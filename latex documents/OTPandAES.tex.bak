@@ -1,0 +1,14 @@
+\documentclass[12pt]{report}
+
+\begin{document}
+
+\title{OTP and AES: A historical transition between two systems of cryptography}
+\author{Valdemar Thanner\\Kantonsschule Zug\\supervised by Mr. Bernhard Keller}
+\maketitle
+
+\tableofcontents
+\chapter{OTP: The One Time Pad}
+\section{What is a "One Time Pad"?}
+The one time pad
+\section{Method used}
+\end{document}
