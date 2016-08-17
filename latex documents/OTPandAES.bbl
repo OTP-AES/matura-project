@@ -1,0 +1,57 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{none/global/}
+  \entry{vernampatent}{patent}{}
+    \name{author}{1}{}{%
+      {{hash=VG}{%
+         family={Vernam},
+         family_i={V\bibinitperiod},
+         given={G.S},
+         given_i={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VG1}
+    \strng{fullhash}{VG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{U.S. Patent 1,310,719}
+    \field{title}{Secret Signaling system}
+    \field{type}{patent}
+    \field{year}{1919}
+  \endentry
+
+  \entry{frequencyanalysis}{online}{}
+    \name{author}{1}{}{%
+      {{hash=l}{%
+         family={learncryptography.com},
+         family_i={l\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{l1}
+    \strng{fullhash}{l1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Frequency Analysis}
+    \verb{url}
+    \verb https://learncryptography.com/cryptanalysis/frequency-analysis
+    \endverb
+    \field{year}{2014}
+  \endentry
+\endsortlist
+\endinput
