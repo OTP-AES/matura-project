@@ -36,6 +36,23 @@
     \field{year}{1919}
   \endentry
 
+  \entry{HutSix}{book}{}
+    \name{author}{1}{}{%
+      {{hash=WG}{%
+         family={Welchman},
+         family_i={W\bibinitperiod},
+         given={Gordon},
+         given_i={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WG1}
+    \strng{fullhash}{WG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The Hut Six Story: Breaking the Enigma Codes}
+    \field{year}{1997}
+  \endentry
+
   \entry{frequencyanalysis}{online}{}
     \name{author}{1}{}{%
       {{hash=l}{%
