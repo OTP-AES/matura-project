@@ -8,9 +8,11 @@ style=numeric,
 citestyle=numeric,
 sorting=none]
 {biblatex}
+\makeatletter 
+\def\blx@maxline{77} 
+\makeatother 
 \addbibresource{mybib}
 \setlength{\parskip}{5mm}
-
 \begin{document}
 
 \title{OTP and AES: A historical transition between two systems of cryptography}
@@ -24,7 +26,7 @@ sorting=none]
 \section{What is a "One Time Pad"?}
 When speaking about OTP, it is important to distinguish between its two meanings: On the one hand, it is a technique used to encrypt information. This technique requires one single key, used both to encrypt and decrypt the information. This key is also referred to as a one time pad; therefore, it is important to distinguish between the one time pad (a cryptographical technique) and a one time pad (a key which is used to encrypt and decrypt information).
 
-The One Time Pad is largely derived from the Vernam cipher, which is named after Gilbert Vernam. The Vernam cipher utilized a perforated tape (one of the earliest types of data storage) as the secret key\cite{vernampatent}. Each bit of data was stored in the form of a hole punched into the perforated tape.
+The One Time Pad is largely derived from the Vernam cipher, which is named after Gilbert Vernam. The Vernam cipher utilized a perforated tape (one of the earliest types of data storage) as the secret key\cite{VernamPatent}. Each bit of data was stored in the form of a hole punched into the perforated tape.
 
 \begin{figure}[H]
 \centering
@@ -42,7 +44,7 @@ In the following section, the utilized method will be clarified through usage of
 \subsection{Generation of the random key}
 In order to encrypt the plaintext, a key must first be generated. This key will be utilized to encrypt the plaintext through the usage of modular addition, turning it into the ciphertext.
 
-This key must fulfil some crucial criteria. Foremost, the length of the key (the amount of  characters contained within it) must be equivalent to or greater than the length of the plaintext; otherwise, it is not possible to perform any encryption (using the OTP). Secondly, the key must be generated randomly. This is mainly due to the fact that a randomly generated key makes frequency analysis\cite{frequencyanalysis}, the form of cryptanalysis most commonly used to break classical ciphers, impossible.
+This key must fulfil some crucial criteria. Foremost, the length of the key (the amount of  characters contained within it) must be equivalent to or greater than the length of the plaintext; otherwise, it is not possible to perform any encryption (using the OTP). Secondly, the key must be generated randomly. This is mainly due to the fact that a randomly generated key makes frequency analysis\cite{FrequencyAnalysis}, the form of cryptanalysis most commonly used to break classical ciphers, impossible.
 
 The key consists of numbers. Usually, when the plaintext is made up of Latin letters, the numbers range between 0 and 25. The key can be converted into Latin letters through the same method applied to the plaintext outlined in the following chapter, however, this is not necessary, although the key is often transported in the form of text.
 
@@ -65,7 +67,7 @@ As the key was also generated in the form of characters, it too must be converte
 \includegraphics[scale=1]{Table2.PNG}
 \end{figure}
 
-Afterwards, the key and the plaintext are added together utilizing modular addition. Of course, all operations below are performed in \textit{mod 26}. Finally, the resulting numbers are converted to the character to which they correspond in the latin alphabet. The resulting sequence of characters is referred to as the ciphertext.
+Afterwards, the key and the plaintext are added together utilizing modular addition. Of course, all operations below are performed in \textit{mod 26}. Finally, the resulting numbers are converted to the character to which they correspond in the Latin alphabet. The resulting sequence of characters is referred to as the ciphertext.
 
 \begin{figure}[H]
 \centering
@@ -85,10 +87,14 @@ Since the ciphertext was created through the modular addition of the plaintext a
 Now, the message's journey is complete, having passed from plaintext into ciphertext, being transported to its intended recipient in the form of ciphertext, and finally being decoded and read by its recipient. 
 
 \section{Perfect secrecy: Information-theoretical security}
+An important characteristic of OTP is that the ciphertext convey no information at all in regards to the plaintext; this means that it is not possible to garner any information about the key nor the plaintext if one is in possession of the ciphertext
+\cite{PerfectSecrecy}.
 
-\subsection{definition}
+From this, two other important characteristics of a cryptographical system with perfect secrecy can be derived. Firstly, perfect message indistinguishability. This means that, even if you are provided with multiple different plaintexts and one ciphertext, it is impossible to assign any one plaintext to the provided ciphertext. Secondly, if the key is the same length as the plaintext (as is the case in OTP), then there exists a key for every possible encryption from plaintext to ciphertext. This means that any plaintext can be converted to any ciphertext, making it impossible to determine the key without access to both the plaintext and the ciphertext. This is referred to as perfect key ambiguity.
 
-%\subsection{mathematical proof}
+Although many believe that the ciphertext does provide information about the plaintext, namely its length, this can easily be solved through padding, where characters of no importance to the plaintext are added to it before encryption \cite{HutSix}.
+
+\subsection{mathematical proof}
 
 \subsection{Why can only OTP achieve perfect secrecy?}
 
@@ -102,7 +108,5 @@ Now, the message's journey is complete, having passed from plaintext into cipher
 
 
 \printbibliography
-
 \end{document}
-
 

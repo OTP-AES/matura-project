@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  26 AUG 2016 22:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  27 AUG 2016 17:39
 entering extended mode
 **./OTPandAES.tex
 (OTPandAES.tex
@@ -328,18 +328,18 @@ File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
  (OTPandAES.aux)
 \openout1 = `OTPandAES.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 (E:\miketex\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -381,112 +381,2538 @@ Package biblatex Info: Data encoding 'ascii' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'OTPandAES.bbl' found.
- (OTPandAES.bbl)
-Package biblatex Info: Reference section=0 on input line 14.
-Package biblatex Info: Reference segment=0 on input line 14.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 18.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 18.
- [1
+ (OTPandAES.bbl
+! Use of \blx@bbl@verbadd@i doesn't match its definition.
+l.87     \verb
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-{C:/Users/Valdemar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (OTPandA
-ES.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 5.
 )
-\tf@toc=\write5
-\openout5 = `OTPandAES.toc'.
+Package biblatex Info: Reference section=0 on input line 16.
+Package biblatex Info: Reference segment=0 on input line 16.
 
+Overfull \hbox (7.21115pt too wide) in paragraph at lines 88--17
+[]\OT1/cmr/m/n/12   http://crypto.stackexchange.com/questions/3896/simply-put-w
+hat-does-
+ []
+
+
+Overfull \hbox (143.83612pt too wide) in paragraph at lines 88--17
+\OT1/cmr/m/n/12 per    \verb fect-secrecy-mean    \endverb    \field{year}{2
+014}  \endentry\endsortlist\endinput 
+ []
 
 [1
 
+{C:/Users/Valdemar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 20.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 20.
+
+[1] (OTPandAES.toc)
+\tf@toc=\write5
+\openout5 = `OTPandAES.toc'.
+
+ [1
+
 ]
 Chapter 1.
-<images/PerforatedTape.jpg, id=11, 433.37122pt x 288.95561pt>
+<images/PerforatedTape.jpg, id=14, 433.37122pt x 288.95561pt>
 File: images/PerforatedTape.jpg Graphic file (type jpg)
 
 <use images/PerforatedTape.jpg>
-Package pdftex.def Info: images/PerforatedTape.jpg used on input line 31.
+Package pdftex.def Info: images/PerforatedTape.jpg used on input line 33.
 (pdftex.def)             Requested size: 216.68507pt x 144.47745pt.
  [2
 
-] [3 <./images/PerforatedTape.jpg>] [4]
-<images/Table1.PNG, id=23, 433.62pt x 42.91031pt>
+] [3 <./images/PerforatedTape.jpg>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 54.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 54.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 54.
+ [4]
+<images/Table1.PNG, id=26, 433.62pt x 42.91031pt>
 File: images/Table1.PNG Graphic file (type png)
  <use images/Table1.PNG>
-Package pdftex.def Info: images/Table1.PNG used on input line 58.
+Package pdftex.def Info: images/Table1.PNG used on input line 60.
 (pdftex.def)             Requested size: 433.61894pt x 42.91019pt.
 
-Overfull \hbox (43.61894pt too wide) in paragraph at lines 58--59
+Overfull \hbox (43.61894pt too wide) in paragraph at lines 60--61
  [][] 
  []
 
-<images/Table2.PNG, id=25, 436.63126pt x 39.14626pt>
+<images/Table2.PNG, id=28, 436.63126pt x 39.14626pt>
 File: images/Table2.PNG Graphic file (type png)
  <use images/Table2.PNG>
-Package pdftex.def Info: images/Table2.PNG used on input line 65.
+Package pdftex.def Info: images/Table2.PNG used on input line 67.
 (pdftex.def)             Requested size: 436.63019pt x 39.14615pt.
 
-Overfull \hbox (46.63019pt too wide) in paragraph at lines 65--66
+Overfull \hbox (46.63019pt too wide) in paragraph at lines 67--68
  [][] 
  []
 
-<images/Table3.PNG, id=26, 450.9347pt x 67.0003pt>
+<images/Table3.PNG, id=29, 450.9347pt x 67.0003pt>
 File: images/Table3.PNG Graphic file (type png)
  <use images/Table3.PNG>
-Package pdftex.def Info: images/Table3.PNG used on input line 72.
+Package pdftex.def Info: images/Table3.PNG used on input line 74.
 (pdftex.def)             Requested size: 450.9336pt x 67.00012pt.
 
-Overfull \hbox (60.9336pt too wide) in paragraph at lines 72--73
+Overfull \hbox (60.9336pt too wide) in paragraph at lines 74--75
  [][] 
  []
 
 [5 <./images/Table1.PNG> <./images/Table2.PNG> <./images/Table3.PNG>]
-<images/Table4.PNG, id=33, 446.41782pt x 68.50594pt>
+<images/Table4.PNG, id=37, 446.41782pt x 68.50594pt>
 File: images/Table4.PNG Graphic file (type png)
  <use images/Table4.PNG>
-Package pdftex.def Info: images/Table4.PNG used on input line 82.
+Package pdftex.def Info: images/Table4.PNG used on input line 84.
 (pdftex.def)             Requested size: 446.41672pt x 68.50577pt.
 
-Overfull \hbox (56.41672pt too wide) in paragraph at lines 82--83
+Overfull \hbox (56.41672pt too wide) in paragraph at lines 84--85
  [][] 
  []
 
-[6 <./images/Table4.PNG>] [7]
-Overfull \hbox (75.95891pt too wide) in paragraph at lines 105--105
-[]\OT1/cmr/m/n/12 learncryptography.com. \OT1/cmr/m/it/12 Fre-quency Anal-y-sis
-\OT1/cmr/m/n/12 . 2014. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : $\OT1/cmtt/m/n/12
- https : / / learncryptography .
+[6 <./images/Table4.PNG>]
+Overfull \hbox (1.72371pt too wide) in paragraph at lines 95--96
+[]\OT1/cmr/m/n/12 Although many be-lieve that the ci-pher-text does pro-vide in
+-for-ma-tion about
  []
 
-[8
+[7]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.111 \end
+          {document}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-] (OTPandAES.aux)
-Package logreq Info: Writing requests to 'OTPandAES.run.xml'.
-\openout1 = `OTPandAES.run.xml'.
+! Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.111 \end
+          {document}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
- ) 
+! Undefined control sequence.
+<argument> \let \blx@theformat 
+                               \@firstofone 
+l.111 \end
+          {document}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Extra \fi.
+\@ifnch ...e \let \reserved@c \reserved@b \fi \fi 
+                                                  \reserved@c 
+l.111 \end
+          {document}
+I'm ignoring this; it doesn't match any \if.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   l
+l.111 \end
+          {document}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   l
+l.111 \end
+          {document}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Extra \endcsname.
+<argument> ...printfield {labelnumber}}\endcsname 
+                                                  \NewCount \relax \def \exp...
+l.111 \end
+          {document}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+<argument> ...printfield {labelnumber}}\endcsname 
+                                                  {\expandonce \NewValue }}
+l.111 \end
+          {document}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Use of \expandafter doesn't match its definition.
+\expandonce #1->\unexpanded \expandafter {
+                                          #1}
+l.111 \end
+          {document}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Missing { inserted.
+<to be read again> 
+                   \let 
+l.111 \end
+          {document}
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Argument of \renew@command has an extra }.
+<inserted text> 
+                \par 
+l.111 \end
+          {document}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \renew@command was complete.
+<to be read again> 
+                   \par 
+l.111 \end
+          {document}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra }, or forgotten \endgroup.
+<argument> ...\endcsname {\expandonce \NewValue }}
+                                                  
+l.111 \end
+          {document}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Argument of \makelabel has an extra }.
+<inserted text> 
+                \par 
+l.111 \end
+          {document}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \makelabel was complete.
+<to be read again> 
+                   \par 
+l.111 \end
+          {document}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! You can't use `macro parameter character #' in horizontal mode.
+\blx@env@bibliography ...*{\makelabel }[1]{\hss ##
+                                                  1}
+l.111 \end
+          {document}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Use of \expandafter doesn't match its definition.
+\blx@listloop #1->\expandafter \blx@listloop@i 
+                                               #1|&
+l.111 \end
+          {document}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Infinite glue shrinkage found in a paragraph.
+\blx@listloop #1->\expandafter \blx@listloop@i #1|
+                                                  &
+l.111 \end
+          {document}
+The paragraph just ended includes some glue that has
+infinite shrinkability, e.g., `\hskip 0pt minus 1fil'.
+Such glue doesn't belong there---it allows a paragraph
+of any length to fit on one line. But it's safe to proceed,
+since the offensive shrinkability has been made finite.
+
+! Display math should end with $$.
+<to be read again> 
+                   \let 
+l.111 \end{document}
+                    
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+! Use of \expandafter doesn't match its definition.
+\ifundef ...oftwo \else \expandafter \expandafter 
+                                                  \expandafter \@secondoftwo...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\ifundef ...xpandafter \expandafter \@secondoftwo 
+                                                  \fi \else \expandafter \@f...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\expandonce #1->\unexpanded \expandafter {
+                                          #1}
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.111 \end{document}
+                    
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Use of \expandafter doesn't match its definition.
+\forlistloop #1#2->\expandafter \etb@forlistloop 
+                                                 \expandafter {#2}{#1}
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\forlistloop ...er \etb@forlistloop \expandafter {
+                                                  #2}{#1}
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra }, or forgotten \endgroup.
+\forlistloop ...\etb@forlistloop \expandafter {#2}
+                                                  {#1}
+l.111 \end{document}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Argument of \do has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \do was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Use of \expandafter doesn't match its definition.
+\ifinlist ...@firstoftwo }\expandafter \etb@tempa 
+                                                  \expandafter |#2|#1|&
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\ifinlist ...expandafter \etb@tempa \expandafter |
+                                                  #2|#1|&
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\ifdefmacro #1->\expandafter \etb@ifdefmacro 
+                                             \meaning #1macro:&
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\ifdefmacro #1->\expandafter \etb@ifdefmacro 
+                                             \meaning #1macro:&
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.111 \end{document}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Use of \expandafter doesn't match its definition.
+\ifdefstrequal ...mpa {\expandafter \strip@prefix 
+                                                  \meaning #1}\edef \etb@tem...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\ifdefstrequal ...mpb {\expandafter \strip@prefix 
+                                                  \meaning #2}\ifx \etb@temp...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Argument of \@firstoftwo has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@firstoftwo was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Overfull \hbox (442.47733pt too wide) in paragraph at lines 111--111
+\OT1/cmr/m/n/12 macro:->VernamPatent|HutSix|FrequencyAnalysis|PerfectSecrecy|ma
+cro:$[]$ 
+ []
+
+! Argument of \@secondoftwo has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@secondoftwo was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@secondoftwo has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@secondoftwo was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Use of \expandafter doesn't match its definition.
+\ifinlist ...@firstoftwo }\expandafter \etb@tempa 
+                                                  \expandafter |#2|#1|&
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\ifinlist ...expandafter \etb@tempa \expandafter |
+                                                  #2|#1|&
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\ifblank #1->\expandafter \ifx 
+                               \expandafter \relax \detokenize \expandafter ...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\ifblank ...\expandafter \ifx \expandafter \relax 
+                                                  \detokenize \expandafter {...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\ifblank ...fter \relax \detokenize \expandafter {
+                                                  \@gobble #1?}\relax \expan...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Missing { inserted.
+<to be read again> 
+                   T
+l.111 \end{document}
+                    
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Use of \expandafter doesn't match its definition.
+\ifblank ... #1?}\relax \expandafter \@firstoftwo 
+                                                  \else \expandafter \@secon...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra \else.
+\ifblank ...relax \expandafter \@firstoftwo \else 
+                                                  \expandafter \@secondoftwo...
+l.111 \end{document}
+                    
+I'm ignoring this; it doesn't match any \if.
+
+! Use of \expandafter doesn't match its definition.
+\ifblank ...ftwo \else \expandafter \@secondoftwo 
+                                                  \fi 
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra \fi.
+\ifblank ... \else \expandafter \@secondoftwo \fi 
+                                                  
+l.111 \end{document}
+                    
+I'm ignoring this; it doesn't match any \if.
+
+! Use of \expandafter doesn't match its definition.
+\ifundef ...oftwo \else \expandafter \expandafter 
+                                                  \expandafter \@secondoftwo...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\ifundef ...xpandafter \expandafter \@secondoftwo 
+                                                  \fi \else \expandafter \@f...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\expandonce #1->\unexpanded \expandafter {
+                                          #1}
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Missing { inserted.
+<to be read again> 
+                   O
+l.111 \end{document}
+                    
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Use of \expandafter doesn't match its definition.
+\ifblank #1->\expandafter \ifx 
+                               \expandafter \relax \detokenize \expandafter ...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\ifblank ...\expandafter \ifx \expandafter \relax 
+                                                  \detokenize \expandafter {...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\ifblank ...fter \relax \detokenize \expandafter {
+                                                  \@gobble #1?}\relax \expan...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Missing { inserted.
+<to be read again> 
+                   }
+l.111 \end{document}
+                    
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Use of \expandafter doesn't match its definition.
+\ifblank ... #1?}\relax \expandafter \@firstoftwo 
+                                                  \else \expandafter \@secon...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra \else.
+\ifblank ...relax \expandafter \@firstoftwo \else 
+                                                  \expandafter \@secondoftwo...
+l.111 \end{document}
+                    
+I'm ignoring this; it doesn't match any \if.
+
+! Use of \expandafter doesn't match its definition.
+\ifblank ...ftwo \else \expandafter \@secondoftwo 
+                                                  \fi 
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra \fi.
+\ifblank ... \else \expandafter \@secondoftwo \fi 
+                                                  
+l.111 \end{document}
+                    
+I'm ignoring this; it doesn't match any \if.
+
+
+LaTeX Warning:  on input line 110.
+
+! Use of \expandafter doesn't match its definition.
+\ifcsdef ...1\endcsname \expandafter \@firstoftwo 
+                                                  \else \expandafter \@secon...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! You can't use a prefix with `begin-group character {'.
+<to be read again> 
+                   {
+l.111 \end{document}
+                    
+I'll pretend you didn't say \long or \outer or \global or \protected.
+
+! Use of \expandafter doesn't match its definition.
+\cslet #1#2->\expandafter \let 
+                               \csname #1\endcsname #2
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Argument of \etb@tgl@blx@runltx has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \etb@tgl@blx@runltx was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.111 \end{document}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.111 \end{document}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.111 \end{document}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! Package etoolbox Error: Toggle 'blx@runltx' undefined.
+
+See the etoolbox package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Use of \expandafter doesn't match its definition.
+\ifcsdef ...1\endcsname \expandafter \@firstoftwo 
+                                                  \else \expandafter \@secon...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! You can't use a prefix with `begin-group character {'.
+<to be read again> 
+                   {
+l.111 \end{document}
+                    
+I'll pretend you didn't say \long or \outer or \global or \protected.
+
+! Use of \expandafter doesn't match its definition.
+\cslet #1#2->\expandafter \let 
+                               \csname #1\endcsname #2
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Argument of \etb@tgl@blx@runbtx has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \etb@tgl@blx@runbtx was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! Package etoolbox Error: Toggle 'blx@runbtx' undefined.
+
+See the etoolbox package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra }, or forgotten \endgroup.
+\@enddocumenthook ... } {} {\blx@logreq@active {}}
+                                                  } {}\def \do ##1{\ifinlist...
+l.111 \end{document}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+\@enddocumenthook ...} {} {\blx@logreq@active {}}}
+                                                   {}\def \do ##1{\ifinlist ...
+l.111 \end{document}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Use of \expandafter doesn't match its definition.
+\forlistloop #1#2->\expandafter \etb@forlistloop 
+                                                 \expandafter {#2}{#1}
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\forlistloop ...er \etb@forlistloop \expandafter {
+                                                  #2}{#1}
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.111 \end{document}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Argument of \do has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \do was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.111 \end{document}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.111 \end{document}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.111 \end{document}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Use of \expandafter doesn't match its definition.
+\forlistloop #1#2->\expandafter \etb@forlistloop 
+                                                 \expandafter {#2}{#1}
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\forlistloop ...er \etb@forlistloop \expandafter {
+                                                  #2}{#1}
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.111 \end{document}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Argument of \do has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \do was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.111 \end{document}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.111 \end{document}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.111 \end{document}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Use of \expandafter doesn't match its definition.
+\forlistloop #1#2->\expandafter \etb@forlistloop 
+                                                 \expandafter {#2}{#1}
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\forlistloop ...er \etb@forlistloop \expandafter {
+                                                  #2}{#1}
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra }, or forgotten \endgroup.
+\forlistloop ...\etb@forlistloop \expandafter {#2}
+                                                  {#1}
+l.111 \end{document}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Argument of \do has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \do was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Use of \expandafter doesn't match its definition.
+\forlistloop #1#2->\expandafter \etb@forlistloop 
+                                                 \expandafter {#2}{#1}
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\forlistloop ...er \etb@forlistloop \expandafter {
+                                                  #2}{#1}
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra }, or forgotten \endgroup.
+\forlistloop ...\etb@forlistloop \expandafter {#2}
+                                                  {#1}
+l.111 \end{document}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Argument of \do has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \do was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Use of \expandafter doesn't match its definition.
+\ifcsdef ...1\endcsname \expandafter \@firstoftwo 
+                                                  \else \expandafter \@secon...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Argument of \etb@tgl@blx@defernumbers has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \etb@tgl@blx@defernumbers was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! Package etoolbox Error: Toggle 'blx@defernumbers' undefined.
+
+See the etoolbox package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Argument of \@gobbletwo has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobbletwo was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Use of \expandafter doesn't match its definition.
+\ifcsdef ...1\endcsname \expandafter \@firstoftwo 
+                                                  \else \expandafter \@secon...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Argument of \etb@tgl@blx@runbiber has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \etb@tgl@blx@runbiber was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! Package etoolbox Error: Toggle 'blx@runbiber' undefined.
+
+See the etoolbox package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Argument of \@gobbletwo has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobbletwo was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Use of \expandafter doesn't match its definition.
+\forlistloop #1#2->\expandafter \etb@forlistloop 
+                                                 \expandafter {#2}{#1}
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\forlistloop ...er \etb@forlistloop \expandafter {
+                                                  #2}{#1}
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Argument of \do has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \do was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra }, or forgotten \endgroup.
+\@enddocumenthook ...olistloop \blx@localnumaux }}
+                                                   {}\endgroup \ifbool {refc...
+l.111 \end{document}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Use of \expandafter doesn't match its definition.
+\ifcsundef ...name #1\endcsname \expandafter \ifx 
+                                                  \csname #1\endcsname \rela...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\ifcsundef ...two \else \expandafter \expandafter 
+                                                  \expandafter \@secondoftwo...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\ifcsundef ...andafter \expandafter \@secondoftwo 
+                                                  \fi \else \expandafter \@f...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+! Package etoolbox Error: Boolean '\ifrefcontextdefaults' undefined.
+
+See the etoolbox package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Argument of \@gobbletwo has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobbletwo was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Use of \expandafter doesn't match its definition.
+\ifbool ...oftwo \else \expandafter \@secondoftwo 
+                                                  \fi }
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\ifcsdef ...1\endcsname \expandafter \@firstoftwo 
+                                                  \else \expandafter \@secon...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Argument of \etb@tgl@blx@bbldone has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \etb@tgl@blx@bbldone was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! Package etoolbox Error: Toggle 'blx@bbldone' undefined.
+
+See the etoolbox package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Argument of \@gobbletwo has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobbletwo was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Use of \expandafter doesn't match its definition.
+\forlistloop #1#2->\expandafter \etb@forlistloop 
+                                                 \expandafter {#2}{#1}
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\forlistloop ...er \etb@forlistloop \expandafter {
+                                                  #2}{#1}
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.111 \end{document}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Argument of \do has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \do was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.111 \end{document}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.111 \end{document}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Use of \expandafter doesn't match its definition.
+\ifcsdef ...1\endcsname \expandafter \@firstoftwo 
+                                                  \else \expandafter \@secon...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \expandafter doesn't match its definition.
+\cslet #1#2->\expandafter \let 
+                               \csname #1\endcsname #2
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Argument of \etb@tgl@blx@refcontext has an extra }.
+<inserted text> 
+                \par 
+l.111 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \etb@tgl@blx@refcontext was complete.
+<to be read again> 
+                   \par 
+l.111 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! Package etoolbox Error: Toggle 'blx@refcontext' undefined.
+
+See the etoolbox package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Use of \expandafter doesn't match its definition.
+\fontencoding  #1->\expandafter \ifx 
+                                     \csname T@#1\endcsname \relax \@latex@e...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+! LaTeX Error: Encoding scheme `OT1' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \else.
+\fontencoding  ...scheme `#1' unknown}\@eha \else 
+                                                  \edef \f@encoding {#1}\ifx...
+l.111 \end{document}
+                    
+I'm ignoring this; it doesn't match any \if.
+
+! Use of \expandafter doesn't match its definition.
+\pickup@font ->\expandafter \ifx 
+                                 \font@name \relax \define@newfont \fi 
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+define@newfont ...ar m@ne expandafter expandafter 
+                                                  expandafter split@name exp...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+define@newfont ...andafter expandafter split@name 
+                                                  expandafter string font@na...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+define@newfont ...r split@name expandafter string 
+                                                  font@name @nil try@load@fo...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Undefined control sequence.
+define@newfont ...pandafter string font@name @nil 
+                                                  try@load@fontshape expanda...
+l.111 \end{document}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Use of expandafter doesn't match its definition.
+try@load@fontshape ->expandafter ifx 
+                                     csname f@encoding +f@family endcsname r...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+LaTeX Font Info:    Try loading font information for OT1+cmr on input line 110.
+
+! Use of expandafter doesn't match its definition.
+try@load@fontshape ...ily }global expandafter let 
+                                                  csname f@encoding +f@famil...
+l.111 \end{document}
+                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+(E:\miketex\tex\latex\base\ot1cmr.fd
+File: ot1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+
+! Use of expandafter doesn't match its definition.
+@providesfile ...og {File: #1 #2}expandafter xdef 
+                                                  csname ver@#1endcsname {#2...
+l.46 .../29 v2.5h Standard LaTeX font definitions]
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+@ifundefined #1->expandafter ifx 
+                                 csname #1endcsname relax expandafter @first...
+l.47 ...eFontFamily{OT1}{cmr}{\hyphenchar\font45 }
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+@ifundefined ...ame relax expandafter @firstoftwo 
+                                                  else expandafter @secondof...
+l.47 ...eFontFamily{OT1}{cmr}{\hyphenchar\font45 }
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra else.
+@ifundefined ...elax expandafter @firstoftwo else 
+                                                  expandafter @secondoftwo fi 
+l.47 ...eFontFamily{OT1}{cmr}{\hyphenchar\font45 }
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
+! Use of expandafter doesn't match its definition.
+@ifundefined ...two else expandafter @secondoftwo 
+                                                  fi 
+l.47 ...eFontFamily{OT1}{cmr}{\hyphenchar\font45 }
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+! LaTeX Error: Encoding scheme `OT1' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 ...eFontFamily{OT1}{cmr}{\hyphenchar\font45 }
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontFamily ...a {#3}global expandafter let 
+                                                  csname #1+#2expandafter en...
+l.47 ...eFontFamily{OT1}{cmr}{\hyphenchar\font45 }
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontFamily ...e #1+#2expandafter endcsname 
+                                                  ifx reserved@a @empty @emp...
+l.47 ...eFontFamily{OT1}{cmr}{\hyphenchar\font45 }
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Missing endcsname inserted.
+<to be read again> 
+                   hyphenchar 
+l.47 ...eFontFamily{OT1}{cmr}{\hyphenchar\font45 }
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape ...catcodes expandafter endgroup 
+                                                  DeclareFontShape@ 
+l.48 \DeclareFontShape
+                      {OT1}{cmr}{m}{n}%
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ #1#2#3#4#5#6->expandafter ifx 
+                                                csname #1+#2endcsname relax ...
+l.52       <17.28><20.74><24.88>cmr17}{}
+                                        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+! LaTeX Error: Font family `OT1+cmr' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52       <17.28><20.74><24.88>cmr17}{}
+                                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra else.
+DeclareFontShape@ ...ly `#1+#2' unknown}@eha else 
+                                                  expandafter xdef csname #1...
+l.52       <17.28><20.74><24.88>cmr17}{}
+                                        
+I'm ignoring this; it doesn't match any \if.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...n}@eha else expandafter xdef 
+                                                  csname #1/#2/#3/#4endcsnam...
+l.52       <17.28><20.74><24.88>cmr17}{}
+                                        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+<argument> <
+            5><6><7><8><9><10><12>gen*cmr<10.95>cmr10<14.4>cmr12<17.28><20.7...
+l.52       <17.28><20.74><24.88>cmr17}{}
+                                        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra endcsname.
+DeclareFontShape@ ... noexpand csname #5endcsname 
+                                                  }def reserved@a {#6}global...
+l.52       <17.28><20.74><24.88>cmr17}{}
+                                        
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...a {#6}global expandafter let 
+                                                  csname #5expandafter endcs...
+l.52       <17.28><20.74><24.88>cmr17}{}
+                                        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...name #5expandafter endcsname 
+                                                  ifx reserved@a @empty @emp...
+l.52       <17.28><20.74><24.88>cmr17}{}
+                                        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra fi.
+DeclareFontShape@ ...@empty else reserved@a fi fi 
+                                                  
+l.52       <17.28><20.74><24.88>cmr17}{}
+                                        
+I'm ignoring this; it doesn't match any \if.
+
+! Missing endcsname inserted.
+<to be read again> 
+                   begingroup 
+l.53 \DeclareFontShape
+                      {OT1}{cmr}{m}{sl}%
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! You can't use a prefix with `begingroup'.
+<to be read again> 
+                   begingroup 
+l.53 \DeclareFontShape
+                      {OT1}{cmr}{m}{sl}%
+I'll pretend you didn't say \long or \outer or \global or \protected.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape ...catcodes expandafter endgroup 
+                                                  DeclareFontShape@ 
+l.53 \DeclareFontShape
+                      {OT1}{cmr}{m}{sl}%
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ #1#2#3#4#5#6->expandafter ifx 
+                                                csname #1+#2endcsname relax ...
+l.59       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+! LaTeX Error: Font family `OT1+cmr' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59       }{}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra else.
+DeclareFontShape@ ...ly `#1+#2' unknown}@eha else 
+                                                  expandafter xdef csname #1...
+l.59       }{}
+              
+I'm ignoring this; it doesn't match any \if.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...n}@eha else expandafter xdef 
+                                                  csname #1/#2/#3/#4endcsnam...
+l.59       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+<argument> <
+            5><6><7>cmsl8<8><9>gen*cmsl<10><10.95>cmsl10<12><14.4><17.28><20...
+l.59       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra endcsname.
+DeclareFontShape@ ... noexpand csname #5endcsname 
+                                                  }def reserved@a {#6}global...
+l.59       }{}
+              
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...a {#6}global expandafter let 
+                                                  csname #5expandafter endcs...
+l.59       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...name #5expandafter endcsname 
+                                                  ifx reserved@a @empty @emp...
+l.59       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra fi.
+DeclareFontShape@ ...@empty else reserved@a fi fi 
+                                                  
+l.59       }{}
+              
+I'm ignoring this; it doesn't match any \if.
+
+! Missing endcsname inserted.
+<to be read again> 
+                   begingroup 
+l.60 \DeclareFontShape
+                      {OT1}{cmr}{m}{it}%
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! You can't use a prefix with `begingroup'.
+<to be read again> 
+                   begingroup 
+l.60 \DeclareFontShape
+                      {OT1}{cmr}{m}{it}%
+I'll pretend you didn't say \long or \outer or \global or \protected.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape ...catcodes expandafter endgroup 
+                                                  DeclareFontShape@ 
+l.60 \DeclareFontShape
+                      {OT1}{cmr}{m}{it}%
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ #1#2#3#4#5#6->expandafter ifx 
+                                                csname #1+#2endcsname relax ...
+l.67       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+! LaTeX Error: Font family `OT1+cmr' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67       }{}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra else.
+DeclareFontShape@ ...ly `#1+#2' unknown}@eha else 
+                                                  expandafter xdef csname #1...
+l.67       }{}
+              
+I'm ignoring this; it doesn't match any \if.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...n}@eha else expandafter xdef 
+                                                  csname #1/#2/#3/#4endcsnam...
+l.67       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+<argument> <
+            5><6><7>cmti7<8>cmti8<9>cmti9<10><10.95>cmti10<12><14.4><17.28><...
+l.67       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra endcsname.
+DeclareFontShape@ ... noexpand csname #5endcsname 
+                                                  }def reserved@a {#6}global...
+l.67       }{}
+              
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...a {#6}global expandafter let 
+                                                  csname #5expandafter endcs...
+l.67       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...name #5expandafter endcsname 
+                                                  ifx reserved@a @empty @emp...
+l.67       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra fi.
+DeclareFontShape@ ...@empty else reserved@a fi fi 
+                                                  
+l.67       }{}
+              
+I'm ignoring this; it doesn't match any \if.
+
+! Missing endcsname inserted.
+<to be read again> 
+                   begingroup 
+l.68 \DeclareFontShape
+                      {OT1}{cmr}{m}{sc}%
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! You can't use a prefix with `begingroup'.
+<to be read again> 
+                   begingroup 
+l.68 \DeclareFontShape
+                      {OT1}{cmr}{m}{sc}%
+I'll pretend you didn't say \long or \outer or \global or \protected.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape ...catcodes expandafter endgroup 
+                                                  DeclareFontShape@ 
+l.68 \DeclareFontShape
+                      {OT1}{cmr}{m}{sc}%
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ #1#2#3#4#5#6->expandafter ifx 
+                                                csname #1+#2endcsname relax ...
+l.72       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+! LaTeX Error: Font family `OT1+cmr' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72       }{}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra else.
+DeclareFontShape@ ...ly `#1+#2' unknown}@eha else 
+                                                  expandafter xdef csname #1...
+l.72       }{}
+              
+I'm ignoring this; it doesn't match any \if.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...n}@eha else expandafter xdef 
+                                                  csname #1/#2/#3/#4endcsnam...
+l.72       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+<argument> <
+            5><6><7><8><9><10><10.95><12><14.4><17.28><20.74><24.88>cmcsc10
+l.72       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra endcsname.
+DeclareFontShape@ ... noexpand csname #5endcsname 
+                                                  }def reserved@a {#6}global...
+l.72       }{}
+              
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...a {#6}global expandafter let 
+                                                  csname #5expandafter endcs...
+l.72       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...name #5expandafter endcsname 
+                                                  ifx reserved@a @empty @emp...
+l.72       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra fi.
+DeclareFontShape@ ...@empty else reserved@a fi fi 
+                                                  
+l.72       }{}
+              
+I'm ignoring this; it doesn't match any \if.
+
+! Missing endcsname inserted.
+<to be read again> 
+                   begingroup 
+l.77 \DeclareFontShape
+                      {OT1}{cmr}{m}{ui}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! You can't use a prefix with `begingroup'.
+<to be read again> 
+                   begingroup 
+l.77 \DeclareFontShape
+                      {OT1}{cmr}{m}{ui}
+I'll pretend you didn't say \long or \outer or \global or \protected.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape ...catcodes expandafter endgroup 
+                                                  DeclareFontShape@ 
+l.77 \DeclareFontShape
+                      {OT1}{cmr}{m}{ui}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ #1#2#3#4#5#6->expandafter ifx 
+                                                csname #1+#2endcsname relax ...
+l.81       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+! LaTeX Error: Font family `OT1+cmr' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81       }{}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra else.
+DeclareFontShape@ ...ly `#1+#2' unknown}@eha else 
+                                                  expandafter xdef csname #1...
+l.81       }{}
+              
+I'm ignoring this; it doesn't match any \if.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...n}@eha else expandafter xdef 
+                                                  csname #1/#2/#3/#4endcsnam...
+l.81       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+<argument> <
+            5><6><7><8><9><10><10.95><12><14.4><17.28><20.74><24.88>cmu10
+l.81       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra endcsname.
+DeclareFontShape@ ... noexpand csname #5endcsname 
+                                                  }def reserved@a {#6}global...
+l.81       }{}
+              
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...a {#6}global expandafter let 
+                                                  csname #5expandafter endcs...
+l.81       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...name #5expandafter endcsname 
+                                                  ifx reserved@a @empty @emp...
+l.81       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra fi.
+DeclareFontShape@ ...@empty else reserved@a fi fi 
+                                                  
+l.81       }{}
+              
+I'm ignoring this; it doesn't match any \if.
+
+! Missing endcsname inserted.
+<to be read again> 
+                   begingroup 
+l.83 \DeclareFontShape
+                      {OT1}{cmr}{b}{n}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! You can't use a prefix with `begingroup'.
+<to be read again> 
+                   begingroup 
+l.83 \DeclareFontShape
+                      {OT1}{cmr}{b}{n}
+I'll pretend you didn't say \long or \outer or \global or \protected.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape ...catcodes expandafter endgroup 
+                                                  DeclareFontShape@ 
+l.83 \DeclareFontShape
+                      {OT1}{cmr}{b}{n}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ #1#2#3#4#5#6->expandafter ifx 
+                                                csname #1+#2endcsname relax ...
+l.87       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+! LaTeX Error: Font family `OT1+cmr' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87       }{}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra else.
+DeclareFontShape@ ...ly `#1+#2' unknown}@eha else 
+                                                  expandafter xdef csname #1...
+l.87       }{}
+              
+I'm ignoring this; it doesn't match any \if.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...n}@eha else expandafter xdef 
+                                                  csname #1/#2/#3/#4endcsnam...
+l.87       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+<argument> <
+            5><6><7><8><9><10><10.95><12><14.4><17.28><20.74><24.88>cmb10
+l.87       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra endcsname.
+DeclareFontShape@ ... noexpand csname #5endcsname 
+                                                  }def reserved@a {#6}global...
+l.87       }{}
+              
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...a {#6}global expandafter let 
+                                                  csname #5expandafter endcs...
+l.87       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ ...name #5expandafter endcsname 
+                                                  ifx reserved@a @empty @emp...
+l.87       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra fi.
+DeclareFontShape@ ...@empty else reserved@a fi fi 
+                                                  
+l.87       }{}
+              
+I'm ignoring this; it doesn't match any \if.
+
+! Missing endcsname inserted.
+<to be read again> 
+                   begingroup 
+l.89 \DeclareFontShape
+                      {OT1}{cmr}{bx}{n}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! You can't use a prefix with `begingroup'.
+<to be read again> 
+                   begingroup 
+l.89 \DeclareFontShape
+                      {OT1}{cmr}{bx}{n}
+I'll pretend you didn't say \long or \outer or \global or \protected.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape ...catcodes expandafter endgroup 
+                                                  DeclareFontShape@ 
+l.89 \DeclareFontShape
+                      {OT1}{cmr}{bx}{n}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of expandafter doesn't match its definition.
+DeclareFontShape@ #1#2#3#4#5#6->expandafter ifx 
+                                                csname #1+#2endcsname relax ...
+l.94       }{}
+              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+! LaTeX Error: Font family `OT1+cmr' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94       }{}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra else.
+DeclareFontShape@ ...ly `#1+#2' unknown}@eha else 
+                                                  expandafter xdef csname #1...
+l.94       }{}
+              
+(That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 7620 strings out of 493335
- 128983 string characters out of 3146586
+ 7610 strings out of 493335
+ 128859 string characters out of 3146586
  364960 words of memory out of 3000000
- 11074 multiletter control sequences out of 15000+200000
- 10231 words of font info for 36 fonts, out of 3000000 for 9000
+ 11068 multiletter control sequences out of 15000+200000
+ 9454 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,45p,822b,977s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/miketex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/miketex/fonts/type1
-/public/amsfonts/cm/cmcsc10.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmmi
-12.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/miketex/fonts/t
-ype1/public/amsfonts/cm/cmr17.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cm
-ti12.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on OTPandAES.pdf (9 pages, 291000 bytes).
-PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36i,6n,37p,813b,937s stack positions out of 5000i,500n,10000p,200000b,50000s
 
+!  ==> Fatal error occurred, no output PDF file produced!

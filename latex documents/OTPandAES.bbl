@@ -17,7 +17,7 @@
 \endgroup
 
 \sortlist[entry]{none/global/}
-  \entry{vernampatent}{patent}{}
+  \entry{VernamPatent}{patent}{}
     \name{author}{1}{}{%
       {{hash=VG}{%
          family={Vernam},
@@ -53,7 +53,7 @@
     \field{year}{1997}
   \endentry
 
-  \entry{frequencyanalysis}{online}{}
+  \entry{FrequencyAnalysis}{online}{}
     \name{author}{1}{}{%
       {{hash=l}{%
          family={learncryptography.com},
@@ -67,6 +67,26 @@
     \field{title}{Frequency Analysis}
     \verb{url}
     \verb https://learncryptography.com/cryptanalysis/frequency-analysis
+    \endverb
+    \field{year}{2014}
+  \endentry
+
+  \entry{PerfectSecrecy}{online}{}
+    \name{author}{1}{}{%
+      {{hash=f}{%
+         family={figlesquidge},
+         family_i={f\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{f1}
+    \strng{fullhash}{f1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Simply put, what does “perfect secrecy” mean?}
+    \verb{url}
+    \verb
+  http://crypto.stackexchange.com/questions/3896/simply-put-what-does-per
+    \verb fect-secrecy-mean
     \endverb
     \field{year}{2014}
   \endentry
