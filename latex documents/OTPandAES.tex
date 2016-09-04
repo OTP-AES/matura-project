@@ -12,6 +12,15 @@ sorting=none]
 \setlength{\parskip}{5mm}
 %Are there any preferred bibliography style choices / general style requirements when it comes to the Maturaarbeit at the KSZ which I ought to implement?
 
+% There are more or less none. Personally I like the notation where you use the
+% first letter of the authors surname in square brackets. I think this is also
+% the latex preset.  You are free to chose the notation you like most but use it
+% consistently. Make sure you include all the information needed in the
+% bibliography. If you cite web resources, make sure you include the date you
+% retrieved the information. Try to avoid citing Wikipedia but use Wikipedia to
+% find other, more credible sources.
+
+
 \begin{document}
 
 \title{OTP and AES: A historical transition between two systems of cryptography}
@@ -52,12 +61,21 @@ In order to encrypt the plaintext, a key must first be generated. This key will 
 
 This key must fulfil some crucial criteria \cite{MilsElectronic}. Foremost, the length of the key (the amount of  characters contained within it) must be equivalent to or greater than the length of the plaintext; otherwise, it is not possible to perform any encryption (using the OTP). Secondly, the key must be generated randomly. This is mainly due to the fact that a randomly generated key makes frequency analysis\cite{FrequencyAnalysis}, the form of cryptanalysis most commonly used to break classical ciphers, impossible.
 
+% It's not clear what it means to generate a key randomly. 
+
 The key consists of numbers. Usually, when the plaintext is made up of Latin letters, the numbers range between 0 and 25. The key can be converted into Latin letters through the same method applied to the plaintext outlined in the following chapter, however, this is not necessary, although the key is often transported in the form of text.
 
 As the message being encrypted in this example has 12 characters, the key must also posses at least 12 characters. For the sake of this example, the key \textit{"sytruifgnihm"} will be utilized.
 
 \subsection{Modular addition of the key and plaintext}
 %unsure if a picture explaining modular addition and subtraction is needed, or if the provided explanation suffices?			
+
+% In my opinition, the part about modular addition is quite clear. You could
+% also add a binary example where you don't even need the concept of modular
+% addition since all you need is an XOR gate - which of course is the same as
+% modular addition of bits - but easier to understand.
+
+
 Next, the ciphertext is created through modular addition of the key and the plaintext. This can be applied not only to a message consisting of alphabetical characters, but also to any sequence of bits. If the plaintext consists of a message made up of alphabetical characters, the plaintext and the key are added using arithmetic referred to as \textit{"addition modulo 26"}. The correct mathematical notation for modular arithmetic is $(a+b)\:mod\:c$, where c is referred to as the \textit{modulus}, which is the value that cannot be passed nor reached in modular addition. In order to perform modular addition, the variables a and b are first added, after which they are divided by the modulus c, up to an integer. The resulting remainder r is the final result of the operation.
 
 Before the modular addition of the plaintext and the key can begin, each character (of the plaintext as well as of the secret key, in the case that the key was generated as a string of Latin letters instead of as a sequence of numbers) must be converted to a number, corresponding to it's position in the Latin alphabet:
@@ -67,6 +85,10 @@ Before the modular addition of the plaintext and the key can begin, each charact
 \includegraphics[scale=1]{Table1.PNG}		
 \end{figure}
 %Do these tables suffice in aiding understanding the example, or 		                                             should I include more "graphical" explanations as well?
+
+% I don't think this needs to get any more graphical. You could look into latex
+% tables and math syntax for arrow to make the typesetting look a bit more
+% consistent.
 
 As the key was also generated in the form of characters, it too must be converted to a sequence of numbers:
 
@@ -104,11 +126,28 @@ Although many believe that the ciphertext does provide information about the pla
 \subsection{mathematical proof}
 %This is the section which was most difficult for me to write; I opted to present a more simplified explanation of %Shannons proof without the use of probability theory.
 %Should I Include the probability Theory or is it better to keep it simple for the reader?
+
+% I'm not convinced that you'll manage to present a mathematically correct proof without using
+% any probability theory. There are a few problems with the current version of the proof: 
+
+
 In 1949, Shannon proved the perfect secrecy of OTP by using probability theory \cite{ShannonOTP}. To be precise, he proved that, in order to achieve perfect secrecy, the key must possess at least the same length as the plaintext; one of the key characteristics of OTP. If this is the case, then an attacker cannot determine the plaintext given the ciphertext, even with access to infinite computational capacity; a "brute-force attack" is impossible.
+
+% To proof that OTP provides perfect secrecy it's not enough to show that one
+% can only achieve perfect secrecy with a key of the same length as the message
+% as this is only a necessity but no sufficiency
+% (https://en.wikipedia.org/wiki/Necessity_and_sufficiency) to achieve perfect
+% secrecy. E.g. if I use the key consisting of as many zeros as the message has
+% letters and encrypt every message by adding said key, the encryption gives you
+% no secrecy at all even though the key has the same length as the message.
+
 
 A simplified method of presenting this proof is as follows:
 
 If the attacker does indeed possess infinite computational capacity, he can generate every possible key which could have been used to generate the ciphertext, and he can then generate every possible plaintext (each of which will correspond to the given ciphertext and one of the generated keys).
+
+% I don't understand the comment in brackets. You could use a graphical explanation or mathematical
+% notation to make your point clearer.
 
 It follows that, if the ciphertext was $m$ bits long, there would be $2^m$ possible keys (or, in the case that the plaintext and ciphertext consist of Latin characters, $26^m$ possible keys). This is because a bit can possess the value of either 0 or 1, meaning that each individual bit of the key has two possible values. As The entire key possesses m bits, each cell must be multiplied by the following cell in order to obtain the total number of possible keys. In the case that the key consists of Latin characters, however, each cell possess 26 possible values (ranging from 0 to 25); therefore, the total number of possible keys would be $26^m$.
 
@@ -116,8 +155,16 @@ If the possible amount of keys that the attacker can generate is equal to $2^m$,
 
 This amount, $2^m$, is equal to the amount of possible bit sequences of the length m; therefore, the attacker cannot possibly eliminate any one possible plaintext of the length m, meaning that he cannot garner any information from the ciphertext on its own. This fulfils the requirements of perfect secrecy.
 
+% We should discuss the above paragraphs in a meeting as I don't fully
+% understand what you are trying to say. I'm not convinced that this suffices to
+% proof perfect secrecy. Most importantly, it appears that you never used the
+% randomness of the key in your proof. That's also the point where it gets
+% difficult to avoid probability theory. Without probability theory you don't
+% have a understanding of what it means for a key to be ``random''.
+
 \subsection{Why can only OTP achieve perfect secrecy?}
 %Not sure if this information warrants its own section or if I should merge it with the above one
+
 From the above proof, it can be concluded that, in order for the elimination of any possible plaintext to be impossible (rendering a brute-force attack impossible), the key must possess at least the same length as the plaintext. Also, the individual bits of the must not be dependant on one another. These conditions are only fulfilled by OTP.  
 
 \section{Issues with OTP}
@@ -140,11 +187,18 @@ Therefore, in order to ensure that the plaintext cannot be accessed by any party
 
 However, if the communicants already possess a method by which the key can be transmitted with infallible security, then it stands to reason that the plaintext itself could just as well be submitted through the same channel, considering that it has the same number of bytes (or characters) as the key. So, the problem of securely transmitting the plaintext has simply been transferred to the problem of securely transmitting the key.
 
+
+
+
 One method of mitigating this issue is to first send one very long key, which can then be used for multiple messages in the future. Using this method, only one secure transmission has to be made in order to ensure the security of multiple transmissions. 
 
 \subsection{Secure disposal of a utilized key}
 %Once again, not entirely sure if this warrants its own section or if it should be merged into the above section.
-After a key has been fully utilized, it has to be disposed of securely, in order to prevent any information from being compromised in the future, which is possible should the key continue to exist. Therefore, it is necessary to completely eradicate the entirety of the key. If the key was stored on a digital media, such as a USB drive or HDD, the only completely secure method of disposal is considered to be complete incineration. 
+After a key has been fully utilized, it has to be disposed of securely, in order to prevent any information from being compromised in the future, which is possible should the key continue to exist. Therefore, it is necessary to completely eradicate the entirety of the key. If the key was stored on a digital media, such as a USB drive or HDD, the only completely secure method of disposal is considered to be complete incineration.
+
+% Whenever you use a sentence like ``is considered to be...'' you need to
+% provide a source. Are you sure that incinerating hard drives does the job? The
+% ways I know of used to destroy harddrives involve strong electromagnets and drills.
 
 \printbibliography
 
