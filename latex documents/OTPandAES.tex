@@ -24,7 +24,7 @@ sorting=none]
 \begin{document}
 
 \title{OTP and AES: A historical transition between two systems of cryptography}
-\author{Valdemar Thanner\\Kantonsschule Zug\\supervised by Mr. Bernhard Keller}
+\author{Valdemar Thanner\\Kantonsschule Zug\\Supervised by Mr. Bernhard Keller\\Linguistic supervision by Ms. Margrit Oetiker}
 \maketitle
 
 \tableofcontents
@@ -104,7 +104,7 @@ Afterwards, the key and the plaintext are added together utilizing modular addit
 \includegraphics[scale=1]{Table3.PNG}
 \end{figure}
 
-\subsection{decoding of the ciphertext using the key}
+\subsection{Decoding of the ciphertext using the key}
 Assuming the message has been delivered to the intended recipient, who must hold a copy of the secret key (which, as OTP is a symmetrical cryptographical method, is identical to the one utilized to create the ciphertext), the recipient can now decode the ciphertext in order to view the plaintext.
 
 Since the ciphertext was created through the modular addition of the plaintext and the key, the recipient can utilize modular subtraction in order to view the plaintext. In order to do this, the recipient must subtract the key from the ciphertext in modulo 26, and convert the resulting numbers to Latin characters.  However, it is now also necessary for the numbers not to become negative. Fortunately, this is also made possible by modular arithmetic, as the values simply loop back around from 0 as well. Once again, all below operations are in \textit{mod 26}.
@@ -123,7 +123,7 @@ From this, two other important characteristics of a cryptographical system with 
 
 Although many believe that the ciphertext does provide information about the plaintext, namely its length, this can easily be solved through padding, where characters of no importance to the plaintext are added to it before encryption \cite{HutSix}.
 
-\subsection{mathematical proof}
+\subsection{Mathematical proof}
 %This is the section which was most difficult for me to write; I opted to present a more simplified explanation of %Shannons proof without the use of probability theory.
 %Should I Include the probability Theory or is it better to keep it simple for the reader?
 
