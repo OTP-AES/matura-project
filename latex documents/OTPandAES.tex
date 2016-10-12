@@ -104,6 +104,14 @@ Afterwards, the key and the plaintext are added together utilizing modular addit
 \includegraphics[scale=1]{Table3.PNG}
 \end{figure}
 
+The modular addition of the plaintext and the key can also, however, be performed bitwise. This simply means that, instead of adding a message consisting of (up to) 26 different letters with a key (also consisting of up to 26 different letters), we simply add the bits of the plaintext (a computer file consisting of bits), which can assume the value of either 1 or 2, with the bits of the key. The bits are added in modulo 2. This process is referred to as XOR, one of the basic bitwise operations which can be performed directly by a computers central processor.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{XORgate.PNG}
+\caption{The formula used by an XOR gate.}
+\end{figure}
+
 \subsection{Decoding of the ciphertext using the key}
 Assuming the message has been delivered to the intended recipient, who must hold a copy of the secret key (which, as OTP is a symmetrical cryptographical method, is identical to the one utilized to create the ciphertext), the recipient can now decode the ciphertext in order to view the plaintext.
 
@@ -200,7 +208,61 @@ After a key has been fully utilized, it has to be disposed of securely, in order
 % provide a source. Are you sure that incinerating hard drives does the job? The
 % ways I know of used to destroy harddrives involve strong electromagnets and drills.
 
-\printbibliography
+\chapter{AES: The Advanced Encryption Standard}
+
+\section{AES viewed from a high level}
+
+Viewed from a high level, the AES algorithm consists of one XOR step, followed by 10 rounds of cryptographical measures, with each round as well as the initial XOR step using a specific subkey, generated using the main key. By passing through these steps, each block of plaintext is converted into a block of Ciphertext. In the following chapter, each individual aspect of the complete AES algorithm will be more closely examined.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{AES_fig1.jpg}
+\caption{A high-level description of AES.}
+\end{figure}
+
+\section{Method used}
+
+\subsection{Subkey generation (KEYEXPANSIONS)}
+As can be seen in the high-level explanation, AES requires 11 128-bit subkeys (also referred to as round keys); one for the initial XOR operation, and then one for each of the 10 rounds. These subkeys are derived from the main key using the "Rijndael key schedule" \cite{KeySchedule}.
+
+\subsection{Initial XOR operation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{AES_fig2.jpg}
+\end{figure}
+
+This step is identical to the XOR operation already described in the chapter regarding AES; once again, a simple XOR gate is used to add the plaintext with the initial XOR operations own subkey (which, crucially, is not the main key itself, but is, in fact, derived from the main key during the process of subkey generation). After this, the resulting ciphertext proceeds into the first of ten so-called "rounds".
+
+\subsection{Rounds}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{AES_fig3.jpg}
+\end{figure}
+
+\subsubsection{Substitution using lookup table (SUBBYTES)}
+The first substitution is relatively simple to perform; this is because it is a bytewise operation. This means that the data being manipulated is one single byte. In this case, the manipulation is a substitution of each byte with another byte, the substitution being determined by a lookup table, in which each individual byte is assigned another byte with which it must be swapped. The reason that a lookup table is practical is that there are only $2^8 = 256$ different possible bytes. This means that the speed which could be gained from swapping bytes using a formula instead of a simple lookup table is inconsequential.
+
+\subsubsection{Transposition (SHIFTROWS)}
+
+\subsubsection{Substitution using formula (MIXCOLUMNS)}
+
+\subsubsection{Round-closing XOR operation (ADDROUNDKEY)}
+
+\section{Fulfilment of Shannon's properties}
+
+\subsection{Diffusion}
+
+\subsection{Confusion}
+
+\section{Problems with AES}
+
+\subsection{Overconfidence and over-reliance}
+
+\subsection{Keeping of a shared secret}
+
+% have to print the bibliography once all entries are made, otherwise an error keeps occuring. \printbibliography
 
 \end{document}
 
