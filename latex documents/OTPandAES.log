@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  10 OCT 2016 18:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  13 OCT 2016 01:27
 entering extended mode
 **./OTPandAES.tex
 (OTPandAES.tex
@@ -368,7 +368,15 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'OTPandAES.bbl' found.
- (OTPandAES.bbl)
+ (OTPandAES.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                SBox
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 24.
 Package biblatex Info: Reference segment=0 on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -377,22 +385,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 28.
  [1
 
-{C:/Users/Valdemar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (OTPandA
-ES.toc
+{C:/Users/Valdemar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(OTPandAES.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 5.
+ [1
 
-[1
-
-]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ¢ in font cmr12!
-)
+])
 \tf@toc=\write5
 \openout5 = `OTPandAES.toc'.
 
@@ -490,53 +493,41 @@ Package pdftex.def Info: images/AES_fig1.jpg used on input line 219.
 
 [14
 
- <./images/AES_fig1.jpg>]
-<images/AES_fig2.jpg, id=71, 722.7pt x 264.23718pt>
+ <./images/AES_fig1.jpg>] [15]
+<images/AES_fig2.jpg, id=77, 722.7pt x 264.23718pt>
 File: images/AES_fig2.jpg Graphic file (type jpg)
  <use images/AES_fig2.jpg>
-Package pdftex.def Info: images/AES_fig2.jpg used on input line 232.
+Package pdftex.def Info: images/AES_fig2.jpg used on input line 251.
 (pdftex.def)             Requested size: 289.07487pt x 105.693pt.
 
-<images/AES_fig3.jpg, id=72, 963.6pt x 722.7pt>
+[16 <./images/AES_fig2.jpg>]
+<images/AES_fig3.jpg, id=81, 722.7pt x 266.49562pt>
 File: images/AES_fig3.jpg Graphic file (type jpg)
  <use images/AES_fig3.jpg>
-Package pdftex.def Info: images/AES_fig3.jpg used on input line 241.
-(pdftex.def)             Requested size: 385.43317pt x 289.07487pt.
+Package pdftex.def Info: images/AES_fig3.jpg used on input line 276.
+(pdftex.def)             Requested size: 289.07487pt x 106.59636pt.
 
-[15 <./images/AES_fig2.jpg>]
-Missing character: There is no â in font cmbx12!
-Missing character: There is no € in font cmbx12!
-Missing character: There is no ¢ in font cmbx12!
- [16 <./images/AES_fig3.jpg>] [17]
-Overfull \hbox (75.95891pt too wide) in paragraph at lines 262--262
-[]\OT1/cmr/m/n/12 learncryptography.com. \OT1/cmr/m/it/12 Fre-quency Anal-y-sis
-\OT1/cmr/m/n/12 . 2014. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : $\OT1/cmtt/m/n/12
- https : / / learncryptography .
- []
-
-[18
-
-] (OTPandAES.aux)
+[17 <./images/AES_fig3.jpg>] [18] (OTPandAES.aux)
 Package logreq Info: Writing requests to 'OTPandAES.run.xml'.
 \openout1 = `OTPandAES.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 7629 strings out of 493335
- 129611 string characters out of 3146586
- 536522 words of memory out of 3000000
- 11081 multiletter control sequences out of 15000+200000
- 10231 words of font info for 36 fonts, out of 3000000 for 9000
+ 7617 strings out of 493335
+ 129251 string characters out of 3146586
+ 537444 words of memory out of 3000000
+ 11071 multiletter control sequences out of 15000+200000
+ 9761 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,45p,826b,979s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,7n,34p,826b,757s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/miketex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/miketex/fonts/type1
-/public/amsfonts/cm/cmcsc10.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmmi
-12.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/miketex/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cm
-r17.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/miketex/fonts/t
-ype1/public/amsfonts/cm/cmti12.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/c
-mtt12.pfb>
-Output written on OTPandAES.pdf (19 pages, 616017 bytes).
+/public/amsfonts/cm/cmex10.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmmi1
+2.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/miketex/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmr
+17.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/miketex/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cm
+ti12.pfb>
+Output written on OTPandAES.pdf (19 pages, 647397 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

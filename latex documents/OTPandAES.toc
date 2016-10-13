@@ -32,24 +32,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Method used}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Subkey generation (KEYEXPANSIONS)}{15}
+\contentsline {subsection}{\numberline {2.2.1}Subkey generation (KEYEXPANSIONS)}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Initial XOR operation}{15}
+\contentsline {subsection}{\numberline {2.2.2}Initial XOR operation}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Rounds}{16}
+\contentsline {subsection}{\numberline {2.2.3}Rounds}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Substitution using lookup table (SUBBYTES)}{16}
+\contentsline {subsubsection}{Substitution using lookup table (SUBBYTES)}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Transposition (SHIFTROWS)}{17}
+\contentsline {subsubsection}{Transposition (SHIFTROWS)}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Substitution using formula (MIXCOLUMNS)}{17}
+\contentsline {subsubsection}{Substitution using formula (MIXCOLUMNS)}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Round-closing XOR operation (ADDROUNDKEY)}{17}
+\contentsline {subsubsection}{Round-closing XOR operation (ADDROUNDKEY)}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Fulfilment of Shannon's properties}{17}
+\contentsline {section}{\numberline {2.3}Fulfilment of Shannon's properties}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Diffusion}{17}
+\contentsline {subsection}{\numberline {2.3.1}Diffusion}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Confusion}{17}
+\contentsline {subsection}{\numberline {2.3.2}Confusion}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}•}{17}
+\contentsline {section}{\numberline {2.4}Problems with AES}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Overconfidence and over-reliance}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.2}Keeping of a shared secret}{18}
