@@ -1,17 +1,15 @@
 [0] Config.pm:343> INFO - This is Biber 2.5
 [0] Config.pm:346> INFO - Logfile is 'OTPandAES.blg'
-[25] biber-MSWIN32:290> INFO - === 
-[40] Biber.pm:351> INFO - Reading 'OTPandAES.bcf'
-[109] Biber.pm:776> INFO - Found 10 citekeys in bib section 0
-[120] Biber.pm:3493> INFO - Processing section 0
-[133] Biber.pm:3657> INFO - Looking for bibtex format file 'mybib.bib' for section 0
-[135] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
-[135] bibtex.pm:1048> INFO - Found BibTeX data source 'mybib.bib'
-[144] Utils.pm:149> WARN - I didn't find a database entry for 'SBox' (section 0)
-[153] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[153] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[153] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
-[153] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
-[157] bbl.pm:526> INFO - Writing 'OTPandAES.bbl' with encoding 'ascii'
-[158] bbl.pm:619> INFO - Output to OTPandAES.bbl
-[158] Biber.pm:108> INFO - WARNINGS: 1
+[24] biber-MSWIN32:290> INFO - === 
+[68] Biber.pm:351> INFO - Reading 'OTPandAES.bcf'
+[137] Biber.pm:776> INFO - Found 12 citekeys in bib section 0
+[146] Biber.pm:3493> INFO - Processing section 0
+[159] Biber.pm:3657> INFO - Looking for bibtex format file 'mybib.bib' for section 0
+[160] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[161] bibtex.pm:1048> INFO - Found BibTeX data source 'mybib.bib'
+[181] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[182] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[182] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[182] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
+[187] bbl.pm:526> INFO - Writing 'OTPandAES.bbl' with encoding 'ascii'
+[188] bbl.pm:619> INFO - Output to OTPandAES.bbl

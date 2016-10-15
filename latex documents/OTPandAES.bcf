@@ -2083,7 +2083,17 @@
     <bcf:citekey order="8">ShannonOTP</bcf:citekey>
     <bcf:citekey order="9">MilsElectronic</bcf:citekey>
     <bcf:citekey order="10">KeySchedule</bcf:citekey>
-    <bcf:citekey order="11">SBox</bcf:citekey>
-    <bcf:citekey order="12">GaloisField</bcf:citekey>
+    <bcf:citekey order="11">GFieldExample</bcf:citekey>
+    <bcf:citekey order="12">RFiniteField</bcf:citekey>
+    <bcf:citekey order="13">GaloisField</bcf:citekey>
+    <bcf:citekey order="14">SBox</bcf:citekey>
+    <bcf:citekey order="15">SBox</bcf:citekey>
   </bcf:section>
+  <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
+  <bcf:sorting>
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sorting>
+  </bcf:sortlist>
 </bcf:controlfile>
