@@ -32,30 +32,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Method used}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Subkey generation (KEYEXPANSIONS)}{16}
+\contentsline {subsection}{\numberline {2.2.1}Initial XOR operation}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Initial XOR operation}{16}
+\contentsline {subsection}{\numberline {2.2.2}Rounds}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Rounds}{17}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Galois Field $GF(2^8)$ arithmetic}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Galois Field $GF(2^8)$ arithmetic}{17}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Substitution using lookup table (SUBBYTES)}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Substitution using lookup table (SUBBYTES)}{18}
+\contentsline {subsubsection}{\numberline {2.2.2.3}Transposition (SHIFTROWS)}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Transposition (SHIFTROWS)}{19}
+\contentsline {subsubsection}{\numberline {2.2.2.4}Substitution using formula (MIXCOLUMNS)}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Substitution using formula (MIXCOLUMNS)}{20}
+\contentsline {subsubsection}{\numberline {2.2.2.5}Subkey generation (KEYEXPANSIONS)}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Round-closing XOR operation (ADDROUNDKEY)}{20}
+\contentsline {subsubsection}{\numberline {2.2.2.6}Round-closing XOR operation (ADDROUNDKEY)}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Fulfilment of Shannon's properties}{21}
+\contentsline {section}{\numberline {2.3}Fulfilment of Shannon's properties}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Diffusion}{21}
+\contentsline {subsection}{\numberline {2.3.1}Diffusion}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Confusion}{21}
+\contentsline {subsection}{\numberline {2.3.2}Confusion}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Problems with AES}{21}
+\contentsline {section}{\numberline {2.4}Problems with AES}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Overconfidence and over-reliance}{21}
+\contentsline {subsection}{\numberline {2.4.1}Overconfidence and over-reliance}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Keeping of a shared secret}{21}
+\contentsline {subsection}{\numberline {2.4.2}Keeping of a shared secret}{24}

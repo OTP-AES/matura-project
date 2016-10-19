@@ -2082,12 +2082,14 @@
     <bcf:citekey order="7">HutSix</bcf:citekey>
     <bcf:citekey order="8">ShannonOTP</bcf:citekey>
     <bcf:citekey order="9">MilsElectronic</bcf:citekey>
-    <bcf:citekey order="10">KeySchedule</bcf:citekey>
-    <bcf:citekey order="11">GFieldExample</bcf:citekey>
-    <bcf:citekey order="12">RFiniteField</bcf:citekey>
-    <bcf:citekey order="13">GaloisField</bcf:citekey>
+    <bcf:citekey order="10">GFieldExample</bcf:citekey>
+    <bcf:citekey order="11">RFiniteField</bcf:citekey>
+    <bcf:citekey order="12">GaloisField</bcf:citekey>
+    <bcf:citekey order="13">SBox</bcf:citekey>
     <bcf:citekey order="14">SBox</bcf:citekey>
-    <bcf:citekey order="15">SBox</bcf:citekey>
+    <bcf:citekey order="15">MixColumns</bcf:citekey>
+    <bcf:citekey order="16">KeySchedule</bcf:citekey>
+    <bcf:citekey order="17">Rijndael</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

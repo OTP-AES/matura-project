@@ -1,4 +1,6 @@
 \documentclass[12pt]{report}
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
 \usepackage{graphicx}
 \usepackage{float}
 \graphicspath{ {images/} }
@@ -10,6 +12,7 @@ sorting=none]
 {biblatex}							
 \addbibresource{mybib.bib}
 \setlength{\parskip}{5mm}
+\usepackage{mathtools}
 %Are there any preferred bibliography style choices / general style requirements when it comes to the Maturaarbeit at the KSZ which I ought to implement?
 
 % There are more or less none. Personally I like the notation where you use the
@@ -195,9 +198,6 @@ Therefore, in order to ensure that the plaintext cannot be accessed by any party
 
 However, if the communicants already possess a method by which the key can be transmitted with infallible security, then it stands to reason that the plaintext itself could just as well be submitted through the same channel, considering that it has the same number of bytes (or characters) as the key. So, the problem of securely transmitting the plaintext has simply been transferred to the problem of securely transmitting the key.
 
-
-
-
 One method of mitigating this issue is to first send one very long key, which can then be used for multiple messages in the future. Using this method, only one secure transmission has to be made in order to ensure the security of multiple transmissions. 
 
 \subsection{Secure disposal of a utilized key}
@@ -241,8 +241,6 @@ a_{3,0} & a_{3,1} & a_{3,2} & a_{3,3}\end{array} \right)\]
 
 The subkey possesses the same size as the state, and is made into a matrix in the exact same fashion; this is, of course, necessary for the successful modular addition of the bytes contained within the state and those contained within the subkey using the XOR operation.
 
-\subsection{Subkey generation (KEYEXPANSIONS)}
-As can be seen in the high-level explanation, AES requires 11 128-bit subkeys (also referred to as round keys); one for the initial XOR operation, and then one for each of the 10 rounds. These subkeys are derived from the main key using the "Rijndael key schedule" \cite{KeySchedule}.
 
 \subsection{Initial XOR operation}
 
@@ -308,7 +306,52 @@ In practice, the table is pre-calculated, since it is the same for each byte. Th
 \caption{The lookup table used for AES, in hexadecimal notation\cite{SBox}.}
 \end{figure}
 
-%%First, the multiplicative inverse of the byte (within the Galois field $GF(2^8)$) is calculated. The element {00} is mapped to itself. %%%All other elements need to be calculated using finite field arithmetic.
+First, the multiplicative inverse of the byte is calculated within Rijndael's finite field. This multiplicative inverse, also a byte, is then stored as a vector $[x_7; x_6 ... x_0]$ to be used in an affine transformation. As always, it is important to note that the plus sign denotes an XOR operation.
+
+\[ \left( \begin{array}{cccccccc}
+1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 \\
+1 & 1 & 0 & 0 & 0 & 1 & 1 & 1 \\
+1 & 1 & 1 & 0 & 0 & 0 & 1 & 1 \\
+1 & 1 & 1 & 1 & 0 & 0 & 0 & 1 \\
+1 & 1 & 1 & 1 & 1 & 0 & 0 & 0 \\
+0 & 1 & 1 & 1 & 1 & 1 & 0 & 0 \\
+0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 \\
+0 & 0 & 0 & 1 & 1 & 1 & 1 & 1\end{array} \right)
+*
+\left( \begin{array}{c}
+x_0 \\
+x_1 \\
+x_2 \\
+x_3 \\
+x_4 \\
+x_5 \\
+x_6 \\
+x_7\end{array} \right)
++
+\left( \begin{array}{c}
+1 \\
+1 \\
+0 \\
+0 \\
+0 \\
+1 \\
+1 \\
+0\end{array} \right)
+=
+\left( \begin{array}{c}
+b_0 \\
+b_1 \\
+b_2 \\
+b_3 \\
+b_4 \\
+b_5 \\
+b_6 \\
+b_7\end{array} \right)
+\]
+
+So, after being manipulated by the S-Box, the byte of the state is replaced by the byte $[b_7; b_6 ... b_0 ]$. This step is performed for each of the 16 bytes in the state. After each byte of the state has been replaced, the new state continues on to the ShiftRows step.
+
+
 
 \subsubsection{Transposition (SHIFTROWS)}
 The next operation, transposition, operates upon the rows of the state by shifting each byte by a certain offset. The offset starts with 0, and is then increased by 1 for each row downwards from the top row.
@@ -318,19 +361,126 @@ a_{0,0} & a_{0,1} & a_{0,2} & a_{0,3} \\
 a_{1,0} & a_{1,1} & a_{1,2} & a_{1,3} \\
 a_{2,0} & a_{2,1} & a_{2,2} & a_{2,3} \\
 a_{3,0} & a_{3,1} & a_{3,2} & a_{3,3}\end{array} \right)
-\to
+\xrightarrow{ShiftRows}
 \left( \begin{array}{cccc}
 a_{0,0} & a_{0,1} & a_{0,2} & a_{0,3} \\
 a_{1,1} & a_{1,2} & a_{1,3} & a_{1,0} \\
 a_{2,2} & a_{2,3} & a_{2,0} & a_{2,1} \\
 a_{3,3} & a_{3,0} & a_{3,1} & a_{3,2}\end{array} \right)
-\] 
+\]
 
 \subsubsection{Substitution using formula (MIXCOLUMNS)}
-The MixColumns step replaces each byte in the state with a different byte, dependent on all the bytes of that same column. Once again, it is important to note that all multiplications are performed within the $GF(2^8)$ field, and all additions represent XOR operations.
+The MixColumns step replaces each byte in the state with a different byte, dependent on all the bytes of that same column. Once again, it is important to note that all multiplications are performed within Rijndael's finite field.
+
+In the MixColumns step, each column (and crucially not each individual byte) is treated as a polynomial in Rijndael's finite field.
+
+MixColumns can be performed by multiplying the column (treated as a vector) with a circulant (meaning that each row of the matrix is identical to the one above it, except that the values are offset by 1 to the right) MDS ("maximum distance separable", a representation of a function known to have useful properties in cryptography) Matrix \cite{MixColumns}.
+
+It is very important to note that the values of the cyclical MDS matrix are not regular numbers, but actually represent hexadecimal bytes (for example, $03 = 11$, which is then padded with zeroes until it possesses 8 values, making it 00000011. This is permissible in Rijndael's finite field, as $11 = x+1 = 00000011$)
+
+\[ \left( \begin{array}{cccc}
+02 & 03 & 01 & 01 \\
+01 & 02 & 03 & 01 \\
+01 & 01 & 02 & 03 \\
+03 & 01 & 01 & 02\end{array} \right)
+*
+\left( \begin{array}{c}
+a_0 \\
+a_1 \\
+a_2 \\
+a_3\end{array} \right)
+=
+\left( \begin{array}{c}
+s_0 \\
+s_1 \\
+s_2 \\
+s_3\end{array} \right)
+\]
+
+Now, it becomes evident that each byte of the resulting column is dependent on every byte of the manipulated column. As always, all operations take place in Rijndael's finite field. \\
+\\
+$
+s_0 = {02}*a_0+{03}*a_1+{01}*a_2+{01}*a_3 \\
+s_1 = {01}*a_0+{02}*a_1+{03}*a_2+{01}*a_3 \\
+s_2 = {01}*a_0+{01*}a_1+{02}*a_2+{03}*a_3 \\
+s_3 = {03}*a_0+{01}*a_1+{01}*a_2+{02}*a_3 \\ $
+
+\subsubsection{Subkey generation (KEYEXPANSIONS)}
+As can be seen in the high-level explanation, AES requires 11 128-bit subkeys (also referred to as round keys); one for the initial XOR operation, and then one for each of the 10 rounds. These subkeys are derived from the main key using the "Rijndael key schedule" \cite{KeySchedule}.
+
+
+The first round key, utilized for the initial XOR operation, is simply the master key itself.
+
+\[ \left( \begin{array}{cccc}
+k_0 & k_4 & k_8 & k_{12} \\
+k_1 & k_5 & k_9 & k_{13} \\
+k_2 & k_6 & k_{10} & k_{14} \\
+k_3 & k_7 & k_{11} & k_{15}\end{array} \right)\] 
+
+Each subsequent round key must be generated through key expansion.
+
+The first four bytes of the 16-byte round key, which are contained within the first column of the round key matrix, are generated first. To this end, the last, as in the rightmost, column is stored in a temporary variable, for example x. The so-called RotWord operation is then employed, wherein each byte is transposed one step upwards.
+
+\[
+\left( \begin{array}{c}
+x_0 \\
+x_1 \\
+x_2 \\
+x_3\end{array} \right)
+\xrightarrow{RotWord}
+\left( \begin{array}{c}
+x_1 \\
+x_2 \\
+x_3 \\
+x_0\end{array} \right)
+\]
+
+Afterwards, the four bytes resulting from the RotWord operation are each replaced through utilization of a Rijndael S-Box (see chapter 2.2.2.2). The resulting vector now needs to be added to the first, as in the leftmost, column of the master key using an XOR gate.
+
+\[
+\left( \begin{array}{c}
+x_1 \\
+x_2 \\
+x_3 \\
+x_0\end{array} \right)
+\xrightarrow{SubBytes}
+\left( \begin{array}{c}
+b_0 \\
+b_1 \\
+b_2 \\
+b_3\end{array} \right)
++
+\left( \begin{array}{c}
+k_0 \\
+k_1 \\
+k_2 \\
+k_3\end{array} \right)
+\]
+
+The final step to obtain the first four bytes of the round key is referred to as the RCon, meaning round constant \cite[p. 15]{Rijndael} step. In this step, a vector dependent on the iteration, the chronological number of the round key being generated starting with one, is added using an XOR gate. These vectors are constant for every application of AES; for example, the RCon vector obtained using an iteration of eight will always be used in the process of obtaining the first four bytes of the eighth round key.
+
+The RCon vector is calculated through the following formula, with i standing for the iteration:
+
+\[ \left( \begin{array}{c}
+{02}^{i-1}\\
+00 \\
+00 \\
+00\end{array} \right) \]
+
+As this operation takes place in Rijndael's finite field, the byte ${02} = x$, and if the RCon value possesses an order higher than 7, it must be taken modulo the reducing polynomial (see chapter 2.2.2.1). After the RCon operation is complete, the first column of the round key has been obtained.
+
+The generation of the other three columns is now relatively simple; only the XOR operation is necessary from this point onwards. In order to obtain the second column of the round key, the first column of the round key is added to the second column of the master key. The second column of the round key is now added to the third column of the master key in order to obtain the third column of the round key. Finally, in order to obtain the fourth column of the round key, the fourth column of the master key is added to the third column of the round key.
+
+\[ \left( \begin{array}{cccc}
+r_0 & r_4=r_0+k_4 & r_8=r_4+k_8 & r_{12}=r_8+k_{12} \\
+r_1 & r_5=r_1+k_5 & r_9=r_5+k_9 & r_{13}=r_9+k_{13} \\
+r_2 & r_6=r_2+k_6 & r_{10}=r_6+k_{10} & r_{14}=r_{10}+k_{14} \\
+r_3 & r_7=r_3+k_7 & r_{11}=r_7+k_{11} & r_{15}=r_{11}+k_{15}\end{array} \right) \]
+
+This round key is taken as the master key for the generation of the next round key. This process is then repeated until ten new keys have been generated.
 
 \subsubsection{Round-closing XOR operation (ADDROUNDKEY)}
-Finally, the state is added to the rounds subkey using modular addition. The method is the same as described in chapter 2.2.2; an XOR gate is, once again, utilized.
+Finally, the state is added to the round's unique round key using modular addition. The method is the same as described in chapter 2.2.2; an XOR gate is, once again, utilized.
 
 \section{Fulfilment of Shannon's properties}
 
