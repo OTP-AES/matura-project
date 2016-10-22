@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  19 OCT 2016 22:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  22 OCT 2016 14:52
 entering extended mode
 **./OTPandAES.tex
 (OTPandAES.tex
@@ -605,28 +605,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 400--407
 
  []
 
-[21] [22] [23] [24]
-Overfull \hbox (81.83385pt too wide) in paragraph at lines 499--499
+[21] [22] [23] [24] [25] [26]
+Overfull \hbox (81.83385pt too wide) in paragraph at lines 518--518
 []\OT1/cmr/m/n/12 learncryptography.com. \OT1/cmr/m/it/12 Fre-quency Anal-y-sis
 \OT1/cmr/m/n/12 . 2014. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : $\OT1/cmtt/m/n/12
  https : / / learncryptography .
  []
 
-[25
+[27
 
-] [26] (OTPandAES.aux)
+]
+Overfull \hbox (13.71162pt too wide) in paragraph at lines 518--518
+[]\OT1/cmr/m/n/12 Amish Ku-mar and Na-mita Ti-wari. \OT1/cmr/m/it/12 ef-fec-tiv
+e im-ple-men-ta-tion and avalanche
+ []
+
+[28] (OTPandAES.aux)
 Package logreq Info: Writing requests to 'OTPandAES.run.xml'.
 \openout1 = `OTPandAES.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 8794 strings out of 493335
- 146089 string characters out of 3146586
- 565958 words of memory out of 3000000
- 12216 multiletter control sequences out of 15000+200000
+ 8811 strings out of 493335
+ 146696 string characters out of 3146586
+ 566273 words of memory out of 3000000
+ 12233 multiletter control sequences out of 15000+200000
  11356 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,11n,45p,826b,992s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,11n,45p,826b,994s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/miketex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/miketex/fonts/type1
 /public/amsfonts/cm/cmcsc10.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmex
 10.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/miketex/fonts/
@@ -636,9 +642,9 @@ mr12.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/miketex/fonts
 msy10.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/miketex/font
 s/type1/public/amsfonts/cm/cmti12.pfb><E:/miketex/fonts/type1/public/amsfonts/c
 m/cmtt12.pfb>
-Output written on OTPandAES.pdf (27 pages, 737939 bytes).
+Output written on OTPandAES.pdf (29 pages, 746311 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
+ 163 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

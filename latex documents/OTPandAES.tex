@@ -405,6 +405,7 @@ s_1 = {01}*a_0+{02}*a_1+{03}*a_2+{01}*a_3 \\
 s_2 = {01}*a_0+{01*}a_1+{02}*a_2+{03}*a_3 \\
 s_3 = {03}*a_0+{01}*a_1+{01}*a_2+{02}*a_3 \\ $
 
+It is important to note that the last round of AES does not possess a MixColumns step; this is because, if there were a MixColumns step included in the last round of encryption, it would not possess a corresponding invMixColumns in the final round of decryption\cite{NoMixColumns}.
 \subsubsection{Subkey generation (KEYEXPANSIONS)}
 As can be seen in the high-level explanation, AES requires 11 128-bit subkeys (also referred to as round keys); one for the initial XOR operation, and then one for each of the 10 rounds. These subkeys are derived from the main key using the "Rijndael key schedule" \cite{KeySchedule}.
 
@@ -483,18 +484,36 @@ This round key is taken as the master key for the generation of the next round k
 Finally, the state is added to the round's unique round key using modular addition. The method is the same as described in chapter 2.2.2; an XOR gate is, once again, utilized.
 
 \section{Fulfilment of Shannon's properties}
+In 1945, Claude Shannon wrote a report that would become central to cryptography. This report was titled "A Mathematical Theory of Cryptography", and it identified two properties necessary to ensure the security of any cipher\cite{ShannonProperties}. These were termed diffusion and confusion. These two properties, if fulfilled, serve to make methods of cryptanalysis, in particular statistical analysis, less effective.
 
 \subsection{Diffusion}
+Diffusion requires that, as a rule of thumb, changing one bit of the plaintext should alter half of the ciphertext, with the reverse also being true; this is referred to as the avalanche effect\cite{AvalancheEffect}. This is best achieved by spreading the values of the plaintext out over the entire ciphertext; hence the term "diffusion".
+
+In AES, diffusion is  provided by the MixColumns and the Shiftrows steps. The diffusion provided by the ShiftRows step is self-evident; as the bytes are entered into the state in a column-major order, mixing the bytes along the rows is a good source of diffusion.
+
+MixColumns is a good source of diffuion because it creates a dependecy of four bytes on just one byte; if a single byte of the four substituted bytes are changed, every byte resulting from the substitution is also changed. This effect is further compounded because it is performed nine times, meaning that if just one bit, contained within a byte, of the initial plaintext is altered, the ciphertext will be dramatically different.
 
 \subsection{Confusion}
+Confusion requires that each bit of the ciphertext relies on multiple different parts of the key. This means that the input data must be altered in a non-linear, difficult to reverse manner, thereby obscuring the relation between the ciphertext and the key\cite{Confusion}.
+
+In AES, confusion is provided by the SubBytes step. This can be seen if the journey of a single byte through AES is examined; Since each byte goes through so many substitutions, it is difficult to find the key even if one were to possess a large number of plaintext-ciphertext pairs.
 
 \section{Problems with AES}
+In 1997, NIST deemed it necessary to replace DES, the data encryption standard, with AES, the advanced encryption standard, because of DES' vulnerability to brute force attacks due to its small key size. 15 submissions were received, but Rijndael was selected due to its good performance and security\cite{AESSelection}.
+
+Though AES was thouroughly vetted during the AES selection process and is considered secure enough to be used in encryption of top secret documents by the National Security Agency\cite{CNSSPolicy} of the united states, it is unfortunately not perfect.
 
 \subsection{Overconfidence and over-reliance}
+AES is widely used by large businesses and the United States government. Therefore, it would be a large threat to many nations national security if the Cipher were to be compromised.
+
+One of the earliest scares was the XSL attack, which relied on the relative algebraic simplicity of AES\cite{XSL}.However, this proposed attack was later shown to be technically infeasible\cite{XLSRebuked}; nevertheless, this shows that while AES is very secure, the cryptographic community must remain vigilant in its continued research into possible attacks in order to ensure the security of highly sensitive data across the world.
 
 \subsection{Keeping of a shared secret}
+One of AES' major issues is shared with OTP and all other symmetric-key encryption methods; the confidentiality of the key. The same argument that was made against OTP can be made against AES as well, namely that because the encryption method as well as the decryption method are both publicly known, the problem of keeping the message or file secret is simply transferred to keeping the key secret, while still being able to exchange it between the sender and the recipient.
 
-% have to print the bibliography once all entries are made, otherwise an error keeps occuring. 
+However, in the case of AES, this issue is strongly mitigated: While the key used in OTP has to be at least as long as the message, AES keys are only 128, 192 or 256 bits long, with top secret documentation requiring the usage of either a 192 or 256-bit key\cite{CNSSPolicy}.
+
+% have to print the bibliography once all entries are made, otherwise an error keeps occuring.
 \printbibliography
 
 \end{document}
