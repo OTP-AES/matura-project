@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1477509570 source:d:\matura-project\c++ projects\otp_encryption\main.cpp
+	<iostream>
+	<string>
+	<cstdlib>
+	<ctime>
+
