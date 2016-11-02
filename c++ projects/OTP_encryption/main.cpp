@@ -6,8 +6,8 @@ using namespace std;
 
 char keygen()  // used to generate the key (in letters).
 {
-    static const char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-    return alphabet[rand() % sizeof(alphabet)-1];
+    string alphabet = "abcdefghijklmnopqrstuvwxyz";
+    return alphabet[rand() % 26];
 }
 
 int convert_input(string user_input, int i)
