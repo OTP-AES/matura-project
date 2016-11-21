@@ -124,24 +124,6 @@
       \field{title}{Handbook of Applied Cryptography}
       \field{year}{1996}
     \endentry
-    \entry{ShannonOTP}{article}{}
-      \name{author}{1}{}{%
-        {{hash=4c25be95a25ab36580cf8ee914b6b3e6}{%
-           family={Shannon},
-           family_i={S\bibinitperiod},
-           given={Claude\bibnamedelima E.},
-           given_i={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \strng{namehash}{4c25be95a25ab36580cf8ee914b6b3e6}
-      \strng{fullhash}{4c25be95a25ab36580cf8ee914b6b3e6}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Bell System Technical Journal}
-      \field{title}{Communication Theory of Secrecy Systems}
-      \field{year}{1949}
-    \endentry
     \entry{GFieldExample}{online}{}
       \name{author}{1}{}{%
         {{hash=904fd0158bacf0c6dd922d025d41c79f}{%

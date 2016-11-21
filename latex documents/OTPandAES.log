@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  22 OCT 2016 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  21 NOV 2016 20:20
 entering extended mode
 **./OTPandAES.tex
 (OTPandAES.tex
@@ -554,97 +554,98 @@ Overfull \hbox (1.72371pt too wide) in paragraph at lines 135--136
 -for-ma-tion about
  []
 
-[9] [10] <images/MilsElectronic.PNG, id=56, 502.87875pt x 312.41719pt>
+[9] [10] [11] <images/MilsElectronic.PNG, id=64, 502.87875pt x 312.41719pt>
 File: images/MilsElectronic.PNG Graphic file (type png)
 
 <use images/MilsElectronic.PNG>
-Package pdftex.def Info: images/MilsElectronic.PNG used on input line 190.
+Package pdftex.def Info: images/MilsElectronic.PNG used on input line 243.
 (pdftex.def)             Requested size: 377.15813pt x 234.3123pt.
- [11] [12 <./images/MilsElectronic.PNG>]
-[13]
+ [12] [13 <./images/MilsElectronic.PNG>]
+[14]
 Chapter 2.
-<images/AES_fig1.jpg, id=68, 722.7pt x 265.74281pt>
+<images/AES_fig1.jpg, id=76, 722.7pt x 265.74281pt>
 File: images/AES_fig1.jpg Graphic file (type jpg)
  <use images/AES_fig1.jpg>
-Package pdftex.def Info: images/AES_fig1.jpg used on input line 219.
+Package pdftex.def Info: images/AES_fig1.jpg used on input line 272.
 (pdftex.def)             Requested size: 289.07487pt x 106.29523pt.
 
-[14
+[15
 
- <./images/AES_fig1.jpg>] [15]
-<images/AES_fig2.jpg, id=77, 722.7pt x 264.23718pt>
+ <./images/AES_fig1.jpg>] [16]
+<images/AES_fig2.jpg, id=83, 722.7pt x 264.23718pt>
 File: images/AES_fig2.jpg Graphic file (type jpg)
  <use images/AES_fig2.jpg>
-Package pdftex.def Info: images/AES_fig2.jpg used on input line 249.
+Package pdftex.def Info: images/AES_fig2.jpg used on input line 302.
 (pdftex.def)             Requested size: 289.07487pt x 105.693pt.
 
-<images/AES_fig3.jpg, id=78, 722.7pt x 266.49562pt>
+<images/AES_fig3.jpg, id=84, 722.7pt x 266.49562pt>
 File: images/AES_fig3.jpg Graphic file (type jpg)
  <use images/AES_fig3.jpg>
-Package pdftex.def Info: images/AES_fig3.jpg used on input line 274.
+Package pdftex.def Info: images/AES_fig3.jpg used on input line 327.
 (pdftex.def)             Requested size: 289.07487pt x 106.59636pt.
 
-[16 <./images/AES_fig2.jpg>] [17 <./images/AES_fig3.jpg>]
-<images/SBox.PNG, id=85, 398.99063pt x 351.56343pt>
+[17 <./images/AES_fig2.jpg>] [18 <./images/AES_fig3.jpg>]
+<images/SBox.PNG, id=92, 398.99063pt x 351.56343pt>
 File: images/SBox.PNG Graphic file (type png)
  <use images/SBox.PNG>
-Package pdftex.def Info: images/SBox.PNG used on input line 305.
+Package pdftex.def Info: images/SBox.PNG used on input line 358.
 (pdftex.def)             Requested size: 398.98965pt x 351.56256pt.
 
-Overfull \hbox (8.98965pt too wide) in paragraph at lines 305--306
+Overfull \hbox (8.98965pt too wide) in paragraph at lines 358--359
  [][] 
  []
 
-[18] [19 <./images/SBox.PNG>] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 400--407
+[19] [20 <./images/SBox.PNG>] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 453--460
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--407
+Underfull \hbox (badness 10000) in paragraph at lines 453--460
 
  []
 
-[21] [22] [23] [24] [25] [26]
-Overfull \hbox (81.83385pt too wide) in paragraph at lines 518--518
+[22] [23] [24] [25] [26] [27]
+Overfull \hbox (81.83385pt too wide) in paragraph at lines 571--571
 []\OT1/cmr/m/n/12 learncryptography.com. \OT1/cmr/m/it/12 Fre-quency Anal-y-sis
 \OT1/cmr/m/n/12 . 2014. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : $\OT1/cmtt/m/n/12
  https : / / learncryptography .
  []
 
-[27
+[28
 
 ]
-Overfull \hbox (13.71162pt too wide) in paragraph at lines 518--518
+Overfull \hbox (13.71162pt too wide) in paragraph at lines 571--571
 []\OT1/cmr/m/n/12 Amish Ku-mar and Na-mita Ti-wari. \OT1/cmr/m/it/12 ef-fec-tiv
 e im-ple-men-ta-tion and avalanche
  []
 
-[28] (OTPandAES.aux)
+[29] (OTPandAES.aux)
 Package logreq Info: Writing requests to 'OTPandAES.run.xml'.
 \openout1 = `OTPandAES.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 8811 strings out of 493335
- 146696 string characters out of 3146586
- 566273 words of memory out of 3000000
- 12233 multiletter control sequences out of 15000+200000
+ 8809 strings out of 493335
+ 146624 string characters out of 3146586
+ 566237 words of memory out of 3000000
+ 12231 multiletter control sequences out of 15000+200000
  11356 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,11n,45p,826b,994s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/miketex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/miketex/fonts/type1
 /public/amsfonts/cm/cmcsc10.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmex
 10.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/miketex/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/c
-mr12.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/miketex/fonts
-/type1/public/amsfonts/cm/cmr8.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/c
-msy10.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/miketex/font
-s/type1/public/amsfonts/cm/cmti12.pfb><E:/miketex/fonts/type1/public/amsfonts/c
-m/cmtt12.pfb>
-Output written on OTPandAES.pdf (29 pages, 746311 bytes).
+type1/public/amsfonts/cm/cmmi6.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/c
+mmi8.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/miketex/fonts
+/type1/public/amsfonts/cm/cmr17.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/
+cmr8.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/miketex/font
+s/type1/public/amsfonts/cm/cmsy6.pfb><E:/miketex/fonts/type1/public/amsfonts/cm
+/cmsy8.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmti12.pfb><E:/miketex/fo
+nts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on OTPandAES.pdf (30 pages, 771253 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
+ 174 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

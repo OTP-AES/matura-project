@@ -16,46 +16,46 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3.1}Mathematical proof}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Why can only OTP achieve perfect secrecy?}{10}
+\contentsline {subsection}{\numberline {1.3.2}Why can only OTP achieve perfect secrecy?}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Issues with OTP}{11}
+\contentsline {section}{\numberline {1.4}Issues with OTP}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}True randomness in generating the key}{11}
+\contentsline {subsection}{\numberline {1.4.1}True randomness in generating the key}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.2}Secure distribution of the key itself}{12}
+\contentsline {subsection}{\numberline {1.4.2}Secure distribution of the key itself}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.3}Secure disposal of a utilized key}{13}
+\contentsline {subsection}{\numberline {1.4.3}Secure disposal of a utilized key}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}AES: The Advanced Encryption Standard}{14}
+\contentsline {chapter}{\numberline {2}AES: The Advanced Encryption Standard}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}AES viewed from a high level}{14}
+\contentsline {section}{\numberline {2.1}AES viewed from a high level}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Method used}{15}
+\contentsline {section}{\numberline {2.2}Method used}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Initial XOR operation}{16}
+\contentsline {subsection}{\numberline {2.2.1}Initial XOR operation}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Rounds}{17}
+\contentsline {subsection}{\numberline {2.2.2}Rounds}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.1}Galois Field $GF(2^8)$ arithmetic}{17}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Galois Field $GF(2^8)$ arithmetic}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.2}Substitution using lookup table (SUBBYTES)}{18}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Substitution using lookup table (SUBBYTES)}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.3}Transposition (SHIFTROWS)}{20}
+\contentsline {subsubsection}{\numberline {2.2.2.3}Transposition (SHIFTROWS)}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.4}Substitution using formula (MIXCOLUMNS)}{20}
+\contentsline {subsubsection}{\numberline {2.2.2.4}Substitution using formula (MIXCOLUMNS)}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.5}Subkey generation (KEYEXPANSIONS)}{22}
+\contentsline {subsubsection}{\numberline {2.2.2.5}Subkey generation (KEYEXPANSIONS)}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.6}Round-closing XOR operation (ADDROUNDKEY)}{24}
+\contentsline {subsubsection}{\numberline {2.2.2.6}Round-closing XOR operation (ADDROUNDKEY)}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Fulfilment of Shannon's properties}{24}
+\contentsline {section}{\numberline {2.3}Fulfilment of Shannon's properties}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Diffusion}{24}
+\contentsline {subsection}{\numberline {2.3.1}Diffusion}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Confusion}{25}
+\contentsline {subsection}{\numberline {2.3.2}Confusion}{26}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Problems with AES}{25}
+\contentsline {section}{\numberline {2.4}Problems with AES}{26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Overconfidence and over-reliance}{26}
+\contentsline {subsection}{\numberline {2.4.1}Overconfidence and over-reliance}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Keeping of a shared secret}{26}
+\contentsline {subsection}{\numberline {2.4.2}Keeping of a shared secret}{27}
