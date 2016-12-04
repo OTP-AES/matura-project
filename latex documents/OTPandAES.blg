@@ -1,15 +1,15 @@
 [0] Config.pm:343> INFO - This is Biber 2.5
 [0] Config.pm:346> INFO - Logfile is 'OTPandAES.blg'
-[31] biber-MSWIN32:290> INFO - === 
-[45] Biber.pm:351> INFO - Reading 'OTPandAES.bcf'
-[114] Biber.pm:776> INFO - Found 21 citekeys in bib section 0
-[123] Biber.pm:3493> INFO - Processing section 0
-[136] Biber.pm:3657> INFO - Looking for bibtex format file 'mybib.bib' for section 0
-[137] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
-[138] bibtex.pm:1048> INFO - Found BibTeX data source 'mybib.bib'
-[164] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[164] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[164] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
-[164] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
-[172] bbl.pm:526> INFO - Writing 'OTPandAES.bbl' with encoding 'ascii'
-[175] bbl.pm:619> INFO - Output to OTPandAES.bbl
+[23] biber-MSWIN32:290> INFO - === 
+[37] Biber.pm:351> INFO - Reading 'OTPandAES.bcf'
+[105] Biber.pm:776> INFO - Found 21 citekeys in bib section 0
+[114] Biber.pm:3493> INFO - Processing section 0
+[127] Biber.pm:3657> INFO - Looking for bibtex format file 'mybib.bib' for section 0
+[129] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[129] bibtex.pm:1048> INFO - Found BibTeX data source 'mybib.bib'
+[156] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[156] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[156] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[156] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
+[164] bbl.pm:526> INFO - Writing 'OTPandAES.bbl' with encoding 'ascii'
+[166] bbl.pm:619> INFO - Output to OTPandAES.bbl

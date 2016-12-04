@@ -13,6 +13,9 @@ sorting=none]
 \addbibresource{mybib.bib}
 \setlength{\parskip}{5mm}
 \usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{tikz}
+\usetikzlibrary{tikzmark}
 %Are there any preferred bibliography style choices / general style requirements when it comes to the Maturaarbeit at the KSZ which I ought to implement?
 
 % There are more or less none. Personally I like the notation where you use the
@@ -197,13 +200,39 @@ must be true.
 
 This is because, if the probability that the actual plaintext $m$ is equal to some other message $m^{*}$, given the ciphertext $c$, is equal to the probability that $m=m^{*}$, then the ciphertext $c$ provides no additional information to the attacker. The ciphertext not providing any information about the plaintext nor the key is the definition of perfect secrecy; therefore, if the above equation can be proven to be true in the case of OTP, then the perfect secrecy of OTP will also have been proven.
 
-As in a standard mathematical proof, it must be proven that the left-hand side is equal to the right hand side. The left hand side of the equation uses conditional probability; in order to simplify its notation, let $m=m^{*}$ be $A$, and let ${E_k}(m)=c$ be $B$.
+\begin{proof}
+Per the definition of conditional probability, 
 
-Per the definition of conditional probability, $P(A \mid B) = \frac{P(A \cap B)}{P(B)}$. First, the computation of $P(B)$:
+$P(m=m^{*} \mid {E_k}(m)=c) = \frac{P(m=m^{*} \cap {E_k}(m)=c)}{P({E_k}(m)=c)}$.
+
+First, the computation of $P({E_k}(m)=c)$:
+
+The distribution of the messages is not uniform, as it must be assumed that a potential attacker has some form of knowledge about the nature of the message. Therefore, each message is not equally likely, meaning that 
+$P(m=m^{*}) \neq \frac{1}{\lvert M \rvert}$. $P({E_k}(m)=c)$ can also be taken as $P(k=k^{*})$, because the probability of the function encrypting a certain message into a certain ciphertext hinges solely on the key. As the key is randomly generated, each possible key is equally likely. Therefore, 
+$P(k=k^{*}) = P({E_k}(m)=c) =  \frac{1}{\lvert K \rvert} $.
+The mathematical computation of $P({E_k}(m)=c)$ reaffirms this conclusion.
+
+In order to find the probability that the given key $k$ maps the given message $m$ to the given ciphertext $c$, all probabilities that a certain key-message pair, $k_i$ and $m_i$, encrypt to the given ciphertext $c$, are summed up. This summation needs to be divided by the probability space. Because each key is applied to each message, the probability space is $\lvert M \rvert*\lvert K \rvert$.
+
+\begin{tabular}{cccc}
+$k_0$\tikzmark{a} & \tikzmark{z}$k_1$\tikzmark{b} & ... & $k_{\lvert K \rvert}$\tikzmark{c} \\
+ & & & \\
+$m_0$\tikzmark{d} & \tikzmark{e}$m_1$\tikzmark{y} & ... & \tikzmark{f}$m_{\lvert M \rvert}$ \\
+\end{tabular}
+
+\begin{tikzpicture}[overlay, remember picture, yshift=.25\baselineskip, shorten >=.5pt, shorten <=.5pt]
+\draw [->] ({pic cs:a}) [bend left] to ({pic cs:d});
+\draw [->] ([yshift=.75pt]{pic cs:a}) -- ({pic cs:e});
+\draw [->] ([yshift=.75pt]{pic cs:a}) -- ({pic cs:f});
+%\draw [->] ({pic cs:b}) [bend left] to ({pic cs:y});
+%\draw [->] ([yshift=.75pt]{pic cs:z}) -- ({pic cs:d});
+\end{tikzpicture}
 
 $P({E_k}(m)=c) = \sum\limits_{\substack{m_i \in M \\ k_i \in K}}
 P(E_{k_i}(m_i)=c) 
 * \frac{1}{\lvert M \rvert*\lvert K \rvert}$
+
+In OTP, there exists exactly one key which maps a specific message to a specific ciphertext. Therefore:
 
 $\sum\limits_{k_i \in K}
 P(E_{k_i}(m_i)=c)
@@ -214,17 +243,15 @@ $\sum\limits_{m_i \in M} 1
 
 $\Rightarrow P({E_k}(m)=c) = \frac{\lvert M \rvert}{\lvert M \rvert*\lvert K \rvert} = \frac{1}{\lvert K \rvert}$
 
+Note that, due to the above mentioned possibility that the attacker possesses some knowledge of the message, $P(m=m^{*}) \neq \frac{1}{\lvert M \rvert}$. Therefore, $P(m=m^{*})$ cannot be further simplified. In order to find $P(m=m^{*} \cap {E_k}(m)=c)$, the definition of conditional probability as well as the property $P({E_k}(m)=c) = \frac{1}{\lvert K \rvert}$ are used.
+
 $P(m=m^{*} \cap {E_k}(m)=c) = \frac{P(m=m^{*})}{\lvert K \rvert}$
 
-This is because the distribution of the messages is not uniform, as it must be assumed that a potential attacker has some form of knowledge about the nature of the message. Therefore, each message is not equally likely, meaning that 
-$P(m=m^{*}) \neq \frac{1}{\lvert M \rvert}$. $P({E_k}(m)=c)$ can also be taken as $P(k=k^{*})$, because the probability of the function encrypting a certain message into a certain ciphertext hinges solely on the key. As the key is randomly generated, each possible key is equally likely. Therefore, 
-$P(k=k^{*}) = \frac{1}{\lvert K \rvert} $.
+Now, the values computed for $P({E_k}(m)=c)$ and $P(m=m^{*} \cap {E_k}(m)=c)$ are inserted into the left hand side of the equation to see if it equals the right hand side of the equation.
 
-Now, we simply need to insert the values computed for $P({E_k}(m)=c)$ and $P(m=m^{*} \cap {E_k}(m)=c)$ into the left hand side of the equation to see if it equals the right hand side of the equation.
-
-$\dfrac{\dfrac{P(m=m^{*})}{\lvert K \rvert}}{\dfrac{1}{\lvert K \rvert}} = P(m=m^{*}) \\
-= RHS \\
-\Rightarrow q.e.d$
+$\dfrac{\dfrac{P(m=m^{*})}{\lvert K \rvert}}{\frac{1}{\lvert K \rvert}} = P(m=m^{*}) \\
+= RHS$
+\end{proof}
 
 \subsection{Why can only OTP achieve perfect secrecy?}
 %Not sure if this information warrants its own section or if I should merge it with the above one
@@ -343,6 +370,11 @@ As can be seen, this method is in keeping with the XOR addition of bytes. Howeve
 The issue with multiplying two bytes with each other within the finite field is that it is possible to receive a polynomial of higher order than 7; polynomials like this cannot be stored as a byte. Therefore, a reducing polynomial of the order 8 must be utilized. AES defines this reducing polynomial as $x^8+x^4+x^3+x+1$. The Galois Field $GF(2^8)$ utilizing the reducing polynomial $x^8+x^4+x^3+x+1$ for multiplication is referred to as Rijndael's finite field\cite{RFiniteField}.
 
 In order to prevent a result that cannot be stored as a byte, all results of multiplications between bytes are then taken modulo the reducing polynomial. This means that, if the degree of a resulting polynomial exceeds 7, an XOR division using the reducing polynomial must be performed.
+
+\subsubsection{Finding the multiplicative inverse using the extended euclidean algorithm}
+The multiplicative inverse of a number is defined as equalling one when multiplied with the number in question. Normally, this is not too difficult to find: The number itself can simply be taken to the power of $-1$. For example, the multiplicative inverse of $5$ is $frac{1}{5}$.
+
+In AES however, it is often necessary to find the multiplicative inverse of a byte. Furthermore, 
 
 \subsubsection{Substitution using lookup table (SUBBYTES)}
 The first substitution is relatively simple to perform; this is because it is a bytewise operation. This means that the data being manipulated is one single byte. In this case, the manipulation is a substitution of each byte with another byte, the substitution being determined by a lookup table, in which each individual byte is assigned another byte with which it must be swapped. The reason that a lookup table is practical is that there are only $2^8 = 256$ different possible bytes.
