@@ -164,6 +164,51 @@
       \verb http://www.samiam.org/galois.html
       \endverb
     \endentry
+    \entry{KeySchedule}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1b5687078be2d4de890048b24591b834}{%
+           family={Trenholme},
+           family_i={T\bibinitperiod},
+           given={Sam},
+           given_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{1b5687078be2d4de890048b24591b834}
+      \strng{fullhash}{1b5687078be2d4de890048b24591b834}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Rijndael's key schedule}
+      \field{year}{2010}
+      \verb{url}
+      \verb http://www.samiam.org/key-schedule.html
+      \endverb
+    \endentry
+    \entry{Rijndael}{online}{}
+      \name{author}{2}{}{%
+        {{hash=ce9c20302c5a545e289c41661ac58c43}{%
+           family={Daemen},
+           family_i={D\bibinitperiod},
+           given={Joan},
+           given_i={J\bibinitperiod}}}%
+        {{hash=d2e51b6dbeb039e27ea5d1a6f5d63302}{%
+           family={Rijmen},
+           family_i={R\bibinitperiod},
+           given={Vincent},
+           given_i={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{3967038944da1152e0568c52ebc551ab}
+      \strng{fullhash}{3967038944da1152e0568c52ebc551ab}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Rijndael Block Cipher}
+      \field{year}{1991}
+      \verb{url}
+      \verb http://csrc.nist.gov/archive/aes/rijndael/Rijndael-ammended.pdf
+      \endverb
+    \endentry
     \entry{GaloisField}{online}{}
       \name{author}{1}{}{%
         {{hash=47ecec875be04ae6c4848815bfc8c9cf}{%
@@ -242,51 +287,6 @@
       \field{year}{2011}
       \verb{url}
       \verb http://crypto.stackexchange.com/questions/1346/why-is-mixcolumns-omitted-from-the-last-round-of-aes
-      \endverb
-    \endentry
-    \entry{KeySchedule}{online}{}
-      \name{author}{1}{}{%
-        {{hash=1b5687078be2d4de890048b24591b834}{%
-           family={Trenholme},
-           family_i={T\bibinitperiod},
-           given={Sam},
-           given_i={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{1b5687078be2d4de890048b24591b834}
-      \strng{fullhash}{1b5687078be2d4de890048b24591b834}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Rijndael's key schedule}
-      \field{year}{2010}
-      \verb{url}
-      \verb http://www.samiam.org/key-schedule.html
-      \endverb
-    \endentry
-    \entry{Rijndael}{online}{}
-      \name{author}{2}{}{%
-        {{hash=ce9c20302c5a545e289c41661ac58c43}{%
-           family={Daemen},
-           family_i={D\bibinitperiod},
-           given={Joan},
-           given_i={J\bibinitperiod}}}%
-        {{hash=d2e51b6dbeb039e27ea5d1a6f5d63302}{%
-           family={Rijmen},
-           family_i={R\bibinitperiod},
-           given={Vincent},
-           given_i={V\bibinitperiod}}}%
-      }
-      \strng{namehash}{3967038944da1152e0568c52ebc551ab}
-      \strng{fullhash}{3967038944da1152e0568c52ebc551ab}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{The Rijndael Block Cipher}
-      \field{year}{1991}
-      \verb{url}
-      \verb http://csrc.nist.gov/archive/aes/rijndael/Rijndael-ammended.pdf
       \endverb
     \endentry
     \entry{ShannonProperties}{article}{}

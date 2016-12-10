@@ -1,63 +1,73 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}OTP: The One Time Pad}{3}
+\contentsline {chapter}{\numberline {1}OTP: The One Time Pad}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}What is a "One Time Pad"?}{3}
+\contentsline {section}{\numberline {1.1}What is a "One Time Pad"?}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Method used}{5}
+\contentsline {section}{\numberline {1.2}Method used}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Generation of the random key}{5}
+\contentsline {subsection}{\numberline {1.2.1}Generation of the random key}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Modular addition of the key and plaintext}{6}
+\contentsline {subsection}{\numberline {1.2.2}Modular addition of the key and plaintext}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.3}Decoding of the ciphertext using the key}{8}
+\contentsline {subsection}{\numberline {1.2.3}Decoding of the ciphertext using the key}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Perfect secrecy: Information-theoretical security}{9}
+\contentsline {section}{\numberline {1.3}Perfect secrecy: Information-theoretical security}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}Mathematical proof}{9}
+\contentsline {subsection}{\numberline {1.3.1}Mathematical proof}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Why can only OTP achieve perfect secrecy?}{12}
+\contentsline {subsection}{\numberline {1.3.2}Why can only OTP achieve perfect secrecy?}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Issues with OTP}{12}
+\contentsline {section}{\numberline {1.4}Issues with OTP}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}True randomness in generating the key}{12}
+\contentsline {subsection}{\numberline {1.4.1}True randomness in generating the key}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.2}Secure distribution of the key itself}{13}
+\contentsline {subsection}{\numberline {1.4.2}Secure distribution of the key itself}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.3}Secure disposal of a utilized key}{14}
+\contentsline {subsection}{\numberline {1.4.3}Secure disposal of a utilized key}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}AES: The Advanced Encryption Standard}{15}
+\contentsline {chapter}{\numberline {2}AES: The Advanced Encryption Standard}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}AES viewed from a high level}{15}
+\contentsline {section}{\numberline {2.1}AES viewed from a high level}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Method used}{16}
+\contentsline {section}{\numberline {2.2}Encryption}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Initial XOR operation}{17}
+\contentsline {subsection}{\numberline {2.2.1}Initial XOR operation}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Rounds}{18}
+\contentsline {subsection}{\numberline {2.2.2}Rounds}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.1}Galois Field $GF(2^8)$ arithmetic}{18}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Galois Field $GF(2^8)$ arithmetic}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.2}Finding the multiplicative inverse using the extended euclidean algorithm}{19}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Finding the multiplicative inverse using the extended euclidean algorithm}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.3}Substitution using lookup table (SUBBYTES)}{19}
+\contentsline {subsubsection}{\numberline {2.2.2.3}Subkey generation (KEYEXPANSIONS)}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.4}Transposition (SHIFTROWS)}{21}
+\contentsline {subsubsection}{\numberline {2.2.2.4}Substitution using lookup table (SUBBYTES)}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.5}Substitution using formula (MIXCOLUMNS)}{21}
+\contentsline {subsubsection}{\numberline {2.2.2.5}Transposition (SHIFTROWS)}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.6}Subkey generation (KEYEXPANSIONS)}{23}
+\contentsline {subsubsection}{\numberline {2.2.2.6}Substitution using formula (MIXCOLUMNS)}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.7}Round-closing XOR operation (ADDROUNDKEY)}{25}
+\contentsline {subsubsection}{\numberline {2.2.2.7}Round-closing XOR operation (ADDROUNDKEY)}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Fulfilment of Shannon's properties}{25}
+\contentsline {section}{\numberline {2.3}Decryption}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Diffusion}{25}
+\contentsline {subsection}{\numberline {2.3.1}Initial inverse XOR operation}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Confusion}{26}
+\contentsline {subsection}{\numberline {2.3.2}Rounds}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Problems with AES}{26}
+\contentsline {subsubsection}{\numberline {2.3.2.1}INV. SHIFTROWS}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Overconfidence and over-reliance}{27}
+\contentsline {subsubsection}{\numberline {2.3.2.2}INV. SUBBYTES}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Keeping of a shared secret}{27}
+\contentsline {section}{\numberline {2.4}Fulfilment of Shannon's properties}{28}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Diffusion}{29}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.2}Confusion}{29}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Problems with AES}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.1}Overconfidence and over-reliance}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.2}Keeping of a shared secret}{30}

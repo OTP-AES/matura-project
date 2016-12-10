@@ -300,7 +300,7 @@ Viewed from a high level, the AES algorithm consists of one XOR step, followed b
 \caption{A high-level description of AES.}
 \end{figure}
 
-\section{Method used}
+\section{Encryption}
 Each round possesses 4 steps, explained in detail below. However, before those operations can be understood, some basic terminology must first be clarified.
 
 The "state" is the matrix containing the information which is manipulated throughout the encryption process. As such, the state begins its journey through AES as the block of plaintext which is to be encrypted, and ends it as a block of ciphertext. The state is represented in a 4x4 column-major order matrix; this means that, in a block containing 16 bytes, the standard size of an AES plaintext block as well as the standard size of an AES key $(16 bytes * 8 = 128 bits)$.
@@ -372,125 +372,11 @@ The issue with multiplying two bytes with each other within the finite field is 
 In order to prevent a result that cannot be stored as a byte, all results of multiplications between bytes are then taken modulo the reducing polynomial. This means that, if the degree of a resulting polynomial exceeds 7, an XOR division using the reducing polynomial must be performed.
 
 \subsubsection{Finding the multiplicative inverse using the extended euclidean algorithm}
-The multiplicative inverse of a number is defined as equalling one when multiplied with the number in question. Normally, this is not too difficult to find: The number itself can simply be taken to the power of $-1$. For example, the multiplicative inverse of $5$ is $frac{1}{5}$.
+The multiplicative inverse of a number is defined as equalling one when multiplied with the number in question. Normally, this is not too difficult to find: The number itself can simply be taken to the power of $-1$. For example, the multiplicative inverse of $5$ is 
+$\frac{1}{5}$.
 
-In AES however, it is often necessary to find the multiplicative inverse of a byte. Furthermore, 
+In AES however, it is often necessary to find the multiplicative inverse of a byte. Furthermore, this multiplicative inverse must be found within the Rijndael field, meaning the multiplicative inverse must be found modulo the reducing polynomial.
 
-\subsubsection{Substitution using lookup table (SUBBYTES)}
-The first substitution is relatively simple to perform; this is because it is a bytewise operation. This means that the data being manipulated is one single byte. In this case, the manipulation is a substitution of each byte with another byte, the substitution being determined by a lookup table, in which each individual byte is assigned another byte with which it must be swapped. The reason that a lookup table is practical is that there are only $2^8 = 256$ different possible bytes.
-
-This swapping of bytes is performed using a Rijndael S-box as the lookup table. Firstly, it is very important to note that this substitution is performed in a Galois field (also referred to as a finite field)\cite{GaloisField}, specifically $GF(2^8)$.
-
-The S-Box performs a revertible, complete transformation of the plaintext\cite{SBox}. This means that the transformation is reversible (which is necessary for decryption), and that no two different bytes are transformed into the same byte; this is the criteria for a full permutation.
-
-In practice, the table is pre-calculated, since it is the same for each byte. Therefore, the most simple method of performing this substitution is to first split the byte into two 4-bit nibbles. If the byte is represented in hexadecimal, then the first nibble is simply the first of the two values, the second nibble being the second of the two values. For example, the byte $(7c)_h$, $(01111100)_2$ in binary, would be converted to the byte $(c6)_h$.
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=1]{SBox.PNG}
-\caption{The lookup table used for AES, in hexadecimal notation\cite{SBox}.}
-\end{figure}
-
-First, the multiplicative inverse of the byte is calculated within Rijndael's finite field. This multiplicative inverse, also a byte, is then stored as a vector $[x_7; x_6 ... x_0]$ to be used in an affine transformation. As always, it is important to note that the plus sign denotes an XOR operation.
-
-\[ \left( \begin{array}{cccccccc}
-1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 \\
-1 & 1 & 0 & 0 & 0 & 1 & 1 & 1 \\
-1 & 1 & 1 & 0 & 0 & 0 & 1 & 1 \\
-1 & 1 & 1 & 1 & 0 & 0 & 0 & 1 \\
-1 & 1 & 1 & 1 & 1 & 0 & 0 & 0 \\
-0 & 1 & 1 & 1 & 1 & 1 & 0 & 0 \\
-0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 \\
-0 & 0 & 0 & 1 & 1 & 1 & 1 & 1\end{array} \right)
-*
-\left( \begin{array}{c}
-x_0 \\
-x_1 \\
-x_2 \\
-x_3 \\
-x_4 \\
-x_5 \\
-x_6 \\
-x_7\end{array} \right)
-+
-\left( \begin{array}{c}
-1 \\
-1 \\
-0 \\
-0 \\
-0 \\
-1 \\
-1 \\
-0\end{array} \right)
-=
-\left( \begin{array}{c}
-b_0 \\
-b_1 \\
-b_2 \\
-b_3 \\
-b_4 \\
-b_5 \\
-b_6 \\
-b_7\end{array} \right)
-\]
-
-So, after being manipulated by the S-Box, the byte of the state is replaced by the byte $[b_7; b_6 ... b_0 ]$. This step is performed for each of the 16 bytes in the state. After each byte of the state has been replaced, the new state continues on to the ShiftRows step.
-
-
-
-\subsubsection{Transposition (SHIFTROWS)}
-The next operation, transposition, operates upon the rows of the state by shifting each byte by a certain offset. The offset starts with 0, and is then increased by 1 for each row downwards from the top row.
-
-\[ \left( \begin{array}{cccc}
-a_{0,0} & a_{0,1} & a_{0,2} & a_{0,3} \\
-a_{1,0} & a_{1,1} & a_{1,2} & a_{1,3} \\
-a_{2,0} & a_{2,1} & a_{2,2} & a_{2,3} \\
-a_{3,0} & a_{3,1} & a_{3,2} & a_{3,3}\end{array} \right)
-\xrightarrow{ShiftRows}
-\left( \begin{array}{cccc}
-a_{0,0} & a_{0,1} & a_{0,2} & a_{0,3} \\
-a_{1,1} & a_{1,2} & a_{1,3} & a_{1,0} \\
-a_{2,2} & a_{2,3} & a_{2,0} & a_{2,1} \\
-a_{3,3} & a_{3,0} & a_{3,1} & a_{3,2}\end{array} \right)
-\]
-
-\subsubsection{Substitution using formula (MIXCOLUMNS)}
-The MixColumns step replaces each byte in the state with a different byte, dependent on all the bytes of that same column. Once again, it is important to note that all multiplications are performed within Rijndael's finite field.
-
-In the MixColumns step, each column (and crucially not each individual byte) is treated as a polynomial in Rijndael's finite field.
-
-MixColumns can be performed by multiplying the column (treated as a vector) with a circulant (meaning that each row of the matrix is identical to the one above it, except that the values are offset by 1 to the right) MDS ("maximum distance separable", a representation of a function known to have useful properties in cryptography) Matrix \cite{MixColumns}.
-
-It is very important to note that the values of the cyclical MDS matrix are not regular numbers, but actually represent hexadecimal bytes (for example, $03 = 11$, which is then padded with zeroes until it possesses 8 values, making it 00000011. This is permissible in Rijndael's finite field, as $11 = x+1 = 00000011$)
-
-\[ \left( \begin{array}{cccc}
-02 & 03 & 01 & 01 \\
-01 & 02 & 03 & 01 \\
-01 & 01 & 02 & 03 \\
-03 & 01 & 01 & 02\end{array} \right)
-*
-\left( \begin{array}{c}
-a_0 \\
-a_1 \\
-a_2 \\
-a_3\end{array} \right)
-=
-\left( \begin{array}{c}
-s_0 \\
-s_1 \\
-s_2 \\
-s_3\end{array} \right)
-\]
-
-Now, it becomes evident that each byte of the resulting column is dependent on every byte of the manipulated column. As always, all operations take place in Rijndael's finite field. \\
-\\
-$
-s_0 = {02}*a_0+{03}*a_1+{01}*a_2+{01}*a_3 \\
-s_1 = {01}*a_0+{02}*a_1+{03}*a_2+{01}*a_3 \\
-s_2 = {01}*a_0+{01*}a_1+{02}*a_2+{03}*a_3 \\
-s_3 = {03}*a_0+{01}*a_1+{01}*a_2+{02}*a_3 \\ $
-
-It is important to note that the last round of AES does not possess a MixColumns step; this is because, if there were a MixColumns step included in the last round of encryption, it would not possess a corresponding invMixColumns in the final round of decryption\cite{NoMixColumns}.
 \subsubsection{Subkey generation (KEYEXPANSIONS)}
 As can be seen in the high-level explanation, AES requires 11 128-bit subkeys (also referred to as round keys); one for the initial XOR operation, and then one for each of the 10 rounds. These subkeys are derived from the main key using the "Rijndael key schedule" \cite{KeySchedule}.
 
@@ -565,8 +451,199 @@ r_3 & r_7=r_3+k_7 & r_{11}=r_7+k_{11} & r_{15}=r_{11}+k_{15}\end{array} \right) 
 
 This round key is taken as the master key for the generation of the next round key. This process is then repeated until ten new keys have been generated.
 
+\subsubsection{Substitution using lookup table (SUBBYTES)}
+The first substitution is relatively simple to perform; this is because it is a bytewise operation. This means that the data being manipulated is one single byte. In this case, the manipulation is a substitution of each byte with another byte, the substitution being determined by a lookup table, in which each individual byte is assigned another byte with which it must be swapped. The reason that a lookup table is practical is that there are only $2^8 = 256$ different possible bytes.
+
+This swapping of bytes is performed using a Rijndael S-box as the lookup table. Firstly, it is very important to note that this substitution is performed in a Galois field (also referred to as a finite field)\cite{GaloisField}, specifically $GF(2^8)$.
+
+The S-Box performs a revertible, complete transformation of the plaintext\cite{SBox}. This means that the transformation is reversible (which is necessary for decryption), and that no two different bytes are transformed into the same byte; this is the criteria for a full permutation.
+
+In practice, the table is pre-calculated, since it is the same for each byte. Therefore, the most simple method of performing this substitution is to first split the byte into two 4-bit nibbles. If the byte is represented in hexadecimal, then the first nibble is simply the first of the two values, the second nibble being the second of the two values. For example, the byte $(7c)_h$, $(01111100)_2$ in binary, would be converted to the byte $(c6)_h$.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{SBox.PNG}
+\caption{The lookup table used for AES, in hexadecimal notation\cite{SBox}.}
+\end{figure}
+
+First, the multiplicative inverse of the byte is calculated within Rijndael's finite field. This multiplicative inverse, also a byte, is then stored as a vector $[x_7; x_6 ... x_0]$ to be used in an affine transformation. As always, it is important to note that the plus sign denotes an XOR operation.
+
+\[ \left( \begin{array}{cccccccc}
+1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 \\
+1 & 1 & 0 & 0 & 0 & 1 & 1 & 1 \\
+1 & 1 & 1 & 0 & 0 & 0 & 1 & 1 \\
+1 & 1 & 1 & 1 & 0 & 0 & 0 & 1 \\
+1 & 1 & 1 & 1 & 1 & 0 & 0 & 0 \\
+0 & 1 & 1 & 1 & 1 & 1 & 0 & 0 \\
+0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 \\
+0 & 0 & 0 & 1 & 1 & 1 & 1 & 1\end{array} \right)
+*
+\left( \begin{array}{c}
+x_0 \\
+x_1 \\
+x_2 \\
+x_3 \\
+x_4 \\
+x_5 \\
+x_6 \\
+x_7\end{array} \right)
++
+\left( \begin{array}{c}
+1 \\
+1 \\
+0 \\
+0 \\
+0 \\
+1 \\
+1 \\
+0\end{array} \right)
+=
+\left( \begin{array}{c}
+b_0 \\
+b_1 \\
+b_2 \\
+b_3 \\
+b_4 \\
+b_5 \\
+b_6 \\
+b_7\end{array} \right)
+\]
+
+So, after being manipulated by the S-Box, the byte of the state is replaced by the byte $[b_7; b_6 ... b_0 ]$. This step is performed for each of the 16 bytes in the state. After each byte of the state has been replaced, the new state continues on to the ShiftRows step.
+
+\subsubsection{Transposition (SHIFTROWS)}
+The next operation, transposition, operates upon the rows of the state by shifting each byte by a certain offset. The offset starts with 0, and is then increased by 1 for each row downwards from the top row.
+
+\[ \left( \begin{array}{cccc}
+a_{0,0} & a_{0,1} & a_{0,2} & a_{0,3} \\
+a_{1,0} & a_{1,1} & a_{1,2} & a_{1,3} \\
+a_{2,0} & a_{2,1} & a_{2,2} & a_{2,3} \\
+a_{3,0} & a_{3,1} & a_{3,2} & a_{3,3}\end{array} \right)
+\xrightarrow{ShiftRows}
+\left( \begin{array}{cccc}
+a_{0,0} & a_{0,1} & a_{0,2} & a_{0,3} \\
+a_{1,1} & a_{1,2} & a_{1,3} & a_{1,0} \\
+a_{2,2} & a_{2,3} & a_{2,0} & a_{2,1} \\
+a_{3,3} & a_{3,0} & a_{3,1} & a_{3,2}\end{array} \right)
+\]
+
+\subsubsection{Substitution using formula (MIXCOLUMNS)}
+The MixColumns step replaces each byte in the state with a different byte, dependent on all the bytes of that same column. Once again, it is important to note that all multiplications are performed within Rijndael's finite field.
+
+In the MixColumns step, each column (and crucially not each individual byte) is treated as a polynomial in Rijndael's finite field.
+
+MixColumns can be performed by multiplying the column (treated as a vector) with a circulant (meaning that each row of the matrix is identical to the one above it, except that the values are offset by 1 to the right) MDS ("maximum distance separable", a representation of a function known to have useful properties in cryptography) Matrix \cite{MixColumns}.
+
+It is very important to note that the values of the cyclical MDS matrix are not regular numbers, but actually represent hexadecimal bytes (for example, $03 = 11$, which is then padded with zeroes until it possesses 8 values, making it 00000011. This is permissible in Rijndael's finite field, as $11 = x+1 = 00000011$)
+
+\[ \left( \begin{array}{cccc}
+02 & 03 & 01 & 01 \\
+01 & 02 & 03 & 01 \\
+01 & 01 & 02 & 03 \\
+03 & 01 & 01 & 02\end{array} \right)
+*
+\left( \begin{array}{c}
+a_0 \\
+a_1 \\
+a_2 \\
+a_3\end{array} \right)
+=
+\left( \begin{array}{c}
+s_0 \\
+s_1 \\
+s_2 \\
+s_3\end{array} \right)
+\]
+
+Now, it becomes evident that each byte of the resulting column is dependent on every byte of the manipulated column. As always, all operations take place in Rijndael's finite field. \\
+\\
+$
+s_0 = {02}*a_0+{03}*a_1+{01}*a_2+{01}*a_3 \\
+s_1 = {01}*a_0+{02}*a_1+{03}*a_2+{01}*a_3 \\
+s_2 = {01}*a_0+{01*}a_1+{02}*a_2+{03}*a_3 \\
+s_3 = {03}*a_0+{01}*a_1+{01}*a_2+{02}*a_3 \\ $
+
+It is important to note that the last round of AES does not possess a MixColumns step; this is because, if there were a MixColumns step included in the last round of encryption, it would not possess a corresponding invMixColumns in the final round of decryption\cite{NoMixColumns}.
+
 \subsubsection{Round-closing XOR operation (ADDROUNDKEY)}
 Finally, the state is added to the round's unique round key using modular addition. The method is the same as described in chapter 2.2.2; an XOR gate is, once again, utilized.
+
+\section{Decryption}
+Just like encryption, decryption also begins with key generation. Because the algorithm used is exactly the same as in encryption, the same round keys will once again be generated using the same master key that was already used for encryption. While each decryption round contains the inverses of the steps used in encryption, it is important to note that the order in which these steps appear in the rounds is not identical to the order in which their non-inversed counterparts appear in encryption.
+
+\subsection{Initial inverse XOR operation}
+
+\subsection{Rounds}
+Just like in encryption, decryption consists of on initial inverse add round key step, followed by ten rounds, with the last round missing the inverse MixColumns step.
+
+\subsubsection{INV. SHIFTROWS}
+The Inv. ShiftRows step is rather simple, as it simply performs the exact opposite manipulation of the regular ShiftRows step.
+
+\[
+\left( \begin{array}{cccc}
+a_{0,0} & a_{0,1} & a_{0,2} & a_{0,3} \\
+a_{1,1} & a_{1,2} & a_{1,3} & a_{1,0} \\
+a_{2,2} & a_{2,3} & a_{2,0} & a_{2,1} \\
+a_{3,3} & a_{3,0} & a_{3,1} & a_{3,2}\end{array} \right)
+\xrightarrow{Inv. ShiftRows}
+\left( \begin{array}{cccc}
+a_{0,0} & a_{0,1} & a_{0,2} & a_{0,3} \\
+a_{1,0} & a_{1,1} & a_{1,2} & a_{1,3} \\
+a_{2,0} & a_{2,1} & a_{2,2} & a_{2,3} \\
+a_{3,0} & a_{3,1} & a_{3,2} & a_{3,3}\end{array} \right)
+\]
+
+\subsubsection{INV. SUBBYTES}
+Just as in the regular SubBytes step, a lookup table is usually utilized in any practical implementations. The lookup table is generated using the following Process:
+
+First, the inverse of the affine transformation performed in encryption is calculated and stored in a byte $[x_7;x_6...x_0]$. For the byte $[b_7;b_6...b_0]$, the inverse affine transformation is performed as follows:
+
+\[ 
+\left( \begin{array}{c}
+x_0 \\
+x_1 \\
+x_2 \\
+x_3 \\
+x_4 \\
+x_5 \\
+x_6 \\
+x_7\end{array} \right)
+=
+\left( \begin{array}{cccccccc}
+0 & 1 & 0 & 1 & 0 & 0 & 1 & 0 \\
+0 & 0 & 1 & 0 & 1 & 0 & 0 & 1 \\
+1 & 0 & 0 & 1 & 0 & 1 & 0 & 0 \\
+0 & 1 & 0 & 0 & 1 & 0 & 1 & 0 \\
+0 & 0 & 1 & 0 & 0 & 1 & 0 & 1 \\
+1 & 0 & 0 & 1 & 0 & 0 & 1 & 0 \\
+0 & 1 & 0 & 0 & 1 & 0 & 0 & 1 \\
+1 & 0 & 1 & 0 & 0 & 1 & 0 & 0\end{array} \right)
+*
+\left( \begin{array}{c}
+b_0 \\
+b_1 \\
+b_2 \\
+b_3 \\
+b_4 \\
+b_5 \\
+b_6 \\
+b_7\end{array} \right)
++
+\left( \begin{array}{c}
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+1 \\
+0 \\
+1\end{array} \right)
+\]
+
+Finally, the multiplicative inverse of the byte $[x_7;x_6...x_0]$ is found in Rijndael's finite field. This process is applied until all 16 bytes of the state have been replaced.
+
+\subsubsection{INV. ADDROUNDKEY}
+
 
 \section{Fulfilment of Shannon's properties}
 In 1945, Claude Shannon wrote a report that would become central to cryptography. This report was titled "A Mathematical Theory of Cryptography", and it identified two properties necessary to ensure the security of any cipher\cite{ShannonProperties}. These were termed diffusion and confusion. These two properties, if fulfilled, serve to make methods of cryptanalysis, in particular statistical analysis, less effective.

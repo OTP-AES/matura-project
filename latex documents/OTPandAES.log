@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  4 DEC 2016 16:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  10 DEC 2016 14:01
 entering extended mode
 **./OTPandAES.tex
 (OTPandAES.tex
@@ -739,29 +739,29 @@ Overfull \hbox (5.09196pt too wide) in paragraph at lines 51--51
  [][] []\OT1/cmr/m/n/12 Round-closing XOR op-er-a-tion (AD-DROUND- 
  []
 
-)
+[2])
 \tf@toc=\write6
 \openout6 = `OTPandAES.toc'.
 
- [2]
+ [3]
 Chapter 1.
-<images/PerforatedTape.jpg, id=19, 433.37122pt x 288.95561pt>
+<images/PerforatedTape.jpg, id=22, 433.37122pt x 288.95561pt>
 File: images/PerforatedTape.jpg Graphic file (type jpg)
 
 <use images/PerforatedTape.jpg>
 Package pdftex.def Info: images/PerforatedTape.jpg used on input line 47.
 (pdftex.def)             Requested size: 216.68507pt x 144.47745pt.
- [3
+ [4
 
 ]
-<images/VernamCipher.jpg, id=23, 292.292pt x 191.917pt>
+<images/VernamCipher.jpg, id=26, 292.292pt x 191.917pt>
 File: images/VernamCipher.jpg Graphic file (type jpg)
 
 <use images/VernamCipher.jpg>
 Package pdftex.def Info: images/VernamCipher.jpg used on input line 57.
 (pdftex.def)             Requested size: 292.29129pt x 191.91653pt.
- [4 <./images/PerforatedTape.jpg>] [5 <./images/VernamCipher.jpg>] <images/Tabl
-e1.PNG, id=31, 433.62pt x 42.91031pt>
+ [5 <./images/PerforatedTape.jpg>] [6 <./images/VernamCipher.jpg>] <images/Tabl
+e1.PNG, id=35, 433.62pt x 42.91031pt>
 File: images/Table1.PNG Graphic file (type png)
 
 <use images/Table1.PNG>
@@ -772,7 +772,7 @@ Overfull \hbox (43.61894pt too wide) in paragraph at lines 91--92
  [][] 
  []
 
-[6] <images/Table2.PNG, id=37, 436.63126pt x 39.14626pt>
+[7] <images/Table2.PNG, id=40, 436.63126pt x 39.14626pt>
 File: images/Table2.PNG Graphic file (type png)
 
 <use images/Table2.PNG>
@@ -783,7 +783,7 @@ Overfull \hbox (46.63019pt too wide) in paragraph at lines 103--104
  [][] 
  []
 
-<images/Table3.PNG, id=38, 450.9347pt x 67.0003pt>
+<images/Table3.PNG, id=41, 450.9347pt x 67.0003pt>
 File: images/Table3.PNG Graphic file (type png)
  <use images/Table3.PNG>
 Package pdftex.def Info: images/Table3.PNG used on input line 110.
@@ -793,7 +793,7 @@ Overfull \hbox (60.9336pt too wide) in paragraph at lines 110--111
  [][] 
  []
 
-<images/XORgate.PNG, id=39, 414.79968pt x 80.55093pt>
+<images/XORgate.PNG, id=42, 414.79968pt x 80.55093pt>
 File: images/XORgate.PNG Graphic file (type png)
  <use images/XORgate.PNG>
 Package pdftex.def Info: images/XORgate.PNG used on input line 117.
@@ -803,8 +803,8 @@ Overfull \hbox (24.79868pt too wide) in paragraph at lines 117--118
  [][] 
  []
 
-[7 <./images/Table1.PNG> <./images/Table2.PNG> <./images/Table3.PNG>]
-<images/Table4.PNG, id=46, 446.41782pt x 68.50594pt>
+[8 <./images/Table1.PNG> <./images/Table2.PNG> <./images/Table3.PNG>]
+<images/Table4.PNG, id=49, 446.41782pt x 68.50594pt>
 File: images/Table4.PNG Graphic file (type png)
  <use images/Table4.PNG>
 Package pdftex.def Info: images/Table4.PNG used on input line 128.
@@ -814,13 +814,13 @@ Overfull \hbox (56.41672pt too wide) in paragraph at lines 128--129
  [][] 
  []
 
-[8 <./images/XORgate.PNG> <./images/Table4.PNG>]
+[9 <./images/XORgate.PNG> <./images/Table4.PNG>]
 Overfull \hbox (1.72371pt too wide) in paragraph at lines 138--139
 []\OT1/cmr/m/n/12 Although many be-lieve that the ci-pher-text does pro-vide in
 -for-ma-tion about
  []
 
-[9] [10]
+[10] [11]
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -829,73 +829,73 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
- [11] <images/MilsElectronic.PNG, id=67, 502.87875pt x 312.41719pt>
+ [12] <images/MilsElectronic.PNG, id=71, 502.87875pt x 312.41719pt>
 File: images/MilsElectronic.PNG Graphic file (type png)
 
 <use images/MilsElectronic.PNG>
 Package pdftex.def Info: images/MilsElectronic.PNG used on input line 270.
 (pdftex.def)             Requested size: 377.15813pt x 234.3123pt.
- [12] [13 <./images/MilsElectronic.PNG>]
-[14]
+ [13] [14 <./images/MilsElectronic.PNG>]
+[15]
 Chapter 2.
-<images/AES_fig1.jpg, id=79, 722.7pt x 265.74281pt>
+<images/AES_fig1.jpg, id=82, 722.7pt x 265.74281pt>
 File: images/AES_fig1.jpg Graphic file (type jpg)
  <use images/AES_fig1.jpg>
 Package pdftex.def Info: images/AES_fig1.jpg used on input line 299.
 (pdftex.def)             Requested size: 289.07487pt x 106.29523pt.
 
-[15
+[16
 
- <./images/AES_fig1.jpg>] [16]
-<images/AES_fig2.jpg, id=86, 722.7pt x 264.23718pt>
+ <./images/AES_fig1.jpg>] [17]
+<images/AES_fig2.jpg, id=89, 722.7pt x 264.23718pt>
 File: images/AES_fig2.jpg Graphic file (type jpg)
  <use images/AES_fig2.jpg>
 Package pdftex.def Info: images/AES_fig2.jpg used on input line 329.
 (pdftex.def)             Requested size: 289.07487pt x 105.693pt.
 
-<images/AES_fig3.jpg, id=87, 722.7pt x 266.49562pt>
+<images/AES_fig3.jpg, id=90, 722.7pt x 266.49562pt>
 File: images/AES_fig3.jpg Graphic file (type jpg)
  <use images/AES_fig3.jpg>
 Package pdftex.def Info: images/AES_fig3.jpg used on input line 354.
 (pdftex.def)             Requested size: 289.07487pt x 106.59636pt.
 
-[17 <./images/AES_fig2.jpg>] [18 <./images/AES_fig3.jpg>] [19]
-<images/SBox.PNG, id=98, 398.99063pt x 351.56343pt>
+[18 <./images/AES_fig2.jpg>] [19 <./images/AES_fig3.jpg>] [20] [21] [22]
+<images/SBox.PNG, id=107, 398.99063pt x 351.56343pt>
 File: images/SBox.PNG Graphic file (type png)
  <use images/SBox.PNG>
-Package pdftex.def Info: images/SBox.PNG used on input line 387.
+Package pdftex.def Info: images/SBox.PNG used on input line 465.
 (pdftex.def)             Requested size: 398.98965pt x 351.56256pt.
 
-Overfull \hbox (8.98965pt too wide) in paragraph at lines 387--388
+Overfull \hbox (8.98965pt too wide) in paragraph at lines 465--466
  [][] 
  []
 
-[20 <./images/SBox.PNG>] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 482--489
+[23] [24 <./images/SBox.PNG>] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 558--565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--489
+Underfull \hbox (badness 10000) in paragraph at lines 558--565
 
  []
 
-[22] [23] [24] [25] [26] [27]
-Overfull \hbox (81.83385pt too wide) in paragraph at lines 600--600
+[26] [27] [28] [29] [30] [31]
+Overfull \hbox (81.83385pt too wide) in paragraph at lines 675--675
 []\OT1/cmr/m/n/12 learncryptography.com. \OT1/cmr/m/it/12 Fre-quency Anal-y-sis
 \OT1/cmr/m/n/12 . 2014. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : $\OT1/cmtt/m/n/12
  https : / / learncryptography .
  []
 
-[28
+[32
 
 ]
-Overfull \hbox (13.71162pt too wide) in paragraph at lines 600--600
+Overfull \hbox (13.71162pt too wide) in paragraph at lines 675--675
 []\OT1/cmr/m/n/12 Amish Ku-mar and Na-mita Ti-wari. \OT1/cmr/m/it/12 ef-fec-tiv
 e im-ple-men-ta-tion and avalanche
  []
 
-[29] (OTPandAES.aux)
+[33] (OTPandAES.aux)
 Package logreq Info: Writing requests to 'OTPandAES.run.xml'.
 \openout1 = `OTPandAES.run.xml'.
 
@@ -918,9 +918,9 @@ cmr8.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/miketex/font
 s/type1/public/amsfonts/cm/cmsy6.pfb><E:/miketex/fonts/type1/public/amsfonts/cm
 /cmsy8.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmti12.pfb><E:/miketex/fo
 nts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on OTPandAES.pdf (30 pages, 775096 bytes).
+Output written on OTPandAES.pdf (34 pages, 780656 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
+ 190 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
