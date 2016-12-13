@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  10 DEC 2016 14:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  13 DEC 2016 18:55
 entering extended mode
 **./OTPandAES.tex
 (OTPandAES.tex
@@ -410,11 +410,23 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip66
 \dth@everypar=\toks27
 )
+(E:\miketex\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(E:\miketex\tex\latex\base\inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks28
+\inpenc@posthook=\toks29
+)
 (E:\miketex\tex\latex\pgf\frontendlayer\tikz.sty
 (E:\miketex\tex\latex\pgf\basiclayer\pgf.sty
 (E:\miketex\tex\latex\pgf\utilities\pgfrcs.sty
 (E:\miketex\tex\generic\pgf\utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks28
+\pgfutil@everybye=\toks30
 \pgfutil@tempdima=\dimen123
 \pgfutil@tempdimb=\dimen124
 
@@ -436,11 +448,11 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 (E:\miketex\tex\generic\pgf\utilities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks29
-\pgfkeys@temptoks=\toks30
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
 
 (E:\miketex\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks31
+\pgfkeys@tmptoks=\toks33
 ))
 \pgf@x=\dimen125
 \pgf@y=\dimen126
@@ -456,9 +468,9 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 \c@pgf@countb=\count293
 \c@pgf@countc=\count294
 \c@pgf@countd=\count295
-\t@pgf@toka=\toks32
-\t@pgf@tokb=\toks33
-\t@pgf@tokc=\toks34
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
 
 (E:\miketex\tex\generic\pgf\systemlayer\pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -506,9 +518,9 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 \pgfmath@dimen=\dimen133
 \pgfmath@count=\count298
 \pgfmath@box=\box31
-\pgfmath@toks=\toks35
-\pgfmath@stack@operand=\toks36
-\pgfmath@stack@operation=\toks37
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
 )
 (E:\miketex\tex\generic\pgf\math\pgfmathfunctions.code.tex
 (E:\miketex\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex)
@@ -626,8 +638,8 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 (E:\miketex\tex\generic\pgf\math\pgfmath.code.tex)
 \pgffor@iter=\dimen160
 \pgffor@skip=\dimen161
-\pgffor@stack=\toks38
-\pgffor@toks=\toks39
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
 ))
 (E:\miketex\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -675,18 +687,18 @@ File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
  (OTPandAES.aux)
 \openout1 = `OTPandAES.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 (E:\miketex\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -695,12 +707,12 @@ LaTeX Font Info:    ... okay on input line 30.
 \scratchbox=\box41
 \nofMPsegments=\count314
 \nofMParguments=\count315
-\everyMPshowfont=\toks40
+\everyMPshowfont=\toks42
 \MPscratchCnt=\count316
 \MPscratchDim=\dimen170
 \MPnumerator=\count317
 \makeMPintoPDFobject=\count318
-\everyMPtoPDFconversion=\toks41
+\everyMPtoPDFconversion=\toks43
 ) (E:\miketex\tex\latex\oberdiek\epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -726,10 +738,19 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'OTPandAES.bbl' found.
  (OTPandAES.bbl)
-Package biblatex Info: Reference section=0 on input line 30.
-Package biblatex Info: Reference segment=0 on input line 30.
+Package biblatex Info: Reference section=0 on input line 32.
+Package biblatex Info: Reference segment=0 on input line 32.
 
-ABD: EveryShipout initializing macros [1
+ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for U+msa on input line 36.
+ (E:\miketex\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 36.
+
+(E:\miketex\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
 
 {C:/Users/Valdemar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (OTPandA
 ES.toc [1
@@ -749,7 +770,7 @@ Chapter 1.
 File: images/PerforatedTape.jpg Graphic file (type jpg)
 
 <use images/PerforatedTape.jpg>
-Package pdftex.def Info: images/PerforatedTape.jpg used on input line 47.
+Package pdftex.def Info: images/PerforatedTape.jpg used on input line 49.
 (pdftex.def)             Requested size: 216.68507pt x 144.47745pt.
  [4
 
@@ -758,17 +779,17 @@ Package pdftex.def Info: images/PerforatedTape.jpg used on input line 47.
 File: images/VernamCipher.jpg Graphic file (type jpg)
 
 <use images/VernamCipher.jpg>
-Package pdftex.def Info: images/VernamCipher.jpg used on input line 57.
+Package pdftex.def Info: images/VernamCipher.jpg used on input line 59.
 (pdftex.def)             Requested size: 292.29129pt x 191.91653pt.
  [5 <./images/PerforatedTape.jpg>] [6 <./images/VernamCipher.jpg>] <images/Tabl
 e1.PNG, id=35, 433.62pt x 42.91031pt>
 File: images/Table1.PNG Graphic file (type png)
 
 <use images/Table1.PNG>
-Package pdftex.def Info: images/Table1.PNG used on input line 91.
+Package pdftex.def Info: images/Table1.PNG used on input line 93.
 (pdftex.def)             Requested size: 433.61894pt x 42.91019pt.
 
-Overfull \hbox (43.61894pt too wide) in paragraph at lines 91--92
+Overfull \hbox (43.61894pt too wide) in paragraph at lines 93--94
  [][] 
  []
 
@@ -776,30 +797,30 @@ Overfull \hbox (43.61894pt too wide) in paragraph at lines 91--92
 File: images/Table2.PNG Graphic file (type png)
 
 <use images/Table2.PNG>
-Package pdftex.def Info: images/Table2.PNG used on input line 103.
+Package pdftex.def Info: images/Table2.PNG used on input line 105.
 (pdftex.def)             Requested size: 436.63019pt x 39.14615pt.
 
-Overfull \hbox (46.63019pt too wide) in paragraph at lines 103--104
+Overfull \hbox (46.63019pt too wide) in paragraph at lines 105--106
  [][] 
  []
 
 <images/Table3.PNG, id=41, 450.9347pt x 67.0003pt>
 File: images/Table3.PNG Graphic file (type png)
  <use images/Table3.PNG>
-Package pdftex.def Info: images/Table3.PNG used on input line 110.
+Package pdftex.def Info: images/Table3.PNG used on input line 112.
 (pdftex.def)             Requested size: 450.9336pt x 67.00012pt.
 
-Overfull \hbox (60.9336pt too wide) in paragraph at lines 110--111
+Overfull \hbox (60.9336pt too wide) in paragraph at lines 112--113
  [][] 
  []
 
 <images/XORgate.PNG, id=42, 414.79968pt x 80.55093pt>
 File: images/XORgate.PNG Graphic file (type png)
  <use images/XORgate.PNG>
-Package pdftex.def Info: images/XORgate.PNG used on input line 117.
+Package pdftex.def Info: images/XORgate.PNG used on input line 119.
 (pdftex.def)             Requested size: 414.79868pt x 80.55074pt.
 
-Overfull \hbox (24.79868pt too wide) in paragraph at lines 117--118
+Overfull \hbox (24.79868pt too wide) in paragraph at lines 119--120
  [][] 
  []
 
@@ -807,15 +828,15 @@ Overfull \hbox (24.79868pt too wide) in paragraph at lines 117--118
 <images/Table4.PNG, id=49, 446.41782pt x 68.50594pt>
 File: images/Table4.PNG Graphic file (type png)
  <use images/Table4.PNG>
-Package pdftex.def Info: images/Table4.PNG used on input line 128.
+Package pdftex.def Info: images/Table4.PNG used on input line 130.
 (pdftex.def)             Requested size: 446.41672pt x 68.50577pt.
 
-Overfull \hbox (56.41672pt too wide) in paragraph at lines 128--129
+Overfull \hbox (56.41672pt too wide) in paragraph at lines 130--131
  [][] 
  []
 
 [9 <./images/XORgate.PNG> <./images/Table4.PNG>]
-Overfull \hbox (1.72371pt too wide) in paragraph at lines 138--139
+Overfull \hbox (1.72371pt too wide) in paragraph at lines 140--141
 []\OT1/cmr/m/n/12 Although many be-lieve that the ci-pher-text does pro-vide in
 -for-ma-tion about
  []
@@ -833,7 +854,7 @@ Missing character: There is no ; in font nullfont!
 File: images/MilsElectronic.PNG Graphic file (type png)
 
 <use images/MilsElectronic.PNG>
-Package pdftex.def Info: images/MilsElectronic.PNG used on input line 270.
+Package pdftex.def Info: images/MilsElectronic.PNG used on input line 272.
 (pdftex.def)             Requested size: 377.15813pt x 234.3123pt.
  [13] [14 <./images/MilsElectronic.PNG>]
 [15]
@@ -841,7 +862,7 @@ Chapter 2.
 <images/AES_fig1.jpg, id=82, 722.7pt x 265.74281pt>
 File: images/AES_fig1.jpg Graphic file (type jpg)
  <use images/AES_fig1.jpg>
-Package pdftex.def Info: images/AES_fig1.jpg used on input line 299.
+Package pdftex.def Info: images/AES_fig1.jpg used on input line 301.
 (pdftex.def)             Requested size: 289.07487pt x 106.29523pt.
 
 [16
@@ -850,62 +871,73 @@ Package pdftex.def Info: images/AES_fig1.jpg used on input line 299.
 <images/AES_fig2.jpg, id=89, 722.7pt x 264.23718pt>
 File: images/AES_fig2.jpg Graphic file (type jpg)
  <use images/AES_fig2.jpg>
-Package pdftex.def Info: images/AES_fig2.jpg used on input line 329.
+Package pdftex.def Info: images/AES_fig2.jpg used on input line 331.
 (pdftex.def)             Requested size: 289.07487pt x 105.693pt.
 
 <images/AES_fig3.jpg, id=90, 722.7pt x 266.49562pt>
 File: images/AES_fig3.jpg Graphic file (type jpg)
  <use images/AES_fig3.jpg>
-Package pdftex.def Info: images/AES_fig3.jpg used on input line 354.
+Package pdftex.def Info: images/AES_fig3.jpg used on input line 356.
 (pdftex.def)             Requested size: 289.07487pt x 106.59636pt.
 
-[18 <./images/AES_fig2.jpg>] [19 <./images/AES_fig3.jpg>] [20] [21] [22]
-<images/SBox.PNG, id=107, 398.99063pt x 351.56343pt>
+[18 <./images/AES_fig2.jpg>] [19 <./images/AES_fig3.jpg>] [20] [21]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ [22]
+[23] [24] <images/SBox.PNG, id=115, 398.99063pt x 351.56343pt>
 File: images/SBox.PNG Graphic file (type png)
- <use images/SBox.PNG>
-Package pdftex.def Info: images/SBox.PNG used on input line 465.
+
+<use images/SBox.PNG>
+Package pdftex.def Info: images/SBox.PNG used on input line 516.
 (pdftex.def)             Requested size: 398.98965pt x 351.56256pt.
 
-Overfull \hbox (8.98965pt too wide) in paragraph at lines 465--466
+Overfull \hbox (8.98965pt too wide) in paragraph at lines 516--517
  [][] 
  []
 
-[23] [24 <./images/SBox.PNG>] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 558--565
+[25] [26 <./images/SBox.PNG>] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 609--616
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--565
+Underfull \hbox (badness 10000) in paragraph at lines 609--616
 
  []
 
-[26] [27] [28] [29] [30] [31]
-Overfull \hbox (81.83385pt too wide) in paragraph at lines 675--675
+[28] [29] [30] [31] [32] [33]
+Overfull \hbox (81.83385pt too wide) in paragraph at lines 731--731
 []\OT1/cmr/m/n/12 learncryptography.com. \OT1/cmr/m/it/12 Fre-quency Anal-y-sis
 \OT1/cmr/m/n/12 . 2014. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : $\OT1/cmtt/m/n/12
  https : / / learncryptography .
  []
 
-[32
+
+Overfull \hbox (16.70265pt too wide) in paragraph at lines 731--731
+\OT1/cmtt/m/n/12 mathematics / numberTheory / euclidsAlgorithmAndExtendedAlgori
+th .
+ []
+
+[34
 
 ]
-Overfull \hbox (13.71162pt too wide) in paragraph at lines 675--675
+Overfull \hbox (13.71162pt too wide) in paragraph at lines 731--731
 []\OT1/cmr/m/n/12 Amish Ku-mar and Na-mita Ti-wari. \OT1/cmr/m/it/12 ef-fec-tiv
 e im-ple-men-ta-tion and avalanche
  []
 
-[33] (OTPandAES.aux)
+[35] [36] (OTPandAES.aux)
 Package logreq Info: Writing requests to 'OTPandAES.run.xml'.
 \openout1 = `OTPandAES.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18864 strings out of 493335
- 358128 string characters out of 3146586
- 754905 words of memory out of 3000000
- 22070 multiletter control sequences out of 15000+200000
- 11356 words of font info for 41 fonts, out of 3000000 for 9000
+ 18967 strings out of 493335
+ 359700 string characters out of 3146586
+ 756942 words of memory out of 3000000
+ 22156 multiletter control sequences out of 15000+200000
+ 13826 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,11n,54p,826b,995s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/miketex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/miketex/fonts/type1
@@ -917,10 +949,11 @@ mmi8.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/miketex/fonts
 cmr8.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/miketex/font
 s/type1/public/amsfonts/cm/cmsy6.pfb><E:/miketex/fonts/type1/public/amsfonts/cm
 /cmsy8.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmti12.pfb><E:/miketex/fo
-nts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on OTPandAES.pdf (34 pages, 780656 bytes).
+nts/type1/public/amsfonts/cm/cmtt12.pfb><E:/miketex/fonts/type1/public/amsfonts
+/symbols/msbm10.pfb>
+Output written on OTPandAES.pdf (37 pages, 791709 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
+ 206 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

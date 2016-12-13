@@ -2083,21 +2083,23 @@
     <bcf:citekey order="8">MilsElectronic</bcf:citekey>
     <bcf:citekey order="9">GFieldExample</bcf:citekey>
     <bcf:citekey order="10">RFiniteField</bcf:citekey>
-    <bcf:citekey order="11">KeySchedule</bcf:citekey>
-    <bcf:citekey order="12">Rijndael</bcf:citekey>
-    <bcf:citekey order="13">GaloisField</bcf:citekey>
-    <bcf:citekey order="14">SBox</bcf:citekey>
-    <bcf:citekey order="15">SBox</bcf:citekey>
-    <bcf:citekey order="16">MixColumns</bcf:citekey>
-    <bcf:citekey order="17">NoMixColumns</bcf:citekey>
-    <bcf:citekey order="18">ShannonProperties</bcf:citekey>
-    <bcf:citekey order="19">AvalancheEffect</bcf:citekey>
-    <bcf:citekey order="20">Confusion</bcf:citekey>
-    <bcf:citekey order="21">AESSelection</bcf:citekey>
-    <bcf:citekey order="22">CNSSPolicy</bcf:citekey>
-    <bcf:citekey order="23">XSL</bcf:citekey>
-    <bcf:citekey order="24">XLSRebuked</bcf:citekey>
-    <bcf:citekey order="25">CNSSPolicy</bcf:citekey>
+    <bcf:citekey order="11">EuclideanPolynomials</bcf:citekey>
+    <bcf:citekey order="12">EuclidGeneralization</bcf:citekey>
+    <bcf:citekey order="13">KeySchedule</bcf:citekey>
+    <bcf:citekey order="14">Rijndael</bcf:citekey>
+    <bcf:citekey order="15">GaloisField</bcf:citekey>
+    <bcf:citekey order="16">SBox</bcf:citekey>
+    <bcf:citekey order="17">SBox</bcf:citekey>
+    <bcf:citekey order="18">MixColumns</bcf:citekey>
+    <bcf:citekey order="19">NoMixColumns</bcf:citekey>
+    <bcf:citekey order="20">ShannonProperties</bcf:citekey>
+    <bcf:citekey order="21">AvalancheEffect</bcf:citekey>
+    <bcf:citekey order="22">Confusion</bcf:citekey>
+    <bcf:citekey order="23">AESSelection</bcf:citekey>
+    <bcf:citekey order="24">CNSSPolicy</bcf:citekey>
+    <bcf:citekey order="25">XSL</bcf:citekey>
+    <bcf:citekey order="26">XLSRebuked</bcf:citekey>
+    <bcf:citekey order="27">CNSSPolicy</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

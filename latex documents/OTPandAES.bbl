@@ -164,6 +164,46 @@
       \verb http://www.samiam.org/galois.html
       \endverb
     \endentry
+    \entry{EuclideanPolynomials}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ed108dcc47eac032241598b570b76801}{%
+           family={Keller},
+           family_i={K\bibinitperiod},
+           given={Mitch},
+           given_i={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed108dcc47eac032241598b570b76801}
+      \strng{fullhash}{ed108dcc47eac032241598b570b76801}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Finding the Greatest Common Divisor of Polynomials Over a Finite Field}
+      \field{year}{2013}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=q9lKz-cicWI
+      \endverb
+    \endentry
+    \entry{EuclidGeneralization}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8f32141f0a2f502ac1e4be38e4e54f4e}{%
+           family={Ward},
+           family_i={W\bibinitperiod},
+           given={Ken},
+           given_i={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f32141f0a2f502ac1e4be38e4e54f4e}
+      \strng{fullhash}{8f32141f0a2f502ac1e4be38e4e54f4e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Computing Both the gcd and Solving ax+by=d}
+      \field{year}{acessed 2011}
+      \verb{url}
+      \verb https://trans4mind.com/personal_development/mathematics/numberTheory/euclidsAlgorithmAndExtendedAlgorith.htm
+      \endverb
+    \endentry
     \entry{KeySchedule}{online}{}
       \name{author}{1}{}{%
         {{hash=1b5687078be2d4de890048b24591b834}{%

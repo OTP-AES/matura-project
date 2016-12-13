@@ -14,6 +14,8 @@ sorting=none]
 \setlength{\parskip}{5mm}
 \usepackage{mathtools}
 \usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{inputenc}
 \usepackage{tikz}
 \usetikzlibrary{tikzmark}
 %Are there any preferred bibliography style choices / general style requirements when it comes to the Maturaarbeit at the KSZ which I ought to implement?
@@ -375,7 +377,56 @@ In order to prevent a result that cannot be stored as a byte, all results of mul
 The multiplicative inverse of a number is defined as equalling one when multiplied with the number in question. Normally, this is not too difficult to find: The number itself can simply be taken to the power of $-1$. For example, the multiplicative inverse of $5$ is 
 $\frac{1}{5}$.
 
-In AES however, it is often necessary to find the multiplicative inverse of a byte. Furthermore, this multiplicative inverse must be found within the Rijndael field, meaning the multiplicative inverse must be found modulo the reducing polynomial.
+In AES however, it is often necessary to find the multiplicative inverse of a byte. Furthermore, this multiplicative inverse must be found within the Rijndael field, meaning the multiplicative inverse must be found modulo the reducing polynomial. To this end, the extended euclidean algorithm is used.
+
+The regular Euclidean algorithm is simply a computationally efficient method to find the greatest common divisor of two positive integers. In order to find the gcd, the Euclidean algorithm checks how many times the smaller integer goes into the larger one, leaving r over. The algorithm then checks how many times r goes into the smaller integer, continuing in this manner until $r=0$. Once this point has been reached, the last value before r=0 is the gcd.
+
+$a = k*b + r$
+
+Next, assign b to a and r to b: $a=b, b=r$
+ 
+Continue to repeat these steps until $r=0$.
+
+The regular euclidean algorithm can be applied to polynomials over a finite field, such as Rijndael's finite field, with no issues as long as the rules of the field are observed\cite{EuclideanPolynomials}.
+
+The extended Euclidean algorithm is used to compute the integers $x$ and $y$ $({x,y} \in \mathbb{Z})$ of B\'ezouts Identity, in order to fulfil the following equation:
+
+$ax+by = gcd(a,b)$
+
+The following example uses $a=240$ and $b=46$.
+
+\[ \left( \begin{array}{cccc}
+r_k & x_k & y_k & q_k \\
+240 & 1 & 0 & 1 \\
+46 & 0 & 1 & 5 \\
+10 & 1 & -5 & 4 \\
+6 & -4 & 21 & 1 \\
+4 & 5 & -26 & 1 \\
+2 & -9 & 47 & 2 \\
+0 &  &  &  \end{array} \right)\] 
+
+The starting conditions of the algorithm are always identical: $x_0=1, x_1=0$ and $y_0=0, y_1=1$. Next, the largest value of $a$ and $b$ is placed in $r_0$ (in this case 240), with the smaller value being placed in $r_1$ (in this case 46). The quotient q is how many times 46 goes into 240, namely 5 times. The remainder of 10 is then placed into the next spot in the $r_k$ column. Now, $x$ and $y$ can be computed:
+$x_2=x_0-x_1*q_1 \Rightarrow 1=1-0*5$
+
+$y_2=y_0-y_1*q_1 \Rightarrow -5=0-1*5$
+
+This can be used to calculate all $x_k$ and $y_k$ values\cite{EuclidGeneralization}:
+
+$x_k=x_{k-2}-x_{k-1}*q_{k-1}$
+
+$y_k=y_{k-2}-y_{k-1}*q_{k-1}$
+
+All columns are then filled using this method until a value in the $r_k$ column reaches 0. At this point, the values in the row above the 0 are the answers to the equation $ax+by = gcd(a,b)$.
+
+Within Rijndael’s finite field, this becomes more complicated, as the algorithm must be applied within a finite field which employs a reducing polynomial, as well as being applied to polynomials instead of integers.
+
+Since the reducing polynomial is $x^8+x^4+x^3+x+1$, the equation that must be solved to find the multiplicative inverse of the polynomial $p$ goes as follows:
+
+$a*p+b*(x^8+x^4+x^3+x+1) = 1 = gcd(p, x^8+x^4+x^3+x+1)$
+
+All operations within the field are performed modulo the reducing polynomial, meaning that the gcd of the reducing polynomial and any other polynomial is always equal to one. Furthermore, $b*( x^8+x^4+x^3+x+1) = 0$.
+
+In order to find the multiplicative inverse of $p$, namely $a$, the extended euclidean algorithm can be applied. As always, it is of great importance that the rules of the field are observed.
 
 \subsubsection{Subkey generation (KEYEXPANSIONS)}
 As can be seen in the high-level explanation, AES requires 11 128-bit subkeys (also referred to as round keys); one for the initial XOR operation, and then one for each of the 10 rounds. These subkeys are derived from the main key using the "Rijndael key schedule" \cite{KeySchedule}.

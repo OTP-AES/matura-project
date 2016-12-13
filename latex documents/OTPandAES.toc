@@ -40,34 +40,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.2.2}Finding the multiplicative inverse using the extended euclidean algorithm}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.3}Subkey generation (KEYEXPANSIONS)}{20}
+\contentsline {subsubsection}{\numberline {2.2.2.3}Subkey generation (KEYEXPANSIONS)}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.4}Substitution using lookup table (SUBBYTES)}{23}
+\contentsline {subsubsection}{\numberline {2.2.2.4}Substitution using lookup table (SUBBYTES)}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.5}Transposition (SHIFTROWS)}{25}
+\contentsline {subsubsection}{\numberline {2.2.2.5}Transposition (SHIFTROWS)}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.6}Substitution using formula (MIXCOLUMNS)}{25}
+\contentsline {subsubsection}{\numberline {2.2.2.6}Substitution using formula (MIXCOLUMNS)}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.7}Round-closing XOR operation (ADDROUNDKEY)}{27}
+\contentsline {subsubsection}{\numberline {2.2.2.7}Round-closing XOR operation (ADDROUNDKEY)}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Decryption}{27}
+\contentsline {section}{\numberline {2.3}Decryption}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Initial inverse XOR operation}{27}
+\contentsline {subsection}{\numberline {2.3.1}Initial inverse XOR operation}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Rounds}{27}
+\contentsline {subsection}{\numberline {2.3.2}Rounds}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.1}INV. SHIFTROWS}{27}
+\contentsline {subsubsection}{\numberline {2.3.2.1}INV. SHIFTROWS}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.2}INV. SUBBYTES}{28}
+\contentsline {subsubsection}{\numberline {2.3.2.2}INV. SUBBYTES}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Fulfilment of Shannon's properties}{28}
+\contentsline {subsubsection}{\numberline {2.3.2.3}INV. ADDROUNDKEY}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Diffusion}{29}
+\contentsline {section}{\numberline {2.4}Fulfilment of Shannon's properties}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Confusion}{29}
+\contentsline {subsection}{\numberline {2.4.1}Diffusion}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Problems with AES}{30}
+\contentsline {subsection}{\numberline {2.4.2}Confusion}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Overconfidence and over-reliance}{30}
+\contentsline {section}{\numberline {2.5}Problems with AES}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Keeping of a shared secret}{30}
+\contentsline {subsection}{\numberline {2.5.1}Overconfidence and over-reliance}{32}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.2}Keeping of a shared secret}{33}
