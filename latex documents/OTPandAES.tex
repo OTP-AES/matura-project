@@ -581,9 +581,11 @@ a_{3,3} & a_{3,0} & a_{3,1} & a_{3,2}\end{array} \right)
 \subsubsection{Substitution using formula (MIXCOLUMNS)}
 The MixColumns step replaces each byte in the state with a different byte, dependent on all the bytes of that same column. Once again, it is important to note that all multiplications are performed within Rijndael's finite field.
 
-In the MixColumns step, each column (and crucially not each individual byte) is treated as a polynomial in Rijndael's finite field.
+In the MixColumns step, each column (and crucially not each individual byte) is treated as a polynomial in Rijndael's finite field. However, the reducing polynomial $x^4+1$ is used instead of $x^8+x^4+x^3+x+1$, as the column (which contains four values) will be represented as a third-order polynomial\cite{Rijndael}.
 
-MixColumns can be performed by multiplying the column (treated as a vector) with a circulant (meaning that each row of the matrix is identical to the one above it, except that the values are offset by 1 to the right) MDS ("maximum distance separable", a representation of a function known to have useful properties in cryptography) Matrix \cite{MixColumns}.
+They are then multiplied, modulo the reducing polynomial, with a fixed polynomial $c(x)=03*x^3+01*x^2+01*x+02$. This process can also be shown by treating the column as a vector, and multiplying it with a special matrix:
+
+The column (treated as a vector) is multiplied with a circulant (meaning that each row of the matrix is identical to the one above it, except that the values are offset by 1 to the right) MDS ("maximum distance separable", a representation of a function known to have useful properties in cryptography) Matrix \cite{MixColumns}.
 
 It is very important to note that the values of the cyclical MDS matrix are not regular numbers, but actually represent hexadecimal bytes (for example, $03 = 11$, which is then padded with zeroes until it possesses 8 values, making it 00000011. This is permissible in Rijndael's finite field, as $11 = x+1 = 00000011$)
 
@@ -623,6 +625,27 @@ Finally, the state is added to the round's unique round key using modular additi
 Just like encryption, decryption also begins with key generation. Because the algorithm used is exactly the same as in encryption, the same round keys will once again be generated using the same master key that was already used for encryption. While each decryption round contains the inverses of the steps used in encryption, it is important to note that the order in which these steps appear in the rounds is not identical to the order in which their non-inversed counterparts appear in encryption.
 
 \subsection{Initial inverse XOR operation}
+Since all steps in decryption are the exact inverse of the encryption steps, the last round key used in encryption is used first in decryption\cite{RoundKeyInverse}. The inverse of the XOR operation is, fortunately, also simply the XOR operation. The following example demonstrates how adding the key twice yields the same state as before having added the key.
+
+\[
+\left( \begin{array}{cccc}
+1 & 0 & 1 & 1 \\
++ & + & + & + \\
+0 & 1 & 1 & 0 \\
+= & = & = & = \\
+1 & 1 & 0 & 1 \\
+\end{array} \right)
+\]
+
+\[
+\left( \begin{array}{cccc}
+1 & 1 & 0 & 1 \\
++ & + & + & + \\
+0 & 1 & 1 & 0 \\
+= & = & = & = \\
+1 & 0 & 1 & 1 \\
+\end{array} \right)
+\]
 
 \subsection{Rounds}
 Just like in encryption, decryption consists of on initial inverse add round key step, followed by ten rounds, with the last round missing the inverse MixColumns step.
@@ -694,7 +717,57 @@ b_7\end{array} \right)
 Finally, the multiplicative inverse of the byte $[x_7;x_6...x_0]$ is found in Rijndael's finite field. This process is applied until all 16 bytes of the state have been replaced.
 
 \subsubsection{INV. ADDROUNDKEY}
+Since the inverse of an XOR addition is also the XOR addition (see 2.3.1), this step simply consists of adding the inverse round key to the state. For example, round key 9 would be the first round key to be added to the state, since round key 10 will already have been used in the initial inverse XOR operation\cite{RoundKeyInverse}.
 
+\subsubsection{INV. MIXCOLUMNS}
+The final step of each decryption round, except the last decryption round, is the Inv. MixColumns operation. The Inv. MicColumns step is performed by multiplying every column of the state with a specific polynomial d(x)\cite{Rijndael}. Once again, it is important to note that each column is seen as a third-order polynomial in Rijndaels finite field, with the reducing polynomial $x^4+1$ (see 2.2.2.6).
+
+$d(x)$ has to be the inverse of the fixed polynomial used in the regular MixColumns step, $c(x)$, so it can be calculated in the following way:
+
+\noindent
+$c(x)*d(x)=01 \\
+(03*x^3+01*x^2+01*x+02)*d(x)=01 \\
+\Rightarrow d(x)=0B*x^3+0D*x^2+09*x+0E$
+
+Just like the regular MixColumns operation, the Inv. MiColumns operation can also be performed by viewing the column to be replaced as a vector, and then multiplying it with a special matrix. This matrix is also the inverse of the matrix used in the regular MixColumns step.
+
+\[ \left( \begin{array}{cccc}
+0E & 0B & 0D & 09 \\
+09 & 0E & 0B & 0D \\
+0D & 09 & 0E & 0B \\
+0B & 0D & 09 & 0E\end{array} \right)
+*
+\left( \begin{array}{cccc}
+02 & 03 & 01 & 01 \\
+01 & 02 & 03 & 01 \\
+01 & 01 & 02 & 03 \\
+03 & 01 & 01 & 02\end{array} \right)
+=
+\left( \begin{array}{cccc}
+01 & 00 & 00 & 00 \\
+00 & 01 & 00 & 00 \\
+00 & 00 & 01 & 00 \\
+00 & 00 & 00 & 01\end{array} \right)
+\]
+
+\[ \left( \begin{array}{cccc}
+0E & 0B & 0D & 09 \\
+09 & 0E & 0B & 0D \\
+0D & 09 & 0E & 0B \\
+0B & 0D & 09 & 0E\end{array} \right)
+*
+\left( \begin{array}{c}
+s_0 \\
+s_1 \\
+s_2 \\
+s_3\end{array} \right)
+=
+\left( \begin{array}{c}
+a_0 \\
+a_1 \\
+a_2 \\
+a_3\end{array} \right)
+\]
 
 \section{Fulfilment of Shannon's properties}
 In 1945, Claude Shannon wrote a report that would become central to cryptography. This report was titled "A Mathematical Theory of Cryptography", and it identified two properties necessary to ensure the security of any cipher\cite{ShannonProperties}. These were termed diffusion and confusion. These two properties, if fulfilled, serve to make methods of cryptanalysis, in particular statistical analysis, less effective.

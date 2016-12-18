@@ -329,6 +329,26 @@
       \verb http://crypto.stackexchange.com/questions/1346/why-is-mixcolumns-omitted-from-the-last-round-of-aes
       \endverb
     \endentry
+    \entry{RoundKeyInverse}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c1f2ec4a536dc61d8042a1237e1f701c}{%
+           family={Ebermann},
+           family_i={E\bibinitperiod},
+           given={Paulo},
+           given_i={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{c1f2ec4a536dc61d8042a1237e1f701c}
+      \strng{fullhash}{c1f2ec4a536dc61d8042a1237e1f701c}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{In which order are the round keys used during AES decryption?}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://crypto.stackexchange.com/questions/2712/in-which-order-are-the-round-keys-used-during-aes-decryption
+      \endverb
+    \endentry
     \entry{ShannonProperties}{article}{}
       \name{author}{1}{}{%
         {{hash=ca26f443443e1379e657ca796d56ecc9}{%

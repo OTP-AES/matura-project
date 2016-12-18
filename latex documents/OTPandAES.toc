@@ -54,22 +54,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Initial inverse XOR operation}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Rounds}{29}
+\contentsline {subsection}{\numberline {2.3.2}Rounds}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.1}INV. SHIFTROWS}{29}
+\contentsline {subsubsection}{\numberline {2.3.2.1}INV. SHIFTROWS}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.2}INV. SUBBYTES}{30}
+\contentsline {subsubsection}{\numberline {2.3.2.2}INV. SUBBYTES}{31}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.2.3}INV. ADDROUNDKEY}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Fulfilment of Shannon's properties}{31}
+\contentsline {subsubsection}{\numberline {2.3.2.4}INV. MIXCOLUMNS}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Diffusion}{31}
+\contentsline {section}{\numberline {2.4}Fulfilment of Shannon's properties}{33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Confusion}{32}
+\contentsline {subsection}{\numberline {2.4.1}Diffusion}{33}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Problems with AES}{32}
+\contentsline {subsection}{\numberline {2.4.2}Confusion}{33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Overconfidence and over-reliance}{32}
+\contentsline {section}{\numberline {2.5}Problems with AES}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Keeping of a shared secret}{33}
+\contentsline {subsection}{\numberline {2.5.1}Overconfidence and over-reliance}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.2}Keeping of a shared secret}{35}

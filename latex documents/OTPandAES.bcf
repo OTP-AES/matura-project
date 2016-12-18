@@ -2090,16 +2090,20 @@
     <bcf:citekey order="15">GaloisField</bcf:citekey>
     <bcf:citekey order="16">SBox</bcf:citekey>
     <bcf:citekey order="17">SBox</bcf:citekey>
-    <bcf:citekey order="18">MixColumns</bcf:citekey>
-    <bcf:citekey order="19">NoMixColumns</bcf:citekey>
-    <bcf:citekey order="20">ShannonProperties</bcf:citekey>
-    <bcf:citekey order="21">AvalancheEffect</bcf:citekey>
-    <bcf:citekey order="22">Confusion</bcf:citekey>
-    <bcf:citekey order="23">AESSelection</bcf:citekey>
-    <bcf:citekey order="24">CNSSPolicy</bcf:citekey>
-    <bcf:citekey order="25">XSL</bcf:citekey>
-    <bcf:citekey order="26">XLSRebuked</bcf:citekey>
-    <bcf:citekey order="27">CNSSPolicy</bcf:citekey>
+    <bcf:citekey order="18">Rijndael</bcf:citekey>
+    <bcf:citekey order="19">MixColumns</bcf:citekey>
+    <bcf:citekey order="20">NoMixColumns</bcf:citekey>
+    <bcf:citekey order="21">RoundKeyInverse</bcf:citekey>
+    <bcf:citekey order="22">RoundKeyInverse</bcf:citekey>
+    <bcf:citekey order="23">Rijndael</bcf:citekey>
+    <bcf:citekey order="24">ShannonProperties</bcf:citekey>
+    <bcf:citekey order="25">AvalancheEffect</bcf:citekey>
+    <bcf:citekey order="26">Confusion</bcf:citekey>
+    <bcf:citekey order="27">AESSelection</bcf:citekey>
+    <bcf:citekey order="28">CNSSPolicy</bcf:citekey>
+    <bcf:citekey order="29">XSL</bcf:citekey>
+    <bcf:citekey order="30">XLSRebuked</bcf:citekey>
+    <bcf:citekey order="31">CNSSPolicy</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
