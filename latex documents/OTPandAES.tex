@@ -12,9 +12,20 @@ sorting=none]
 {biblatex}							
 \addbibresource{mybib.bib}
 \setlength{\parskip}{5mm}
+\setlength\parindent{0pt}
 \usepackage{mathtools}
-\usepackage{amsthm}
-\usepackage{amsfonts}
+\usepackage{amsfonts, amsmath, amsthm, amssymb}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lemma}[thm]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{defin}[thm]{Definition}
+
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{ex}[thm]{Example}
+
 \usepackage{inputenc}
 \usepackage{tikz}
 \usetikzlibrary{tikzmark}
@@ -133,7 +144,13 @@ Since the ciphertext was created through the modular addition of the plaintext a
 Now, the message's journey is complete, having passed from plaintext into ciphertext, being transported to its intended recipient in the form of ciphertext, and finally being decoded and read by its recipient. 
 
 \section{Perfect secrecy: Information-theoretical security}
-An important characteristic of OTP is that the ciphertext convey no information at all in regards to the plaintext; this means that it is not possible to garner any information about the key nor the plaintext if one is in possession of the ciphertext \cite{PerfectSecrecy} \cite{HandbookOfAppliedCryptography}.
+An important characteristic of perfect secrecy is that the ciphertext conveys no information at all in regards to the plaintext; this means that it is not possible to garner any information about the key nor the plaintext if one is in possession of the ciphertext \cite{PerfectSecrecy} \cite{HandbookOfAppliedCryptography}. In probability theory, where $C$ contains all possible ciphertexts and $M$ contains all possible messages:
+
+$for c \in C: \\
+\forall m_1, m_2 \in M: \\
+P(E_k(m_1)=c) = P(E_k(m_2)=c)$
+
+$E_k$ is a defined as a cipher using the key $k$ if there exists a function $D_k(m)=c$, also using the key $k$, which decrypts each ciphertext to a unique message.
 
 From this, two other important characteristics of a cryptographical system with perfect secrecy can be derived. Firstly, perfect message indistinguishability. This means that, even if you are provided with multiple different plaintexts and one ciphertext, it is impossible to assign any one plaintext to the provided ciphertext. Secondly, if the key is the same length as the plaintext (as is the case in OTP), then there exists a key for every possible encryption from plaintext to ciphertext. This means that any plaintext can be converted to any ciphertext, making it impossible to determine the key without access to both the plaintext and the ciphertext. This is referred to as perfect key ambiguity.		%This paragraph was difficult for me to summarize well.
 
@@ -178,29 +195,56 @@ Although many believe that the ciphertext does provide information about the pla
 % difficult to avoid probability theory. Without probability theory you don't
 % have a understanding of what it means for a key to be ``random''.
 
-First, the properties and contents of the sets and variables used in this proof must be clarified:
+In 1949, Shannon proved that OTP did, in fact, posess perfect secrecy\cite{ShannonOTP}. First, the properties and contents of the sets and variables used in this proof must be clarified:
 
--Let $M$ contain all possible messages; meaning all possible bit sequences.
+\begin{defin}
+Let $M$ contain all possible messages; meaning all possible bit sequences.
+\end{defin}
 
--Let $m$ be the plaintext. $m \in M$.
+\begin{defin}
+Let $m$ be the plaintext. $m \in M$.
+\end{defin}
 
--Let $c$ be the ciphertext.
+\begin{defin}
+Let $c$ be the ciphertext.
+\end{defin}
 
--Let $K$ contain all possible keys.
+\begin{defin}
+Let $K$ contain all possible keys.
+\end{defin}
 
--Let $k$ be the key. $k \in K$.
+\begin{defin}
+Let $k$ be the key. $k \in K$.
+\end{defin}
 
--Let the function ${E_k}(m)=c$. The function $E$ is the One Time Pads encryption process using the key k, which outputs the ciphertext $c$ using the plaintext $m$.
+\begin{defin}
+Let the function ${E_k}(m)=c$. The function $E$ is an encryption process using the key k, which outputs the ciphertext $c$ using the plaintext $m$.
+\end{defin}
 
--Let $m^{*}$ be a possible message, selected at random.
+\begin{defin}
+Let $m^{*}$ be a possible message, selected at random using a uniform distribution:
+$\forall m^{*} \in M: P(m^{*})=\frac{1}{\lvert M \rvert}$
+\end{defin}
 
--Let $k^{*}$ be a possible key, selected at random.
+\begin{defin}
+Let $k^{*}$ be a possible key, selected at random using a uniform distribution.
+$\forall k^{*} \in M: P(k^{*})=\frac{1}{\lvert K \rvert}$
+\end{defin}
 
-So, in order for perfect secrecy to apply, then:
+\begin{lemma}
+In order for perfect secrecy to apply, then:
+
 $P( m=m^{*} \mid E(m)=c ) = P( m=m^{*} )$
 must be true.
 
+\begin{rem}
 This is because, if the probability that the actual plaintext $m$ is equal to some other message $m^{*}$, given the ciphertext $c$, is equal to the probability that $m=m^{*}$, then the ciphertext $c$ provides no additional information to the attacker. The ciphertext not providing any information about the plaintext nor the key is the definition of perfect secrecy; therefore, if the above equation can be proven to be true in the case of OTP, then the perfect secrecy of OTP will also have been proven.
+\end{rem}
+\end{lemma}
+
+\begin{thm}
+$P( m=m^{*} \mid E(m)=c ) = P( m=m^{*} )$ is true in the case of OTP.
+\end{thm}
 
 \begin{proof}
 Per the definition of conditional probability, 
@@ -209,10 +253,12 @@ $P(m=m^{*} \mid {E_k}(m)=c) = \frac{P(m=m^{*} \cap {E_k}(m)=c)}{P({E_k}(m)=c)}$.
 
 First, the computation of $P({E_k}(m)=c)$:
 
+\begin{rem}
 The distribution of the messages is not uniform, as it must be assumed that a potential attacker has some form of knowledge about the nature of the message. Therefore, each message is not equally likely, meaning that 
 $P(m=m^{*}) \neq \frac{1}{\lvert M \rvert}$. $P({E_k}(m)=c)$ can also be taken as $P(k=k^{*})$, because the probability of the function encrypting a certain message into a certain ciphertext hinges solely on the key. As the key is randomly generated, each possible key is equally likely. Therefore, 
 $P(k=k^{*}) = P({E_k}(m)=c) =  \frac{1}{\lvert K \rvert} $.
 The mathematical computation of $P({E_k}(m)=c)$ reaffirms this conclusion.
+\end{rem}
 
 In order to find the probability that the given key $k$ maps the given message $m$ to the given ciphertext $c$, all probabilities that a certain key-message pair, $k_i$ and $m_i$, encrypt to the given ciphertext $c$, are summed up. This summation needs to be divided by the probability space. Because each key is applied to each message, the probability space is $\lvert M \rvert*\lvert K \rvert$.
 
@@ -221,6 +267,7 @@ $k_0$\tikzmark{a} & \tikzmark{z}$k_1$\tikzmark{b} & ... & $k_{\lvert K \rvert}$\
  & & & \\
 $m_0$\tikzmark{d} & \tikzmark{e}$m_1$\tikzmark{y} & ... & \tikzmark{f}$m_{\lvert M \rvert}$ \\
 \end{tabular}
+
 
 \begin{tikzpicture}[overlay, remember picture, yshift=.25\baselineskip, shorten >=.5pt, shorten <=.5pt]
 \draw [->] ({pic cs:a}) [bend left] to ({pic cs:d});
@@ -245,7 +292,9 @@ $\sum\limits_{m_i \in M} 1
 
 $\Rightarrow P({E_k}(m)=c) = \frac{\lvert M \rvert}{\lvert M \rvert*\lvert K \rvert} = \frac{1}{\lvert K \rvert}$
 
+\begin{rem}
 Note that, due to the above mentioned possibility that the attacker possesses some knowledge of the message, $P(m=m^{*}) \neq \frac{1}{\lvert M \rvert}$. Therefore, $P(m=m^{*})$ cannot be further simplified. In order to find $P(m=m^{*} \cap {E_k}(m)=c)$, the definition of conditional probability as well as the property $P({E_k}(m)=c) = \frac{1}{\lvert K \rvert}$ are used.
+\end{rem}
 
 $P(m=m^{*} \cap {E_k}(m)=c) = \frac{P(m=m^{*})}{\lvert K \rvert}$
 
@@ -255,10 +304,12 @@ $\dfrac{\dfrac{P(m=m^{*})}{\lvert K \rvert}}{\frac{1}{\lvert K \rvert}} = P(m=m^
 = RHS$
 \end{proof}
 
-\subsection{Why can only OTP achieve perfect secrecy?}
+\subsection{Consequences of the proof}
 %Not sure if this information warrants its own section or if I should merge it with the above one
 
-From the above proof, it can be concluded that, in order for the elimination of any possible plaintext to be impossible (rendering a brute-force attack impossible), the key must possess at least the same length as the plaintext. Also, the individual bits of the must not be dependant on one another. These conditions are only fulfilled by OTP.  
+%From the above proof, it can be concluded that, in order for the elimination of any possible %plaintext to be impossible (rendering a brute-force attack impossible), the key must possess %at least the same length as the plaintext. Also, the individual bits of the must not be %dependant on one another. These conditions are only fulfilled by OTP.
+
+The most important conclusion which Shannon drew from his proof was that, in order for a cipher to posess perfect secrecy, $\lvert K \rvert \geqslant \lvert M \rvert$\cite{ShannonOTP}. This means that the key needs to be at least as long as the message. Note that using a key as long or longer than the message does not, however, constitute guaranteed perfect secrecy: It is merely an absolute necessity.
 
 \section{Issues with OTP}
 %I had just one sentence here, but felt it appeared strange to just have one sentence and opted to leave it blank.
