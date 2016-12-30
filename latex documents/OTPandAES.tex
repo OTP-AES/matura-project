@@ -356,7 +356,7 @@ Viewed from a high level, the AES algorithm consists of one XOR step, followed b
 \section{Encryption}
 Each round possesses 4 steps, explained in detail below. However, before those operations can be understood, some basic terminology must first be clarified.
 
-The "state" is the matrix containing the information which is manipulated throughout the encryption process. As such, the state begins its journey through AES as the block of plaintext which is to be encrypted, and ends it as a block of ciphertext. The state is represented in a 4x4 column-major order matrix; this means that, in a block containing 16 bytes, the standard size of an AES plaintext block as well as the standard size of an AES key $(16 bytes * 8 = 128 bits)$.
+The "state" is the matrix containing the information which is manipulated throughout the encryption process. As such, the state begins its journey through AES as the block of plaintext which is to be encrypted, and ends it as a block of ciphertext. The state is represented in a $4 \times 4$ column-major order matrix, meaning that the bytes are counted from top to bottom. In a block containing 16 bytes, the standard size of an AES plaintext block as well as the standard size of  an AES key is $(16 bytes \cdot 8 = 128 bits)$.
 
 \[ \left( \begin{array}{cccc}
 a_0 & a_4 & a_8 & a_{12} \\
@@ -364,7 +364,7 @@ a_1 & a_5 & a_9 & a_{13} \\
 a_2 & a_6 & a_{10} & a_{14} \\
 a_3 & a_7 & a_{11} & a_{15}\end{array} \right)\] 
 
-It is important to note that, because the state is a column-major order matrix, the bytes are counted from "top to bottom"; that is, in the direction of the columns, and not in the direction of the rows. This shows how the bytes from the plaintext are ordered into the state. However, in order to clarify the manipulations performed throughout the 10 rounds of AES, it is more beneficial to note the starting position each byte takes in the subscript instead of noting its chronological order in the plaintext block.
+However, in order to clarify the manipulations performed throughout the 10 rounds of AES, it is more beneficial to note the starting position each byte takes in the subscript instead of noting its chronological order in the plaintext block.
 
 \[ \left( \begin{array}{cccc}
 a_{0,0} & a_{0,1} & a_{0,2} & a_{0,3} \\
@@ -372,7 +372,7 @@ a_{1,0} & a_{1,1} & a_{1,2} & a_{1,3} \\
 a_{2,0} & a_{2,1} & a_{2,2} & a_{2,3} \\
 a_{3,0} & a_{3,1} & a_{3,2} & a_{3,3}\end{array} \right)\] 
 
-The subkey possesses the same size as the state, and is made into a matrix in the exact same fashion; this is, of course, necessary for the successful modular addition of the bytes contained within the state and those contained within the subkey using the XOR operation.
+Each AES round key possesses the same size as the state, and is made into a matrix in the exact same fashion; this is, of course, necessary for the successful modular addition of the bytes contained within the state and those contained within the subkey using the XOR operation.
 
 
 \subsection{Initial XOR operation}
@@ -382,7 +382,7 @@ The subkey possesses the same size as the state, and is made into a matrix in th
 \includegraphics[scale=0.4]{AES_fig2.jpg}
 \end{figure}
 
-This step is identical to the XOR operation already described in the chapter regarding OTP; once again, a simple XOR gate is used to add the state with the initial XOR operations own subkey (which, crucially, is not the main key itself, but is, in fact, derived from the main key during the process of subkey generation).
+This step is identical to the XOR operation already described in the chapter regarding OTP. The XOR operation simply represents an addition modulo 2, and is denoted using the symbol $\bigoplus$. Once again, a simple XOR gate is used to add the state with the initial XOR operations own round key, which is identical to the master key (see 2.2.2.3).
 
 \[ 
 \left( \begin{array}{cccc}
@@ -390,7 +390,7 @@ a_{0,0} & a_{0,1} & a_{0,2} & a_{0,3} \\
 a_{1,0} & a_{1,1} & a_{1,2} & a_{1,3} \\
 a_{2,0} & a_{2,1} & a_{2,2} & a_{2,3} \\
 a_{3,0} & a_{3,1} & a_{3,2} & a_{3,3}\end{array} \right)
-+
+\bigoplus
 \left( \begin{array}{cccc}
 k_{0,0} & k_{0,1} & k_{0,2} & k_{0,3} \\
 k_{1,0} & k_{1,1} & k_{1,2} & k_{1,3} \\
@@ -410,11 +410,13 @@ Here, each byte of the state is combined with the byte of the subkey which posse
 \subsubsection{Galois Field $GF(2^8)$ arithmetic}
 Before the math behind AES can be fully understood, the Galois Field $GF(2^8)$ must first be more closely examined. This field contains only 256 values, ranging from 0-255; the range which can be stored in a byte. Secondly, all bytes are written using hexadecimal notation. Most importantly, all binary strings are represented as polynomials; this is best illustrated through an example \cite{GFieldExample}.
 
-$11001000 = x^7+x^6+x^3$
+$11001000 = 1x^7+1x^6+0x^4+1x^3+0x^2+0x^1+0x^0 = x^7+x^6+x^3 $ 
 
 $10000111 = x^7+x^2+x+1$
 
 Addition is made rather simple through this; keeping in mind that, since addition is an XOR operation, two identical factors neutralize each other $(x^n+x^n = 0)$.
+
+Therefore, a byte can be written as a polynomial, in binary or in hexadecimal\cite{BinHex}.
 
 $(x^7+x^6+x^3)+(x^7+x^2+x+1) = x^6+x^3+x^2+x+1 = 01001111 = 4f$
 
@@ -425,14 +427,13 @@ The issue with multiplying two bytes with each other within the finite field is 
 In order to prevent a result that cannot be stored as a byte, all results of multiplications between bytes are then taken modulo the reducing polynomial. This means that, if the degree of a resulting polynomial exceeds 7, an XOR division using the reducing polynomial must be performed.
 
 \subsubsection{Finding the multiplicative inverse using the extended euclidean algorithm}
-The multiplicative inverse of a number is defined as equalling one when multiplied with the number in question. Normally, this is not too difficult to find: The number itself can simply be taken to the power of $-1$. For example, the multiplicative inverse of $5$ is 
-$\frac{1}{5}$.
+The multiplicative inverse of a number is defined as equalling one when multiplied with the number in question. The multiplicative inverse of $a$ is $a^{-1}$, as $a^{-1} \cdot a = 1$. Taking a variable to the power of $-1$ is defined as finding the multiplicative inverse.
 
-In AES however, it is often necessary to find the multiplicative inverse of a byte. Furthermore, this multiplicative inverse must be found within the Rijndael field, meaning the multiplicative inverse must be found modulo the reducing polynomial. To this end, the extended euclidean algorithm is used.
+In AES, it is often necessary to find the multiplicative inverse of a byte. Furthermore, this multiplicative inverse must be found within the Rijndael field, meaning the multiplicative inverse must be found modulo the reducing polynomial. To this end, the extended euclidean algorithm is used.
 
 The regular Euclidean algorithm is simply a computationally efficient method to find the greatest common divisor of two positive integers. In order to find the gcd, the Euclidean algorithm checks how many times the smaller integer goes into the larger one, leaving r over. The algorithm then checks how many times r goes into the smaller integer, continuing in this manner until $r=0$. Once this point has been reached, the last value before r=0 is the gcd.
 
-$a = k*b + r$
+$a = k \cdot b + r$
 
 Next, assign b to a and r to b: $a=b, b=r$
  
@@ -440,13 +441,14 @@ Continue to repeat these steps until $r=0$.
 
 The regular euclidean algorithm can be applied to polynomials over a finite field, such as Rijndael's finite field, with no issues as long as the rules of the field are observed\cite{EuclideanPolynomials}.
 
-The extended Euclidean algorithm is used to compute the integers $x$ and $y$ $({x,y} \in \mathbb{Z})$ of B\'ezouts Identity, in order to fulfil the following equation:
+The extended Euclidean algorithm is used to compute the integers $x$ and $y$ $({x,y} \in \mathbb{Z})$ of B\'ezouts Identity\cite{Bezout}, in order to fulfil the following equation:
 
 $ax+by = gcd(a,b)$
 
 The following example uses $a=240$ and $b=46$.
 
-\[ \left( \begin{array}{cccc}
+\begin{center}
+$\begin{vmatrix}
 r_k & x_k & y_k & q_k \\
 240 & 1 & 0 & 1 \\
 46 & 0 & 1 & 5 \\
@@ -454,18 +456,19 @@ r_k & x_k & y_k & q_k \\
 6 & -4 & 21 & 1 \\
 4 & 5 & -26 & 1 \\
 2 & -9 & 47 & 2 \\
-0 &  &  &  \end{array} \right)\] 
+0 &  &  &  \end{vmatrix}$
+\end{center}
 
 The starting conditions of the algorithm are always identical: $x_0=1, x_1=0$ and $y_0=0, y_1=1$. Next, the largest value of $a$ and $b$ is placed in $r_0$ (in this case 240), with the smaller value being placed in $r_1$ (in this case 46). The quotient q is how many times 46 goes into 240, namely 5 times. The remainder of 10 is then placed into the next spot in the $r_k$ column. Now, $x$ and $y$ can be computed:
-$x_2=x_0-x_1*q_1 \Rightarrow 1=1-0*5$
+$x_2=x_0-x_1 \cdot q_1 \Rightarrow 1=1-0 \cdot 5$
 
-$y_2=y_0-y_1*q_1 \Rightarrow -5=0-1*5$
+$y_2=y_0-y_1 \cdot q_1 \Rightarrow -5=0-1 \cdot 5$
 
 This can be used to calculate all $x_k$ and $y_k$ values\cite{EuclidGeneralization}:
 
-$x_k=x_{k-2}-x_{k-1}*q_{k-1}$
+$x_k=x_{k-2}-x_{k-1} \cdot q_{k-1}$
 
-$y_k=y_{k-2}-y_{k-1}*q_{k-1}$
+$y_k=y_{k-2}-y_{k-1} \cdot q_{k-1}$
 
 All columns are then filled using this method until a value in the $r_k$ column reaches 0. At this point, the values in the row above the 0 are the answers to the equation $ax+by = gcd(a,b)$.
 
@@ -473,13 +476,17 @@ Within Rijndael’s finite field, this becomes more complicated, as the algorith
 
 Since the reducing polynomial is $x^8+x^4+x^3+x+1$, the equation that must be solved to find the multiplicative inverse of the polynomial $p$ goes as follows:
 
-$a*p+b*(x^8+x^4+x^3+x+1) = 1 = gcd(p, x^8+x^4+x^3+x+1)$
+$a \cdot p+b \cdot (x^8+x^4+x^3+x+1) = 1 = gcd(p, x^8+x^4+x^3+x+1)$
 
-All operations within the field are performed modulo the reducing polynomial, meaning that the gcd of the reducing polynomial and any other polynomial is always equal to one. Furthermore, $b*( x^8+x^4+x^3+x+1) = 0$.
+$b \cdot ( x^8+x^4+x^3+x+1) = 0$
+
+$\Rightarrow a \cdot p = 1$
+
+All operations within the field are performed modulo the reducing polynomial, meaning that the gcd of the reducing polynomial and any other polynomial is always equal to one.
 
 In order to find the multiplicative inverse of $p$, namely $a$, the extended euclidean algorithm can be applied. As always, it is of great importance that the rules of the field are observed.
 
-\subsubsection{Subkey generation (KEYEXPANSIONS)}
+\subsubsection{Round key generation (KEYEXPANSIONS)}
 As can be seen in the high-level explanation, AES requires 11 128-bit subkeys (also referred to as round keys); one for the initial XOR operation, and then one for each of the 10 rounds. These subkeys are derived from the main key using the "Rijndael key schedule" \cite{KeySchedule}.
 
 
@@ -491,7 +498,7 @@ k_1 & k_5 & k_9 & k_{13} \\
 k_2 & k_6 & k_{10} & k_{14} \\
 k_3 & k_7 & k_{11} & k_{15}\end{array} \right)\] 
 
-Each subsequent round key must be generated through key expansion.
+Each subsequent round key must be generated through key expansion, using the master key as a template for the generation of the first round key.
 
 The first four bytes of the 16-byte round key, which are contained within the first column of the round key matrix, are generated first. To this end, the last, as in the rightmost, column is stored in a temporary variable, for example x. The so-called RotWord operation is then employed, wherein each byte is transposed one step upwards.
 
@@ -501,7 +508,7 @@ x_0 \\
 x_1 \\
 x_2 \\
 x_3\end{array} \right)
-\xrightarrow{RotWord}
+\xrightarrow{\text{RotWord}}
 \left( \begin{array}{c}
 x_1 \\
 x_2 \\
@@ -517,7 +524,7 @@ x_1 \\
 x_2 \\
 x_3 \\
 x_0\end{array} \right)
-\xrightarrow{SubBytes}
+\xrightarrow{\text{SubBytes}}
 \left( \begin{array}{c}
 b_0 \\
 b_1 \\
@@ -531,15 +538,17 @@ k_2 \\
 k_3\end{array} \right)
 \]
 
-The final step to obtain the first four bytes of the round key is referred to as the RCon, meaning round constant \cite[p. 15]{Rijndael} step. In this step, a vector dependent on the iteration, the chronological number of the round key being generated starting with one, is added using an XOR gate. These vectors are constant for every application of AES; for example, the RCon vector obtained using an iteration of eight will always be used in the process of obtaining the first four bytes of the eighth round key.
+The final step to obtain the first four bytes of the round key is referred to as the RCon, meaning round constant step\cite[p. 15]{Rijndael}. In this step, a vector dependent on the iteration, the chronological number of the round key being generated starting with one, is added using an XOR gate. These vectors are constant for every application of AES; for example, the RCon vector obtained using an iteration of eight will always be used in the process of obtaining the first four bytes of the eighth round key.
 
-The RCon vector is calculated through the following formula, with i standing for the iteration:
+The RCon vector is calculated through the following formula, with i standing for the iteration.
 
 \[ \left( \begin{array}{c}
 {02}^{i-1}\\
 00 \\
 00 \\
 00\end{array} \right) \]
+
+The bottom three values of the vetor are simply 00, in order to ensure that a vector with four values is obtained. This enables the vector to be added to the first column of the round key, which is also a vector containing four values. Therefore, the Rcon step only changes the top-most byte in the first column of the round key:
 
 As this operation takes place in Rijndael's finite field, the byte ${02} = x$, and if the RCon value possesses an order higher than 7, it must be taken modulo the reducing polynomial (see chapter 2.2.2.1). After the RCon operation is complete, the first column of the round key has been obtained.
 
@@ -551,7 +560,7 @@ r_1 & r_5=r_1+k_5 & r_9=r_5+k_9 & r_{13}=r_9+k_{13} \\
 r_2 & r_6=r_2+k_6 & r_{10}=r_6+k_{10} & r_{14}=r_{10}+k_{14} \\
 r_3 & r_7=r_3+k_7 & r_{11}=r_7+k_{11} & r_{15}=r_{11}+k_{15}\end{array} \right) \]
 
-This round key is taken as the master key for the generation of the next round key. This process is then repeated until ten new keys have been generated.
+This round key is taken as the template for the generation of the next round key. This process is then repeated until ten new keys have been generated. Since the master key was the first template used, the entire expanded key is completely dependant on the master key.
 
 \subsubsection{Substitution using lookup table (SUBBYTES)}
 The first substitution is relatively simple to perform; this is because it is a bytewise operation. This means that the data being manipulated is one single byte. In this case, the manipulation is a substitution of each byte with another byte, the substitution being determined by a lookup table, in which each individual byte is assigned another byte with which it must be swapped. The reason that a lookup table is practical is that there are only $2^8 = 256$ different possible bytes.

@@ -40,7 +40,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.2.2}Finding the multiplicative inverse using the extended euclidean algorithm}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.3}Subkey generation (KEYEXPANSIONS)}{23}
+\contentsline {subsubsection}{\numberline {2.2.2.3}Round key generation (KEYEXPANSIONS)}{23}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.2.4}Substitution using lookup table (SUBBYTES)}{25}
 \defcounter {refsection}{0}\relax 

@@ -162,6 +162,24 @@
       \verb https://www.youtube.com/watch?v=dN2pJRLRcb0
       \endverb
     \endentry
+    \entry{BinHex}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e04085838e1722d1524631b95abb15f8}{%
+           family={computerhope.com},
+           family_i={c\bibinitperiod}}}%
+      }
+      \strng{namehash}{e04085838e1722d1524631b95abb15f8}
+      \strng{fullhash}{e04085838e1722d1524631b95abb15f8}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Binary and hexadecimal conversions}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.computerhope.com/binhex.htm
+      \endverb
+    \endentry
     \entry{RFiniteField}{online}{}
       \name{author}{1}{}{%
         {{hash=1b5687078be2d4de890048b24591b834}{%
@@ -200,6 +218,26 @@
       \field{year}{2013}
       \verb{url}
       \verb https://www.youtube.com/watch?v=q9lKz-cicWI
+      \endverb
+    \endentry
+    \entry{Bezout}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5d54d442adc2a0d430f0728fd6530577}{%
+           family={Weisstein},
+           family_i={W\bibinitperiod},
+           given={Eric\bibnamedelima W.},
+           given_i={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d54d442adc2a0d430f0728fd6530577}
+      \strng{fullhash}{5d54d442adc2a0d430f0728fd6530577}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bezout's Identity}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://mathworld.wolfram.com/BezoutsIdentity.html
       \endverb
     \endentry
     \entry{EuclidGeneralization}{online}{}

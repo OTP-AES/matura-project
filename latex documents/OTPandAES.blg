@@ -2,14 +2,14 @@
 [0] Config.pm:346> INFO - Logfile is 'OTPandAES.blg'
 [33] biber-MSWIN32:290> INFO - === 
 [51] Biber.pm:351> INFO - Reading 'OTPandAES.bcf'
-[124] Biber.pm:776> INFO - Found 25 citekeys in bib section 0
-[134] Biber.pm:3493> INFO - Processing section 0
-[148] Biber.pm:3657> INFO - Looking for bibtex format file 'mybib.bib' for section 0
-[150] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
-[150] bibtex.pm:1048> INFO - Found BibTeX data source 'mybib.bib'
-[183] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[183] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[183] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
-[183] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
-[193] bbl.pm:526> INFO - Writing 'OTPandAES.bbl' with encoding 'ascii'
-[196] bbl.pm:619> INFO - Output to OTPandAES.bbl
+[137] Biber.pm:776> INFO - Found 27 citekeys in bib section 0
+[150] Biber.pm:3493> INFO - Processing section 0
+[164] Biber.pm:3657> INFO - Looking for bibtex format file 'mybib.bib' for section 0
+[167] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[168] bibtex.pm:1048> INFO - Found BibTeX data source 'mybib.bib'
+[203] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[203] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[203] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[203] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
+[219] bbl.pm:526> INFO - Writing 'OTPandAES.bbl' with encoding 'ascii'
+[224] bbl.pm:619> INFO - Output to OTPandAES.bbl
