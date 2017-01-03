@@ -472,7 +472,7 @@ $y_k=y_{k-2}-y_{k-1} \cdot q_{k-1}$
 
 All columns are then filled using this method until a value in the $r_k$ column reaches 0. At this point, the values in the row above the 0 are the answers to the equation $ax+by = gcd(a,b)$.
 
-Within Rijndael’s finite field, this becomes more complicated, as the algorithm must be applied within a finite field which employs a reducing polynomial, as well as being applied to polynomials instead of integers.
+Within Rijndael’s finite field, this becomes more complicated, as the algorithm must be applied within a finite field which employs a reducing polynomial.
 
 Since the reducing polynomial is $x^8+x^4+x^3+x+1$, the equation that must be solved to find the multiplicative inverse of the polynomial $p$ goes as follows:
 
@@ -480,15 +480,16 @@ $a \cdot p+b \cdot (x^8+x^4+x^3+x+1) = 1 = gcd(p, x^8+x^4+x^3+x+1)$
 
 $b \cdot ( x^8+x^4+x^3+x+1) = 0$
 
-$\Rightarrow a \cdot p = 1$
+$a \cdot p = 1$
 
-All operations within the field are performed modulo the reducing polynomial, meaning that the gcd of the reducing polynomial and any other polynomial is always equal to one.
+$\Rightarrow a = p^{-1}$
+
+All operations within the field are performed modulo the reducing polynomial. Therefore, the gcd of the reducing polynomial and any other polynomial is always equal to one.
 
 In order to find the multiplicative inverse of $p$, namely $a$, the extended euclidean algorithm can be applied. As always, it is of great importance that the rules of the field are observed.
 
 \subsubsection{Round key generation (KEYEXPANSIONS)}
-As can be seen in the high-level explanation, AES requires 11 128-bit subkeys (also referred to as round keys); one for the initial XOR operation, and then one for each of the 10 rounds. These subkeys are derived from the main key using the "Rijndael key schedule" \cite{KeySchedule}.
-
+As can be seen in the high-level explanation, AES requires 11 128-bit subkeys (also referred to as round keys); one for the initial XOR operation, and then one for each of the 10 rounds. These subkeys are derived from the master key using the "Rijndael key schedule" \cite{KeySchedule}. In the most basic implementation of AES, the master key has a length of 128 bits. There are also implementations of AES using keys of lengths 192 and 256 bits. Such longer keys are used to provide even greater security, and are considered standard for top-secret documentation\cite{CNSSPolicy}. It is important to note that, even though the key size varies, AES always retains the same block size.
 
 The first round key, utilized for the initial XOR operation, is simply the master key itself.
 
@@ -516,7 +517,7 @@ x_3 \\
 x_0\end{array} \right)
 \]
 
-Afterwards, the four bytes resulting from the RotWord operation are each replaced through utilization of a Rijndael S-Box (see chapter 2.2.2.2). The resulting vector now needs to be added to the first, as in the leftmost, column of the master key using an XOR gate.
+Afterwards, the four bytes resulting from the RotWord operation are each replaced through utilization of a Rijndael S-Box (see  2.2.2.2). The resulting vector now needs to be added to the first, as in the leftmost, column of the master key using an XOR gate.
 
 \[
 \left( \begin{array}{c}
@@ -563,13 +564,13 @@ r_3 & r_7=r_3+k_7 & r_{11}=r_7+k_{11} & r_{15}=r_{11}+k_{15}\end{array} \right) 
 This round key is taken as the template for the generation of the next round key. This process is then repeated until ten new keys have been generated. Since the master key was the first template used, the entire expanded key is completely dependant on the master key.
 
 \subsubsection{Substitution using lookup table (SUBBYTES)}
-The first substitution is relatively simple to perform; this is because it is a bytewise operation. This means that the data being manipulated is one single byte. In this case, the manipulation is a substitution of each byte with another byte, the substitution being determined by a lookup table, in which each individual byte is assigned another byte with which it must be swapped. The reason that a lookup table is practical is that there are only $2^8 = 256$ different possible bytes.
+The first substitution is relatively simple to perform; this is because it is a bytewise operation. This means that the data being manipulated is one single byte at a time, until all bytes that constitute the state have been manipulated. In this case, the manipulation is a substitution of each byte with another byte, the substitution being determined by a lookup table, in which each individual byte is assigned another byte with which it must be swapped. The reason that a lookup table is practical is that there are only $2^8 = 256$ different possible bytes.
 
-This swapping of bytes is performed using a Rijndael S-box as the lookup table. Firstly, it is very important to note that this substitution is performed in a Galois field (also referred to as a finite field)\cite{GaloisField}, specifically $GF(2^8)$.
+This swapping of bytes is performed using a Rijndael S-box as the lookup table. A Rijndael S-box denotes the method used to substitute one single byte. It is very important to note that this substitution is performed in a Galois field (also referred to as a finite field)\cite{GaloisField}, specifically $GF(2^8)$.
 
-The S-Box performs a revertible, complete transformation of the plaintext\cite{SBox}. This means that the transformation is reversible (which is necessary for decryption), and that no two different bytes are transformed into the same byte; this is the criteria for a full permutation.
+The S-Box performs a revertible, complete transformation of the plaintext byte\cite{SBox}. This means that the transformation is reversible (which is necessary for decryption), and that no two different bytes are transformed into the same byte; this is the criteria for a full permutation.
 
-In practice, the table is pre-calculated, since it is the same for each byte. Therefore, the most simple method of performing this substitution is to first split the byte into two 4-bit nibbles. If the byte is represented in hexadecimal, then the first nibble is simply the first of the two values, the second nibble being the second of the two values. For example, the byte $(7c)_h$, $(01111100)_2$ in binary, would be converted to the byte $(c6)_h$.
+In practice, the table is pre-calculated, since it is the same for each byte. Therefore, the most computationally efficient method of performing this substitution is to first split the byte into two 4-bit nibbles. If the byte is represented in hexadecimal, then the first nibble is simply the first of the two values, the second nibble being the second of the two values. For example, the byte $(7c)_h$, $(01111100)_2$ in binary, would be converted to the byte $(c6)_h$.
 
 \begin{figure}[H]
 \centering
@@ -577,7 +578,9 @@ In practice, the table is pre-calculated, since it is the same for each byte. Th
 \caption{The lookup table used for AES, in hexadecimal notation\cite{SBox}.}
 \end{figure}
 
-First, the multiplicative inverse of the byte is calculated within Rijndael's finite field. This multiplicative inverse, also a byte, is then stored as a vector $[x_7; x_6 ... x_0]$ to be used in an affine transformation. As always, it is important to note that the plus sign denotes an XOR operation.
+A more memory efficient implementation can also be used instead of having to save a lookup table. There is also a formula, explained below, for calculating the byte with which a byte will be replaced when using an S-box. 
+
+First, the multiplicative inverse of the byte is calculated within Rijndael's finite field (see 2.2.2.2). This multiplicative inverse, also a byte, is then stored as a vector $[x_7; x_6 ... x_0]$ to be used in an affine transformation.
 
 \[ \left( \begin{array}{cccccccc}
 1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 \\
@@ -588,7 +591,7 @@ First, the multiplicative inverse of the byte is calculated within Rijndael's fi
 0 & 1 & 1 & 1 & 1 & 1 & 0 & 0 \\
 0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 \\
 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1\end{array} \right)
-*
+\cdot
 \left( \begin{array}{c}
 x_0 \\
 x_1 \\
@@ -598,7 +601,7 @@ x_4 \\
 x_5 \\
 x_6 \\
 x_7\end{array} \right)
-+
+\bigoplus
 \left( \begin{array}{c}
 1 \\
 1 \\
@@ -630,7 +633,7 @@ a_{0,0} & a_{0,1} & a_{0,2} & a_{0,3} \\
 a_{1,0} & a_{1,1} & a_{1,2} & a_{1,3} \\
 a_{2,0} & a_{2,1} & a_{2,2} & a_{2,3} \\
 a_{3,0} & a_{3,1} & a_{3,2} & a_{3,3}\end{array} \right)
-\xrightarrow{ShiftRows}
+\xrightarrow{\text{ShiftRows}}
 \left( \begin{array}{cccc}
 a_{0,0} & a_{0,1} & a_{0,2} & a_{0,3} \\
 a_{1,1} & a_{1,2} & a_{1,3} & a_{1,0} \\
@@ -639,9 +642,9 @@ a_{3,3} & a_{3,0} & a_{3,1} & a_{3,2}\end{array} \right)
 \]
 
 \subsubsection{Substitution using formula (MIXCOLUMNS)}
-The MixColumns step replaces each byte in the state with a different byte, dependent on all the bytes of that same column. Once again, it is important to note that all multiplications are performed within Rijndael's finite field.
+The MixColumns step replaces each byte in the state with a different byte, dependent on all the bytes of that same column. All operations are performed within a finite field $GF(2^8)$.
 
-In the MixColumns step, each column (and crucially not each individual byte) is treated as a polynomial in Rijndael's finite field. However, the reducing polynomial $x^4+1$ is used instead of $x^8+x^4+x^3+x+1$, as the column (which contains four values) will be represented as a third-order polynomial\cite{Rijndael}.
+In the MixColumns step, each column (and crucially not each individual byte) is treated as a polynomial Over $GF(2^8)$. This field is different from the Rijndael field, since it employs the reducing polynomial $x^4+1$ instead of $x^8+x^4+x^3+x+1$. This is because the column (which contains four values) will be represented as a third-order polynomial\cite{Rijndael}.
 
 They are then multiplied, modulo the reducing polynomial, with a fixed polynomial $c(x)=03*x^3+01*x^2+01*x+02$. This process can also be shown by treating the column as a vector, and multiplying it with a special matrix:
 

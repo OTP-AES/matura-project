@@ -280,6 +280,21 @@
       \verb http://www.samiam.org/key-schedule.html
       \endverb
     \endentry
+    \entry{CNSSPolicy}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=5b91b8ec7eca7d4a87c133c4357ba456}{%
+           family={CNSS},
+           family_i={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b91b8ec7eca7d4a87c133c4357ba456}
+      \strng{fullhash}{5b91b8ec7eca7d4a87c133c4357ba456}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{CNSS Policy No. 15, Fact Sheet No. 1}
+      \field{year}{2003}
+    \endentry
     \entry{Rijndael}{online}{}
       \name{author}{2}{}{%
         {{hash=ce9c20302c5a545e289c41661ac58c43}{%
@@ -483,21 +498,6 @@
       \verb{url}
       \verb https://www.nist.gov/news-events/news/2000/10/commerce-department-announces-winner-global-information-security
       \endverb
-    \endentry
-    \entry{CNSSPolicy}{manual}{}
-      \name{author}{1}{}{%
-        {{hash=5b91b8ec7eca7d4a87c133c4357ba456}{%
-           family={CNSS},
-           family_i={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{5b91b8ec7eca7d4a87c133c4357ba456}
-      \strng{fullhash}{5b91b8ec7eca7d4a87c133c4357ba456}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{CNSS Policy No. 15, Fact Sheet No. 1}
-      \field{year}{2003}
     \endentry
     \entry{XSL}{misc}{}
       \name{author}{2}{}{%

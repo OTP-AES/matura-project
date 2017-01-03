@@ -2090,24 +2090,25 @@
     <bcf:citekey order="15">Bezout</bcf:citekey>
     <bcf:citekey order="16">EuclidGeneralization</bcf:citekey>
     <bcf:citekey order="17">KeySchedule</bcf:citekey>
-    <bcf:citekey order="18">Rijndael</bcf:citekey>
-    <bcf:citekey order="19">GaloisField</bcf:citekey>
-    <bcf:citekey order="20">SBox</bcf:citekey>
+    <bcf:citekey order="18">CNSSPolicy</bcf:citekey>
+    <bcf:citekey order="19">Rijndael</bcf:citekey>
+    <bcf:citekey order="20">GaloisField</bcf:citekey>
     <bcf:citekey order="21">SBox</bcf:citekey>
-    <bcf:citekey order="22">Rijndael</bcf:citekey>
-    <bcf:citekey order="23">MixColumns</bcf:citekey>
-    <bcf:citekey order="24">NoMixColumns</bcf:citekey>
-    <bcf:citekey order="25">RoundKeyInverse</bcf:citekey>
+    <bcf:citekey order="22">SBox</bcf:citekey>
+    <bcf:citekey order="23">Rijndael</bcf:citekey>
+    <bcf:citekey order="24">MixColumns</bcf:citekey>
+    <bcf:citekey order="25">NoMixColumns</bcf:citekey>
     <bcf:citekey order="26">RoundKeyInverse</bcf:citekey>
-    <bcf:citekey order="27">Rijndael</bcf:citekey>
-    <bcf:citekey order="28">ShannonProperties</bcf:citekey>
-    <bcf:citekey order="29">AvalancheEffect</bcf:citekey>
-    <bcf:citekey order="30">Confusion</bcf:citekey>
-    <bcf:citekey order="31">AESSelection</bcf:citekey>
-    <bcf:citekey order="32">CNSSPolicy</bcf:citekey>
-    <bcf:citekey order="33">XSL</bcf:citekey>
-    <bcf:citekey order="34">XLSRebuked</bcf:citekey>
-    <bcf:citekey order="35">CNSSPolicy</bcf:citekey>
+    <bcf:citekey order="27">RoundKeyInverse</bcf:citekey>
+    <bcf:citekey order="28">Rijndael</bcf:citekey>
+    <bcf:citekey order="29">ShannonProperties</bcf:citekey>
+    <bcf:citekey order="30">AvalancheEffect</bcf:citekey>
+    <bcf:citekey order="31">Confusion</bcf:citekey>
+    <bcf:citekey order="32">AESSelection</bcf:citekey>
+    <bcf:citekey order="33">CNSSPolicy</bcf:citekey>
+    <bcf:citekey order="34">XSL</bcf:citekey>
+    <bcf:citekey order="35">XLSRebuked</bcf:citekey>
+    <bcf:citekey order="36">CNSSPolicy</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
