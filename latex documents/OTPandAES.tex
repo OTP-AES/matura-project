@@ -43,8 +43,15 @@ sorting=none]
 \begin{document}
 
 \title{OTP and AES: A historical transition between two systems of cryptography}
-\author{Valdemar Thanner\\Kantonsschule Zug\\Supervised by Mr. Bernhard Keller\\Linguistic supervision by Ms. Margrit Oetiker}
+\author{Valdemar Thanner\\Supervised by Mr. Bernhard Keller\\Linguistic supervision by Ms. Margrit Oetiker}
+\date{23.01.2017}
 \maketitle
+
+\chapter*{Abstract}
+
+\chapter*{Dedication}
+
+\chapter*{Acknowledgements}
 
 \tableofcontents
 
@@ -146,9 +153,11 @@ Now, the message's journey is complete, having passed from plaintext into cipher
 \section{Perfect secrecy: Information-theoretical security}
 An important characteristic of perfect secrecy is that the ciphertext conveys no information at all in regards to the plaintext; this means that it is not possible to garner any information about the key nor the plaintext if one is in possession of the ciphertext \cite{PerfectSecrecy} \cite{HandbookOfAppliedCryptography}. In probability theory, where $C$ contains all possible ciphertexts and $M$ contains all possible messages:
 
+\begin{defin}\label{def:perfectsecrecy}
 $for c \in C: \\
 \forall m_1, m_2 \in M: \\
 P(E_k(m_1)=c) = P(E_k(m_2)=c)$
+\end{defin}
 
 $E_k$ is a defined as a cipher using the key $k$ if there exists a function $D_k(m)=c$, also using the key $k$, which decrypts each ciphertext to a unique message.
 
@@ -199,34 +208,20 @@ In 1949, Shannon proved that OTP did, in fact, posess perfect secrecy\cite{Shann
 
 \begin{defin}
 Let $M$ contain all possible messages; meaning all possible bit sequences.
-\end{defin}
 
-\begin{defin}
 Let $m$ be the plaintext. $m \in M$.
-\end{defin}
 
-\begin{defin}
 Let $c$ be the ciphertext.
-\end{defin}
 
-\begin{defin}
 Let $K$ contain all possible keys.
-\end{defin}
 
-\begin{defin}
 Let $k$ be the key. $k \in K$.
-\end{defin}
 
-\begin{defin}
 Let the function ${E_k}(m)=c$. The function $E$ is an encryption process using the key k, which outputs the ciphertext $c$ using the plaintext $m$.
-\end{defin}
 
-\begin{defin}
 Let $m^{*}$ be a possible message, selected at random using a uniform distribution:
 $\forall m^{*} \in M: P(m^{*})=\frac{1}{\lvert M \rvert}$
-\end{defin}
 
-\begin{defin}
 Let $k^{*}$ be a possible key, selected at random using a uniform distribution.
 $\forall k^{*} \in M: P(k^{*})=\frac{1}{\lvert K \rvert}$
 \end{defin}
@@ -235,7 +230,7 @@ $\forall k^{*} \in M: P(k^{*})=\frac{1}{\lvert K \rvert}$
 In order for perfect secrecy to apply, then:
 
 $P( m=m^{*} \mid E(m)=c ) = P( m=m^{*} )$
-must be true.
+must be true, fulfilling the definition of perfect secrecy \ref{def:perfectsecrecy}
 
 \begin{rem}
 This is because, if the probability that the actual plaintext $m$ is equal to some other message $m^{*}$, given the ciphertext $c$, is equal to the probability that $m=m^{*}$, then the ciphertext $c$ provides no additional information to the attacker. The ciphertext not providing any information about the plaintext nor the key is the definition of perfect secrecy; therefore, if the above equation can be proven to be true in the case of OTP, then the perfect secrecy of OTP will also have been proven.
@@ -861,6 +856,33 @@ One of the earliest scares was the XSL attack, which relied on the relative alge
 One of AES' major issues is shared with OTP and all other symmetric-key encryption methods; the confidentiality of the key. The same argument that was made against OTP can be made against AES as well, namely that because the encryption method as well as the decryption method are both publicly known, the problem of keeping the message or file secret is simply transferred to keeping the key secret, while still being able to exchange it between the sender and the recipient.
 
 However, in the case of AES, this issue is strongly mitigated: While the key used in OTP has to be at least as long as the message, AES keys are only 128, 192 or 256 bits long, with top secret documentation requiring the usage of either a 192 or 256-bit key\cite{CNSSPolicy}.
+
+\chapter{A historical transition}
+Throughout modern history, cryptography has always been an essential part of our lives. From warfare to communication and economy, many of recent histories most monumentous occurences have been influenced by cryptography. This is especially true in the case of OTP and AES; one having played a key role in the largest military confilct of human history, the other being implemented as a standard just shortly before cryptograhpy was brought to the public eye like never before through the numerous security breaches, conspiratorial government spy programs and the new dangers of a globalist economical system. In order to learn from history and apply it to present issues, it is essential to examine the first computer-aided cryptography system, OTP, and understand how it differs from but also inspired certain elements of todays standard, AES.
+
+\section{Key differences}
+
+\section{Key similarities and inspirations}
+Many of AES most important elements take heavy inspiration from OTP. This comes as no great surprise, considering that though cryptography has long been evolving, it has always strived to achieve the same goals. The following chapter will serve to highlight the similar methods used in OTP and AES to achieve those goals.
+
+\subsection{Key addition}
+The only encrypting measure performed in OTP is an XOR addition of the key and the plaintext. While AES performs many different cryptographical measures, one of its absolute core principles is still the employment of a secret key, making it a symmetrical secret key algorithm, just like OTP. In this way, AES has taken inspiration from OTP whilst also improving one of OTP's major weaknesses: Its key length.
+
+After all, one of OTP's great weaknesses is that the key is equally as long as the message. Many critics have argued that this simply transfers the problem of transporting the secret message to the transport of the secret key. However, this can be combatted:
+
+After all, the key is not actually secret until it has been conclusively employed. One method is to continue attempting to send keys until one manages to reach its destination without being compromised. At this point, the message can be encrypted using the uncompromised key and sent to the reciever.
+
+Unfortunately, this method is rather inefficient in the many time-critical situations we face in modern society. This is where AES manages to greatly improve upon the foundation that OTP provides: It manages to retain the great security benefits that can be achieved by using a secret key, whilst also substantially shortening the key. The master key, although short, retains great cryptographical power because of AES' usage of KeyExpansions(see ).
+
+\subsection{Cipher type}
+
+\section{Cryptography: Past, present and future}
+
+\subsection{The modern war}
+
+\subsection{Identity: An outdated concept?}
+
+
 
 % have to print the bibliography once all entries are made, otherwise an error keeps occuring.
 \printbibliography
