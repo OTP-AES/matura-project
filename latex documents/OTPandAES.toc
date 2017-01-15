@@ -78,16 +78,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}A historical transition}{40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Key differences}{41}
+\contentsline {section}{\numberline {3.1}Key differences and improvements}{40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Key similarities and inspirations}{41}
+\contentsline {subsection}{\numberline {3.1.1}Memory vs. computational efficiency}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Key addition}{41}
+\contentsline {subsection}{\numberline {3.1.2}Key length}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Cipher type}{42}
+\contentsline {section}{\numberline {3.2}Key similarities and inspirations}{42}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Cryptography: Past, present and future}{42}
+\contentsline {subsection}{\numberline {3.2.1}Key addition}{42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}The modern war}{42}
+\contentsline {subsection}{\numberline {3.2.2}Secure transmission methods}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Identity: An outdated concept?}{43}
+\contentsline {section}{\numberline {3.3}Cryptography: Past, present and future}{44}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}The modern war}{44}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}Privacy: An outdated concept?}{46}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Closing remarks}{47}

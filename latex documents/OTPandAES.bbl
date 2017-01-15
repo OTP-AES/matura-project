@@ -541,6 +541,67 @@
       \verb https://web.archive.org/web/20100305200432/http://www.usdsi.com/aes.html
       \endverb
     \endentry
+    \entry{RandomOrg}{online}{}
+      \name{author}{2}{}{%
+        {{hash=1e91523b5e6f8896acfd8fdd5673266d}{%
+           family={Randomness},
+           family_i={R\bibinitperiod}}}%
+        {{hash=be86c4168fef3c51ce31d49a79f4f43a}{%
+           family={Ltd},
+           family_i={L\bibinitperiod},
+           given={Integrity\bibnamedelima Serivces},
+           given_i={I\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8199e0613929816ac6921d392bdf6f03}
+      \strng{fullhash}{8199e0613929816ac6921d392bdf6f03}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{True Random Number service}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://www.random.org/
+      \endverb
+    \endentry
+    \entry{Snowden}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a92744888af1a77e5dc8795d3a4954cc}{%
+           family={Glenn\bibnamedelima Greenwald},
+           family_i={G\bibinitperiod\bibinitdelim G\bibinitperiod},
+           suffix={Ewen\bibnamedelima MacAskill},
+           suffix_i={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Laurea\bibnamedelima Poitras},
+           given_i={L\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{a92744888af1a77e5dc8795d3a4954cc}
+      \strng{fullhash}{a92744888af1a77e5dc8795d3a4954cc}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Guardian}
+      \field{title}{Edward Snowden: the whistleblower behind the NSA surveillance revelations}
+      \field{year}{2013}
+    \endentry
+    \entry{PayPal}{online}{}
+      \name{author}{1}{}{%
+        {{hash=62182ca58a739daa8ddd8a48b7b19abb}{%
+           family={Statista},
+           family_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{62182ca58a739daa8ddd8a48b7b19abb}
+      \strng{fullhash}{62182ca58a739daa8ddd8a48b7b19abb}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{PayPal's total payment volume from 1st quarter 2014 to 3rd quarter 2016 (in billion U.S. dollars)}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://www.statista.com/statistics/277841/paypals-total-payment-volume/
+      \endverb
+    \endentry
   \endsortlist
 \endrefsection
 \endinput

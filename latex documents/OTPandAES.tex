@@ -29,6 +29,13 @@ sorting=none]
 \usepackage{inputenc}
 \usepackage{tikz}
 \usetikzlibrary{tikzmark}
+\usetikzlibrary{shapes.geometric, arrows}
+
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
 %Are there any preferred bibliography style choices / general style requirements when it comes to the Maturaarbeit at the KSZ which I ought to implement?
 
 % There are more or less none. Personally I like the notation where you use the
@@ -47,11 +54,16 @@ sorting=none]
 \date{23.01.2017}
 \maketitle
 
-\chapter*{Abstract}
-
 \chapter*{Dedication}
 
 \chapter*{Acknowledgements}
+
+\chapter*{Introduction}
+With the advent of the internet, cryptography has, for the first time in human history, become an integral part of human life. It protects our private communications, safeguards our finances and so much more. In writing this paper, it is my aim to shed some light on the modern cryptography which has become so integral to our daily lives.
+
+However, in order to understand modern cryptography, the foundation upon which it was built, as well as the transition between the two, must also be understood. This is why I have chosen to write about two systems of cryptography: AES, the current standard of cryptography, as well as OTP, which was the first cryptographic algorithm which to be implemented with the help of a computer.
+
+In order to facilitate the examination of how modern cryptography, which was built on the foundation of OTP, affects our lives today, the algorithms AES and OTP must first be fully understood. This is the purpose of the first two chapters; the final chapter will be examining the historical relation between these two incredibly significant algorithms, as well as why cryptography is more important to the everyday person than ever before, and how this came to be.
 
 \tableofcontents
 
@@ -858,12 +870,27 @@ One of AES' major issues is shared with OTP and all other symmetric-key encrypti
 However, in the case of AES, this issue is strongly mitigated: While the key used in OTP has to be at least as long as the message, AES keys are only 128, 192 or 256 bits long, with top secret documentation requiring the usage of either a 192 or 256-bit key\cite{CNSSPolicy}.
 
 \chapter{A historical transition}
-Throughout modern history, cryptography has always been an essential part of our lives. From warfare to communication and economy, many of recent histories most monumentous occurences have been influenced by cryptography. This is especially true in the case of OTP and AES; one having played a key role in the largest military confilct of human history, the other being implemented as a standard just shortly before cryptograhpy was brought to the public eye like never before through the numerous security breaches, conspiratorial government spy programs and the new dangers of a globalist economical system. In order to learn from history and apply it to present issues, it is essential to examine the first computer-aided cryptography system, OTP, and understand how it differs from but also inspired certain elements of todays standard, AES.
+Throughout modern history, cryptography has always been an essential part of our lives. From warfare to communication and economy, many of recent histories most momentous occurrences have been influenced by cryptography. This is especially true in the case of OTP and AES; one having played a key role in the largest military conflict of human history, the other being implemented as a standard just shortly before cryptography was brought to the public eye like never before through numerous security breaches, conspiratorial government spy programs and the new dangers of a globalist economical system. In order to learn from history and apply it to present issues, it is essential to examine the first computer-aided cryptography system, OTP, and understand how it differs from but also inspired certain elements of today's standard, AES.
 
-\section{Key differences}
+\section{Key differences and improvements}
+While OTP was a building block of the foundation of modern computational cryptography, AES currently stands at its pinnacle. With many different implementations and possible uses, each one of them tailored to achieve a specific goal and ongoing research and development, AES is truly on the cutting edge of cryptography. Many of its great achievements are great improvements over earlier algorithms, as well as a degree of flexibility that has seldom been observed within cryptographic algorithms.
+
+\subsection{Memory vs. computational efficiency}
+One of the greatest advantages of AES, which is not at all present in the case of OTP, is its ability to be implemented in a way that is either computationally or memory efficient.
+
+Almost all operations performed in AES can be pre-saved, for example in the case of lookup tables (see 2.2.2.4). This also applies to the key expansions step (see 2.2.2.3), as all Rcon vectors can either be pre-calculated and stored or calculated during runtime of the algorithm. This even applies to the MixColumns step (see 2.2.2.6); although the lookup table would be very large, pre-calculating and subsequently storing it would make the algorithm run very quickly.
+
+On the other hand, it is also possible to make each calculation completely without lookup tables, storing only the currently needed value, be it a byte, vector or matrix, at one time. This is computationally rather taxing, however extremely memory-efficient as the algorithm only requires its source code and a very small storage block to function.
+
+This flexibility in implementation is one of AES' greatest advantages, especially when compared with the rigid requirements of OTP.
+
+\subsection{Key length}
+The most relevant improvement AES makes over OTP, as well as many other contemporary ciphers, is its short key. AES manages to retain the great security benefits that can be achieved by using a secret key, whilst also substantially shortening the key. The master key, although short, retains great cryptographical power because of AES' usage of KeyExpansions(see 2.2.2.3). This is a large advantage in today's time-critical society and economy: a short key is faster to generate and easier to transport or transmit.
+
+Furthermore, it is often challenging for a potential attacker to even realise the relevance of a short key. On a busy network, a short key embedded into an inconspicuous file or perhaps even distributed across multiple such files becomes exceedingly difficult to detect. This is especially advantageous if the key must be sent through an insecure channel, as it can be quite effectively masked by other data.
 
 \section{Key similarities and inspirations}
-Many of AES most important elements take heavy inspiration from OTP. This comes as no great surprise, considering that though cryptography has long been evolving, it has always strived to achieve the same goals. The following chapter will serve to highlight the similar methods used in OTP and AES to achieve those goals.
+Many of AES' most important elements take heavy inspiration from OTP. This comes as no great surprise, considering that though cryptography has long been evolving, it has always strived to achieve the same goals. The following chapter will serve to highlight the similar methods used in OTP and AES to achieve those goals.
 
 \subsection{Key addition}
 The only encrypting measure performed in OTP is an XOR addition of the key and the plaintext. While AES performs many different cryptographical measures, one of its absolute core principles is still the employment of a secret key, making it a symmetrical secret key algorithm, just like OTP. In this way, AES has taken inspiration from OTP whilst also improving one of OTP's major weaknesses: Its key length.
@@ -872,26 +899,60 @@ After all, one of OTP's great weaknesses is that the key is equally as long as t
 
 After all, the key is not actually secret until it has been conclusively employed. One method is to continue attempting to send keys until one manages to reach its destination without being compromised. At this point, the message can be encrypted using the uncompromised key and sent to the reciever.
 
-Unfortunately, this method is rather inefficient in the many time-critical situations we face in modern society. This is where AES manages to greatly improve upon the foundation that OTP provides: It manages to retain the great security benefits that can be achieved by using a secret key, whilst also substantially shortening the key. The master key, although short, retains great cryptographical power because of AES' usage of KeyExpansions(see ).
+\subsection{Secure transmission methods}
+As aforementioned, one way to combat the issues caused by OTP's large key length is to continue sending keys until a key arrives uncompromised at the ciphertext's intended recipient.
 
-\subsection{Cipher type}
+\begin{center}
+\begin{tikzpicture}[node distance=2cm]
+\node (start) [startstop] {Send key};
+\node (dec1) [decision, below of=start, yshift=-1.5cm] {Key status};
+\node (proc1) [process, below of=dec1, yshift=-1.5cm] {Uncompromised};
+\node (proc2) [process, right of=dec1, xshift=2cm] {Compromised};
+\node (end) [startstop, below of = proc1] {Send message};
+\draw [arrow] (start) -- (dec1);
+\draw [arrow] (dec1) -- (proc1);
+\draw [arrow] (dec1) -- (proc2);
+\draw [arrow] (proc2) -- (start);
+\draw [arrow] (proc1) -- (end);
+\end{tikzpicture}
+\end{center}
+
+Since AES and OTP are both symmetrical key ciphers, this technique can be used for both ciphers. Interestingly, this has made it possible for OTP to make a comeback in the modern high-security industry: With the advent of hard drives able to store vast amounts of information, keys as large as 3TB can be transported in relative secrecy. This, coupled with new high-speed random number generation techniques such as atmospheric noise\cite{RandomOrg}, enable the creation and covert transportation of extremely long random keys. If one such hard drive is successfully transported to a recipient, with a sender retaining an identical copy, they will be able to send 3TB of text, amounting to a large amount of messages, securely between each other until the length of the key is exhausted.
+
+Therefore, an advantage of OTP, shared to a lesser extent by AES, can be paraphrased as "the movement of perfect secrecy through time". If a secure channel can only be accessed for a limited amount of time, the sending of a large key can enable later secure communication, even over insecure channels.
 
 \section{Cryptography: Past, present and future}
 
 \subsection{The modern war}
-With the recent revelations brought about through the Snowden scandal, cryptography as a tool of the state has become a theme of major public interest in a way that has not seen precedent since the second world war.
+With the recent revelations brought about through the Snowden scandal\cite{Snowden}, cryptography as a tool of the state has become a theme of major public interest in a way that has not seen precedent since the second world war.
 
 This is one of the major reasons OTP and AES are definitely comparable in a historical context; they were both relevant on a global scale, being used in covert high-security operations, deciding the fates of countless individuals, even perhaps lending a decisive advantage to those most proficient in their employment.
 
 The British intelligence community in particular played a huge role in the allied victory. Much of this sucess is attributed to Alan Turing, who provided extremely significant advances in the battle to crack the German enigma system. However, another fact that must not be glossed over is the sucessful employment of OTP by the British Special Operations Executive, which enabled slow yet extremely secure communications, even being employed amongst field agents towards the later years of the war.
 
-AES now finds itself a key element in a different kind of, yet equally important for mankinds future, conflict. With the advent of globalism, the battle for economic, ideological and social supremacy has grown ever fiercer and more multi-faceted than ever. This, coupled with the United States waning position as the globes sole superpower waning, in fact being contested by China and Russias rise out of communism into extreme capitalist competitiveness, makes information and intelligence more valuable than ever. Todays conflict is not concerned with large-scale troop movements and industrial weapons production, but instead with the passwords of CEOs, small-scale targeted tactical strikes and the economic plans of gigantic corporations.
+AES now finds itself a key element in a different kind of, yet equally important for mankinds future, conflict. With the advent of globalism, the battle for economic, ideological and social supremacy has grown fiercer and more multi-faceted than ever. This, coupled with the United States position as the globes sole superpower waning, in fact being contested by China and Russia's rise out of communism into extreme capitalist competitiveness, makes information and intelligence more valuable than ever. Today's conflict is not concerned with large-scale troop movements and industrial weapons production, but instead with the passwords of CEO's, small-scale targeted tactical strikes and the economic plans of gigantic corporations.
 
-This is where the relevance of AES becomes apparent. AES is widely utilized by the U.S and other governemts to encrypt files ranging from SECRET to TOP SECRET security clearance. However, unlike OTP during the second world war, AES also plays a large role in the lives of regular people, as techonology has become ever more integrated into our daily lives: For example, many websites using https (hyper-text transfer protocol secure) use 128-bit AES encryption. Any entity able to somehow crack or bypass AES would have access to an unimaginably large quantity of valuable information.
+This is where the relevance of AES becomes apparent. AES is widely utilized by the U.S and other governemts to encrypt files ranging from SECRET to TOP SECRET security clearance. However, unlike OTP during the second world war, AES also plays a large role in the lives of regular people, as techonology has become ever more integrated into our daily lives: For example, many websites using https (hyper-text transfer protocol secure) use 128-bit AES encryption. Any entity able to somehow crack or bypass AES would have access to an unimaginably large quantity of valuable information. For example, PayPal, a company which processed more than 87 billion dollars in the third quarter of 2016 \cite{PayPal}, uses 128-bit AES encryption.
 
-\subsection{Identity: An outdated concept?}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{PayPal.png}
+\caption{Google Chrome can show which encryption standard a certain website is utilizing.}
+\end{figure}
 
+Given these new developments, it is certainly fair to say that cryptography plays a more important role in the lives of everyday people than ever before in human history.
 
+\subsection{Privacy: An outdated concept?}
+With new and exciting developments that have inseparably linked technology and social media to the lives of billions of ordinary people across the globe, many exciting new possibilities have been realized. Seamlessly integrating into our daily routine, services such as google calendar enable us to plan our day, while all transactions can be taken care of over services such as PayPal or Samsung Pay with nothing but the press of a button. We can access the knowledge of the entire world or connect with others across the globe using a device that fits in our pocket.
+
+However, in using these revolutionary new technologies, we have been exposed to new risks and vulnerabilities, many of which are only just becoming apparent through the unpleasant revelations that recent years have brought. This is why cryptography is currently so important, and also why its relevance will only continue to grow as the rapid pace of technological development continues.
+
+This growing importance of cryptography is why it is imperative not just for academics, but also for regular people to understand what cryptography is and how it functions. With most of our communication and financial transactions being conducted over the internet, we can no longer assume that privacy is our default state: Instead, we must remain vigilant in safeguarding it. To this end, we all use cryptography, whether we know it or not.
+
+\section{Closing remarks}
+In conclusion, the importance of cryptography is greater than ever before. Therefore, it is my strong belief that every person living and working in the modern world can profit greatly from understanding modern as well as historical cryptography, due to their highly important roles in our private and professional lives. To this end, I hope that this paper has succeeded not only in shedding some light upon the highly intricate algorithms that permeate our everyday existence, but perhaps also in igniting some spark of fascination in what I consider a highly important, yet criminally under-examined facet of our daily lives.
+
+In closing, I would like to leave you with thanks for reading, but also a final thought: Although AES is the current modern standard, it too, just like its predecessor, is sure to be replaced. Therefore, the most important conclusion that can be drawn from this paper is not just the current importance of AES, but the importance of staying informed, and continuing to strive to understand how our information is safeguarded, as well as the algorithms that undertake and will long continue to undertake this momentous task.
 
 % have to print the bibliography once all entries are made, otherwise an error keeps occuring.
 \printbibliography
