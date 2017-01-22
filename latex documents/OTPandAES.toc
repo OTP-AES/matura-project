@@ -1,99 +1,99 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}OTP: The One Time Pad}{7}
+\contentsline {chapter}{\numberline {1}OTP: The One Time Pad}{7}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}What is a "One Time Pad"?}{7}
+\contentsline {section}{\numberline {1.1}What is a "One Time Pad"?}{7}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Method used}{9}
+\contentsline {section}{\numberline {1.2}Method used}{9}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Generation of the random key}{9}
+\contentsline {subsection}{\numberline {1.2.1}Generation of the random key}{9}{subsection.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Modular addition of the key and plaintext}{10}
+\contentsline {subsection}{\numberline {1.2.2}Modular addition of the key and plaintext}{10}{subsection.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.3}Decoding of the ciphertext using the key}{12}
+\contentsline {subsection}{\numberline {1.2.3}Decoding of the ciphertext using the key}{12}{subsection.1.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Perfect secrecy: Information-theoretical security}{13}
+\contentsline {section}{\numberline {1.3}Perfect secrecy: Information-theoretical security}{12}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}Mathematical proof}{14}
+\contentsline {subsection}{\numberline {1.3.1}Mathematical proof}{13}{subsection.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Consequences of the proof}{16}
+\contentsline {subsection}{\numberline {1.3.2}Consequences of the proof}{16}{subsection.1.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Issues with OTP}{17}
+\contentsline {section}{\numberline {1.4}Issues with OTP}{16}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}True randomness in generating the key}{17}
+\contentsline {subsection}{\numberline {1.4.1}True randomness in generating the key}{16}{subsection.1.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.2}Secure distribution of the key itself}{18}
+\contentsline {subsection}{\numberline {1.4.2}Secure distribution of the key itself}{17}{subsection.1.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.3}Secure disposal of a utilized key}{19}
+\contentsline {subsection}{\numberline {1.4.3}Secure disposal of a utilized key}{18}{subsection.1.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}AES: The Advanced Encryption Standard}{20}
+\contentsline {chapter}{\numberline {2}AES: The Advanced Encryption Standard}{19}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}AES viewed from a high level}{20}
+\contentsline {section}{\numberline {2.1}AES viewed from a high level}{19}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Encryption}{21}
+\contentsline {section}{\numberline {2.2}Encryption}{20}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Initial XOR operation}{22}
+\contentsline {subsection}{\numberline {2.2.1}Initial XOR operation}{21}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Rounds}{23}
+\contentsline {subsection}{\numberline {2.2.2}Rounds}{22}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.1}Galois Field $GF(2^8)$ arithmetic}{23}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Galois Field $GF(2^8)$ arithmetic}{22}{subsubsection.2.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.2}Finding the multiplicative inverse using the extended euclidean algorithm}{24}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Finding the multiplicative inverse using the extended euclidean algorithm}{23}{subsubsection.2.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.3}Round key generation (KEYEXPANSIONS)}{26}
+\contentsline {subsubsection}{\numberline {2.2.2.3}Round key generation (KEYEXPANSIONS)}{26}{subsubsection.2.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.4}Substitution using lookup table (SUBBYTES)}{29}
+\contentsline {subsubsection}{\numberline {2.2.2.4}Substitution using lookup table (SUBBYTES)}{28}{subsubsection.2.2.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.5}Transposition (SHIFTROWS)}{31}
+\contentsline {subsubsection}{\numberline {2.2.2.5}Transposition (SHIFTROWS)}{31}{subsubsection.2.2.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.6}Substitution using formula (MIXCOLUMNS)}{31}
+\contentsline {subsubsection}{\numberline {2.2.2.6}Substitution using formula (MIXCOLUMNS)}{31}{subsubsection.2.2.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.7}Round-closing XOR operation (ADDROUNDKEY)}{33}
+\contentsline {subsubsection}{\numberline {2.2.2.7}Round-closing XOR operation (ADDROUNDKEY)}{33}{subsubsection.2.2.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Decryption}{33}
+\contentsline {section}{\numberline {2.3}Decryption}{33}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Initial inverse XOR operation}{33}
+\contentsline {subsection}{\numberline {2.3.1}Initial inverse XOR operation}{33}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Rounds}{34}
+\contentsline {subsection}{\numberline {2.3.2}Rounds}{34}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.1}INV. SHIFTROWS}{34}
+\contentsline {subsubsection}{\numberline {2.3.2.1}INVERSE SHIFTROWS}{34}{subsubsection.2.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.2}INV. SUBBYTES}{35}
+\contentsline {subsubsection}{\numberline {2.3.2.2}INVERSE SUBBYTES}{34}{subsubsection.2.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.3}INV. ADDROUNDKEY}{35}
+\contentsline {subsubsection}{\numberline {2.3.2.3}INVERSE ADDROUNDKEY}{35}{subsubsection.2.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.4}INV. MIXCOLUMNS}{36}
+\contentsline {subsubsection}{\numberline {2.3.2.4}INVERSE MIXCOLUMNS}{35}{subsubsection.2.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Fulfilment of Shannon's properties}{37}
+\contentsline {section}{\numberline {2.4}Fulfilment of Shannon's properties}{36}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Diffusion}{37}
+\contentsline {subsection}{\numberline {2.4.1}Diffusion}{36}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Confusion}{37}
+\contentsline {subsection}{\numberline {2.4.2}Confusion}{37}{subsection.2.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Problems with AES}{38}
+\contentsline {section}{\numberline {2.5}Problems with AES}{37}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Overconfidence and over-reliance}{38}
+\contentsline {subsection}{\numberline {2.5.1}Overconfidence and over-reliance}{38}{subsection.2.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Keeping of a shared secret}{39}
+\contentsline {subsection}{\numberline {2.5.2}Keeping of a shared secret}{38}{subsection.2.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}A historical transition}{40}
+\contentsline {chapter}{\numberline {3}A historical transition}{40}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Key differences and improvements}{40}
+\contentsline {section}{\numberline {3.1}Key differences and improvements}{40}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Memory vs. computational efficiency}{41}
+\contentsline {subsection}{\numberline {3.1.1}Memory vs. computational efficiency}{41}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Key length}{41}
+\contentsline {subsection}{\numberline {3.1.2}Key length}{41}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Key similarities and inspirations}{42}
+\contentsline {section}{\numberline {3.2}Key similarities and inspirations}{42}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Key addition}{42}
+\contentsline {subsection}{\numberline {3.2.1}Key addition}{42}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Secure transmission methods}{43}
+\contentsline {subsection}{\numberline {3.2.2}Secure transmission methods}{43}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Cryptography: Past, present and future}{45}
+\contentsline {section}{\numberline {3.3}Cryptography: Past, present and future}{45}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}The modern war}{45}
+\contentsline {subsection}{\numberline {3.3.1}The modern war}{45}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Privacy: An outdated concept?}{47}
+\contentsline {subsection}{\numberline {3.3.2}Privacy: An outdated concept?}{47}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Closing remarks}{47}
+\contentsline {section}{\numberline {3.4}Closing remarks}{47}{section.3.4}

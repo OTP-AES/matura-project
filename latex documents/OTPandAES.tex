@@ -15,6 +15,7 @@ sorting=none]
 \setlength\parindent{0pt}
 \usepackage{mathtools}
 \usepackage{amsfonts, amsmath, amsthm, amssymb}
+\usepackage[hidelinks]{hyperref}
 
 \newtheorem{thm}{Theorem}[section]
 \newtheorem{lemma}[thm]{Lemma}
@@ -32,7 +33,7 @@ sorting=none]
 \usetikzlibrary{shapes.geometric, arrows}
 
 \tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
-\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{io} = [trapezium, minimum width=1.5cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
 \tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
 \tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
 \tikzstyle{arrow} = [thick,->,>=stealth]
@@ -95,13 +96,14 @@ This made the entire system vulnerable. The re-usage of the key meant that the r
 In the following section, the utilized method will be clarified through usage of an example. In this example, the message \textit{"cryptography"} will first be encrypted by its sender, sent to its intended recipient, and finally decoded by the recipient.
 
 \subsection{Generation of the random key}
+\label{sec::otpkeygen}
 In order to encrypt the plaintext, a key must first be generated. This key will be utilized to encrypt the plaintext through the usage of modular addition, turning it into the ciphertext.
 
-This key must fulfil some crucial criteria \cite{MilsElectronic}. Foremost, the length of the key (the amount of  characters contained within it) must be equivalent to or greater than the length of the plaintext; otherwise, it is not possible to perform any encryption (using the OTP). Secondly, the key must be generated randomly. This is mainly due to the fact that a randomly generated key makes frequency analysis\cite{FrequencyAnalysis}, the form of cryptanalysis most commonly used to break classical ciphers, impossible.
+This key must fulfil some crucial criteria \cite{MilsElectronic}. Foremost, the length of the key (the amount of  characters contained within it) must be equivalent to or greater than the length of the plaintext; otherwise, it is not possible to perform any encryption (using OTP). Secondly, the key must be generated randomly; if the key is made up of numbers ranging from 0 to 25, the probability for any number to be generated at one time should, ideally, be equal to $\frac{1}{26}$, a uniform distribution. This is mainly due to the fact that a randomly generated key makes frequency analysis\cite{FrequencyAnalysis}, the form of cryptanalysis most commonly used to break classical ciphers, impossible.
 
 % It's not clear what it means to generate a key randomly. 
 
-The key consists of numbers. Usually, when the plaintext is made up of Latin letters, the numbers range between 0 and 25. The key can be converted into Latin letters through the same method applied to the plaintext outlined in the following chapter, however, this is not necessary, although the key is often transported in the form of text.
+The key consists of numbers. Usually, when the plaintext is made up of Latin letters, the numbers range between 0 and 25. The key can be converted into Latin letters through the same method applied to the plaintext outlined in the following chapter. This is not strictly necessary, although the key is often transported in the form of text.
 
 As the message being encrypted in this example has 12 characters, the key must also posses at least 12 characters. For the sake of this example, the key \textit{"sytruifgnihm"} will be utilized.
 
@@ -114,14 +116,18 @@ As the message being encrypted in this example has 12 characters, the key must a
 % modular addition of bits - but easier to understand.
 
 
-Next, the ciphertext is created through modular addition of the key and the plaintext. This can be applied not only to a message consisting of alphabetical characters, but also to any sequence of bits. If the plaintext consists of a message made up of alphabetical characters, the plaintext and the key are added using arithmetic referred to as \textit{"addition modulo 26"}. The correct mathematical notation for modular arithmetic is $(a+b)\:mod\:c$, where c is referred to as the \textit{modulus}, which is the value that cannot be passed nor reached in modular addition. In order to perform modular addition, the variables a and b are first added, after which they are divided by the modulus c, up to an integer. The resulting remainder r is the final result of the operation.
+Now that the key has been generated, the ciphertext is created through modular addition of the key and the plaintext. This can be applied not only to a message consisting of alphabetical characters, but also to any sequence of bits. If the plaintext consists of a message made up of alphabetical characters, the plaintext and the key are added using arithmetic referred to as \textit{"addition modulo 26"}. The correct mathematical notation for modular arithmetic is $(a+b)\:mod\:c$, where c is referred to as the \textit{modulus}, which is the value that cannot be exceeded nor reached in modular addition. In order to perform modular addition, the variables $a$ and $b$ are first added, after which they are divided by the modulus $c$, up to an integer. The resulting remainder $r$ is the final result of the operation.
 
 Before the modular addition of the plaintext and the key can begin, each character (of the plaintext as well as of the secret key, in the case that the key was generated as a string of Latin letters instead of as a sequence of numbers) must be converted to a number, corresponding to it's position in the Latin alphabet:
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=1]{Table1.PNG}		
-\end{figure}
+\begin{center}
+\begin{tabular}{cccccccccccc}
+c & r & y & p & t & o & g & r & a & p & h & y \\
+$\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$  \\
+2 & 17 & 24 & 15 & 19 & 14 & 6 & 17 & 0 & 15 & 7 & 24 \\
+\end{tabular}
+\end{center}
+
 %Do these tables suffice in aiding understanding the example, or 		                                             should I include more "graphical" explanations as well?
 
 % I don't think this needs to get any more graphical. You could look into latex
@@ -130,35 +136,56 @@ Before the modular addition of the plaintext and the key can begin, each charact
 
 As the key was also generated in the form of characters, it too must be converted to a sequence of numbers:
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=1]{Table2.PNG}
-\end{figure}
+\begin{center}
+\begin{tabular}{cccccccccccc}
+s & y & t & r & u & i & f & q & n & i & h & m \\
+$\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$  \\
+18 & 24 & 19 & 17 & 20 & 8 & 5 & 16 & 13 & 8 & 7 & 12 \\
+\end{tabular}
+\end{center}
 
-Afterwards, the key and the plaintext are added together utilizing modular addition. Of course, all operations below are performed in \textit{mod 26}. Finally, the resulting numbers are converted to the character to which they correspond in the Latin alphabet. The resulting sequence of characters is referred to as the ciphertext.
+Afterwards, the key and the plaintext are added using modular addition. Of course, all operations below are performed  \textit{mod 26}. Finally, the resulting numbers are converted to the character to which they correspond in the Latin alphabet. The resulting sequence of characters is referred to as the ciphertext.
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=1]{Table3.PNG}
-\end{figure}
+\begin{center}
+\makebox[\textwidth][c]{
+\begin{tabular}{cccccccccccc}
+2+18 & 17+24 & 24+19 & 15+17 & 19+20 & 14+8 & 6+5 & 17+16 & 0+13 & 15+8 & 7+7 & 24+12 \\
+$\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$  \\
+20 & 15 & 17 & 6 & 13 & 22 & 11 & 7 & 13 & 23 & 14 & 10 \\
+$\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$  \\
+u & p & r & g & n & w & l & h & n & x & o & k
+\end{tabular}
+}
+\end{center}
 
-The modular addition of the plaintext and the key can also, however, be performed bitwise. This simply means that, instead of adding a message consisting of (up to) 26 different letters with a key (also consisting of up to 26 different letters), we simply add the bits of the plaintext (a computer file consisting of bits), which can assume the value of either 1 or 2, with the bits of the key. The bits are added in modulo 2. This process is referred to as XOR, one of the basic bitwise operations which can be performed directly by a computers central processor.
+The modular addition of the plaintext and the key can also be performed bitwise. This means that, instead of adding a message consisting of Latin characters with a key also consisting of Latin characters, the bits of the plaintext (a computer file consisting of bits), which can assume the value of either 1 or 2, are added $mod 2$ to the bits of the key. The bits are added in modulo 2. This process is referred to as XOR, one of the basic bitwise operations which can be performed directly by a computers central processor.
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=1]{XORgate.PNG}
-\caption{The formula used by an XOR gate.}
-\end{figure}
+\begin{center}
+\begin{tabular}{cccc}
+0 & 1 & 0 & 1 \\
+$+(mod 2)$ & $+(mod 2)$ & $+(mod 2)$ & $+(mod 2)$ \\
+0 & 0 & 1 & 1 \\
+$\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ \\
+0 & 1 & 1 & 0
+\end{tabular}
+\end{center}
 
 \subsection{Decoding of the ciphertext using the key}
 Assuming the message has been delivered to the intended recipient, who must hold a copy of the secret key (which, as OTP is a symmetrical cryptographical method, is identical to the one utilized to create the ciphertext), the recipient can now decode the ciphertext in order to view the plaintext.
 
-Since the ciphertext was created through the modular addition of the plaintext and the key, the recipient can utilize modular subtraction in order to view the plaintext. In order to do this, the recipient must subtract the key from the ciphertext in modulo 26, and convert the resulting numbers to Latin characters.  However, it is now also necessary for the numbers not to become negative. Fortunately, this is also made possible by modular arithmetic, as the values simply loop back around from 0 as well. Once again, all below operations are in \textit{mod 26}.
+Since the ciphertext was created through the modular addition of the plaintext and the key, the recipient can utilize modular subtraction in order to view the plaintext. In order to do this, the recipient must subtract the key from the ciphertext in modulo 26, and convert the resulting numbers to Latin characters. It is now also necessary for the results not to become negative. Fortunately, this is also made possible by modular arithmetic, as the values simply loop back around from 0 as well. Once again, all below operations are performed \textit{mod 26}.
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=1]{Table4.PNG}
-\end{figure}
+\begin{center}
+\makebox[\textwidth][c]{
+\begin{tabular}{cccccccccccc}
+20-18 & 15-24 & 17-19 & 6-17 & 13-20 & 22-8 & 11-5 & 7-16 & 13-13 & 23-8 & 14-7 & 10-12 \\
+$\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$  \\
+2 & 17 & 24 & 15 & 19 & 14 & 6 & 17 & 0 & 15 & 7 & 24 \\
+$\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$  \\
+c & r & y & p & t & o & g & r & a & p & h & y \\
+\end{tabular}
+}
+\end{center}
 
 Now, the message's journey is complete, having passed from plaintext into ciphertext, being transported to its intended recipient in the form of ciphertext, and finally being decoded and read by its recipient. 
 
@@ -235,7 +262,7 @@ Let $m^{*}$ be a possible message, selected at random using a uniform distributi
 $\forall m^{*} \in M: P(m^{*})=\frac{1}{\lvert M \rvert}$
 
 Let $k^{*}$ be a possible key, selected at random using a uniform distribution.
-$\forall k^{*} \in M: P(k^{*})=\frac{1}{\lvert K \rvert}$
+$\forall k^{*} \in K: P(k^{*})=\frac{1}{\lvert K \rvert}$
 \end{defin}
 
 \begin{lemma}
@@ -321,9 +348,9 @@ The most important conclusion which Shannon drew from his proof was that, in ord
 \section{Issues with OTP}
 %I had just one sentence here, but felt it appeared strange to just have one sentence and opted to leave it blank.
 \subsection{True randomness in generating the key}
-One of the most important aspects of the utilized key is that it must be completely random (see 1.2.1). However, generating a random sequence of numbers or letters is no trivial task. In fact, most random number generation functions of even modern programming languages are not adequately random for use in cryptography. This is especially difficult for computers, considering that a computer is, in essence, designed to follow a set of predictable instructions as quickly as possible.
+One of the most important aspects of the utilized key is that it must be completely random \hyperref[sec::otpkeygen]{(see 1.2.1)}. However, generating a random sequence of numbers or letters is no trivial task. In fact, most random number generation functions of even modern programming languages are not adequately random for use in cryptography. This is especially difficult for computers, considering that a computer is, in essence, designed to follow a set of predictable instructions as quickly as possible.
 
-Therefore, in order to generate a sufficiently random key, it is preferable to utilize hardware random number generators, for example by utilizing a true random noise source \cite{MilsElectronic}. One such example is the key generator built by mils electronic, where a set of parallel ring oscillators are sampled. Because the oscillation speed of each ring is influenced by random factors such as local variations in temperature and voltage.
+Therefore, in order to generate a sufficiently random key, it is preferable to utilize hardware random number generators, for example by utilizing a true random noise source \cite{MilsElectronic}. One such example is the key generator built by mils electronic, where a set of parallel ring oscillators are sampled. Because the oscillation speed of each ring is influenced by random factors such as local variations in temperature and voltage, this method is sufficiently random for use in high-security cryptography.
 
 \begin{figure}[H]
 \centering
@@ -338,11 +365,11 @@ Therefore, in order to ensure that the plaintext cannot be accessed by any party
 
 However, if the communicants already possess a method by which the key can be transmitted with infallible security, then it stands to reason that the plaintext itself could just as well be submitted through the same channel, considering that it has the same number of bytes (or characters) as the key. So, the problem of securely transmitting the plaintext has simply been transferred to the problem of securely transmitting the key.
 
-One method of mitigating this issue is to first send one very long key, which can then be used for multiple messages in the future. Using this method, only one secure transmission has to be made in order to ensure the security of multiple transmissions. 
+One method of mitigating this issue is to first send one very long key, which can then be used for multiple messages in the future. Using this method, only one secure transmission has to be made in order to ensure the security of multiple future transmissions. 
 
 \subsection{Secure disposal of a utilized key}
 %Once again, not entirely sure if this warrants its own section or if it should be merged into the above section.
-After a key has been fully utilized, it has to be disposed of securely, in order to prevent any information from being compromised in the future, which is possible should the key continue to exist. Therefore, it is necessary to completely eradicate the entirety of the key. If the key was stored on a digital media, such as a USB drive or HDD, the only completely secure method of disposal is considered to be complete incineration.
+After a key has been fully utilized, it has to be disposed of securely, in order to prevent any information from being compromised in the future, which is possible should the key continue to exist. Therefore, it is necessary to completely eradicate the entirety of the key. If the key was stored on a digital media, such as a USB drive or HDD, the sophistication of modern data recovery methods, such as viewing hard drives under magnetic force microscopes to detect their stored bits\cite{DataRecovery}, makes their secure destruction a surprisingly difficult challenge. One way that data is destroyed commercially, for example, is by shredding hard drives and mixing the fragments of multiple hard drives destroyed in such a fashion, making data recovery of one specific drive virtually impossible\cite{HDDDestruction}.
 
 % Whenever you use a sentence like ``is considered to be...'' you need to
 % provide a source. Are you sure that incinerating hard drives does the job? The
@@ -354,11 +381,25 @@ After a key has been fully utilized, it has to be disposed of securely, in order
 
 Viewed from a high level, the AES algorithm consists of one XOR step, followed by 10 rounds of cryptographical measures, with each round as well as the initial XOR step using a specific subkey, generated using the main key. By passing through these steps, each block of plaintext is converted into a block of Ciphertext. In the following chapter, each individual aspect of the complete AES algorithm will be more closely examined.
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{AES_fig1.jpg}
-\caption{A high-level description of AES.}
-\end{figure}
+\begin{center}
+\begin{tikzpicture}[node distance=2cm]
+\node (plaintext) [startstop] {Plaintext};
+\node (masterkey) [startstop, below of = plaintext, yshift=-1.5cm] {Master key};
+\node (XOR) [process, right of = plaintext, xshift=1.5cm] {XOR};
+\node (Roundfirst) [process, right of = XOR, xshift=1.5cm] {Round 1};
+\node (Roundlast) [process, right of = Roundfirst, xshift=1.5cm] {Round 10};
+\node (Ciphertext) [startstop, right of = Roundlast, xshift=1.5cm] {Ciphertext};
+\node (RoundKey) [process, below of = Roundfirst, yshift=-1.5cm] {Round Key generation};
+\draw [arrow] (plaintext) -- (XOR);
+\draw [arrow] (XOR) -- (Roundfirst);
+\draw [arrow] (Roundfirst) -- (Roundlast);
+\draw [arrow] (Roundlast) -- (Ciphertext);
+\draw [arrow] (masterkey) -- (RoundKey);
+\draw [arrow] (RoundKey) -- (XOR);
+\draw [arrow] (RoundKey) -- (Roundfirst);
+\draw [arrow] (RoundKey) -- (Roundlast);
+\end{tikzpicture}
+\end{center}
 
 \section{Encryption}
 Each round possesses 4 steps, explained in detail below. However, before those operations can be understood, some basic terminology must first be clarified.
@@ -384,10 +425,25 @@ Each AES round key possesses the same size as the state, and is made into a matr
 
 \subsection{Initial XOR operation}
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{AES_fig2.jpg}
-\end{figure}
+\begin{center}
+\begin{tikzpicture}[node distance=2cm]
+\node (plaintext) [startstop] {Plaintext};
+\node (masterkey) [startstop, below of = plaintext, yshift=-1.5cm] {Master key};
+\node (XOR) [io, right of = plaintext, xshift=1.5cm] {XOR};
+\node (Roundfirst) [process, right of = XOR, xshift=1.5cm] {Round 1};
+\node (Roundlast) [process, right of = Roundfirst, xshift=1.5cm] {Round 10};
+\node (Ciphertext) [startstop, right of = Roundlast, xshift=1.5cm] {Ciphertext};
+\node (RoundKey) [process, below of = Roundfirst, yshift=-1.5cm] {Round Key generation};
+\draw [arrow] (plaintext) -- (XOR);
+\draw [arrow] (XOR) -- (Roundfirst);
+\draw [arrow] (Roundfirst) -- (Roundlast);
+\draw [arrow] (Roundlast) -- (Ciphertext);
+\draw [arrow] (masterkey) -- (RoundKey);
+\draw [arrow] (RoundKey) -- (XOR);
+\draw [arrow] (RoundKey) -- (Roundfirst);
+\draw [arrow] (RoundKey) -- (Roundlast);
+\end{tikzpicture}
+\end{center}
 
 This step is identical to the XOR operation already described in the chapter regarding OTP. The XOR operation simply represents an addition modulo 2, and is denoted using the symbol $\bigoplus$. Once again, a simple XOR gate is used to add the state with the initial XOR operations own round key, which is identical to the master key (see 2.2.2.3).
 
@@ -409,10 +465,25 @@ Here, each byte of the state is combined with the byte of the subkey which posse
 
 \subsection{Rounds}
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{AES_fig3.jpg}
-\end{figure}
+\begin{center}
+\begin{tikzpicture}[node distance=2cm]
+\node (plaintext) [startstop] {Plaintext};
+\node (masterkey) [startstop, below of = plaintext, yshift=-1.5cm] {Master key};
+\node (XOR) [process, right of = plaintext, xshift=1.5cm] {XOR};
+\node (Roundfirst) [io, right of = XOR, xshift=1.5cm, scale=0.7] {Round 1};
+\node (Roundlast) [io, right of = Roundfirst, xshift=1.5cm, scale=0.7] {Round 10};
+\node (Ciphertext) [startstop, right of = Roundlast, xshift=1.5cm] {Ciphertext};
+\node (RoundKey) [process, below of = Roundfirst, yshift=-1.5cm] {Round Key generation};
+\draw [arrow] (plaintext) -- (XOR);
+\draw [arrow] (XOR) -- (Roundfirst);
+\draw [arrow] (Roundfirst) -- (Roundlast);
+\draw [arrow] (Roundlast) -- (Ciphertext);
+\draw [arrow] (masterkey) -- (RoundKey);
+\draw [arrow] (RoundKey) -- (XOR);
+\draw [arrow] (RoundKey) -- (Roundfirst);
+\draw [arrow] (RoundKey) -- (Roundlast);
+\end{tikzpicture}
+\end{center}
 
 \subsubsection{Galois Field $GF(2^8)$ arithmetic}
 Before the math behind AES can be fully understood, the Galois Field $GF(2^8)$ must first be more closely examined. This field contains only 256 values, ranging from 0-255; the range which can be stored in a byte. Secondly, all bytes are written using hexadecimal notation. Most importantly, all binary strings are represented as polynomials; this is best illustrated through an example \cite{GFieldExample}.

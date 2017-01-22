@@ -142,6 +142,47 @@
       \field{title}{Communication Theory of Secrecy Systems}
       \field{year}{1949}
     \endentry
+    \entry{DataRecovery}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=88f0882bf05de5d9af332851b2a0f9ac}{%
+           family={Kanekal},
+           family_i={K\bibinitperiod},
+           given={Vasu},
+           given_i={V\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of California, San Diego}%
+      }
+      \strng{namehash}{88f0882bf05de5d9af332851b2a0f9ac}
+      \strng{fullhash}{88f0882bf05de5d9af332851b2a0f9ac}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Data Reconstruction from a Hard Disk Drive using Magnetic Force Microscopy}
+      \field{type}{masterthesis}
+      \field{year}{2013}
+    \endentry
+    \entry{HDDDestruction}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c0d0ae44a72d07dcf552a731d8333d73}{%
+           family={Destruction},
+           family_i={D\bibinitperiod},
+           given={Secure\bibnamedelimb Hard\bibnamedelima Drive},
+           given_i={S\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{c0d0ae44a72d07dcf552a731d8333d73}
+      \strng{fullhash}{c0d0ae44a72d07dcf552a731d8333d73}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Secure Hard Drive Destruction can be relied upon for your complete hard drive destruction and recycling needs.}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.shdd.com.au/
+      \endverb
+    \endentry
     \entry{GFieldExample}{online}{}
       \name{author}{1}{}{%
         {{hash=904fd0158bacf0c6dd922d025d41c79f}{%
