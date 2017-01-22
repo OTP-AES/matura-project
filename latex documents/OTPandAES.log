@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  15 JAN 2017 20:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  22 JAN 2017 01:38
 entering extended mode
 **./OTPandAES.tex
 (OTPandAES.tex
@@ -931,19 +931,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 681--688
 Chapter 3.
 [40
 
-] [41] [42] [43] [44] <images/PayPal.png, id=181, 1426.57968pt x 951.555pt>
+] [41] [42] [43] [44] [45]
+<images/PayPal.png, id=184, 1426.57968pt x 951.555pt>
 File: images/PayPal.png Graphic file (type png)
-
-<use images/PayPal.png>
-Package pdftex.def Info: images/PayPal.png used on input line 939.
+ <use images/PayPal.png>
+Package pdftex.def Info: images/PayPal.png used on input line 960.
 (pdftex.def)             Requested size: 427.9772pt x 285.4687pt.
 
-Overfull \hbox (37.9772pt too wide) in paragraph at lines 939--940
+Overfull \hbox (37.9772pt too wide) in paragraph at lines 960--961
  [][] 
  []
 
-[45] [46 <./images/PayPal.png>] [47] [48]
-Overfull \hbox (81.83385pt too wide) in paragraph at lines 959--959
+[46 <./images/PayPal.png>] [47] [48]
+Overfull \hbox (81.83385pt too wide) in paragraph at lines 980--980
 []\OT1/cmr/m/n/12 learncryptography.com. \OT1/cmr/m/it/12 Fre-quency Anal-y-sis
 \OT1/cmr/m/n/12 . 2014. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : $\OT1/cmtt/m/n/12
  https : / / learncryptography .
@@ -952,20 +952,20 @@ Overfull \hbox (81.83385pt too wide) in paragraph at lines 959--959
 [49
 
 ]
-Overfull \hbox (16.70265pt too wide) in paragraph at lines 959--959
+Overfull \hbox (16.70265pt too wide) in paragraph at lines 980--980
 \OT1/cmtt/m/n/12 mathematics / numberTheory / euclidsAlgorithmAndExtendedAlgori
 th .
  []
 
 
-Overfull \hbox (18.44344pt too wide) in paragraph at lines 959--959
+Overfull \hbox (18.44344pt too wide) in paragraph at lines 980--980
 \OT1/cmr/m/it/12 de-cryp-tion? \OT1/cmr/m/n/12 2012. \OT1/cmr/m/sc/12 url\OT1/c
 mr/m/n/12 : $\OT1/cmtt/m/n/12 http : / / crypto . stackexchange . com / questio
 ns /
  []
 
 
-Overfull \hbox (13.71162pt too wide) in paragraph at lines 959--959
+Overfull \hbox (13.71162pt too wide) in paragraph at lines 980--980
 []\OT1/cmr/m/n/12 Amish Ku-mar and Na-mita Ti-wari. \OT1/cmr/m/it/12 ef-fec-tiv
 e im-ple-men-ta-tion and avalanche
  []
@@ -976,13 +976,13 @@ Package logreq Info: Writing requests to 'OTPandAES.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20310 strings out of 493335
- 390468 string characters out of 3146586
- 787410 words of memory out of 3000000
- 23482 multiletter control sequences out of 15000+200000
+ 20316 strings out of 493335
+ 390696 string characters out of 3146586
+ 787540 words of memory out of 3000000
+ 23488 multiletter control sequences out of 15000+200000
  13826 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,56p,860b,993s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,11n,56p,1034b,993s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/miketex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/miketex/fonts/type1
 /public/amsfonts/cm/cmcsc10.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmex
 10.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/miketex/fonts/
@@ -995,7 +995,7 @@ s/type1/public/amsfonts/cm/cmsy6.pfb><E:/miketex/fonts/type1/public/amsfonts/cm
 nts/type1/public/amsfonts/cm/cmtt12.pfb><E:/miketex/fonts/type1/public/amsfonts
 /symbols/msam10.pfb><E:/miketex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 
-Output written on OTPandAES.pdf (52 pages, 4224144 bytes).
+Output written on OTPandAES.pdf (52 pages, 4227896 bytes).
 PDF statistics:
  258 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

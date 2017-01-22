@@ -2109,9 +2109,13 @@
     <bcf:citekey order="34">XSL</bcf:citekey>
     <bcf:citekey order="35">XLSRebuked</bcf:citekey>
     <bcf:citekey order="36">CNSSPolicy</bcf:citekey>
-    <bcf:citekey order="37">RandomOrg</bcf:citekey>
-    <bcf:citekey order="38">Snowden</bcf:citekey>
-    <bcf:citekey order="39">PayPal</bcf:citekey>
+    <bcf:citekey order="37">VernamMachine</bcf:citekey>
+    <bcf:citekey order="38">RandomOrg</bcf:citekey>
+    <bcf:citekey order="39">DiffieHellman</bcf:citekey>
+    <bcf:citekey order="40">Snowden</bcf:citekey>
+    <bcf:citekey order="41">AlanTuring</bcf:citekey>
+    <bcf:citekey order="42">CNSSPolicy</bcf:citekey>
+    <bcf:citekey order="43">PayPal</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

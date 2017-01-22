@@ -541,6 +541,26 @@
       \verb https://web.archive.org/web/20100305200432/http://www.usdsi.com/aes.html
       \endverb
     \endentry
+    \entry{VernamMachine}{online}{}
+      \name{author}{1}{}{%
+        {{hash=94cd3e78d823fbdd6407b02c0e0fcf37}{%
+           family={Museum},
+           family_i={M\bibinitperiod},
+           given={Crypto},
+           given_i={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{94cd3e78d823fbdd6407b02c0e0fcf37}
+      \strng{fullhash}{94cd3e78d823fbdd6407b02c0e0fcf37}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Vernam Cipher Digital bit-wise XOR}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.cryptomuseum.com/crypto/vernam.htm
+      \endverb
+    \endentry
     \entry{RandomOrg}{online}{}
       \name{author}{2}{}{%
         {{hash=1e91523b5e6f8896acfd8fdd5673266d}{%
@@ -564,6 +584,26 @@
       \verb https://www.random.org/
       \endverb
     \endentry
+    \entry{DiffieHellman}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2c3816c137b10701827793fa8d02f8e4}{%
+           family={L.},
+           family_i={L\bibinitperiod},
+           given={Tyler},
+           given_i={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c3816c137b10701827793fa8d02f8e4}
+      \strng{fullhash}{2c3816c137b10701827793fa8d02f8e4}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Diffie Hellman Key Exchange in plain English}
+      \field{year}{2013}
+      \verb{url}
+      \verb http://security.stackexchange.com/questions/45963/diffie-hellman-key-exchange-in-plain-english/45971
+      \endverb
+    \endentry
     \entry{Snowden}{article}{}
       \name{author}{1}{}{%
         {{hash=a92744888af1a77e5dc8795d3a4954cc}{%
@@ -583,6 +623,24 @@
       \field{journaltitle}{The Guardian}
       \field{title}{Edward Snowden: the whistleblower behind the NSA surveillance revelations}
       \field{year}{2013}
+    \endentry
+    \entry{AlanTuring}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0382c5c00c6a5cbb6b64c3ce1b7b78f1}{%
+           family={turing.org.uk},
+           family_i={t\bibinitperiod}}}%
+      }
+      \strng{namehash}{0382c5c00c6a5cbb6b64c3ce1b7b78f1}
+      \strng{fullhash}{0382c5c00c6a5cbb6b64c3ce1b7b78f1}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Critical Cryptanalysis: The Enigma War, 1939-1942}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.turing.org.uk/scrapbook/ww2.html
+      \endverb
     \endentry
     \entry{PayPal}{online}{}
       \name{author}{1}{}{%

@@ -90,10 +90,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}Secure transmission methods}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Cryptography: Past, present and future}{44}
+\contentsline {section}{\numberline {3.3}Cryptography: Past, present and future}{45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}The modern war}{44}
+\contentsline {subsection}{\numberline {3.3.1}The modern war}{45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Privacy: An outdated concept?}{46}
+\contentsline {subsection}{\numberline {3.3.2}Privacy: An outdated concept?}{47}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Closing remarks}{47}
