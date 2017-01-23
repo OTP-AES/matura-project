@@ -50,14 +50,15 @@ sorting=none]
 
 \begin{document}
 
-\title{OTP and AES: A historical transition between two systems of cryptography}
+\title{OTP and AES: A Historical Transition Between two Systems of Cryptography}
 \author{Valdemar Thanner\\Supervised by Mr. Bernhard Keller\\Linguistic supervision by Ms. Margrit Oetiker}
 \date{23.01.2017}
 \maketitle
 
-\chapter*{Dedication}
-
 \chapter*{Acknowledgements}
+I would first like to thank Mr. Keller of the Mathematics Faculty at the Kantonsschule Zug, who not only helped me with many of the difficult to grasp mathematical concepts that I encountered, as well as being very helpful in learning \LaTeX, which was a completely new method of typesetting for me. I am especially grateful not only for his help and patience in regard to this specific paper, but also for teaching me things that I believe will be of great help in my further academic career, such as proper use of git.
+
+Furthermore, I would like to extend thanks to Ms. Oetiker of the English Faculty at the Kantonsschule Zug, for her linguistic supervision of this paper as well as for the helpful materials, advice and guidelines which she provided to me throughout the course of writing the paper.
 
 \chapter*{Introduction}
 With the advent of the internet, cryptography has, for the first time in human history, become an integral part of human life. It protects our private communications, safeguards our finances and so much more. In writing this paper, it is my aim to shed some light on the modern cryptography which has become so integral to our daily lives.
@@ -91,11 +92,11 @@ This made the entire system vulnerable. The re-usage of the key meant that the r
 \caption{A technical diagram from Vernam's famous "Secret signaling system" patent of 1919.}
 \end{figure}    
 
-\section{Method used}
+\section{Method Used}
 %This section, especially the practical example, is the most important part of the chapter.
 In the following section, the utilized method will be clarified through usage of an example. In this example, the message \textit{"cryptography"} will first be encrypted by its sender, sent to its intended recipient, and finally decoded by the recipient.
 
-\subsection{Generation of the random key}
+\subsection{Generation of the Random Key}
 \label{sec::otpkeygen}
 In order to encrypt the plaintext, a key must first be generated. This key will be utilized to encrypt the plaintext through the usage of modular addition, turning it into the ciphertext.
 
@@ -107,7 +108,7 @@ The key consists of numbers. Usually, when the plaintext is made up of Latin let
 
 As the message being encrypted in this example has 12 characters, the key must also posses at least 12 characters. For the sake of this example, the key \textit{"sytruifgnihm"} will be utilized.
 
-\subsection{Modular addition of the key and plaintext}
+\subsection{Modular Addition of the Key and Plaintext}
 %unsure if a picture explaining modular addition and subtraction is needed, or if the provided explanation suffices?			
 
 % In my opinition, the part about modular addition is quite clear. You could
@@ -170,7 +171,7 @@ $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ \\
 \end{tabular}
 \end{center}
 
-\subsection{Decoding of the ciphertext using the key}
+\subsection{Decoding of the Ciphertext Using the Key}
 Assuming the message has been delivered to the intended recipient, who must hold a copy of the secret key (which, as OTP is a symmetrical cryptographical method, is identical to the one utilized to create the ciphertext), the recipient can now decode the ciphertext in order to view the plaintext.
 
 Since the ciphertext was created through the modular addition of the plaintext and the key, the recipient can utilize modular subtraction in order to view the plaintext. In order to do this, the recipient must subtract the key from the ciphertext in modulo 26, and convert the resulting numbers to Latin characters. It is now also necessary for the results not to become negative. Fortunately, this is also made possible by modular arithmetic, as the values simply loop back around from 0 as well. Once again, all below operations are performed \textit{mod 26}.
@@ -189,7 +190,7 @@ c & r & y & p & t & o & g & r & a & p & h & y \\
 
 Now, the message's journey is complete, having passed from plaintext into ciphertext, being transported to its intended recipient in the form of ciphertext, and finally being decoded and read by its recipient. 
 
-\section{Perfect secrecy: Information-theoretical security}
+\section{Perfect Secrecy: Information-theoretical Security}
 An important characteristic of perfect secrecy is that the ciphertext conveys no information at all in regards to the plaintext; this means that it is not possible to garner any information about the key nor the plaintext if one is in possession of the ciphertext \cite{PerfectSecrecy} \cite{HandbookOfAppliedCryptography}. In probability theory, where $C$ contains all possible ciphertexts and $M$ contains all possible messages:
 
 \begin{defin}\label{def:perfectsecrecy}
@@ -204,7 +205,7 @@ From this, two other important characteristics of a cryptographical system with 
 
 Although many believe that the ciphertext does provide information about the plaintext, namely its length, this can easily be solved through padding, where characters of no importance to the plaintext are added to it before encryption \cite{HutSix}.
 
-\subsection{Mathematical proof}
+\subsection{Mathematical Proof}
 %This is the section which was most difficult for me to write; I opted to present a more simplified explanation of %Shannons proof without the use of probability theory.
 %Should I Include the probability Theory or is it better to keep it simple for the reader?
 
@@ -338,7 +339,7 @@ $\dfrac{\dfrac{P(m=m^{*})}{\lvert K \rvert}}{\frac{1}{\lvert K \rvert}} = P(m=m^
 = RHS$
 \end{proof}
 
-\subsection{Consequences of the proof}
+\subsection{Consequences of the Proof}
 %Not sure if this information warrants its own section or if I should merge it with the above one
 
 %From the above proof, it can be concluded that, in order for the elimination of any possible %plaintext to be impossible (rendering a brute-force attack impossible), the key must possess %at least the same length as the plaintext. Also, the individual bits of the must not be %dependant on one another. These conditions are only fulfilled by OTP.
@@ -347,7 +348,7 @@ The most important conclusion which Shannon drew from his proof was that, in ord
 
 \section{Issues with OTP}
 %I had just one sentence here, but felt it appeared strange to just have one sentence and opted to leave it blank.
-\subsection{True randomness in generating the key}
+\subsection{True Randomness in Generating the Key}
 One of the most important aspects of the utilized key is that it must be completely random \hyperref[sec::otpkeygen]{(see 1.2.1)}. However, generating a random sequence of numbers or letters is no trivial task. In fact, most random number generation functions of even modern programming languages are not adequately random for use in cryptography. This is especially difficult for computers, considering that a computer is, in essence, designed to follow a set of predictable instructions as quickly as possible.
 
 Therefore, in order to generate a sufficiently random key, it is preferable to utilize hardware random number generators, for example by utilizing a true random noise source \cite{MilsElectronic}. One such example is the key generator built by mils electronic, where a set of parallel ring oscillators are sampled. Because the oscillation speed of each ring is influenced by random factors such as local variations in temperature and voltage, this method is sufficiently random for use in high-security cryptography.
@@ -358,7 +359,7 @@ Therefore, in order to generate a sufficiently random key, it is preferable to u
 \caption{A hardware random number generator with sufficient randomness to be utilized in the generation of one-time pads.}
 \end{figure}
 
-\subsection{Secure distribution of the key itself}
+\subsection{Secure Distribution of the Key itself}
 The main issue in regards to OTP is that, while it posses perfect security, therefore solving the issue of safely transmitting the ciphertext, the problem instead becomes how to securely transmit the key to the intended recipient of the encrypted message.
 
 Therefore, in order to ensure that the plaintext cannot be accessed by any party other than its intended recipient, the complete security of the transmittal of the key must also be ensured.
@@ -367,7 +368,7 @@ However, if the communicants already possess a method by which the key can be tr
 
 One method of mitigating this issue is to first send one very long key, which can then be used for multiple messages in the future. Using this method, only one secure transmission has to be made in order to ensure the security of multiple future transmissions. 
 
-\subsection{Secure disposal of a utilized key}
+\subsection{Secure Disposal of a Utilized Key}
 %Once again, not entirely sure if this warrants its own section or if it should be merged into the above section.
 After a key has been fully utilized, it has to be disposed of securely, in order to prevent any information from being compromised in the future, which is possible should the key continue to exist. Therefore, it is necessary to completely eradicate the entirety of the key. If the key was stored on a digital media, such as a USB drive or HDD, the sophistication of modern data recovery methods, such as viewing hard drives under magnetic force microscopes to detect their stored bits\cite{DataRecovery}, makes their secure destruction a surprisingly difficult challenge. One way that data is destroyed commercially, for example, is by shredding hard drives and mixing the fragments of multiple hard drives destroyed in such a fashion, making data recovery of one specific drive virtually impossible\cite{HDDDestruction}.
 
@@ -377,9 +378,9 @@ After a key has been fully utilized, it has to be disposed of securely, in order
 
 \chapter{AES: The Advanced Encryption Standard}
 
-\section{AES viewed from a high level}
+\section{AES Viewed from a High Level}
 
-Viewed from a high level, the AES algorithm consists of one XOR step, followed by 10 rounds of cryptographical measures, with each round as well as the initial XOR step using a specific subkey, generated using the main key. By passing through these steps, each block of plaintext is converted into a block of Ciphertext. In the following chapter, each individual aspect of the complete AES algorithm will be more closely examined.
+Viewed from a high level, the AES algorithm consists of one XOR step, followed by ten rounds of cryptographical measures, with each round as well as the initial XOR step using a specific round key, generated using the main key. By passing through these steps, each block of plaintext is converted into a block of ciphertext. In the following chapter, each individual aspect of the complete AES algorithm will be more closely examined.
 
 \begin{center}
 \begin{tikzpicture}[node distance=2cm]
@@ -402,9 +403,9 @@ Viewed from a high level, the AES algorithm consists of one XOR step, followed b
 \end{center}
 
 \section{Encryption}
-Each round possesses 4 steps, explained in detail below. However, before those operations can be understood, some basic terminology must first be clarified.
+Each round possesses four steps, explained in detail below. However, before those operations can be understood, some basic terminology must first be clarified.
 
-The "state" is the matrix containing the information which is manipulated throughout the encryption process. As such, the state begins its journey through AES as the block of plaintext which is to be encrypted, and ends it as a block of ciphertext. The state is represented in a $4 \times 4$ column-major order matrix, meaning that the bytes are counted from top to bottom. In a block containing 16 bytes, the standard size of an AES plaintext block as well as the standard size of  an AES key is $(16 bytes \cdot 8 = 128 bits)$.
+The "state" is the matrix containing the information which will be manipulated throughout the encryption process. As such, the state begins its journey through AES as a block of plaintext which is to be encrypted, and ends it as a block of ciphertext. The state is represented in a $4 \times 4$ column-major order matrix, meaning that the bytes are counted from top to bottom. In a block containing 16 bytes, the standard size of an AES plaintext block as well as the standard size of  an AES key is $(16 bytes = 128 bits)$.
 
 \[ \left( \begin{array}{cccc}
 a_0 & a_4 & a_8 & a_{12} \\
@@ -420,10 +421,11 @@ a_{1,0} & a_{1,1} & a_{1,2} & a_{1,3} \\
 a_{2,0} & a_{2,1} & a_{2,2} & a_{2,3} \\
 a_{3,0} & a_{3,1} & a_{3,2} & a_{3,3}\end{array} \right)\] 
 
-Each AES round key possesses the same size as the state, and is made into a matrix in the exact same fashion; this is, of course, necessary for the successful modular addition of the bytes contained within the state and those contained within the subkey using the XOR operation.
+Each AES round key possesses the same size as the state, and is made into a matrix in the exact same fashion; this is, of course, necessary for the successful modular addition of the bytes contained within the state and those contained within the round key using the XOR operation.
 
 
-\subsection{Initial XOR operation}
+\subsection{Initial XOR Operation}
+\label{InitXOR}
 
 \begin{center}
 \begin{tikzpicture}[node distance=2cm]
@@ -445,7 +447,7 @@ Each AES round key possesses the same size as the state, and is made into a matr
 \end{tikzpicture}
 \end{center}
 
-This step is identical to the XOR operation already described in the chapter regarding OTP. The XOR operation simply represents an addition modulo 2, and is denoted using the symbol $\bigoplus$. Once again, a simple XOR gate is used to add the state with the initial XOR operations own round key, which is identical to the master key (see 2.2.2.3).
+This step is identical to the XOR operation already described in the chapter regarding OTP. The XOR operation simply represents an addition modulo 2, and is denoted using the symbol $\bigoplus$. Once again, a simple XOR gate is used to add the state with the initial XOR operations own round key, which is identical to the master key \hyperref[KeyExpansions]{(see 2.2.2.3)}.
 
 \[ 
 \left( \begin{array}{cccc}
@@ -461,7 +463,7 @@ k_{2,0} & k_{2,1} & k_{2,2} & k_{2,3} \\
 k_{3,0} & k_{3,1} & k_{3,2} & k_{3,3}\end{array} \right)
 \]
 
-Here, each byte of the state is combined with the byte of the subkey which possesses the corresponding position using the XOR operation. For example, $a_{2,1}$ would be combined with $k_{2,1}$. The resulting byte is then placed at the matching coordinate (in this example, once again the coordinate 2,1) of the resulting matrix. The completed matrix resulting from this operation is the new state. Next, this resulting state proceeds into the first of ten so-called "rounds".
+Here, each byte of the state is combined with the byte of the round key which possesses the corresponding position using the XOR operation. For example, $a_{2,1}$ would be combined with $k_{2,1}$. The resulting byte is then placed at the matching coordinate (in this example, once again the coordinate 2,1) of the resulting matrix. The completed matrix resulting from this operation is the new state. Next, this resulting state proceeds into the first of ten so-called "rounds".
 
 \subsection{Rounds}
 
@@ -486,6 +488,7 @@ Here, each byte of the state is combined with the byte of the subkey which posse
 \end{center}
 
 \subsubsection{Galois Field $GF(2^8)$ arithmetic}
+\label{Galois}
 Before the math behind AES can be fully understood, the Galois Field $GF(2^8)$ must first be more closely examined. This field contains only 256 values, ranging from 0-255; the range which can be stored in a byte. Secondly, all bytes are written using hexadecimal notation. Most importantly, all binary strings are represented as polynomials; this is best illustrated through an example \cite{GFieldExample}.
 
 $11001000 = 1x^7+1x^6+0x^4+1x^3+0x^2+0x^1+0x^0 = x^7+x^6+x^3 $ 
@@ -502,14 +505,15 @@ As can be seen, this method is in keeping with the XOR addition of bytes. Howeve
 
 The issue with multiplying two bytes with each other within the finite field is that it is possible to receive a polynomial of higher order than 7; polynomials like this cannot be stored as a byte. Therefore, a reducing polynomial of the order 8 must be utilized. AES defines this reducing polynomial as $x^8+x^4+x^3+x+1$. The Galois Field $GF(2^8)$ utilizing the reducing polynomial $x^8+x^4+x^3+x+1$ for multiplication is referred to as Rijndael's finite field\cite{RFiniteField}.
 
-In order to prevent a result that cannot be stored as a byte, all results of multiplications between bytes are then taken modulo the reducing polynomial. This means that, if the degree of a resulting polynomial exceeds 7, an XOR division using the reducing polynomial must be performed.
+In order to prevent a result that cannot be stored as a byte, all results of multiplications between bytes are performed modulo the reducing polynomial. This means that, if the degree of a resulting polynomial would exceed 7, an XOR division using the reducing polynomial must be performed to obtain the final result of the multiplication.
 
 \subsubsection{Finding the multiplicative inverse using the extended euclidean algorithm}
+\label{Inverse}
 The multiplicative inverse of a number is defined as equalling one when multiplied with the number in question. The multiplicative inverse of $a$ is $a^{-1}$, as $a^{-1} \cdot a = 1$. Taking a variable to the power of $-1$ is defined as finding the multiplicative inverse.
 
-In AES, it is often necessary to find the multiplicative inverse of a byte. Furthermore, this multiplicative inverse must be found within the Rijndael field, meaning the multiplicative inverse must be found modulo the reducing polynomial. To this end, the extended euclidean algorithm is used.
+In AES, it is often necessary to find the multiplicative inverse of a byte. Furthermore, this multiplicative inverse must be found within Rijndael's finites field, meaning the multiplicative inverse must be found modulo the reducing polynomial. To this end, the extended euclidean algorithm is used.
 
-The regular Euclidean algorithm is simply a computationally efficient method to find the greatest common divisor of two positive integers. In order to find the gcd, the Euclidean algorithm checks how many times the smaller integer goes into the larger one, leaving r over. The algorithm then checks how many times r goes into the smaller integer, continuing in this manner until $r=0$. Once this point has been reached, the last value before r=0 is the gcd.
+The regular Euclidean algorithm is a computationally efficient method to find the greatest common divisor of two positive integers. In order to find the gcd, the Euclidean algorithm checks how many times the smaller integer goes into the larger one, leaving r over. The algorithm then checks how many times r goes into the smaller integer, continuing in this manner until $r=0$. Once this point has been reached, the last value before r=0 is the gcd\cite{stark1978introduction}.
 
 $a = k \cdot b + r$
 
@@ -567,7 +571,8 @@ All operations within the field are performed modulo the reducing polynomial. Th
 In order to find the multiplicative inverse of $p$, namely $a$, the extended euclidean algorithm can be applied. As always, it is of great importance that the rules of the field are observed.
 
 \subsubsection{Round key generation (KEYEXPANSIONS)}
-As can be seen in the high-level explanation, AES requires 11 128-bit subkeys (also referred to as round keys); one for the initial XOR operation, and then one for each of the 10 rounds. These subkeys are derived from the master key using the "Rijndael key schedule" \cite{KeySchedule}. In the most basic implementation of AES, the master key has a length of 128 bits. There are also implementations of AES using keys of lengths 192 and 256 bits. Such longer keys are used to provide even greater security, and are considered standard for top-secret documentation\cite{CNSSPolicy}. It is important to note that, even though the key size varies, AES always retains the same block size.
+\label{KeyExpansions}
+As can be seen in the high-level explanation, AES requires 11 128-bit round keys; one for the initial XOR operation, and then one for each of the 10 rounds. These round keys are derived from the master key using the "Rijndael key schedule" \cite{KeySchedule}. In the most basic implementation of AES, the master key has a length of 128 bits. There are also implementations of AES using keys of lengths 192 and 256 bits. Such longer keys are used to provide even greater security, and are considered standard for top-secret documentation\cite{CNSSPolicy}. It is important to note that, even though the key size varies, AES always retains the same block size of 128 bits.
 
 The first round key, utilized for the initial XOR operation, is simply the master key itself.
 
@@ -595,7 +600,7 @@ x_3 \\
 x_0\end{array} \right)
 \]
 
-Afterwards, the four bytes resulting from the RotWord operation are each replaced through utilization of a Rijndael S-Box (see  2.2.2.2). The resulting vector now needs to be added to the first, as in the leftmost, column of the master key using an XOR gate.
+Afterwards, the four bytes resulting from the RotWord operation are each replaced through utilization of a Rijndael S-Box \hyperref[Inverse]{(see 2.2.2.2)}. The resulting vector now needs to be added to the first, as in the leftmost, column of the master key using an XOR gate.
 
 \[
 \left( \begin{array}{c}
@@ -609,7 +614,7 @@ b_0 \\
 b_1 \\
 b_2 \\
 b_3\end{array} \right)
-+
+\bigoplus
 \left( \begin{array}{c}
 k_0 \\
 k_1 \\
@@ -617,7 +622,7 @@ k_2 \\
 k_3\end{array} \right)
 \]
 
-The final step to obtain the first four bytes of the round key is referred to as the RCon, meaning round constant step\cite[p. 15]{Rijndael}. In this step, a vector dependent on the iteration, the chronological number of the round key being generated starting with one, is added using an XOR gate. These vectors are constant for every application of AES; for example, the RCon vector obtained using an iteration of eight will always be used in the process of obtaining the first four bytes of the eighth round key.
+The final step to obtain the first four bytes of the round key is referred to as the RCon, meaning round constant step\cite{Rijndael}. In this step, a vector dependent on the iteration, the chronological number of the round key being generated starting with one, is added using an XOR gate. These vectors are constant for every application of AES; for example, the RCon vector obtained using an iteration of eight will always be used in the process of obtaining the first four bytes of the eighth round key.
 
 The RCon vector is calculated through the following formula, with i standing for the iteration.
 
@@ -629,7 +634,7 @@ The RCon vector is calculated through the following formula, with i standing for
 
 The bottom three values of the vetor are simply 00, in order to ensure that a vector with four values is obtained. This enables the vector to be added to the first column of the round key, which is also a vector containing four values. Therefore, the Rcon step only changes the top-most byte in the first column of the round key:
 
-As this operation takes place in Rijndael's finite field, the byte ${02} = x$, and if the RCon value possesses an order higher than 7, it must be taken modulo the reducing polynomial (see chapter 2.2.2.1). After the RCon operation is complete, the first column of the round key has been obtained.
+As this operation takes place in Rijndael's finite field, the byte ${02} = x$, and if the RCon value possesses an order higher than 7, it must be taken modulo the reducing polynomial \hyperref[Galois]{(see chapter 2.2.2.1)}. After the RCon operation is complete, the first column of the round key has been obtained.
 
 The generation of the other three columns is now relatively simple; only the XOR operation is necessary from this point onwards. In order to obtain the second column of the round key, the first column of the round key is added to the second column of the master key. The second column of the round key is now added to the third column of the master key in order to obtain the third column of the round key. Finally, in order to obtain the fourth column of the round key, the fourth column of the master key is added to the third column of the round key.
 
@@ -642,13 +647,14 @@ r_3 & r_7=r_3+k_7 & r_{11}=r_7+k_{11} & r_{15}=r_{11}+k_{15}\end{array} \right) 
 This round key is taken as the template for the generation of the next round key. This process is then repeated until ten new keys have been generated. Since the master key was the first template used, the entire expanded key is completely dependant on the master key.
 
 \subsubsection{Substitution using lookup table (SUBBYTES)}
+\label{SubBytes}
 The first substitution is relatively simple to perform; this is because it is a bytewise operation. This means that the data being manipulated is one single byte at a time, until all bytes that constitute the state have been manipulated. In this case, the manipulation is a substitution of each byte with another byte, the substitution being determined by a lookup table, in which each individual byte is assigned another byte with which it must be swapped. The reason that a lookup table is practical is that there are only $2^8 = 256$ different possible bytes.
 
 This swapping of bytes is performed using a Rijndael S-box as the lookup table. A Rijndael S-box denotes the method used to substitute one single byte. It is very important to note that this substitution is performed in a Galois field (also referred to as a finite field)\cite{GaloisField}, specifically $GF(2^8)$.
 
-The S-Box performs a revertible, complete transformation of the plaintext byte\cite{SBox}. This means that the transformation is reversible (which is necessary for decryption), and that no two different bytes are transformed into the same byte; this is the criteria for a full permutation.
+The S-Box performs a revertible, complete transformation of the plaintext byte\cite{SBox}. This means that the transformation is reversible (which is necessary for decryption), and that no two different bytes are transformed into the same byte.
 
-In practice, the table is pre-calculated, since it is the same for each byte. Therefore, the most computationally efficient method of performing this substitution is to first split the byte into two 4-bit nibbles. If the byte is represented in hexadecimal, then the first nibble is simply the first of the two values, the second nibble being the second of the two values. For example, the byte $(7c)_h$, $(01111100)_2$ in binary, would be converted to the byte $(c6)_h$.
+The table is pre-calculated, since it is the same for each byte. Therefore, the most computationally efficient method of performing this substitution is to first split the byte into two 4-bit nibbles. If the byte is represented in hexadecimal, then the first nibble is simply the first of the two values, the second nibble being the second of the two values. For example, the byte $(7c)_h$, $(01111100)_2$ in binary, would be converted to the byte $(c6)_h$.
 
 \begin{figure}[H]
 \centering
@@ -656,9 +662,9 @@ In practice, the table is pre-calculated, since it is the same for each byte. Th
 \caption{The lookup table used for AES, in hexadecimal notation\cite{SBox}.}
 \end{figure}
 
-A more memory efficient implementation can also be used instead of having to save a lookup table. There is also a formula, explained below, for calculating the byte with which a byte will be replaced when using an S-box. 
+A more memory efficient implementation can be used instead of having to save a lookup table. There is a formula, explained below, for calculating the byte with which a byte will be replaced when using an S-box. 
 
-First, the multiplicative inverse of the byte is calculated within Rijndael's finite field (see 2.2.2.2). This multiplicative inverse, also a byte, is then stored as a vector $[x_7; x_6 ... x_0]$ to be used in an affine transformation.
+First, the multiplicative inverse of the byte is calculated within Rijndael's finite field \hyperref[Inverse]{(see 2.2.2.2)}. This multiplicative inverse, also a byte, is then stored as a vector $[x_7; x_6 ... x_0]$ to be used in an affine transformation.
 
 \[ \left( \begin{array}{cccccccc}
 1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 \\
@@ -720,7 +726,8 @@ a_{3,3} & a_{3,0} & a_{3,1} & a_{3,2}\end{array} \right)
 \]
 
 \subsubsection{Substitution using formula (MIXCOLUMNS)}
-The MixColumns step replaces each byte in the state with a different byte, dependent on all the bytes of that same column. All operations are performed within a finite field $GF(2^8)$.
+\label{MixColumns}
+The MixColumns step replaces each byte in the state with a different byte, dependent on all the bytes of that same column.
 
 In the MixColumns step, each column (and crucially not each individual byte) is treated as a polynomial Over $GF(2^8)$. This field is different from the Rijndael field, since it employs the reducing polynomial $x^4+1$ instead of $x^8+x^4+x^3+x+1$. This is because the column (which contains four values) will be represented as a third-order polynomial\cite{Rijndael}.
 They are then multiplied, modulo the reducing polynomial, with a fixed polynomial $c(x)=03*x^3+01*x^2+01*x+02$. This process can also be shown by treating the column as a vector, and multiplying it with a special matrix:
@@ -756,21 +763,22 @@ s_1 = {01}*a_0+{02}*a_1+{03}*a_2+{01}*a_3 \\
 s_2 = {01}*a_0+{01*}a_1+{02}*a_2+{03}*a_3 \\
 s_3 = {03}*a_0+{01}*a_1+{01}*a_2+{02}*a_3 \\ $
 
-It is important to note that the last round of AES does not possess a MixColumns step; this is because, if there were a MixColumns step included in the last round of encryption, it would not possess a corresponding invMixColumns in the final round of decryption\cite{NoMixColumns}.
+It is important to note that the last round of AES does not possess a MixColumns step; this is because a corresponding inverse MixColumns operation for the final round of decryption does not exist\cite{NoMixColumns}.
 
 \subsubsection{Round-closing XOR operation (ADDROUNDKEY)}
-Finally, the state is added to the round's unique round key using modular addition. The method is the same as described in chapter 2.2.2; an XOR gate is, once again, utilized.
+Finally, the state is added to the round's unique round key using modular addition. The method is the same as described in \hyperref[InitXOR]{chapter 2.2.2}; an XOR gate is, once again, utilized.
 
 \section{Decryption}
-Just like encryption, decryption also begins with key expansion. Because the algorithm used is exactly the same as in encryption, the same round keys will once again be generated using the same master key that was already used for encryption. While each decryption round contains the inverses of the steps used in encryption, it is important to note that the order in which these steps appear in the rounds is not identical to the order in which their non-inversed counterparts appear in encryption.
+Just like encryption, decryption begins with key expansions. Because the algorithm used is exactly the same as in encryption, the same round keys will once again be generated using the same master key that was already used for encryption. While each decryption round contains the inverses of the steps used in encryption, it is important to note that the order in which these steps appear in the rounds is not identical to the order in which their non-inverse counterparts appear in encryption.
 
-\subsection{Initial inverse XOR operation}
+\subsection{Initial Inverse XOR Operation}
+\label{InvXOR}
 Since all steps in decryption are the exact inverse of the encryption steps, the last round key used in encryption is used first in decryption\cite{RoundKeyInverse}. The inverse of the XOR operation is, fortunately, also simply the XOR operation. The following example demonstrates how adding the same key twice yields the same state as before having added the key.
 
 \[
 \left( \begin{array}{cccc}
 1 & 0 & 1 & 1 \\
-+ & + & + & + \\
+\bigoplus & \bigoplus & \bigoplus & \bigoplus \\
 0 & 1 & 1 & 0 \\
 = & = & = & = \\
 1 & 1 & 0 & 1 \\
@@ -780,7 +788,7 @@ Since all steps in decryption are the exact inverse of the encryption steps, the
 \[
 \left( \begin{array}{cccc}
 1 & 1 & 0 & 1 \\
-+ & + & + & + \\
+\bigoplus & \bigoplus & \bigoplus & \bigoplus \\
 0 & 1 & 1 & 0 \\
 = & = & = & = \\
 1 & 0 & 1 & 1 \\
@@ -799,7 +807,7 @@ a_{0,0} & a_{0,1} & a_{0,2} & a_{0,3} \\
 a_{1,1} & a_{1,2} & a_{1,3} & a_{1,0} \\
 a_{2,2} & a_{2,3} & a_{2,0} & a_{2,1} \\
 a_{3,3} & a_{3,0} & a_{3,1} & a_{3,2}\end{array} \right)
-\xrightarrow{Inv. ShiftRows}
+\xrightarrow{\text{Inv. ShiftRows}}
 \left( \begin{array}{cccc}
 a_{0,0} & a_{0,1} & a_{0,2} & a_{0,3} \\
 a_{1,0} & a_{1,1} & a_{1,2} & a_{1,3} \\
@@ -842,7 +850,7 @@ b_4 \\
 b_5 \\
 b_6 \\
 b_7\end{array} \right)
-+
+\bigoplus
 \left( \begin{array}{c}
 0 \\
 0 \\
@@ -857,26 +865,26 @@ b_7\end{array} \right)
 Finally, the multiplicative inverse of the byte $[x_7;x_6...x_0]$ is found in Rijndael's finite field. This process is applied until all 16 bytes of the state have been replaced.
 
 \subsubsection{INVERSE ADDROUNDKEY}
-Since the inverse of an XOR addition is also the XOR addition (see 2.3.1), this step simply consists of adding the inverse round key to the state. For example, round key 9 would be the first round key to be added to the state, since round key 10 will already have been used in the initial inverse XOR operation\cite{RoundKeyInverse}.
+Since the inverse of an XOR addition is also an XOR addition \hyperref[InvXOR]{(see 2.3.1)}, this step simply consists of adding the inverse round key to the state. For example, round key 9 would be the first round key to be added to the state, since round key 10 will already have been used in the initial inverse XOR operation\cite{RoundKeyInverse}.
 
 \subsubsection{INVERSE MIXCOLUMNS}
-The final step of each decryption round, except the last decryption round, is the Inv. MixColumns operation. The Inv. MicColumns step is performed by multiplying every column of the state with a specific polynomial d(x)\cite{Rijndael}. Once again, it is important to note that each column is seen as a third-order polynomial in $GF(2^8)$, with the reducing polynomial $x^4+1$ (see 2.2.2.6).
+The final step of each decryption round, except the last decryption round, is the inverse MixColumns operation. The inverse MixColumns step is performed by multiplying every column of the state with a specific polynomial d(x)\cite{Rijndael}. Once again, it is important to note that each column is seen as a third-order polynomial in $GF(2^8)$, utilizing the reducing polynomial $x^4+1$ \hyperref[MixColumns]{(see 2.2.2.6)}.
 
 $d(x)$ has to be the inverse of the fixed polynomial used in the regular MixColumns step, $c(x)$, so it can be calculated in the following way:
 
 \noindent
-$c(x)*d(x)=01 \\
-(03*x^3+01*x^2+01*x+02)*d(x)=01 \\
-\Rightarrow d(x)=0B*x^3+0D*x^2+09*x+0E$
+$c(x) \cdot d(x)=01 \\
+(03x^3+01x^2+01x+02) \cdot d(x)=01 \\
+\Rightarrow d(x)=0Bx^3+0Dx^2+09x+0E$
 
-Just like the regular MixColumns operation, the Inv. MiColumns operation can also be performed by viewing the column to be replaced as a vector, and then multiplying it with a special matrix. This matrix is also the inverse of the matrix used in the regular MixColumns step.
+Just like the regular MixColumns operation, the inverse MixColumns operation can also be performed by viewing the column to be replaced as a vector, and then multiplying it with a special matrix. This matrix is also the inverse of the matrix used in the regular MixColumns step.
 
 \[ \left( \begin{array}{cccc}
 0E & 0B & 0D & 09 \\
 09 & 0E & 0B & 0D \\
 0D & 09 & 0E & 0B \\
 0B & 0D & 09 & 0E\end{array} \right)
-*
+\cdot
 \left( \begin{array}{cccc}
 02 & 03 & 01 & 01 \\
 01 & 02 & 03 & 01 \\
@@ -895,7 +903,7 @@ Just like the regular MixColumns operation, the Inv. MiColumns operation can als
 09 & 0E & 0B & 0D \\
 0D & 09 & 0E & 0B \\
 0B & 0D & 09 & 0E\end{array} \right)
-*
+\cdot
 \left( \begin{array}{c}
 s_0 \\
 s_1 \\
@@ -917,59 +925,59 @@ Diffusion requires that, as a rule of thumb, changing one bit of the plaintext s
 
 In AES, diffusion is  provided by the MixColumns and the Shiftrows steps. The diffusion provided by the ShiftRows step is self-evident; as the bytes are entered into the state in a column-major order, mixing the bytes along the rows is a good source of diffusion.
 
-MixColumns is a good source of diffuion because it creates a dependecy of four bytes on just one byte; if a single byte of the four substituted bytes are changed, every byte resulting from the substitution is also changed. This effect is further compounded because it is performed nine times, meaning that if just one bit, contained within a byte, of the initial plaintext is altered, the ciphertext will be dramatically different.
+MixColumns is a good source of diffusion because it creates a dependency of four bytes on just one byte; if a single byte of the four substituted bytes are changed, every byte resulting from the substitution is also changed. This effect is further compounded because it is performed nine times, meaning that if just one bit, contained within a byte, of the initial plaintext is altered, the ciphertext will be dramatically different.
 
 \subsection{Confusion}
 Confusion requires that each bit of the ciphertext relies on multiple different parts of the key. This means that the input data must be altered in a non-linear, difficult to reverse manner, thereby obscuring the relation between the ciphertext and the key\cite{Confusion}.
 
-In AES, confusion is provided by the SubBytes step. This can be seen if the journey of a single byte through AES is examined; Since each byte goes through so many substitutions, it is difficult to find the key even if one were to possess a large number of plaintext-ciphertext pairs.
+In AES, confusion is provided by the SubBytes step. This can be seen if the journey of a single byte through AES is examined; Since each byte goes through so many substitutions, it is difficult to find the key even if one were to possess a large number of plaintext-ciphertext pairs generated using the same key.
 
 \section{Problems with AES}
 In 1997, NIST deemed it necessary to replace DES, the data encryption standard, with AES, the advanced encryption standard, because of DES' vulnerability to brute force attacks due to its small key size. 15 submissions were received, but Rijndael was selected due to its good performance and security\cite{AESSelection}.
 
-Though AES was thouroughly vetted during the AES selection process and is considered secure enough to be used in encryption of top secret documents by the National Security Agency\cite{CNSSPolicy} of the united states, it is unfortunately not perfect.
+Though AES was thouroughly vetted during the AES selection process and is considered secure enough to be used in encryption of top secret documents by the National Security Agency\cite{CNSSPolicy} of the united states, it is, unfortunately, not perfect.
 
-\subsection{Overconfidence and over-reliance}
+\subsection{Overconfidence and Over-reliance}
 AES is widely used by large businesses and the United States government. Therefore, it would be a large threat to many nations national security if the Cipher were to be compromised.
 
-One of the earliest scares was the XSL attack, which relied on the relative algebraic simplicity of AES\cite{XSL}.However, this proposed attack was later shown to be technically infeasible\cite{XLSRebuked}; nevertheless, this shows that while AES is very secure, the cryptographic community must remain vigilant in its continued research into possible attacks in order to ensure the security of highly sensitive data across the world.
+One of the earliest scares was the XSL attack, which relied on the relative algebraic simplicity of AES\cite{XSL}. Fortunately, this proposed attack was later shown to be technically infeasible\cite{XLSRebuked}; nevertheless, this shows that while AES is very secure, the cryptographic community must remain vigilant in its continued research into possible attacks in order to ensure the security of highly sensitive data across the world.
 
-\subsection{Keeping of a shared secret}
+\subsection{Keeping of a Shared Secret}
 One of AES' major issues is shared with OTP and all other symmetric-key encryption methods; the confidentiality of the key. The same argument that was made against OTP can be made against AES as well, namely that because the encryption method as well as the decryption method are both publicly known, the problem of keeping the message or file secret is simply transferred to keeping the key secret, while still being able to exchange it between the sender and the recipient.
 
-However, in the case of AES, this issue is strongly mitigated: While the key used in OTP has to be at least as long as the message, AES keys are only 128, 192 or 256 bits long, with top secret documentation requiring the usage of either a 192 or 256-bit key\cite{CNSSPolicy}.
+However, in the case of AES, this issue is strongly mitigated: While the key used in OTP has to be at least as long as the message, AES keys are only 128, 192 or 256 bits long, with top secret documentation requiring the usage of either a 192 or 256-bit key\cite{CNSSPolicy}. Furthermore, an AES key can be utilized multiple times without creating a security risk.
 
-\chapter{A historical transition}
+\chapter{A Historical Transition}
 Throughout modern history, cryptography has always been an essential part of our lives. From warfare to communication and economy, many of recent histories most momentous occurrences have been influenced by cryptography. This is especially true in the case of OTP and AES; one having played a key role in WWII, the largest military conflict of human history, the other being implemented as a standard just shortly before cryptography was brought to the public eye like never before through numerous security breaches, conspiratorial government spy programs and the new dangers of a globalist economical system. In order to learn from history and apply it to present issues, it is essential to examine the first computer-aided cryptography system using the mechanical Vernam machine and representing bits using punch cards\cite{VernamMachine}, OTP, and understand how it differs from but also inspired certain elements of today's standard, AES, which uses modern computers.
 
-\section{Key differences and improvements}
+\section{Key Differences and Improvements}
 While OTP was a building block of the foundation of modern computational cryptography, AES and the algorithms which support it in regular use currently stand at its pinnacle. With many different implementations and possible uses, each one of them tailored to achieve a specific goal and ongoing research and development, AES is truly on the cutting edge of cryptography. Many of its great achievements are great improvements over earlier algorithms, as well as a degree of flexibility that has seldom been observed within cryptographic algorithms.
 
-\subsection{Memory vs. computational efficiency}
+\subsection{Memory vs. Computational Efficiency}
 One of the greatest advantages of AES, which is not at all present in the case of OTP, is its ability to be implemented in a way that is either computationally or memory efficient. 
 
-Almost all operations performed in AES can be pre-saved, for example in the case of lookup tables (see 2.2.2.4). This also applies to the key expansions step (see 2.2.2.3), as all Rcon vectors can either be pre-calculated and stored or calculated during runtime of the algorithm. This even applies to the MixColumns step (see 2.2.2.6); although the lookup table would be very large, pre-calculating and subsequently storing it would make the algorithm run very quickly.
+Almost all operations performed in AES can be pre-saved, for example in the case of lookup tables \hyperref[SubBytes]{(see 2.2.2.4)}. This also applies to the key expansions step \hyperref[KeyExpansions]{(see 2.2.2.3)}, as all Rcon vectors can either be pre-calculated and stored or calculated during runtime of the algorithm. This even applies to the MixColumns step \hyperref[MixColumns]{(see 2.2.2.6)}; although the lookup table would be very large, pre-calculating and subsequently storing it would make the algorithm run very quickly.
 
 On the other hand, it is also possible to make each calculation completely without lookup tables, storing only the currently needed value, be it a number, vector or matrix, at one time. This is computationally rather taxing, however extremely memory-efficient as the algorithm only requires its source code and a very small storage block to function.
 
 This flexibility in implementation is one of AES' greatest advantages, especially when compared with the rigid requirements of OTP.
 
-\subsection{Key length}
-The most relevant improvement AES makes over OTP, as well as many other contemporary ciphers such as RSA which requires a minimum key length of 1024 bits, is its short key. AES manages to retain the great security benefits that can be achieved by using a secret key, whilst also substantially shortening the key. The master key, although short, retains great cryptographical power because of AES' usage of KeyExpansions(see 2.2.2.3). This is a large advantage in today's time-critical society and economy: a short key is faster to generate and easier to transport or transmit. Furthermore, an AES key can be reused multiple times, unlike OTP, where the key must be discarded after one use.
+\subsection{Key Length}
+The most relevant improvement AES makes over OTP, as well as many other contemporary ciphers such as RSA which requires a minimum key length of 1024 bits, is its short key. AES manages to retain the great security benefits that can be achieved by using a secret key, whilst also substantially shortening the key. The master key, although short, retains great cryptographical power because of AES' usage of KeyExpansions \hyperref[KeyExpansions]{(see 2.2.2.3)}. This is a large advantage in today's time-critical society and economy: a short key is faster to generate and easier to transport or transmit. Furthermore, an AES key can be reused multiple times, unlike OTP, where the key must be discarded after one use.
 
 %Furthermore, This enables the key to be sent over the internet more easily, using other encryption methods to protect the key itself. This is in contrast to keys for OTP, which are usually transported physically by courier.
 
-\section{Key similarities and inspirations}
+\section{Key Similarities and Inspirations}
 Many of AES' most important elements take heavy inspiration from OTP. This comes as no great surprise, considering that though cryptography has long been evolving, it has always strived to achieve the same goals. The following chapter will serve to highlight the similar methods used in OTP and AES to achieve those goals.
 
-\subsection{Key addition}
+\subsection{Key Addition}
 The only encrypting measure performed in OTP is an XOR addition of the key and the plaintext. While AES performs many different cryptographical measures, one of its absolute core principles is still the employment of a secret key, making it a symmetrical secret key algorithm, just like OTP. In this way, AES has taken inspiration from OTP whilst also improving one of OTP's major weaknesses: Its key length.
 
 After all, one of OTP's great weaknesses is that the key is equally as long as the message. Many critics have argued that this simply transfers the problem of transporting the secret message to the transport of the secret key. However, this can be combatted:
 
 After all, the key is not actually secret until it has been conclusively employed. One method is to continue attempting to send keys until one manages to reach its destination without being compromised. At this point, the message can be encrypted using the uncompromised key and sent to the reciever.
 
-\subsection{Secure transmission methods}
+\subsection{Secure Transmission Methods}
 As aforementioned, one way to combat the issues caused by OTP's large key length is to continue sending keys until a key arrives uncompromised at the ciphertext's intended recipient.
 
 \begin{center}
@@ -1012,9 +1020,9 @@ $(a^d mod m)^c mod m = a^{dc} mod m$
 
 This method is secure because the two generated secret numbers, $c$ and $d$, were never transmitted between the two parties.
 
-\section{Cryptography: Past, present and future}
+\section{Cryptography: Past, Present and Future}
 
-\subsection{The modern war}
+\subsection{The Modern War}
 With the recent revelations brought about through the Snowden scandal\cite{Snowden}, cryptography as a tool of the state has become a theme of major public interest in a way that has not seen precedent since the second world war.
 
 This is one of the major reasons OTP and AES are definitely comparable in a historical context; they were both relevant on a global scale, being used in covert high-security operations, deciding the fates of countless individuals, even perhaps lending a decisive advantage to those most proficient in their employment.
@@ -1033,14 +1041,14 @@ This is where the relevance of AES becomes apparent. AES is widely utilized by t
 
 Given these new developments, it is certainly fair to say that cryptography plays a more important role in the lives of everyday people than ever before in human history.
 
-\subsection{Privacy: An outdated concept?}
+\subsection{Privacy: An Outdated Concept?}
 With new and exciting developments that have inseparably linked technology and social media to the lives of billions of ordinary people across the globe, many exciting new possibilities have been realized. Seamlessly integrating into our daily routine, services such as google calendar enable us to plan our day, while all transactions can be taken care of over services such as PayPal or Samsung Pay with nothing but the press of a button. We can access the knowledge of the entire world or connect with others across the globe using a device that fits in our pocket.
 
 However, in using these revolutionary new technologies, we have been exposed to new risks and vulnerabilities, many of which are only just becoming apparent through the unpleasant revelations that recent years have brought. This is why cryptography is currently so important, and also why its relevance will only continue to grow as the rapid pace of technological development continues.
 
 This growing importance of cryptography is why it is imperative not just for academics, but also for regular people to understand what cryptography is and how it functions. With most of our communication and financial transactions being conducted over the internet, we can no longer assume that privacy is our default state: Instead, we must remain vigilant in safeguarding it. To this end, we all use cryptography, whether we know it or not.
 
-\section{Closing remarks}
+\section{Closing Remarks}
 In conclusion, the importance of cryptography is greater than ever before. Therefore, it is my strong belief that every person living and working in the modern world can profit greatly from understanding modern as well as historical cryptography, due to their highly important roles in our private and professional lives. To this end, I hope that this paper has succeeded not only in shedding some light upon the highly intricate algorithms that permeate our everyday existence, but perhaps also in igniting some spark of fascination in what I consider a highly important, yet rather under-examined facet of our daily lives.
 
 In closing, I would like to leave you with thanks for reading, but also a final thought: Although the algorithms we use today are incredibly potent and secure, they too, just like AES' predecessor DES, are sure to be replaced. Therefore, the most important conclusion that can be drawn from this paper is not just the current importance of cryptography for us all, but the importance of staying informed, and continuing to strive to understand how our information is safeguarded, as well as the algorithms that undertake and will long continue to undertake this momentous task.

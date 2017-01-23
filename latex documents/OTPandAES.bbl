@@ -241,6 +241,23 @@
       \verb http://www.samiam.org/galois.html
       \endverb
     \endentry
+    \entry{stark1978introduction}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c0adb9419633421abcb0b3772fc14525}{%
+           family={Stark},
+           family_i={S\bibinitperiod},
+           given={H.M.},
+           given_i={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{c0adb9419633421abcb0b3772fc14525}
+      \strng{fullhash}{c0adb9419633421abcb0b3772fc14525}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Introduction to Number Theory}
+      \field{year}{1978}
+    \endentry
     \entry{EuclideanPolynomials}{online}{}
       \name{author}{1}{}{%
         {{hash=ed108dcc47eac032241598b570b76801}{%
