@@ -1,16 +1,16 @@
 \documentclass[12pt, a4paper]{report}
 \setcounter{tocdepth}{4}
 \setcounter{secnumdepth}{4}
-\usepackage{graphicx}
-\usepackage{float}
-\graphicspath{ {images/} }
+%\usepackage{graphicx}
+%\usepackage{float}
+%\graphicspath{ {images/} }
 \usepackage[
 backend=biber,
 style=numeric,
 citestyle=numeric,
 sorting=none]						
 {biblatex}							
-\addbibresource{mybib.bib}
+\addbibresource{mybib-antiplag.bib}
 \setlength{\parskip}{5mm}
 \setlength\parindent{0pt}
 \usepackage{mathtools}
@@ -51,14 +51,14 @@ sorting=none]
 \begin{document}
 
 \title{OTP and AES: A Historical Transition Between two Systems of Cryptography}
-\author{Valdemar Thanner\\Kantonsschule Zug\\Supervised by Mr. Bernhard Keller\\Linguistic supervision by Ms. Margrit Oetiker}
+\author{-Redacted-\\Kantonsschule Zug\\Supervised by -Redacted-\\Linguistic supervision by -Redacted-}
 \date{01.02.2017}
 \maketitle
 
 \chapter*{Acknowledgements}
-I would first like to thank Mr. Keller of the Mathematics Faculty at the Kantonsschule Zug, who not only helped me with many of the difficult to grasp mathematical concepts that I encountered, as well as being very helpful in learning \LaTeX, which was a completely new method of typesetting for me. I am especially grateful not only for his help and patience in regard to this specific paper, but also for teaching me things that I believe will be of great help in my further academic career, such as proper use of git.
+I would first like to thank -Redacted- of the Mathematics Faculty at the Kantonsschule Zug, who not only helped me with many of the difficult to grasp mathematical concepts that I encountered, as well as being very helpful in learning \LaTeX, which was a completely new method of typesetting for me. I am especially grateful not only for his help and patience in regard to this specific paper, but also for teaching me things that I believe will be of great help in my further academic career, such as proper use of git.
 
-Furthermore, I would like to extend thanks to Ms. Oetiker of the English Faculty at the Kantonsschule Zug, for her linguistic supervision of this paper as well as for the helpful materials, advice and guidelines which she provided to me throughout the course of writing the paper.
+Furthermore, I would like to extend thanks to -Redacted- of the English Faculty at the Kantonsschule Zug, for her linguistic supervision of this paper as well as for the helpful materials, advice and guidelines which she provided to me throughout the course of writing the paper.
 
 \chapter*{Introduction}
 With the advent of the internet, cryptography has, for the first time in human history, become an integral part of human life. It protects our private communications, safeguards our finances and so much more. In writing this paper, it is my aim to shed some light on the modern cryptography which has become so integral to our daily lives.
@@ -76,21 +76,21 @@ When speaking about OTP, it is important to distinguish between its two meanings
 
 The One Time Pad is largely derived from the Vernam cipher, which is named after Gilbert Vernam. The Vernam cipher utilized a perforated tape (one of the earliest types of data storage) as the secret key\cite{VernamPatent}. Each bit of data was stored in the form of a hole punched into the perforated tape.
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.5]{PerforatedTape}
-\caption{Perforated tape, utilized to store bits as punched holes}
-\end{figure}
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.5]{PerforatedTape}
+%\caption{Perforated tape, utilized to store bits as punched holes}
+%\end{figure}
 
 However, this system had a vulnerability which the One-Time Pad solved: In Vernam's original method, the perforated tape was not exchanged after it had completed one cycle; instead, it was looped around continuously, often being used to encrypt multiple different messages.
 
 This made the entire system vulnerable. The re-usage of the key meant that the resulting ciphertext suffered from a so-called known-plaintext vulnerability \cite{HutSix}. This means that, if a plaintext and its corresponding ciphertext are captured, the key utilized to generate the ciphertext can be derived from them. This is not an issue if the key is exchanged each time a new message is encrypted. However, if the key of any Vernam cipher machine was compromised through a known-plaintext attack, any further intercepted ciphertexts could be decrypted.
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=1]{VernamCipher.jpg}
-\caption{A technical diagram from Vernam's famous "Secret signaling system" patent of 1919.}
-\end{figure}    
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=1]{VernamCipher.jpg}
+%\caption{A technical diagram from Vernam's famous "Secret signaling system" patent of 1919.}
+%\end{figure}    
 
 \section{Method Used}
 %This section, especially the practical example, is the most important part of the chapter.
@@ -356,11 +356,11 @@ One of the most important aspects of the utilized key is that it must be complet
 
 Therefore, in order to generate a sufficiently random key, it is preferable to utilize hardware random number generators, for example by utilizing a true random noise source \cite{MilsElectronic}. One such example is the key generator built by mils electronic, where a set of parallel ring oscillators are sampled. Because the oscillation speed of each ring is influenced by random factors such as local variations in temperature and voltage, this method is sufficiently random for use in high-security cryptography.
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.75]{MilsElectronic.PNG}
-\caption{A hardware random number generator with sufficient randomness to be utilized in the generation of one-time pads.}
-\end{figure}
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.75]{MilsElectronic.PNG}
+%\caption{A hardware random number generator with sufficient randomness to be utilized in the generation of one-time pads.}
+%\end{figure}
 
 \subsection{Secure Distribution of the Key itself}
 The main issue in regards to OTP is that, while it posses perfect security, therefore solving the issue of safely transmitting the ciphertext, the problem instead becomes how to securely transmit the key to the intended recipient of the encrypted message.
@@ -663,11 +663,11 @@ The S-Box performs a revertible, complete transformation of the plaintext byte\c
 
 The table is pre-calculated, since it is the same for each implementation of AES. Therefore, the most computationally efficient method of performing this substitution is to first split the byte into two 4-bit nibbles. If the byte is represented in hexadecimal, then the first nibble is simply the first of the two values, the second nibble being the second of the two values. For example, the byte $(7c)_h$, $(01111100)_2$ in binary, would be converted to the byte $(c6)_h$.
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=1]{SBox.PNG}
-\caption{The lookup table used for AES, in hexadecimal notation\cite{SBox}.}
-\end{figure}
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=1]{SBox.PNG}
+%\caption{The lookup table used for AES, in hexadecimal notation\cite{SBox}.}
+%\end{figure}
 
 A more memory efficient implementation can be used instead of having to save a lookup table. There is a formula, explained below, for calculating the byte with which a byte will be replaced when using an S-box. 
 
@@ -737,8 +737,7 @@ a_{3,3} & a_{3,0} & a_{3,1} & a_{3,2}\end{array} \right)
 The MixColumns step replaces each byte in the state with a different byte, dependent on all the bytes of that same column.
 
 In the MixColumns step, each column (and crucially not each individual byte) is treated as a polynomial Over $GF(2^8)$. This field is different from the Rijndael field, since it employs the reducing polynomial $x^4+1$ instead of $x^8+x^4+x^3+x+1$. This is because the column (which contains four values) will be represented as a third-order polynomial\cite{Rijndael}.
-They are then multiplied, modulo the reducing polynomial, with a fixed polynomial\\ 
-$c(x)=03x^3+01x^2+01x+02$. This process can also be shown by treating the column as a vector, and multiplying it with a special matrix:
+They are then multiplied, modulo the reducing polynomial, with a fixed polynomial $c(x)=03x^3+01x^2+01x+02$. This process can also be shown by treating the column as a vector, and multiplying it with a special matrix:
 
 The column (treated as a vector) is multiplied with a circulant (meaning that each row of the matrix is identical to the one above it, except that the values are offset by 1 to the right) MDS ("maximum distance separable", a representation of a function known to have useful properties in cryptography) Matrix \cite{MixColumns}.
 
@@ -1063,11 +1062,11 @@ AES now finds itself a key element in a different kind of, yet equally important
 
 This is where the relevance of AES becomes apparent. AES is widely utilized by the U.S and other governemts to encrypt files ranging from SECRET to TOP SECRET security clearance\cite{CNSSPolicy}. However, unlike OTP during the second world war, AES also plays a large role in the lives of regular people, as techonology has become ever more integrated into our daily lives: For example, many websites using https (hyper-text transfer protocol secure) use 128-bit AES encryption in conjunction with Diffie-Hellman key exchange. Any entity able to somehow crack or bypass AES would have access to an unimaginably large quantity of valuable information. The many large corporations which employ modern cryptography, including PayPal, a company which processed more than 87 billion dollars in the third quarter of 2016 \cite{PayPal}, mostly use 128-bit AES encryption and the Diffie-Hellmann key exchange algorithm.
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.3]{PayPal.png}
-\caption{Google Chrome can show which encryption standard a certain website is utilizing.}
-\end{figure}
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.3]{PayPal.png}
+%\caption{Google Chrome can show which encryption standard a certain website is utilizing.}
+%\end{figure}
 
 Given these new developments, it is certainly fair to say that cryptography plays a more important role in the lives of everyday people than ever before in human history.
 
