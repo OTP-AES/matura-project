@@ -1,0 +1,259 @@
+\documentclass[12pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\graphicspath{ {images/} }
+
+\usepackage{mathtools}
+\usepackage{amsfonts, amsmath, amsthm, amssymb}
+\usepackage{adjustbox}
+
+
+%\newtheorem{thm}{Theorem}[section]
+%\newtheorem{lemma}[thm]{Lemma}
+%
+%\theoremstyle{definition}
+%\newtheorem{defin}[thm]{Definition}
+%
+%\theoremstyle{remark}
+%\newtheorem{rem}[thm]{Remark}
+%\newtheorem{ex}[thm]{Example}
+
+\usepackage{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{tikzmark}
+\usetikzlibrary{shapes.geometric, arrows}
+
+\setbeamertemplate{frametitle}
+  {\begin{centering}\smallskip
+   \insertframetitle\par
+   \smallskip\end{centering}}
+\setbeamertemplate{itemize item}{$\bullet$}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[text line]{%
+    \hfill\strut{%
+        \scriptsize\sf\color{black!60}%
+        \quad\insertframenumber
+    }%
+    \hfill
+}
+
+% Define some colors:
+\definecolor{DarkFern}{HTML}{407428}
+\definecolor{DarkCharcoal}{HTML}{4D4944}
+\colorlet{Fern}{DarkFern!85!white}
+\colorlet{Charcoal}{DarkCharcoal!85!white}
+\colorlet{LightCharcoal}{Charcoal!50!white}
+\colorlet{AlertColor}{orange!80!black}
+\colorlet{DarkRed}{red!70!black}
+\colorlet{DarkBlue}{blue!70!black}
+\colorlet{DarkGreen}{green!70!black}
+% Use the colors:
+\setbeamercolor{title}{fg=Fern}
+\setbeamercolor{frametitle}{fg=Fern}
+\setbeamercolor{normal text}{fg=Charcoal}
+\setbeamercolor{block title}{fg=black,bg=Fern!25!white}
+\setbeamercolor{block body}{fg=black,bg=Fern!25!white}
+\setbeamercolor{alerted text}{fg=AlertColor}
+\setbeamercolor{itemize item}{fg=Charcoal}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{io} = [trapezium, minimum width=1.5cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\title{OTP and AES: A Historical Transition Between two Systems of Cryptography}
+\author{Valdemar Thanner \\ Supervised by Mr. Bernhard Keller\\
+Linguistic supervision by Ms. Margrit Oetiker}
+\date{06.03.2017}
+\institute{Kantonsschule Zug}
+
+
+\begin{document}
+
+
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{OTP: The One Time Pad}
+\end{frame}
+
+\begin{frame}
+\frametitle{AES: The Advanced Encryption Standard}
+\end{frame}
+
+\begin{frame}
+\frametitle{AES: High-Level Structure}
+
+\begin{adjustbox}{max totalsize={.9\textwidth}{.7\textheight},center}
+\begin{tikzpicture}[node distance=2cm ]
+\node (plaintext) [startstop] {Plaintext};
+\node (masterkey) [startstop, below of = plaintext, yshift=-1.5cm] {Master key};
+\node (XOR) [process, right of = plaintext, xshift=1.5cm] {XOR};
+\node (Roundfirst) [process, right of = XOR, xshift=1.5cm] {Round 1};
+\node (Roundlast) [process, right of = Roundfirst, xshift=1.5cm] {Round 10};
+\node (Ciphertext) [startstop, right of = Roundlast, xshift=1.5cm] {Ciphertext};
+\node (RoundKey) [process, below of = Roundfirst, yshift=-1.5cm] {Round Key generation};
+\draw [arrow] (plaintext) -- (XOR);
+\draw [arrow] (XOR) -- (Roundfirst);
+\draw [arrow] (Roundfirst) -- (Roundlast);
+\draw [arrow] (Roundlast) -- (Ciphertext);
+\draw [arrow] (masterkey) -- (RoundKey);
+\draw [arrow] (RoundKey) -- (XOR);
+\draw [arrow] (RoundKey) -- (Roundfirst);
+\draw [arrow] (RoundKey) -- (Roundlast);
+\end{tikzpicture}
+\end{adjustbox}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{AES: Rounds}
+
+\begin{adjustbox}{max totalsize={.9\textwidth}{.7\textheight},center}
+\begin{tikzpicture}[node distance=2cm]
+\node (plaintext) [startstop] {Plaintext};
+\node (masterkey) [startstop, below of = plaintext, yshift=-1.5cm] {Master key};
+\node (XOR) [io, right of = plaintext, xshift=1.5cm] {XOR};
+\node (Roundfirst) [process, right of = XOR, xshift=1.5cm] {Round 1};
+\node (Roundlast) [process, right of = Roundfirst, xshift=1.5cm] {Round 10};
+\node (Ciphertext) [startstop, right of = Roundlast, xshift=1.5cm] {Ciphertext};
+\node (RoundKey) [process, below of = Roundfirst, yshift=-1.5cm] {Round Key generation};
+\draw [arrow] (plaintext) -- (XOR);
+\draw [arrow] (XOR) -- (Roundfirst);
+\draw [arrow] (Roundfirst) -- (Roundlast);
+\draw [arrow] (Roundlast) -- (Ciphertext);
+\draw [arrow] (masterkey) -- (RoundKey);
+\draw [arrow] (RoundKey) -- (XOR);
+\draw [arrow] (RoundKey) -- (Roundfirst);
+\draw [arrow] (RoundKey) -- (Roundlast);
+\end{tikzpicture}
+\end{adjustbox}
+
+\[
+\pause \left( \begin{array}{cccc}
+1 & 0 & 1 & 0 \\
+\bigoplus & \bigoplus & \bigoplus & \bigoplus \\
+0 & 1 & 1 & 0 \\
+= & = & = & = \\
+1 & 1 & 0 & 0 \\
+\end{array} \right)
+\]
+
+\end{frame}
+
+\begin{frame}
+\frametitle{AES: Rounds}
+\begin{adjustbox}{max totalsize={.9\textwidth}{.7\textheight},center}
+\begin{tikzpicture}[node distance=2cm]
+\node (plaintext) [startstop] {Plaintext};
+\node (masterkey) [startstop, below of = plaintext, yshift=-1.5cm] {Master key};
+\node (XOR) [process, right of = plaintext, xshift=1.5cm] {XOR};
+\node (Roundfirst) [io, right of = XOR, xshift=1.5cm, scale=0.7] {Round 1};
+\node (Roundlast) [io, right of = Roundfirst, xshift=1.5cm, scale=0.7] {Round 10};
+\node (Ciphertext) [startstop, right of = Roundlast, xshift=1.5cm] {Ciphertext};
+\node (RoundKey) [process, below of = Roundfirst, yshift=-1.5cm] {Round Key generation};
+\draw [arrow] (plaintext) -- (XOR);
+\draw [arrow] (XOR) -- (Roundfirst);
+\draw [arrow] (Roundfirst) -- (Roundlast);
+\draw [arrow] (Roundlast) -- (Ciphertext);
+\draw [arrow] (masterkey) -- (RoundKey);
+\draw [arrow] (RoundKey) -- (XOR);
+\draw [arrow] (RoundKey) -- (Roundfirst);
+\draw [arrow] (RoundKey) -- (Roundlast);
+\end{tikzpicture}
+\end{adjustbox}
+\end{frame}
+
+\begin{frame}
+\frametitle{AES: Rounds}
+\begin{adjustbox}{max totalsize={.9\textwidth}{.7\textheight},center}
+\begin{tikzpicture}[node distance=4cm]
+\node (subbytes) [process] {SubBytes};
+\node (ShiftRows) [process, right of = subbytes] {ShiftRows};
+\node (MixColumns) [process, right of = ShiftRows] {MixColumns};
+\node (AddRoundKey) [process, right of = MixColumns] {AddRoundKey};
+\node (RoundKey) [startstop, below of = AddRoundKey] {Round Key};
+\draw [arrow] (subbytes) -- (ShiftRows);
+\draw [arrow] (ShiftRows) -- (MixColumns);
+\draw [arrow] (MixColumns) -- (AddRoundKey);
+\draw [arrow] (RoundKey) -- (AddRoundKey);
+\end{tikzpicture}
+\end{adjustbox}
+\end{frame}
+
+\begin{frame}
+\frametitle{AES: SubBytes}
+%\includegraphics[scale=•]{•}
+\end{frame}
+
+\begin{frame}
+\frametitle{AES: ShiftRows}
+
+\[ \left( \begin{array}{cccc}
+a_{0,0} & a_{0,1} & a_{0,2} & a_{0,3} \\
+a_{1,0} & a_{1,1} & a_{1,2} & a_{1,3} \\
+a_{2,0} & a_{2,1} & a_{2,2} & a_{2,3} \\
+a_{3,0} & a_{3,1} & a_{3,2} & a_{3,3}\end{array} \right)
+\xrightarrow{\text{ShiftRows}}
+\left( \begin{array}{cccc}
+a_{0,0} & a_{0,1} & a_{0,2} & a_{0,3} \\
+a_{1,1} & a_{1,2} & a_{1,3} & a_{1,0} \\
+a_{2,2} & a_{2,3} & a_{2,0} & a_{2,1} \\
+a_{3,3} & a_{3,0} & a_{3,1} & a_{3,2}\end{array} \right)
+\]
+
+\end{frame}
+
+\begin{frame}
+\frametitle{AES: MixColumns}
+ 
+\[ \left( \begin{array}{cccc}
+02 & 03 & 01 & 01 \\
+01 & 02 & 03 & 01 \\
+01 & 01 & 02 & 03 \\
+03 & 01 & 01 & 02\end{array} \right)
+\cdot
+\left( \begin{array}{c}
+a_0 \\
+a_1 \\
+a_2 \\
+a_3\end{array} \right)
+=
+\left( \begin{array}{c}
+s_0 \\
+s_1 \\
+s_2 \\
+s_3\end{array} \right)
+\]
+
+\pause
+
+\begin{center}
+$
+s_0 = {02}a_0+{03}a_1+{01}a_2+{01}a_3 \\
+s_1 = {01}a_0+{02}a_1+{03}a_2+{01}a_3 \\
+s_2 = {01}a_0+{01}a_1+{02}a_2+{03}a_3 \\
+s_3 = {03}a_0+{01}a_1+{01}a_2+{02}a_3 \\
+$
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{AES: AddRoundKey}
+\end{frame}
+
+\end{document}
