@@ -100,10 +100,10 @@ Linguistic supervision by Ms. Margrit Oetiker}
 \begin{frame}
 \frametitle{OTP: The One Time Pad}
 \begin{itemize}
-\item Great historical impact
-\item<1-> Basis for or important part of many of today's modern algorithms
-\item<2-> The key must be disposed of securely after being used once
-\item<3-> 
+\item<1-> Great historical impact
+\item<2-> Basis for or important part of many of today's modern algorithms
+\item<3-> The key must be disposed of securely after being used once
+\item<4-> Symmetrical cipher: Keeping of a shared secret
 \end{itemize}
 \end{frame}
 
@@ -130,7 +130,51 @@ $(9+19) \mod 26 = 2 = c$
 \end{frame}
 
 \begin{frame}
-\frametitle{OTP: A Precursor to modern Computer-aided Cryptography}
+\frametitle{OTP: The Cipher}
+
+\begin{center}
+\begin{tabular}{cccccccccccc}
+c & r & y & p & t & o & g & r & a & p & h & y \\
+$\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$  \\
+2 & 17 & 24 & 15 & 19 & 14 & 6 & 17 & 0 & 15 & 7 & 24 \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{cccccccccccc}
+s & y & t & r & u & i & f & q & n & i & h & m \\
+$\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$  \\
+18 & 24 & 19 & 17 & 20 & 8 & 5 & 16 & 13 & 8 & 7 & 12 \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{cccccccccccc}
+2+18 & 17+24 & 24+19 & 15+17 & 19+20 & 14+8 & 6+5 & 17+16 & 0+13 & 15+8 & 7+7 & 24+12 \\
+$\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$  \\
+20 & 15 & 17 & 6 & 13 & 22 & 11 & 7 & 13 & 23 & 14 & 10 \\
+$\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$  \\
+u & p & r & g & n & w & l & h & n & x & o & k
+\end{tabular}
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{OTP: A Precursor to Modern Computer-aided Cryptography}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item<1-> Gilbert Vernam: Secret signaling system of 1919
+\item<2-> Looping perforated tape: known-plaintext vulnerability
+\item<3-> Bits: Binary digits
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\includegraphics<1>[scale=0.5]{VernamCipher.jpg}
+\includegraphics<2->[scale=0.25]{PerforatedTape.jpg}
+\end{column}
+\end{columns}
 
 \end{frame}
 
@@ -143,7 +187,7 @@ $(9+19) \mod 26 = 2 = c$
 \begin{columns}
 \begin{column}{0.4\textwidth}
 \begin{itemize}
-\item<1-> Bit: Boolean value
+\item<1-> Bit: Boolean value first conclusively described by Claude Shannon
 \item<2-> Byte: 8 Bits; can represent any number from 0-255
 \end{itemize}
 \end{column}
@@ -184,7 +228,7 @@ $(B4)_h = 16 \cdot 11 + 4 \cdot 1 = 180$
 \item<4-> Original name: Rijndael; was selected as the successor to DES.
 \end{itemize}
 \end{column}
-\begin{column}{0.5\textwidth}  %%<--- here
+\begin{column}{0.5\textwidth}
 \begin{center}
 \uncover<2->{
 \[ \left( \begin{array}{cccc}
@@ -314,7 +358,8 @@ a_3 & a_7 & a_{11} & a_{15}\end{array} \right)\]
 \item<2-> Bytewise operation
 \item<3-> Sole source of Confusion; the only non-linear operation in AES (affine transformation)
 \item<4-> Key-independence is accepted in return for non-linearity; this eliminates one of DES' major weaknesses
-\item<5-> Utilization of the multiplicative inverse maximizes non-linearity, but negatively impacts diffusion: $0^{-1} = 0$ and $1^{-1}=1$
+\item<5-> Utilization of the multiplicative inverse: if $a \cdot b = 1$ then $b = a^{-1}$
+\item<6-> Maximizes non-linearity, but negatively impacts diffusion: $0^{-1} = 0$ and $1^{-1}=1$
 \end{itemize}
 \end{frame}
 
@@ -390,24 +435,136 @@ $
 
 \begin{frame}
 \frametitle{AES: AddRoundKey}
+\begin{itemize}
+\item Identical to the initialing XOR
+\item XORs the round key with the state
+\end{itemize}
 \end{frame}
 
 \section{A Historical Transition}
 
+\subsection{Conflicts Throughout History}
+
 \begin{frame}
-\frametitle{Historical Impact of Cryptography}
+\frametitle{The Crypto War: Past and Present}
+\begin{itemize}
+\item<2-> WWII: British Special Operations Executive
+\item<3-> Value of information: Rising exponentially alongside globalization
+\item<4-> Covert operations and proxy wars
+\end{itemize}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{center}
+\includegraphics<5->[scale=0.1]{NSA.PNG}
+\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{center}
+\includegraphics<5->[scale=0.1]{SVRRF.PNG}
+\end{center}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}
 \frametitle{Motivator for more Powerful Computing}
+\begin{itemize}
+\item<2-> Cryptologists vs. Cryptanalysts
+\item<3-> Speed and Efficiency: RAM (Rapid Analytic Machines)
+\item<4-> Each different problem required a specialized RAM
+\item<5-> Alan Turing's Thesis: Build a computer not restricted to one specific problem
+\item<6-> Colossus: The world's first programmable computer
+\end{itemize}
+\begin{center}
+\includegraphics<6->[scale=0.15]{colossus.jpg}
+\end{center}
 \end{frame}
 
 \begin{frame}
 \frametitle{Today's Issues}
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item<1-> Mode of operation: ECB
+\item<3-> Goal for security purposes: Pseudo-random result
+\item<4-> Other modes of operation: CBC (Cipher Block Chaining)
+\item<5-> A variety of systems are necessary; key exchange
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\includegraphics<1>[scale=0.7]{tux.jpg}
+\includegraphics<2>[scale=0.7]{tux_ecb.jpg}
+\includegraphics<3->[scale=0.7]{tux_secure.jpg}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}
-\frametitle{The Modern War}
+\begin{center}
+\includegraphics[scale=0.5]{CBC.PNG}
+\end{center}
+\end{frame}
+
+\subsection{Cryptography in Our Society}
+
+\begin{frame}
+\frametitle{New Possibilities and new Risks}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item<2-> Technology and social media are becoming ever more linked with our daily lives
+\item<3-> Multiple protocols and algorithms are integral to the security of your data
+\item<4-> Insecure or compromised data can be easily accessed
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\includegraphics<2->[scale=0.1]{SocialMedia.PNG} \break
+\includegraphics<3->[scale=0.3]{https.PNG}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Mass surveillance}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{center}
+\includegraphics<2->[scale=0.1]{snowden.jpg}
+\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{center}
+\includegraphics<2->[scale=0.2]{BoundlessInformant.PNG}
+\end{center}
+\end{column}
+\end{columns}
+\begin{itemize}
+\item<3-> 3 billion data elements were collected over 30 days in the US alone
+\item<4-> Data collection took place worldwide, including phone call metadata
+\item<5-> Data collection and storage is still active
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Privacy: An Outdated Concept?}
+\begin{center}
+\includegraphics[scale=0.3]{termsandconditions.png}
+\end{center}
+\begin{itemize}
+\item<2-> Historically academic subject
+\item<3-> Thrust into the public eye through recent revelations
+\item<4-> Highly relevant to the daily lives of regular people for the first time
+\end{itemize}
+\end{frame}
+
+\section{Questions}
+
+\begin{frame}
+\frametitle{Questions}
+\begin{center}
+\Huge{?}
+\end{center}
 \end{frame}
 
  

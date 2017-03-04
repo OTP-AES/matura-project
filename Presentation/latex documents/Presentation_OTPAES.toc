@@ -1,5 +1,8 @@
 \beamer@sectionintoc {1}{OTP}{3}{0}{1}
-\beamer@sectionintoc {2}{AES: The Advanced Encryption standard}{12}{0}{2}
-\beamer@subsectionintoc {2}{1}{High Level Structure}{13}{0}{2}
-\beamer@subsectionintoc {2}{2}{Rounds}{24}{0}{2}
-\beamer@sectionintoc {3}{A Historical Transition}{46}{0}{3}
+\beamer@sectionintoc {2}{AES: The Advanced Encryption standard}{16}{0}{2}
+\beamer@subsectionintoc {2}{1}{High Level Structure}{17}{0}{2}
+\beamer@subsectionintoc {2}{2}{Rounds}{28}{0}{2}
+\beamer@sectionintoc {3}{A Historical Transition}{51}{0}{3}
+\beamer@subsectionintoc {3}{1}{Conflicts Throughout History}{52}{0}{3}
+\beamer@subsectionintoc {3}{2}{Cryptography in Our Society}{70}{0}{3}
+\beamer@sectionintoc {4}{Questions}{84}{0}{4}
