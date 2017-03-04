@@ -2,26 +2,65 @@
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\slideentry {0}{0}{3}{3/3}{}{0}}
+\headcommand {\sectionentry {1}{OTP}{3}{OTP}{0}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\slideentry {0}{0}{4}{4/4}{}{0}}
-\headcommand {\beamer@framepages {4}{4}}
-\headcommand {\slideentry {0}{0}{5}{5/6}{}{0}}
-\headcommand {\beamer@framepages {5}{6}}
-\headcommand {\slideentry {0}{0}{6}{7/7}{}{0}}
-\headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {0}{0}{7}{8/8}{}{0}}
-\headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {0}{0}{8}{9/9}{}{0}}
-\headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {0}{0}{9}{10/10}{}{0}}
-\headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {0}{0}{10}{11/12}{}{0}}
-\headcommand {\beamer@framepages {11}{12}}
-\headcommand {\slideentry {0}{0}{11}{13/13}{}{0}}
+\headcommand {\slideentry {1}{0}{2}{4/6}{}{0}}
+\headcommand {\beamer@framepages {4}{6}}
+\headcommand {\slideentry {1}{0}{3}{7/10}{}{0}}
+\headcommand {\beamer@framepages {7}{10}}
+\headcommand {\slideentry {1}{0}{4}{11/11}{}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\sectionentry {2}{AES: The Advanced Encryption standard}{12}{AES: The Advanced Encryption standard}{0}}
+\headcommand {\beamer@sectionpages {3}{11}}
+\headcommand {\beamer@subsectionpages {3}{11}}
+\headcommand {\slideentry {2}{0}{1}{12/12}{}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{13}{High Level Structure}}\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\slideentry {2}{1}{1}{13/13}{High Level Structure}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@partpages {1}{13}}
-\headcommand {\beamer@subsectionpages {1}{13}}
-\headcommand {\beamer@sectionpages {1}{13}}
-\headcommand {\beamer@documentpages {13}}
-\headcommand {\def \inserttotalframenumber {11}}
+\headcommand {\slideentry {2}{1}{2}{14/15}{High Level Structure}{0}}
+\headcommand {\beamer@framepages {14}{15}}
+\headcommand {\slideentry {2}{1}{3}{16/18}{High Level Structure}{0}}
+\headcommand {\beamer@framepages {16}{18}}
+\headcommand {\slideentry {2}{1}{4}{19/22}{High Level Structure}{0}}
+\headcommand {\beamer@framepages {19}{22}}
+\headcommand {\slideentry {2}{1}{5}{23/23}{High Level Structure}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{24}{Rounds}}\headcommand {\beamer@subsectionpages {13}{23}}
+\headcommand {\slideentry {2}{2}{1}{24/24}{Rounds}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {2}{2}{2}{25/29}{Rounds}{0}}
+\headcommand {\beamer@framepages {25}{29}}
+\headcommand {\slideentry {2}{2}{3}{30/30}{Rounds}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\slideentry {2}{2}{4}{31/31}{Rounds}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\slideentry {2}{2}{5}{32/36}{Rounds}{0}}
+\headcommand {\beamer@framepages {32}{36}}
+\headcommand {\slideentry {2}{2}{6}{37/40}{Rounds}{0}}
+\headcommand {\beamer@framepages {37}{40}}
+\headcommand {\slideentry {2}{2}{7}{41/44}{Rounds}{0}}
+\headcommand {\beamer@framepages {41}{44}}
+\headcommand {\slideentry {2}{2}{8}{45/45}{Rounds}{0}}
+\headcommand {\beamer@framepages {45}{45}}
+\headcommand {\sectionentry {3}{A Historical Transition}{46}{A Historical Transition}{0}}
+\headcommand {\beamer@sectionpages {12}{45}}
+\headcommand {\beamer@subsectionpages {24}{45}}
+\headcommand {\slideentry {3}{0}{1}{46/46}{}{0}}
+\headcommand {\beamer@framepages {46}{46}}
+\headcommand {\slideentry {3}{0}{2}{47/47}{}{0}}
+\headcommand {\beamer@framepages {47}{47}}
+\headcommand {\slideentry {3}{0}{3}{48/48}{}{0}}
+\headcommand {\beamer@framepages {48}{48}}
+\headcommand {\slideentry {3}{0}{4}{49/49}{}{0}}
+\headcommand {\beamer@framepages {49}{49}}
+\headcommand {\slideentry {3}{0}{5}{50/50}{}{0}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\beamer@partpages {1}{50}}
+\headcommand {\beamer@subsectionpages {46}{50}}
+\headcommand {\beamer@sectionpages {46}{50}}
+\headcommand {\beamer@documentpages {50}}
+\headcommand {\def \inserttotalframenumber {25}}
