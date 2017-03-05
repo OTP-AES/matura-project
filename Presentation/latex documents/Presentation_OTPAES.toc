@@ -1,8 +1,9 @@
-\beamer@sectionintoc {1}{OTP}{3}{0}{1}
-\beamer@sectionintoc {2}{AES: The Advanced Encryption standard}{16}{0}{2}
-\beamer@subsectionintoc {2}{1}{High Level Structure}{17}{0}{2}
-\beamer@subsectionintoc {2}{2}{Rounds}{28}{0}{2}
-\beamer@sectionintoc {3}{A Historical Transition}{51}{0}{3}
-\beamer@subsectionintoc {3}{1}{Conflicts Throughout History}{52}{0}{3}
-\beamer@subsectionintoc {3}{2}{Cryptography in Our Society}{70}{0}{3}
-\beamer@sectionintoc {4}{Questions}{84}{0}{4}
+\beamer@sectionintoc {1}{A Brief Overview of Cryptography}{3}{0}{1}
+\beamer@sectionintoc {2}{OTP}{6}{0}{2}
+\beamer@sectionintoc {3}{AES: The Advanced Encryption standard}{13}{0}{3}
+\beamer@subsectionintoc {3}{1}{High Level Structure}{14}{0}{3}
+\beamer@subsectionintoc {3}{2}{Rounds}{21}{0}{3}
+\beamer@sectionintoc {4}{A Historical Transition}{35}{0}{4}
+\beamer@subsectionintoc {4}{1}{Conflicts Throughout History}{36}{0}{4}
+\beamer@subsectionintoc {4}{2}{Cryptography in Our Society}{53}{0}{4}
+\beamer@sectionintoc {5}{Questions}{62}{0}{5}
