@@ -4,6 +4,15 @@
 \usepackage{float}
 \graphicspath{ {images/} }
 
+\usepackage[
+backend=biber,
+style=numeric,
+citestyle=numeric,
+sorting=none]						
+{biblatex}							
+\addbibresource{mybibpresentation.bib}
+\renewcommand*{\bibfont}{\footnotesize}
+
 \usepackage{mathtools}
 \usepackage{amsfonts, amsmath, amsthm, amssymb}
 \usepackage{adjustbox}
@@ -119,7 +128,7 @@ Linguistic supervision by Ms. Margrit Oetiker}
 }
 \end{frame}
 
-\section{OTP}
+\section{OTP: The One Time Pad}
 
 \begin{frame}
 \frametitle{OTP: The One Time Pad}
@@ -144,6 +153,9 @@ Linguistic supervision by Ms. Margrit Oetiker}
 \end{column}
 \begin{column}{0.5\textwidth}
 \includegraphics<1->[scale=0.2]{keystream.PNG}
+\break
+\caption{A stream cipher\cite{keystream}}
+\vspace{5mm}
 \uncover<2->{
 $b + d = 1+3 = 4 = e$
 $j + t = 9+19 = 28$
@@ -182,7 +194,6 @@ $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\dow
 u & p & r & g & n & w & l & h & n & x & o & k
 \end{tabular}
 \end{center}
-
 \end{frame}
 
 \begin{frame}
@@ -197,50 +208,52 @@ u & p & r & g & n & w & l & h & n & x & o & k
 \end{column}
 \begin{column}{0.5\textwidth}
 \includegraphics<1>[scale=0.5]{VernamCipher.jpg}
+\break
+\uncover<1>{\caption{Patented 1919: Secret signaling system\cite{VernamPatent}}}
 \includegraphics<2->[scale=0.25]{PerforatedTape.jpg}
+\break
+\uncover<2->{\caption{Perforated tape\cite{PunchedTape}}}
 \end{column}
 \end{columns}
-
 \end{frame}
 
 \section{AES: The Advanced Encryption standard}
 
 \subsection{High Level Structure}
 
-\begin{frame}
-\frametitle{AES: Terminology}
-\begin{columns}
-\begin{column}{0.4\textwidth}
-\begin{itemize}
-\item<1-> Bit: Boolean value first conclusively described by Claude Shannon \vspace{5mm}
-\item<2-> Byte: 8 Bits; can represent any number from 0-255
-\end{itemize}
-\end{column}
-\begin{column}{0.6\textwidth}
-\uncover<1->{
-$0 \vee 1$
-}
-
-\uncover<2->{
-\vspace{5mm}
-$(2^7 + 2^6 + 2^5 + 2^4 + 2^3 + 2^2 + 2^1 + 2^0)_b$
-\vspace{5mm}
-$(00000011)_b = 1 \cdot 2^1 + 1 \cdot 2^0 = 3$ 
-$(16 + 1)_h$
-${1-9; A; B; C; D; E; F}$
-$(B4)_h = 16 \cdot 11 + 4 \cdot 1 = 180$
-}
-
-\end{column}
-\end{columns}
-
-\end{frame}
+%\begin{frame}
+%\frametitle{AES: Terminology}
+%\begin{columns}
+%\begin{column}{0.4\textwidth}
+%\begin{itemize}
+%\item<1-> Bit: Boolean value first conclusively described by Claude Shannon \vspace{5mm}
+%\item<2-> Byte: 8 Bits; can represent any number from 0-255
+%\end{itemize}
+%\end{column}
+%\begin{column}{0.6\textwidth}
+%\uncover<1->{
+%$0 \vee 1$
+%}
+%
+%\uncover<2->{
+%\vspace{5mm}
+%$(2^7 + 2^6 + 2^5 + 2^4 + 2^3 + 2^2 + 2^1 + 2^0)_b$
+%\vspace{5mm}
+%$(00000011)_b = 1 \cdot 2^1 + 1 \cdot 2^0 = 3$ 
+%$(16 + 1)_h$
+%${1-9; A; B; C; D; E; F}$
+%$(B4)_h = 16 \cdot 11 + 4 \cdot 1 = 180$
+%}
+%\end{column}
+%\end{columns}
+%\end{frame}
 
 \begin{frame}
 \frametitle{AES: Design Goals}
 \begin{itemize}
 \item Confusion: Each bit of the ciphertext should depend on multiple bits of the key
-\item Diffusion: The "avalanche effect", small changes to the plaintext should strongly impact the ciphertext
+\item Diffusion: The "avalanche effect"
+%, small changes to the plaintext should strongly impact the ciphertext
 \item Two different implementations: Computationally or memory efficient
 \end{itemize}
 \end{frame}
@@ -251,7 +264,8 @@ $(B4)_h = 16 \cdot 11 + 4 \cdot 1 = 180$
 \begin{column}{0.5\textwidth}
 \begin{itemize}
 \item Block Cipher
-\item The current N.I.S.T standard for SECRET and TOP-SECRET designated files
+\item The current N.I.S.T standard
+% for SECRET and TOP-SECRET designated files
 \item Original name: Rijndael; was selected as the successor to DES.
 \end{itemize}
 \end{column}
@@ -330,9 +344,9 @@ a_3 & a_7 & a_{11} & a_{15}\end{array} \right)\]
 
 \begin{itemize}
 \pause
-\item bitwise logical operation; can be performed directly by the CPU
-\item addition mod 2
-\item can randomize biased input
+\item Bitwise logical operation; can be performed directly by the CPU
+\item Addition mod 2
+\item Can randomize biased input
 \end{itemize}
 \end{frame}
 
@@ -380,14 +394,16 @@ a_3 & a_7 & a_{11} & a_{15}\end{array} \right)\]
 \frametitle{AES: SubBytes}
 \begin{center}
 \includegraphics<1>[scale=0.45]{SBox.PNG}
+\break
+\caption{A Rijndael S-Box\cite{SBox}}
 \end{center}
-\begin{itemize}
-\item<2-> Bytewise operation
-\item<2-> Sole source of Confusion; the only non-linear operation in AES (affine transformation)
-\item<2-> Key-independence is accepted in return for non-linearity; this eliminates one of DES' major weaknesses
-\item<2-> Utilization of the multiplicative inverse: if $a \cdot b = 1$ then $b = a^{-1}$
-\item<2-> Maximizes non-linearity, but negatively impacts diffusion: $0^{-1} = 0$ and $1^{-1}=1$
-\end{itemize}
+%\begin{itemize}
+%\item<2-> Bytewise operation
+%\item<2-> Sole source of Confusion; the only non-linear operation in AES (affine transformation)
+%\item<2-> Key-independence is accepted in return for non-linearity; this eliminates one of DES' major weaknesses
+%\item<2-> Utilization of the multiplicative inverse: if $a \cdot b = 1$ then $b = a^{-1}$
+%\item<2-> Maximizes non-linearity, but negatively impacts diffusion: $0^{-1} = 0$ and $1^{-1}=1$
+%\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -409,8 +425,8 @@ a_{3,3} & a_{3,0} & a_{3,1} & a_{3,2}\end{array} \right)
 \pause
 
 \begin{itemize}
-\item One of the two primary sources of diffusion
-\item One small change to the plaintext should result in a large change to the ciphertext
+%\item One of the two primary sources of diffusion
+%\item One small change to the plaintext should result in a large change to the ciphertext
 \item Bytes are placed into the state in column order, but shifted across rows
 \end{itemize}
 \end{frame}
@@ -418,18 +434,20 @@ a_{3,3} & a_{3,0} & a_{3,1} & a_{3,2}\end{array} \right)
 \begin{frame}
 \frametitle{AES: MixColumns}
 
-\[ \left( \begin{array}{cccc}
-02 & 03 & 01 & 01 \\
-01 & 02 & 03 & 01 \\
-01 & 01 & 02 & 03 \\
-03 & 01 & 01 & 02\end{array} \right)
-\cdot
+%\[ \left( 
+%\begin{array}{cccc}
+%02 & 03 & 01 & 01 \\
+%01 & 02 & 03 & 01 \\
+%01 & 01 & 02 & 03 \\
+%03 & 01 & 01 & 02\end{array} \right)
+%\cdot
+\[
 \left( \begin{array}{c}
 a_0 \\
 a_1 \\
 a_2 \\
 a_3\end{array} \right)
-=
+\xrightarrow{\text{MixColumns}}
 \left( \begin{array}{c}
 s_0 \\
 s_1 \\
@@ -453,7 +471,7 @@ $
 \begin{itemize}
 \pause
 \item Each new byte is dependent on an entire column of four old bytes
-\item Second source of diffusion
+%\item Second source of diffusion
 \end{itemize}
 \end{column}
 \end{columns}
@@ -463,7 +481,7 @@ $
 \begin{frame}
 \frametitle{AES: AddRoundKey}
 \begin{itemize}
-\item Identical to the initialing XOR
+\item Identical to the initializing XOR
 \item XORs the round key with the state
 \end{itemize}
 \begin{center}
@@ -497,12 +515,16 @@ k_{3,0} & k_{3,1} & k_{3,2} & k_{3,3}\end{array} \right)
 \begin{columns}
 \begin{column}{0.5\textwidth}
 \begin{center}
-\uncover<5->{\includegraphics[scale=0.1]{NSA.PNG}}
+\uncover<5->{\includegraphics[scale=0.1]{NSA.PNG}
+\break
+\caption{Seal of the NSA\cite{NSA}}}
 \end{center}
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{center}
-\uncover<5->{\includegraphics[scale=0.1]{SVRRF.PNG}}
+\uncover<5->{\includegraphics[scale=0.1]{SVRRF.PNG}
+\break
+\caption{Seal of the SVRRF\cite{SVRRF}}}
 \end{center}
 \end{column}
 \end{columns}
@@ -513,12 +535,16 @@ k_{3,0} & k_{3,1} & k_{3,2} & k_{3,3}\end{array} \right)
 \begin{itemize}
 \item<2-> Cryptologists vs. Cryptanalysts
 \item<3-> Speed and Efficiency: RAM (Rapid Analytic Machines)
-\item<4-> Each different problem required a specialized RAM
-\item<5-> Alan Turing's Thesis: Build a computer not restricted to one specific problem
+\item<4-> Over-specialization
+%Each different problem required a specialized RAM
+\item<5-> Alan Turing's Thesis
+%: Build a computer not restricted to one specific problem
 \item<6-> Colossus: The world's first programmable computer
 \end{itemize}
 \begin{center}
-\uncover<6->{\includegraphics[scale=0.15]{colossus.jpg}}
+\uncover<6->{\includegraphics[scale=0.15]{colossus.jpg}
+\break
+\caption{The Colossus computer\cite{colossus}}}
 \end{center}
 \end{frame}
 
@@ -529,8 +555,8 @@ k_{3,0} & k_{3,1} & k_{3,2} & k_{3,3}\end{array} \right)
 \begin{column}{0.5\textwidth}
 \begin{itemize}
 \item<1-> Mode of operation: ECB
-\item<3-> Goal for security purposes: Pseudo-random result
-\item<4-> Other modes of operation: CBC (Cipher Block Chaining)
+\item<3-> Pseudo-random result
+\item<4-> CBC (Cipher Block Chaining)
 \item<4-> A variety of systems are necessary; key exchange
 \end{itemize}
 \end{column}
@@ -538,6 +564,8 @@ k_{3,0} & k_{3,1} & k_{3,2} & k_{3,3}\end{array} \right)
 \includegraphics<1>[scale=0.7]{tux.jpg}
 \includegraphics<2>[scale=0.7]{tux_ecb.jpg}
 \includegraphics<3->[scale=0.7]{tux_secure.jpg}
+\break
+\uncover<3->{\caption{All pictures from\cite{tux}}}
 \end{column}
 \end{columns}
 \end{frame}
@@ -545,6 +573,8 @@ k_{3,0} & k_{3,1} & k_{3,2} & k_{3,3}\end{array} \right)
 \begin{frame}
 \begin{center}
 \includegraphics[scale=0.5]{CBC.PNG}
+\break
+\caption{CBC mode of operation\cite{tux}}
 \end{center}
 \end{frame}
 
@@ -555,13 +585,16 @@ k_{3,0} & k_{3,1} & k_{3,2} & k_{3,3}\end{array} \right)
 \begin{columns}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-\item<2-> Technology and social media are becoming ever more linked with our daily lives
-\item<3-> Multiple protocols and algorithms are integral to the security of your data
+\item<2-> Technology and social media 
+%are becoming ever more linked with our daily lives
+\item<3-> Multiple protocols and algorithms 
+%are integral to the security of your data
 \item<3-> Insecure or compromised data can be easily accessed
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
-\uncover<2->{\includegraphics[scale=0.1]{SocialMedia.PNG}} \break
+\uncover<2->{\includegraphics[scale=0.1]{SocialMedia.PNG} \break 
+} \break
 \uncover<3->{\includegraphics[scale=0.3]{https.PNG}}
 \end{column}
 \end{columns}
@@ -573,17 +606,21 @@ k_{3,0} & k_{3,1} & k_{3,2} & k_{3,3}\end{array} \right)
 \begin{column}{0.5\textwidth}
 \begin{center}
 \includegraphics<2->[scale=0.1]{snowden.jpg}
+\break
+\uncover<2->{\caption{Edward Snowden\cite{snowden}}}
 \end{center}
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{center}
 \includegraphics<2->[scale=0.2]{BoundlessInformant.PNG}
+\break
+\uncover<2->{\caption{Boundless Informant\cite{boundless}}}
 \end{center}
 \end{column}
 \end{columns}
 \begin{itemize}
 \item<3-> 3 billion data elements were collected over 30 days in the US alone
-\item<3-> Data collection took place worldwide, including phone call metadata
+\item<3-> Worldwide, including phone call metadata
 \item<3-> Data collection and storage is still active
 \end{itemize}
 \end{frame}
@@ -592,11 +629,13 @@ k_{3,0} & k_{3,1} & k_{3,2} & k_{3,3}\end{array} \right)
 \frametitle{Privacy: An Outdated Concept?}
 \begin{center}
 \includegraphics[scale=0.3]{termsandconditions.png}
+\break
+\caption{Facebook's terms and conditions\cite{fbterms}}
 \end{center}
 \begin{itemize}
 \item<2-> Historically academic subject
 \item<2-> Thrust into the public eye through recent revelations
-\item<2-> Highly relevant to the daily lives of regular people for the first time
+%\item<2-> Highly relevant to the daily lives of regular people for the first time
 \end{itemize}
 \end{frame}
 
@@ -608,6 +647,11 @@ k_{3,0} & k_{3,1} & k_{3,2} & k_{3,3}\end{array} \right)
 \Huge{?}
 \end{center}
 \end{frame}
+
+%\begin{frame}
+%\frametitle{bibliography}
+\printbibliography
+%\end{frame}
 
  
 

@@ -1,0 +1,245 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{keystream}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2d17260a974188737a35c35f8bb8a9cc}{%
+           family={Cryptosmith},
+           family_i={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d17260a974188737a35c35f8bb8a9cc}
+      \strng{fullhash}{2d17260a974188737a35c35f8bb8a9cc}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Stream Ciphers}
+      \field{year}{2007}
+      \verb{url}
+      \verb https://cryptosmith.com/2007/06/07/stream-ciphers/
+      \endverb
+    \endentry
+    \entry{VernamPatent}{patent}{}
+      \name{author}{1}{}{%
+        {{hash=e5478066f53168a8c83e4efbd8816d21}{%
+           family={Vernam},
+           family_i={V\bibinitperiod},
+           given={G.S},
+           given_i={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5478066f53168a8c83e4efbd8816d21}
+      \strng{fullhash}{e5478066f53168a8c83e4efbd8816d21}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{U.S. Patent 1,310,719}
+      \field{title}{Secret Signaling system}
+      \field{year}{1919}
+    \endentry
+    \entry{PunchedTape}{online}{}
+      \name{author}{1}{}{%
+        {{hash=684d6378d73583bfdac3152c78a2820c}{%
+           family={Cole},
+           family_i={C\bibinitperiod},
+           given={Ted},
+           given_i={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{684d6378d73583bfdac3152c78a2820c}
+      \strng{fullhash}{684d6378d73583bfdac3152c78a2820c}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Five-hole and eight-hole punched paper tape}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Punched_tape#/media/File:PaperTapes-5and8Hole.jpg
+      \endverb
+    \endentry
+    \entry{SBox}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6082ade0b5846152390edb0e4414d697}{%
+           family={Wagner},
+           family_i={W\bibinitperiod},
+           given={Neal\bibnamedelima R},
+           given_i={N\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{6082ade0b5846152390edb0e4414d697}
+      \strng{fullhash}{6082ade0b5846152390edb0e4414d697}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Laws of Cryptography: Advanced Encryption Standard: S-Boxes}
+      \field{urlday}{31}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2001}
+      \verb{url}
+      \verb http://www.cs.utsa.edu/~wagner/laws/SBoxes.html
+      \endverb
+    \endentry
+    \entry{NSA}{online}{}
+      \name{author}{1}{}{%
+        {{hash=33be81ea4145bffe521817661e9ead78}{%
+           family={government},
+           family_i={g\bibinitperiod},
+           given={U.S},
+           given_i={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{33be81ea4145bffe521817661e9ead78}
+      \strng{fullhash}{33be81ea4145bffe521817661e9ead78}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The seal of the U.S. National Security Agency}
+      \field{year}{1966}
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/National_Security_Agency#/media/File:Seal_of_the_United_States_National_Security_Agency.svg
+      \endverb
+    \endentry
+    \entry{SVRRF}{online}{}
+      \name{author}{1}{}{%
+        {{hash=19aed0d1f4855d3b940876f8f9db9c99}{%
+           family={Government},
+           family_i={G\bibinitperiod},
+           given={Russian\bibnamedelima Federation},
+           given_i={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{19aed0d1f4855d3b940876f8f9db9c99}
+      \strng{fullhash}{19aed0d1f4855d3b940876f8f9db9c99}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Emblem of the SVR}
+      \field{year}{1991}
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Foreign_Intelligence_Service_(Russia)#/media/File:SVR_Emblem.svg
+      \endverb
+    \endentry
+    \entry{colossus}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0cfabc06c630a277a145ae4da9d59094}{%
+           family={computingheritage},
+           family_i={c\bibinitperiod}}}%
+      }
+      \strng{namehash}{0cfabc06c630a277a145ae4da9d59094}
+      \strng{fullhash}{0cfabc06c630a277a145ae4da9d59094}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Colossus: Creating a Giant}
+      \field{year}{2012}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=knXWMjIA59c
+      \endverb
+    \endentry
+    \entry{tux}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0f7f16555f3865378608b7caaf2963b3}{%
+           family={Commons},
+           family_i={C\bibinitperiod},
+           given={Wikipedia},
+           given_i={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{0f7f16555f3865378608b7caaf2963b3}
+      \strng{fullhash}{0f7f16555f3865378608b7caaf2963b3}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Electronic Codebook}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_.28ECB.29
+      \endverb
+    \endentry
+    \entry{snowden}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a9fb48d7bd11c3d6a53d8aaf4d906f42}{%
+           family={Poitras},
+           family_i={P\bibinitperiod},
+           given={Laura},
+           given_i={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a9fb48d7bd11c3d6a53d8aaf4d906f42}
+      \strng{fullhash}{a9fb48d7bd11c3d6a53d8aaf4d906f42}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Edward Snowden}
+      \field{year}{2013}
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Edward_Snowden#/media/File:Edward_Snowden-2.jpg
+      \endverb
+    \endentry
+    \entry{boundless}{online}{}
+      \name{author}{1}{}{%
+        {{hash=22f0f64b59f4067b1c1318c327fb20ac}{%
+           prefix={off\bibnamedelima the},
+           prefix_i={o\bibinitperiod\bibinitdelim t\bibinitperiod},
+           family={record},
+           family_i={r\bibinitperiod},
+           given={IC},
+           given_i={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{22f0f64b59f4067b1c1318c327fb20ac}
+      \strng{fullhash}{22f0f64b59f4067b1c1318c327fb20ac}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{BOUNDLESS INFORMANT}
+      \field{year}{2013}
+      \verb{url}
+      \verb https://nsa.gov1.info/dni/boundless-informant.html
+      \endverb
+    \endentry
+    \entry{fbterms}{online}{}
+      \name{author}{1}{}{%
+        {{hash=64678f4dc876d94625e1dd9f91e5e62f}{%
+           family={Limited},
+           family_i={L\bibinitperiod},
+           given={Facebook\bibnamedelima Ireland},
+           given_i={F\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{64678f4dc876d94625e1dd9f91e5e62f}
+      \strng{fullhash}{64678f4dc876d94625e1dd9f91e5e62f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Statement of Rights and Responsibilities}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://www.facebook.com/terms
+      \endverb
+    \endentry
+  \endsortlist
+  \missing{SocialMedia}
+\endrefsection
+\endinput
+

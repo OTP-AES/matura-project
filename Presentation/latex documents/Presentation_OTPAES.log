@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  5 MAR 2017 16:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  5 MAR 2017 19:05
 entering extended mode
 **./Presentation_OTPAES.tex
 (Presentation_OTPAES.tex
@@ -941,21 +941,229 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box53
 \@float@everytoks=\toks46
 \@floatcapt=\box54
-) (E:\miketex\tex\latex\mathtools\mathtools.sty
+) (E:\miketex\tex\latex\biblatex\biblatex.sty
+Package: biblatex 2016/05/14 v3.4 programmable bibliographies (PK/JW/AB)
+
+(E:\miketex\tex\latex\iftex\iftex.sty
+Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX, 
+and LuaTeX
+) (E:\miketex\tex\latex\logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count155
+
+(E:\miketex\tex\latex\logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (E:\miketex\tex\latex\base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (E:\miketex\tex\latex\xstring\xstring.sty
+(E:\miketex\tex\generic\xstring\xstring.tex
+\@xs@message=\write5
+\integerpart=\count156
+\decimalpart=\count157
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\c@tabx@nest=\count158
+\c@listtotal=\count159
+\c@listcount=\count160
+\c@liststart=\count161
+\c@liststop=\count162
+\c@citecount=\count163
+\c@citetotal=\count164
+\c@multicitecount=\count165
+\c@multicitetotal=\count166
+\c@instcount=\count167
+\c@maxnames=\count168
+\c@minnames=\count169
+\c@maxitems=\count170
+\c@minitems=\count171
+\c@citecounter=\count172
+\c@savedcitecounter=\count173
+\c@uniquelist=\count174
+\c@uniquename=\count175
+\c@refsection=\count176
+\c@refsegment=\count177
+\c@maxextratitle=\count178
+\c@maxextratitleyear=\count179
+\c@maxextrayear=\count180
+\c@maxextraalpha=\count181
+\c@abbrvpenalty=\count182
+\c@highnamepenalty=\count183
+\c@lownamepenalty=\count184
+\c@maxparens=\count185
+\c@parenlevel=\count186
+\blx@tempcnta=\count187
+\blx@tempcntb=\count188
+\blx@tempcntc=\count189
+\blx@maxsection=\count190
+\blx@maxsegment@0=\count191
+\blx@notetype=\count192
+\blx@parenlevel@text=\count193
+\blx@parenlevel@foot=\count194
+\blx@sectionciteorder@0=\count195
+\labelnumberwidth=\skip57
+\labelalphawidth=\skip58
+\biblabelsep=\skip59
+\bibitemsep=\skip60
+\bibnamesep=\skip61
+\bibinitsep=\skip62
+\bibparsep=\skip63
+\bibhang=\skip64
+\blx@bcfin=\read2
+\blx@bcfout=\write6
+\c@mincomprange=\count196
+\c@maxcomprange=\count197
+\c@mincompwidth=\count198
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(E:\miketex\tex\latex\biblatex\blx-dm.def)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count199
+\c@savedafterword=\count266
+\c@annotator=\count267
+\c@savedannotator=\count268
+\c@author=\count269
+\c@savedauthor=\count270
+\c@bookauthor=\count271
+\c@savedbookauthor=\count272
+\c@commentator=\count273
+\c@savedcommentator=\count274
+\c@editor=\count275
+\c@savededitor=\count276
+\c@editora=\count277
+\c@savededitora=\count278
+\c@editorb=\count279
+\c@savededitorb=\count280
+\c@editorc=\count281
+\c@savededitorc=\count282
+\c@foreword=\count283
+\c@savedforeword=\count284
+\c@holder=\count285
+\c@savedholder=\count286
+\c@introduction=\count287
+\c@savedintroduction=\count288
+\c@namea=\count289
+\c@savednamea=\count290
+\c@nameb=\count291
+\c@savednameb=\count292
+\c@namec=\count293
+\c@savednamec=\count294
+\c@translator=\count295
+\c@savedtranslator=\count296
+\c@shortauthor=\count297
+\c@savedshortauthor=\count298
+\c@shorteditor=\count299
+\c@savedshorteditor=\count300
+\c@labelname=\count301
+\c@savedlabelname=\count302
+\c@institution=\count303
+\c@savedinstitution=\count304
+\c@lista=\count305
+\c@savedlista=\count306
+\c@listb=\count307
+\c@savedlistb=\count308
+\c@listc=\count309
+\c@savedlistc=\count310
+\c@listd=\count311
+\c@savedlistd=\count312
+\c@liste=\count313
+\c@savedliste=\count314
+\c@listf=\count315
+\c@savedlistf=\count316
+\c@location=\count317
+\c@savedlocation=\count318
+\c@organization=\count319
+\c@savedorganization=\count320
+\c@origlocation=\count321
+\c@savedoriglocation=\count322
+\c@origpublisher=\count323
+\c@savedorigpublisher=\count324
+\c@publisher=\count325
+\c@savedpublisher=\count326
+\c@language=\count327
+\c@savedlanguage=\count328
+\c@pageref=\count329
+\c@savedpageref=\count330
+\shorthandwidth=\skip65
+\shortjournalwidth=\skip66
+\shortserieswidth=\skip67
+\shorttitlewidth=\skip68
+\shortauthorwidth=\skip69
+\shorteditorwidth=\skip70
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(E:\miketex\tex\latex\biblatex\blx-compat.def
+File: blx-compat.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(E:\miketex\tex\latex\biblatex\biblatex.def
+File: biblatex.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
+\c@textcitecount=\count331
+\c@textcitetotal=\count332
+\c@textcitemaxnames=\count333
+\c@biburlnumpenalty=\count334
+\c@biburlucpenalty=\count335
+\c@biburllcpenalty=\count336
+\c@smartand=\count337
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(E:\miketex\tex\latex\biblatex\bbx\numeric.bbx
+File: numeric.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(E:\miketex\tex\latex\biblatex\bbx\standard.bbx
+File: standard.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count338
+\c@bbx:relatedtotal=\count339
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(E:\miketex\tex\latex\biblatex\cbx\numeric.cbx
+File: numeric.cbx 2016/05/14 v3.4 biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(E:\miketex\tex\latex\biblatex\biblatex.cfg
+File: biblatex.cfg 
+))
+(E:\miketex\tex\latex\mathtools\mathtools.sty
 Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
 
 (E:\miketex\tex\latex\tools\calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count155
-\calc@Bcount=\count156
+\calc@Acount=\count340
+\calc@Bcount=\count341
 \calc@Adimen=\dimen188
 \calc@Bdimen=\dimen189
-\calc@Askip=\skip57
-\calc@Bskip=\skip58
+\calc@Askip=\skip71
+\calc@Bskip=\skip72
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count157
-\calc@Cskip=\skip59
+\calc@Ccount=\count342
+\calc@Cskip=\skip73
 )
 (E:\miketex\tex\latex\mathtools\mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
@@ -964,9 +1172,9 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count158
+\g_MT_multlinerow_int=\count343
 \l_MT_multwidth_dim=\dimen190
-\origjot=\skip60
+\origjot=\skip74
 \l_MT_shortvdotswithinadjustabove_dim=\dimen191
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen192
 \l_MT_above_intertext_sep=\dimen193
@@ -985,7 +1193,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks47
 \XKV@tempa@toks=\toks48
 )
-\XKV@depth=\count159
+\XKV@depth=\count344
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (E:\miketex\tex\latex\adjustbox\adjcalc.sty
@@ -1015,12 +1223,12 @@ File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 
 (E:\miketex\tex\latex\ifoddpage\ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count160
+\c@checkoddpage=\count345
 )
 (E:\miketex\tex\latex\ltxmisc\varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box56
-\sift@deathcycles=\count161
+\sift@deathcycles=\count346
 \@vwid@loff=\dimen261
 \@vwid@roff=\dimen262
 ))
@@ -1031,15 +1239,15 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen263
 \extrarowheight=\dimen264
 \NC@list=\toks49
-\extratabsurround=\skip61
-\backup@length=\skip62
+\extratabsurround=\skip75
+\backup@length=\skip76
 )
 \TX@col@width=\dimen265
 \TX@old@table=\dimen266
 \TX@old@col=\dimen267
 \TX@target=\dimen268
 \TX@delta=\dimen269
-\TX@cols=\count162
+\TX@cols=\count347
 \TX@ftn=\toks50
 ) (E:\miketex\tex\latex\pgf\frontendlayer\tikz.sty
 (E:\miketex\tex\latex\pgf\basiclayer\pgf.sty
@@ -1079,7 +1287,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
 (E:\miketex\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count163
+\pgf@plot@mark@count=\count348
 \pgfplotmarksize=\dimen274
 )
 \tikz@lastx=\dimen275
@@ -1092,18 +1300,18 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box59
 \tikz@tempbox=\box60
 \tikz@tempbox@bg=\box61
-\tikztreelevel=\count164
-\tikznumberofchildren=\count165
-\tikznumberofcurrentchild=\count166
-\tikz@fig@count=\count167
+\tikztreelevel=\count349
+\tikznumberofchildren=\count350
+\tikznumberofcurrentchild=\count351
+\tikz@fig@count=\count352
 
 (E:\miketex\tex\generic\pgf\modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count168
-\pgfmatrixcurrentcolumn=\count169
-\pgf@matrix@numberofcolumns=\count170
+\pgfmatrixcurrentrow=\count353
+\pgfmatrixcurrentcolumn=\count354
+\pgf@matrix@numberofcolumns=\count355
 )
-\tikz@expandcount=\count171
+\tikz@expandcount=\count356
 
 (E:\miketex\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.cod
 e.tex
@@ -1128,29 +1336,40 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 ))
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 86.
+(hyperref)                removing `\\' on input line 95.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 86.
+(hyperref)                removing `\\' on input line 95.
 
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+(E:\miketex\tex\latex\biblatex\lbx\english.lbx
+File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
+)
+
+Package biblatex Warning: Patching footnotes failed.
+(biblatex)                Footnote detection will not work.
+
+\@quotelevel=\count357
+\@quotereset=\count358
 (Presentation_OTPAES.aux)
 \openout1 = `Presentation_OTPAES.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1188,16 +1407,16 @@ LaTeX Font Info:    ... okay on input line 91.
 
 (E:\miketex\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count172
+\scratchcounter=\count359
 \scratchdimen=\dimen282
 \scratchbox=\box62
-\nofMPsegments=\count173
-\nofMParguments=\count174
+\nofMPsegments=\count360
+\nofMParguments=\count361
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count175
+\MPscratchCnt=\count362
 \MPscratchDim=\dimen283
-\MPnumerator=\count176
-\makeMPintoPDFobject=\count177
+\MPnumerator=\count363
+\makeMPintoPDFobject=\count364
 \everyMPtoPDFconversion=\toks54
 ) (E:\miketex\tex\latex\oberdiek\epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1214,7 +1433,7 @@ G,.JBIG2,.JB2,.eps]
 )
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box63
-Package hyperref Info: Link coloring OFF on input line 91.
+Package hyperref Info: Link coloring OFF on input line 100.
 
 (E:\miketex\tex\latex\hyperref\nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1222,67 +1441,67 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (E:\miketex\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count178
+\c@section@level=\count365
 )
-LaTeX Info: Redefining \ref on input line 91.
-LaTeX Info: Redefining \pageref on input line 91.
-LaTeX Info: Redefining \nameref on input line 91.
+LaTeX Info: Redefining \ref on input line 100.
+LaTeX Info: Redefining \pageref on input line 100.
+LaTeX Info: Redefining \nameref on input line 100.
  (Presentation_OTPAES.out) (Presentation_OTPAES.out)
-\@outlinefile=\write5
-\openout5 = `Presentation_OTPAES.out'.
+\@outlinefile=\write7
+\openout7 = `Presentation_OTPAES.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 91.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 100.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 91.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 100.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 91.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 91.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 91.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 91.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 100.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 91.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 91.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 91.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 100.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 91.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 91.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 91.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 100.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 91.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 91.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 100.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 91.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 100.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 91.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 91.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 91.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 91.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 91.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 91.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 91.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 100.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 100.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 9
-1.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
+00.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-91.
+100.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 91.
+ut line 100.
 
 (E:\miketex\tex\latex\beamer\translator\dicts\translator-basic-dictionary\trans
 lator-basic-dictionary-English.dict
@@ -1308,11 +1527,29 @@ Dictionary: translator-numbers-dictionary, Language: English
 nslator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 91.
+LaTeX Info: Redefining \includegraphics on input line 100.
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout6 = `Presentation_OTPAES.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'Presentation_OTPAES.bbl' found.
+ (Presentation_OTPAES.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                SocialMedia
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
+Package biblatex Info: Reference section=0 on input line 100.
+Package biblatex Info: Reference segment=0 on input line 100.
  (Presentation_OTPAES.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 93.
+(Font)              size <5> substituted on input line 102.
 
 [1
 
@@ -1322,17 +1559,17 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 ] (Presentation_OTPAES.toc) [3
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 120.
+LaTeX Font Info:    Try loading font information for U+msa on input line 129.
 
 (E:\miketex\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 120.
+LaTeX Font Info:    Try loading font information for U+msb on input line 129.
  (E:\miketex\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 120.
+line 129.
 (E:\miketex\tex\latex\sansmathaccent\ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
@@ -1350,61 +1587,268 @@ thkerncmss.
 File: images/keystream.PNG Graphic file (type png)
 
 <use images/keystream.PNG>
-Package pdftex.def Info: images/keystream.PNG used on input line 155.
+Package pdftex.def Info: images/keystream.PNG used on input line 167.
 (pdftex.def)             Requested size: 120.44786pt x 47.17542pt.
- [8
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.167 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.167 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.167 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[8
 
  <./images/keystream.PNG>]
 File: images/keystream.PNG Graphic file (type png)
-
-<use images/keystream.PNG>
-Package pdftex.def Info: images/keystream.PNG used on input line 155.
+ <use images/keystream.PNG>
+Package pdftex.def Info: images/keystream.PNG used on input line 167.
 (pdftex.def)             Requested size: 120.44786pt x 47.17542pt.
- [9
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.167 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.167 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.167 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[9
 
 ]
-Overfull \hbox (181.37321pt too wide) in paragraph at lines 186--186
+Overfull \hbox (181.37321pt too wide) in paragraph at lines 197--197
  [] 
  []
 
 [10
 
-] <images/VernamCipher.jpg, id=140, 292.292pt x 191.917pt>
+] <images/VernamCipher.jpg, id=143, 292.292pt x 191.917pt>
 File: images/VernamCipher.jpg Graphic file (type jpg)
 
 <use images/VernamCipher.jpg>
-Package pdftex.def Info: images/VernamCipher.jpg used on input line 204.
+Package pdftex.def Info: images/VernamCipher.jpg used on input line 218.
 (pdftex.def)             Requested size: 146.14565pt x 95.95827pt.
- [11
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.218 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.218 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.218 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.218 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[11
 
  <./images/VernamCipher.jpg>]
-<images/PerforatedTape.jpg, id=146, 433.37122pt x 288.95561pt>
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.218 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.218 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<images/PerforatedTape.jpg, id=154, 433.37122pt x 288.95561pt>
 File: images/PerforatedTape.jpg Graphic file (type jpg)
 
 <use images/PerforatedTape.jpg>
-Package pdftex.def Info: images/PerforatedTape.jpg used on input line 204.
+Package pdftex.def Info: images/PerforatedTape.jpg used on input line 218.
 (pdftex.def)             Requested size: 108.34253pt x 72.23872pt.
- [12
 
- <./images/PerforatedTape.jpg>]
-(Presentation_OTPAES.toc) [13
 
-] (Presentation_OTPAES.toc) [14
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.218 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.218 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[12
+
+ <./images/PerforatedTape.jpg>] (Presentation_OTPAES.toc) [13
+
+]
+(Presentation_OTPAES.toc) [14
 
 ] [15
 
 ] [16
 
-]
-[17
+] [17
 
 ] [18
 
-] [19
+] (Presentation_OTPAES.toc)
+[19
 
 ] [20
 
-] (Presentation_OTPAES.toc) [21
+] [21
 
 ] [22
 
@@ -1412,27 +1856,52 @@ Package pdftex.def Info: images/PerforatedTape.jpg used on input line 204.
 
 ] [24
 
-] [25
-
-] [26
-
 ]
-<images/SBox.PNG, id=251, 398.99063pt x 351.56343pt>
+<images/SBox.PNG, id=248, 398.99063pt x 351.56343pt>
 File: images/SBox.PNG Graphic file (type png)
  <use images/SBox.PNG>
-Package pdftex.def Info: images/SBox.PNG used on input line 391.
+Package pdftex.def Info: images/SBox.PNG used on input line 407.
 (pdftex.def)             Requested size: 179.54411pt x 158.20207pt.
 
-Overfull \vbox (73.20404pt too high) detected at line 391
- []
 
-[27
+! LaTeX Error: \caption outside float.
 
- <./images/SBox.PNG>] [28
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.407 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-] [29
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.407 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-] [30
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.407 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[25
+
+ <./images/SBox.PNG>] [26
+
+] [27
 
 ]
 
@@ -1442,7 +1911,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1451,7 +1920,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1459,7 +1928,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1470,7 +1939,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1481,7 +1950,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1493,7 +1962,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1502,7 +1971,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1510,7 +1979,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1521,7 +1990,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1532,7 +2001,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1544,7 +2013,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1553,7 +2022,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1561,7 +2030,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1572,7 +2041,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1583,7 +2052,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1595,7 +2064,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1604,7 +2073,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1612,7 +2081,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1623,7 +2092,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1638,7 +2107,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1650,7 +2119,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1662,7 +2131,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1670,7 +2139,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1678,7 +2147,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[31
+[28
 
 ]
 
@@ -1688,7 +2157,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1697,7 +2166,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1705,7 +2174,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1716,7 +2185,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1727,7 +2196,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1739,7 +2208,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1748,7 +2217,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1756,7 +2225,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1767,7 +2236,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1778,7 +2247,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1790,7 +2259,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1799,7 +2268,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1807,7 +2276,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1818,7 +2287,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1829,7 +2298,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1841,7 +2310,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1850,7 +2319,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1858,7 +2327,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1869,7 +2338,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1884,7 +2353,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1896,7 +2365,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1908,7 +2377,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1916,7 +2385,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1924,7 +2393,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[32
+[29
 
 ]
 
@@ -1934,7 +2403,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1943,7 +2412,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1951,7 +2420,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1962,7 +2431,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1973,7 +2442,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1985,7 +2454,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1994,7 +2463,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2002,7 +2471,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2013,7 +2482,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2024,7 +2493,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2036,7 +2505,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2045,7 +2514,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2053,7 +2522,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2064,7 +2533,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2075,7 +2544,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2087,7 +2556,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2096,7 +2565,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2104,7 +2573,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2115,7 +2584,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2130,7 +2599,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2142,7 +2611,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2154,7 +2623,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460 \end{frame}
+l.478 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2162,7 +2631,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.460 \end{frame}
+l.478 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2170,298 +2639,1308 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[33
+[30
 
-] [34
+] [31
 
-] (Presentation_OTPAES.toc) [35
+] (Presentation_OTPAES.toc) [32
 
-] (Presentation_OTPAES.toc) [36
+] (Presentation_OTPAES.toc) [33
 
 ]
-<images/NSA.PNG, id=323, 1204.5pt x 1204.5pt>
+<images/NSA.PNG, id=317, 1204.5pt x 1204.5pt>
 File: images/NSA.PNG Graphic file (type png)
  <use images/NSA.PNG>
-Package pdftex.def Info: images/NSA.PNG used on input line 509.
+Package pdftex.def Info: images/NSA.PNG used on input line 531.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
 
-<images/SVRRF.PNG, id=324, 1204.5pt x 1204.5pt>
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.531 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<images/SVRRF.PNG, id=319, 1204.5pt x 1204.5pt>
 File: images/SVRRF.PNG Graphic file (type png)
  <use images/SVRRF.PNG>
-Package pdftex.def Info: images/SVRRF.PNG used on input line 509.
+Package pdftex.def Info: images/SVRRF.PNG used on input line 531.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
- [37
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.531 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[34
 
  <./images/NSA.PNG> <./images/SVRRF.PNG>]
 File: images/NSA.PNG Graphic file (type png)
  <use images/NSA.PNG>
-Package pdftex.def Info: images/NSA.PNG used on input line 509.
+Package pdftex.def Info: images/NSA.PNG used on input line 531.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
-File: images/SVRRF.PNG Graphic file (type png)
 
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.531 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: images/SVRRF.PNG Graphic file (type png)
 <use images/SVRRF.PNG>
-Package pdftex.def Info: images/SVRRF.PNG used on input line 509.
+Package pdftex.def Info: images/SVRRF.PNG used on input line 531.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
- [38
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.531 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[35
 
 ]
 File: images/NSA.PNG Graphic file (type png)
  <use images/NSA.PNG>
-Package pdftex.def Info: images/NSA.PNG used on input line 509.
+Package pdftex.def Info: images/NSA.PNG used on input line 531.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.531 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 File: images/SVRRF.PNG Graphic file (type png)
- <use images/SVRRF.PNG>
-Package pdftex.def Info: images/SVRRF.PNG used on input line 509.
+<use images/SVRRF.PNG>
+Package pdftex.def Info: images/SVRRF.PNG used on input line 531.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.531 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[36
+
+]
+File: images/NSA.PNG Graphic file (type png)
+ <use images/NSA.PNG>
+Package pdftex.def Info: images/NSA.PNG used on input line 531.
+(pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.531 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: images/SVRRF.PNG Graphic file (type png)
+<use images/SVRRF.PNG>
+Package pdftex.def Info: images/SVRRF.PNG used on input line 531.
+(pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.531 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[37
+
+]
+File: images/NSA.PNG Graphic file (type png)
+ <use images/NSA.PNG>
+Package pdftex.def Info: images/NSA.PNG used on input line 531.
+(pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.531 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: images/SVRRF.PNG Graphic file (type png)
+<use images/SVRRF.PNG>
+Package pdftex.def Info: images/SVRRF.PNG used on input line 531.
+(pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.531 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.531 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[38
+
+] <images/colossus.jpg, id=359, 1284.8pt x 722.7pt>
+File: images/colossus.jpg Graphic file (type jpg)
+
+<use images/colossus.jpg>
+Package pdftex.def Info: images/colossus.jpg used on input line 549.
+(pdftex.def)             Requested size: 192.71169pt x 108.40031pt.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.549 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.549 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.549 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 [39
 
-]
-File: images/NSA.PNG Graphic file (type png)
- <use images/NSA.PNG>
-Package pdftex.def Info: images/NSA.PNG used on input line 509.
-(pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
-File: images/SVRRF.PNG Graphic file (type png)
- <use images/SVRRF.PNG>
-Package pdftex.def Info: images/SVRRF.PNG used on input line 509.
-(pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
- [40
-
-]
-File: images/NSA.PNG Graphic file (type png)
- <use images/NSA.PNG>
-Package pdftex.def Info: images/NSA.PNG used on input line 509.
-(pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
-File: images/SVRRF.PNG Graphic file (type png)
-
-<use images/SVRRF.PNG>
-Package pdftex.def Info: images/SVRRF.PNG used on input line 509.
-(pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
- [41
-
-] <images/colossus.jpg, id=353, 1284.8pt x 722.7pt>
-File: images/colossus.jpg Graphic file (type jpg)
-
-<use images/colossus.jpg>
-Package pdftex.def Info: images/colossus.jpg used on input line 523.
-(pdftex.def)             Requested size: 192.71169pt x 108.40031pt.
- [42
-
  <./images/colossus.jpg>]
 File: images/colossus.jpg Graphic file (type jpg)
-
-<use images/colossus.jpg>
-Package pdftex.def Info: images/colossus.jpg used on input line 523.
+ <use images/colossus.jpg>
+Package pdftex.def Info: images/colossus.jpg used on input line 549.
 (pdftex.def)             Requested size: 192.71169pt x 108.40031pt.
- [43
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.549 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.549 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.549 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[40
 
 ]
 File: images/colossus.jpg Graphic file (type jpg)
  <use images/colossus.jpg>
-Package pdftex.def Info: images/colossus.jpg used on input line 523.
+Package pdftex.def Info: images/colossus.jpg used on input line 549.
 (pdftex.def)             Requested size: 192.71169pt x 108.40031pt.
- [44
 
-]
-File: images/colossus.jpg Graphic file (type jpg)
 
-<use images/colossus.jpg>
-Package pdftex.def Info: images/colossus.jpg used on input line 523.
-(pdftex.def)             Requested size: 192.71169pt x 108.40031pt.
- [45
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.549 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.549 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.549 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[41
 
 ]
 File: images/colossus.jpg Graphic file (type jpg)
  <use images/colossus.jpg>
-Package pdftex.def Info: images/colossus.jpg used on input line 523.
+Package pdftex.def Info: images/colossus.jpg used on input line 549.
 (pdftex.def)             Requested size: 192.71169pt x 108.40031pt.
- [46
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.549 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.549 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.549 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[42
 
 ]
 File: images/colossus.jpg Graphic file (type jpg)
-
-<use images/colossus.jpg>
-Package pdftex.def Info: images/colossus.jpg used on input line 523.
+ <use images/colossus.jpg>
+Package pdftex.def Info: images/colossus.jpg used on input line 549.
 (pdftex.def)             Requested size: 192.71169pt x 108.40031pt.
- [47
 
-] <images/tux.jpg, id=385, 196.735pt x 216.81pt>
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.549 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.549 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.549 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[43
+
+]
+File: images/colossus.jpg Graphic file (type jpg)
+ <use images/colossus.jpg>
+Package pdftex.def Info: images/colossus.jpg used on input line 549.
+(pdftex.def)             Requested size: 192.71169pt x 108.40031pt.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.549 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.549 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.549 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[44
+
+] <images/tux.jpg, id=398, 196.735pt x 216.81pt>
 File: images/tux.jpg Graphic file (type jpg)
-
-<use images/tux.jpg>
-Package pdftex.def Info: images/tux.jpg used on input line 543.
+ <use images/tux.jpg>
+Package pdftex.def Info: images/tux.jpg used on input line 571.
 (pdftex.def)             Requested size: 137.71355pt x 151.76596pt.
- [48
 
- <./images/tux.jpg>]
-<images/tux_ecb.jpg, id=391, 196.735pt x 216.81pt>
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.571 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.571 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.571 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[45
+
+ <./images/tux.jpg>] <images/tux_ecb.jpg, id=406, 196.735pt x 216.81pt>
 File: images/tux_ecb.jpg Graphic file (type jpg)
- <use images/tux_ecb.jpg>
-Package pdftex.def Info: images/tux_ecb.jpg used on input line 543.
+
+<use images/tux_ecb.jpg>
+Package pdftex.def Info: images/tux_ecb.jpg used on input line 571.
 (pdftex.def)             Requested size: 137.71355pt x 151.76596pt.
 
-[49
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.571 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.571 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.571 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[46
 
  <./images/tux_ecb.jpg>]
-<images/tux_secure.jpg, id=398, 196.735pt x 216.81pt>
+<images/tux_secure.jpg, id=413, 196.735pt x 216.81pt>
 File: images/tux_secure.jpg Graphic file (type jpg)
 
 <use images/tux_secure.jpg>
-Package pdftex.def Info: images/tux_secure.jpg used on input line 543.
+Package pdftex.def Info: images/tux_secure.jpg used on input line 571.
 (pdftex.def)             Requested size: 137.71355pt x 151.76596pt.
- [50
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.571 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.571 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.571 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[47
 
  <./images/tux_secure.jpg>]
 File: images/tux_secure.jpg Graphic file (type jpg)
-
-<use images/tux_secure.jpg>
-Package pdftex.def Info: images/tux_secure.jpg used on input line 543.
+ <use images/tux_secure.jpg>
+Package pdftex.def Info: images/tux_secure.jpg used on input line 571.
 (pdftex.def)             Requested size: 137.71355pt x 151.76596pt.
- [51
 
-]
-<images/CBC.PNG, id=409, 603.25375pt x 242.9075pt>
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.571 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.571 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.571 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[48
+
+] <images/CBC.PNG, id=426, 603.25375pt x 242.9075pt>
 File: images/CBC.PNG Graphic file (type png)
  <use images/CBC.PNG>
-Package pdftex.def Info: images/CBC.PNG used on input line 549.
+Package pdftex.def Info: images/CBC.PNG used on input line 579.
 (pdftex.def)             Requested size: 301.62613pt x 121.45345pt.
 
-[52
 
- <./images/CBC.PNG>] (Presentation_OTPAES.toc) [53
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.579 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.579 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.579 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[49
+
+ <./images/CBC.PNG>] (Presentation_OTPAES.toc) [50
 
 ]
-<images/SocialMedia.PNG, id=429, 875.52094pt x 395.22656pt>
+<images/SocialMedia.PNG, id=448, 875.52094pt x 395.22656pt>
 File: images/SocialMedia.PNG Graphic file (type png)
 
 <use images/SocialMedia.PNG>
-Package pdftex.def Info: images/SocialMedia.PNG used on input line 568.
+Package pdftex.def Info: images/SocialMedia.PNG used on input line 601.
 (pdftex.def)             Requested size: 87.55722pt x 39.52496pt.
 
-<images/https.PNG, id=430, 313.17pt x 402.75468pt>
+<images/https.PNG, id=449, 313.17pt x 402.75468pt>
 File: images/https.PNG Graphic file (type png)
  <use images/https.PNG>
-Package pdftex.def Info: images/https.PNG used on input line 568.
+Package pdftex.def Info: images/https.PNG used on input line 601.
 (pdftex.def)             Requested size: 93.95172pt x 120.82733pt.
 
-[54
+[51
 
  <./images/SocialMedia.PNG> <./images/https.PNG>]
 File: images/SocialMedia.PNG Graphic file (type png)
 
 <use images/SocialMedia.PNG>
-Package pdftex.def Info: images/SocialMedia.PNG used on input line 568.
+Package pdftex.def Info: images/SocialMedia.PNG used on input line 601.
 (pdftex.def)             Requested size: 87.55722pt x 39.52496pt.
 File: images/https.PNG Graphic file (type png)
  <use images/https.PNG>
-Package pdftex.def Info: images/https.PNG used on input line 568.
+Package pdftex.def Info: images/https.PNG used on input line 601.
 (pdftex.def)             Requested size: 93.95172pt x 120.82733pt.
- [55
+ [52
 
 ]
 File: images/SocialMedia.PNG Graphic file (type png)
 
 <use images/SocialMedia.PNG>
-Package pdftex.def Info: images/SocialMedia.PNG used on input line 568.
+Package pdftex.def Info: images/SocialMedia.PNG used on input line 601.
 (pdftex.def)             Requested size: 87.55722pt x 39.52496pt.
 File: images/https.PNG Graphic file (type png)
  <use images/https.PNG>
-Package pdftex.def Info: images/https.PNG used on input line 568.
+Package pdftex.def Info: images/https.PNG used on input line 601.
 (pdftex.def)             Requested size: 93.95172pt x 120.82733pt.
- [56
-
-] [57
+ [53
 
 ]
-<images/snowden.jpg, id=454, 578.16pt x 696.6025pt>
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.626 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.626 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.626 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.626 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.626 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.626 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[54
+
+] <images/snowden.jpg, id=476, 578.16pt x 696.6025pt>
 File: images/snowden.jpg Graphic file (type jpg)
- <use images/snowden.jpg>
-Package pdftex.def Info: images/snowden.jpg used on input line 589.
+
+<use images/snowden.jpg>
+Package pdftex.def Info: images/snowden.jpg used on input line 626.
 (pdftex.def)             Requested size: 57.81938pt x 69.66432pt.
 
-<images/BoundlessInformant.PNG, id=455, 682.80093pt x 382.42876pt>
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.626 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.626 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.626 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<images/BoundlessInformant.PNG, id=478, 682.80093pt x 382.42876pt>
 File: images/BoundlessInformant.PNG Graphic file (type png)
 
 <use images/BoundlessInformant.PNG>
-Package pdftex.def Info: images/BoundlessInformant.PNG used on input line 589.
+Package pdftex.def Info: images/BoundlessInformant.PNG used on input line 626.
 (pdftex.def)             Requested size: 136.55775pt x 76.48439pt.
- [58
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.626 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.626 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.626 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[55
 
  <./images/snowden.jpg> <./images/BoundlessInformant.PNG>]
 File: images/snowden.jpg Graphic file (type jpg)
- <use images/snowden.jpg>
-Package pdftex.def Info: images/snowden.jpg used on input line 589.
+
+<use images/snowden.jpg>
+Package pdftex.def Info: images/snowden.jpg used on input line 626.
 (pdftex.def)             Requested size: 57.81938pt x 69.66432pt.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.626 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.626 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.626 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 File: images/BoundlessInformant.PNG Graphic file (type png)
-
 <use images/BoundlessInformant.PNG>
-Package pdftex.def Info: images/BoundlessInformant.PNG used on input line 589.
+Package pdftex.def Info: images/BoundlessInformant.PNG used on input line 626.
 (pdftex.def)             Requested size: 136.55775pt x 76.48439pt.
- [59
 
-]
-<images/termsandconditions.png, id=467, 521.95pt x 415.5525pt>
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.626 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.626 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.626 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[56
+
+] <images/termsandconditions.png, id=494, 521.95pt x 415.5525pt>
 File: images/termsandconditions.png Graphic file (type png)
 
 <use images/termsandconditions.png>
-Package pdftex.def Info: images/termsandconditions.png used on input line 601.
+Package pdftex.def Info: images/termsandconditions.png used on input line 640.
 (pdftex.def)             Requested size: 156.5862pt x 124.6667pt.
- [60
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.640 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.640 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.640 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[57
 
  <./images/termsandconditions.png>]
 File: images/termsandconditions.png Graphic file (type png)
-
-<use images/termsandconditions.png>
-Package pdftex.def Info: images/termsandconditions.png used on input line 601.
+ <use images/termsandconditions.png>
+Package pdftex.def Info: images/termsandconditions.png used on input line 640.
 (pdftex.def)             Requested size: 156.5862pt x 124.6667pt.
- [61
 
-] (Presentation_OTPAES.toc) [62
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.640 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.640 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.640 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[58
+
+] (Presentation_OTPAES.toc) [59
+
+] [60
 
 ]
-[63
 
-]
-\tf@nav=\write6
-\openout6 = `Presentation_OTPAES.nav'.
+LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10> not available
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 653.
 
-\tf@toc=\write7
-\openout7 = `Presentation_OTPAES.toc'.
+[61
 
-\tf@snm=\write8
-\openout8 = `Presentation_OTPAES.snm'.
+ <E:/miketex/tex/latex/beamer/art/beamericonarticle.pdf>] [62]
+\tf@nav=\write8
+\openout8 = `Presentation_OTPAES.nav'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 614.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 614.
- (Presentation_OTPAES.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 614.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 614.
+\tf@toc=\write9
+\openout9 = `Presentation_OTPAES.toc'.
+
+\tf@snm=\write10
+\openout10 = `Presentation_OTPAES.snm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 658.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 658.
+
+(Presentation_OTPAES.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 658.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 658.
 Package rerunfilecheck Info: File `Presentation_OTPAES.out' has not changed.
-(rerunfilecheck)             Checksum: BCC7FD437C1B7C2FF9B93907AA976126;569.
+(rerunfilecheck)             Checksum: E48C81AC868F7B2515FC99D13C5493A7;587.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
+Package logreq Info: Writing requests to 'Presentation_OTPAES.run.xml'.
+\openout1 = `Presentation_OTPAES.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 23059 strings out of 493335
- 443059 string characters out of 3146586
- 538513 words of memory out of 3000000
- 25890 multiletter control sequences out of 15000+200000
- 10697 words of font info for 39 fonts, out of 3000000 for 9000
+ 28711 strings out of 493335
+ 546957 string characters out of 3146586
+ 976937 words of memory out of 3000000
+ 31467 multiletter control sequences out of 15000+200000
+ 15016 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,12n,59p,814b,718s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/miketex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/miketex/fonts/type1
-/public/amsfonts/cm/cmmi8.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmss12
-.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmss17.pfb><E:/miketex/fonts/ty
-pe1/public/amsfonts/cm/cmss8.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cms
-si12.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmssi8.pfb><E:/miketex/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><E:/miketex/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb>
-Output written on Presentation_OTPAES.pdf (63 pages, 2071388 bytes).
+ 56i,12n,59p,1146b,1269s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/miketex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/miketex/fonts/type
+1/public/amsfonts/cm/cmex10.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmss10.pfb><E:/miketex/fonts/t
+ype1/public/amsfonts/cm/cmss12.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/c
+mss17.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmss8.pfb><E:/miketex/font
+s/type1/public/amsfonts/cm/cmssi10.pfb><E:/miketex/fonts/type1/public/amsfonts/
+cm/cmssi12.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/mikete
+x/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Presentation_OTPAES.pdf (62 pages, 2123253 bytes).
 PDF statistics:
- 559 PDF objects out of 1000 (max. 8388607)
- 136 named destinations out of 1000 (max. 500000)
+ 638 PDF objects out of 1000 (max. 8388607)
+ 146 named destinations out of 1000 (max. 500000)
  195 words of extra memory for PDF output out of 10000 (max. 10000000)
 
