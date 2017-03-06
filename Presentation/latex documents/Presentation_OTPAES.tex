@@ -143,7 +143,7 @@ Linguistic supervision by Ms. Margrit Oetiker}
 \begin{frame}
 \frametitle{OTP: The Cipher}
 \begin{columns}
-\begin{column}{0.5\textwidth}
+\begin{column}{0.4\textwidth}
 \begin{itemize}
 \item Stream Cipher
 \item Key length $\geq$ Message length
@@ -151,8 +151,8 @@ Linguistic supervision by Ms. Margrit Oetiker}
 \item Perfect (forward) secrecy
 \end{itemize}
 \end{column}
-\begin{column}{0.5\textwidth}
-\includegraphics<1->[scale=0.2]{keystream.PNG}
+\begin{column}{0.6\textwidth}
+\includegraphics<1->[scale=0.3]{keystream.PNG}
 \break
 \caption{A stream cipher\cite{keystream}}
 \vspace{5mm}
@@ -251,8 +251,8 @@ u & p & r & g & n & w & l & h & n & x & o & k
 \begin{frame}
 \frametitle{AES: Design Goals}
 \begin{itemize}
-\item Confusion: Each bit of the ciphertext should depend on multiple bits of the key
-\item Diffusion: The "avalanche effect"
+\item Confusion: Ciphertext dependent on key
+\item Diffusion: The "avalanche effect", ciphertext dependent on plaintext
 %, small changes to the plaintext should strongly impact the ciphertext
 \item Two different implementations: Computationally or memory efficient
 \end{itemize}
@@ -344,7 +344,8 @@ a_3 & a_7 & a_{11} & a_{15}\end{array} \right)\]
 
 \begin{itemize}
 \pause
-\item Bitwise logical operation; can be performed directly by the CPU
+\item Bit-wise logical operation
+%can be performed directly by the CPU
 \item Addition mod 2
 \item Can randomize biased input
 \end{itemize}
@@ -509,7 +510,8 @@ k_{3,0} & k_{3,1} & k_{3,2} & k_{3,3}\end{array} \right)
 \frametitle{The Crypto War: Past and Present}
 \begin{itemize}
 \item<2-> WWII: British Special Operations Executive
-\item<3-> Value of information: Rising exponentially alongside globalization
+\item<3-> Value of information Rising exponentially
+%alongside globalization
 \item<4-> Covert operations and proxy wars
 \end{itemize}
 \begin{columns}
@@ -628,7 +630,7 @@ k_{3,0} & k_{3,1} & k_{3,2} & k_{3,3}\end{array} \right)
 \begin{frame}
 \frametitle{Privacy: An Outdated Concept?}
 \begin{center}
-\includegraphics[scale=0.3]{termsandconditions.png}
+\includegraphics[scale=0.3]{facebook_terms.PNG}
 \break
 \caption{Facebook's terms and conditions\cite{fbterms}}
 \end{center}

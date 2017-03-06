@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  5 MAR 2017 19:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.3)  6 MAR 2017 11:35
 entering extended mode
 **./Presentation_OTPAES.tex
 (Presentation_OTPAES.tex
@@ -1588,7 +1588,7 @@ File: images/keystream.PNG Graphic file (type png)
 
 <use images/keystream.PNG>
 Package pdftex.def Info: images/keystream.PNG used on input line 167.
-(pdftex.def)             Requested size: 120.44786pt x 47.17542pt.
+(pdftex.def)             Requested size: 180.67639pt x 70.76491pt.
 
 
 ! LaTeX Error: \caption outside float.
@@ -1630,7 +1630,7 @@ and I'll forget about whatever was undefined.
 File: images/keystream.PNG Graphic file (type png)
  <use images/keystream.PNG>
 Package pdftex.def Info: images/keystream.PNG used on input line 167.
-(pdftex.def)             Requested size: 120.44786pt x 47.17542pt.
+(pdftex.def)             Requested size: 180.67639pt x 70.76491pt.
 
 
 ! LaTeX Error: \caption outside float.
@@ -1860,7 +1860,7 @@ and I'll forget about whatever was undefined.
 <images/SBox.PNG, id=248, 398.99063pt x 351.56343pt>
 File: images/SBox.PNG Graphic file (type png)
  <use images/SBox.PNG>
-Package pdftex.def Info: images/SBox.PNG used on input line 407.
+Package pdftex.def Info: images/SBox.PNG used on input line 408.
 (pdftex.def)             Requested size: 179.54411pt x 158.20207pt.
 
 
@@ -1870,7 +1870,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.407 \end{frame}
+l.408 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1878,7 +1878,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.407 \end{frame}
+l.408 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1889,7 +1889,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.407 \end{frame}
+l.408 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1911,7 +1911,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1920,7 +1920,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1928,7 +1928,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1939,7 +1939,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1950,7 +1950,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1962,7 +1962,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1971,7 +1971,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1979,7 +1979,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1990,7 +1990,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2001,7 +2001,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2013,7 +2013,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2022,7 +2022,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2030,7 +2030,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2041,7 +2041,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2052,7 +2052,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2064,7 +2064,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2073,7 +2073,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2081,7 +2081,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2092,7 +2092,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2107,7 +2107,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2119,7 +2119,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2131,7 +2131,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2139,7 +2139,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2157,7 +2157,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2166,7 +2166,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2174,7 +2174,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2185,7 +2185,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2196,7 +2196,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2208,7 +2208,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2217,7 +2217,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2225,7 +2225,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2236,7 +2236,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2247,7 +2247,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2259,7 +2259,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2268,7 +2268,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2276,7 +2276,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2287,7 +2287,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2298,7 +2298,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2310,7 +2310,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2319,7 +2319,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2327,7 +2327,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2338,7 +2338,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2353,7 +2353,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2365,7 +2365,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2377,7 +2377,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2385,7 +2385,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2403,7 +2403,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2412,7 +2412,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2420,7 +2420,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2431,7 +2431,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2442,7 +2442,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2454,7 +2454,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2463,7 +2463,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2471,7 +2471,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2482,7 +2482,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2493,7 +2493,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2505,7 +2505,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2514,7 +2514,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2522,7 +2522,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2533,7 +2533,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2544,7 +2544,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2556,7 +2556,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2565,7 +2565,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2573,7 +2573,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2584,7 +2584,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2599,7 +2599,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2611,7 +2611,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2623,7 +2623,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478 \end{frame}
+l.479 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2631,7 +2631,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 \end{frame}
+l.479 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2651,7 +2651,7 @@ my insertion and my current dilemma will both disappear.
 <images/NSA.PNG, id=317, 1204.5pt x 1204.5pt>
 File: images/NSA.PNG Graphic file (type png)
  <use images/NSA.PNG>
-Package pdftex.def Info: images/NSA.PNG used on input line 531.
+Package pdftex.def Info: images/NSA.PNG used on input line 533.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
 
 
@@ -2661,7 +2661,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.531 \end{frame}
+l.533 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2669,7 +2669,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2680,7 +2680,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2691,7 +2691,7 @@ and I'll forget about whatever was undefined.
 <images/SVRRF.PNG, id=319, 1204.5pt x 1204.5pt>
 File: images/SVRRF.PNG Graphic file (type png)
  <use images/SVRRF.PNG>
-Package pdftex.def Info: images/SVRRF.PNG used on input line 531.
+Package pdftex.def Info: images/SVRRF.PNG used on input line 533.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
 
 
@@ -2701,7 +2701,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.531 \end{frame}
+l.533 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2709,7 +2709,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2720,7 +2720,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2733,7 +2733,7 @@ and I'll forget about whatever was undefined.
  <./images/NSA.PNG> <./images/SVRRF.PNG>]
 File: images/NSA.PNG Graphic file (type png)
  <use images/NSA.PNG>
-Package pdftex.def Info: images/NSA.PNG used on input line 531.
+Package pdftex.def Info: images/NSA.PNG used on input line 533.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
 
 
@@ -2743,7 +2743,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.531 \end{frame}
+l.533 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2751,7 +2751,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2762,7 +2762,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2772,7 +2772,7 @@ and I'll forget about whatever was undefined.
 
 File: images/SVRRF.PNG Graphic file (type png)
 <use images/SVRRF.PNG>
-Package pdftex.def Info: images/SVRRF.PNG used on input line 531.
+Package pdftex.def Info: images/SVRRF.PNG used on input line 533.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
 
 
@@ -2782,7 +2782,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.531 \end{frame}
+l.533 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2790,7 +2790,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2801,7 +2801,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2814,7 +2814,7 @@ and I'll forget about whatever was undefined.
 ]
 File: images/NSA.PNG Graphic file (type png)
  <use images/NSA.PNG>
-Package pdftex.def Info: images/NSA.PNG used on input line 531.
+Package pdftex.def Info: images/NSA.PNG used on input line 533.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
 
 
@@ -2824,7 +2824,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.531 \end{frame}
+l.533 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2832,7 +2832,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2843,7 +2843,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2853,7 +2853,7 @@ and I'll forget about whatever was undefined.
 
 File: images/SVRRF.PNG Graphic file (type png)
 <use images/SVRRF.PNG>
-Package pdftex.def Info: images/SVRRF.PNG used on input line 531.
+Package pdftex.def Info: images/SVRRF.PNG used on input line 533.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
 
 
@@ -2863,7 +2863,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.531 \end{frame}
+l.533 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2871,7 +2871,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2882,7 +2882,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2895,7 +2895,7 @@ and I'll forget about whatever was undefined.
 ]
 File: images/NSA.PNG Graphic file (type png)
  <use images/NSA.PNG>
-Package pdftex.def Info: images/NSA.PNG used on input line 531.
+Package pdftex.def Info: images/NSA.PNG used on input line 533.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
 
 
@@ -2905,7 +2905,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.531 \end{frame}
+l.533 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2913,7 +2913,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2924,7 +2924,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2934,7 +2934,7 @@ and I'll forget about whatever was undefined.
 
 File: images/SVRRF.PNG Graphic file (type png)
 <use images/SVRRF.PNG>
-Package pdftex.def Info: images/SVRRF.PNG used on input line 531.
+Package pdftex.def Info: images/SVRRF.PNG used on input line 533.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
 
 
@@ -2944,7 +2944,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.531 \end{frame}
+l.533 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2952,7 +2952,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2963,7 +2963,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2976,7 +2976,7 @@ and I'll forget about whatever was undefined.
 ]
 File: images/NSA.PNG Graphic file (type png)
  <use images/NSA.PNG>
-Package pdftex.def Info: images/NSA.PNG used on input line 531.
+Package pdftex.def Info: images/NSA.PNG used on input line 533.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
 
 
@@ -2986,7 +2986,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.531 \end{frame}
+l.533 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2994,7 +2994,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3005,7 +3005,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3015,7 +3015,7 @@ and I'll forget about whatever was undefined.
 
 File: images/SVRRF.PNG Graphic file (type png)
 <use images/SVRRF.PNG>
-Package pdftex.def Info: images/SVRRF.PNG used on input line 531.
+Package pdftex.def Info: images/SVRRF.PNG used on input line 533.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
 
 
@@ -3025,7 +3025,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.531 \end{frame}
+l.533 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3033,7 +3033,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3044,7 +3044,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.531 \end{frame}
+l.533 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3058,7 +3058,7 @@ and I'll forget about whatever was undefined.
 File: images/colossus.jpg Graphic file (type jpg)
 
 <use images/colossus.jpg>
-Package pdftex.def Info: images/colossus.jpg used on input line 549.
+Package pdftex.def Info: images/colossus.jpg used on input line 551.
 (pdftex.def)             Requested size: 192.71169pt x 108.40031pt.
 
 
@@ -3068,7 +3068,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.549 \end{frame}
+l.551 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3076,7 +3076,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.549 \end{frame}
+l.551 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3087,7 +3087,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.549 \end{frame}
+l.551 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3100,7 +3100,7 @@ and I'll forget about whatever was undefined.
  <./images/colossus.jpg>]
 File: images/colossus.jpg Graphic file (type jpg)
  <use images/colossus.jpg>
-Package pdftex.def Info: images/colossus.jpg used on input line 549.
+Package pdftex.def Info: images/colossus.jpg used on input line 551.
 (pdftex.def)             Requested size: 192.71169pt x 108.40031pt.
 
 
@@ -3110,7 +3110,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.549 \end{frame}
+l.551 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3118,7 +3118,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.549 \end{frame}
+l.551 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3129,7 +3129,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.549 \end{frame}
+l.551 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3142,7 +3142,7 @@ and I'll forget about whatever was undefined.
 ]
 File: images/colossus.jpg Graphic file (type jpg)
  <use images/colossus.jpg>
-Package pdftex.def Info: images/colossus.jpg used on input line 549.
+Package pdftex.def Info: images/colossus.jpg used on input line 551.
 (pdftex.def)             Requested size: 192.71169pt x 108.40031pt.
 
 
@@ -3152,7 +3152,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.549 \end{frame}
+l.551 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3160,7 +3160,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.549 \end{frame}
+l.551 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3171,7 +3171,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.549 \end{frame}
+l.551 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3184,7 +3184,7 @@ and I'll forget about whatever was undefined.
 ]
 File: images/colossus.jpg Graphic file (type jpg)
  <use images/colossus.jpg>
-Package pdftex.def Info: images/colossus.jpg used on input line 549.
+Package pdftex.def Info: images/colossus.jpg used on input line 551.
 (pdftex.def)             Requested size: 192.71169pt x 108.40031pt.
 
 
@@ -3194,7 +3194,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.549 \end{frame}
+l.551 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3202,7 +3202,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.549 \end{frame}
+l.551 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3213,7 +3213,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.549 \end{frame}
+l.551 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3226,7 +3226,7 @@ and I'll forget about whatever was undefined.
 ]
 File: images/colossus.jpg Graphic file (type jpg)
  <use images/colossus.jpg>
-Package pdftex.def Info: images/colossus.jpg used on input line 549.
+Package pdftex.def Info: images/colossus.jpg used on input line 551.
 (pdftex.def)             Requested size: 192.71169pt x 108.40031pt.
 
 
@@ -3236,7 +3236,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.549 \end{frame}
+l.551 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3244,7 +3244,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.549 \end{frame}
+l.551 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3255,7 +3255,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.549 \end{frame}
+l.551 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3268,7 +3268,7 @@ and I'll forget about whatever was undefined.
 ]
 File: images/colossus.jpg Graphic file (type jpg)
  <use images/colossus.jpg>
-Package pdftex.def Info: images/colossus.jpg used on input line 549.
+Package pdftex.def Info: images/colossus.jpg used on input line 551.
 (pdftex.def)             Requested size: 192.71169pt x 108.40031pt.
 
 
@@ -3278,7 +3278,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.549 \end{frame}
+l.551 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3286,7 +3286,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.549 \end{frame}
+l.551 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3297,7 +3297,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.549 \end{frame}
+l.551 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3310,7 +3310,7 @@ and I'll forget about whatever was undefined.
 ] <images/tux.jpg, id=398, 196.735pt x 216.81pt>
 File: images/tux.jpg Graphic file (type jpg)
  <use images/tux.jpg>
-Package pdftex.def Info: images/tux.jpg used on input line 571.
+Package pdftex.def Info: images/tux.jpg used on input line 573.
 (pdftex.def)             Requested size: 137.71355pt x 151.76596pt.
 
 
@@ -3320,7 +3320,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.571 \end{frame}
+l.573 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3328,7 +3328,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.571 \end{frame}
+l.573 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3339,7 +3339,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.571 \end{frame}
+l.573 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3353,7 +3353,7 @@ and I'll forget about whatever was undefined.
 File: images/tux_ecb.jpg Graphic file (type jpg)
 
 <use images/tux_ecb.jpg>
-Package pdftex.def Info: images/tux_ecb.jpg used on input line 571.
+Package pdftex.def Info: images/tux_ecb.jpg used on input line 573.
 (pdftex.def)             Requested size: 137.71355pt x 151.76596pt.
 
 
@@ -3363,7 +3363,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.571 \end{frame}
+l.573 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3371,7 +3371,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.571 \end{frame}
+l.573 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3382,7 +3382,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.571 \end{frame}
+l.573 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3397,7 +3397,7 @@ and I'll forget about whatever was undefined.
 File: images/tux_secure.jpg Graphic file (type jpg)
 
 <use images/tux_secure.jpg>
-Package pdftex.def Info: images/tux_secure.jpg used on input line 571.
+Package pdftex.def Info: images/tux_secure.jpg used on input line 573.
 (pdftex.def)             Requested size: 137.71355pt x 151.76596pt.
 
 
@@ -3407,7 +3407,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.571 \end{frame}
+l.573 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3415,7 +3415,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.571 \end{frame}
+l.573 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3426,7 +3426,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.571 \end{frame}
+l.573 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3439,7 +3439,7 @@ and I'll forget about whatever was undefined.
  <./images/tux_secure.jpg>]
 File: images/tux_secure.jpg Graphic file (type jpg)
  <use images/tux_secure.jpg>
-Package pdftex.def Info: images/tux_secure.jpg used on input line 571.
+Package pdftex.def Info: images/tux_secure.jpg used on input line 573.
 (pdftex.def)             Requested size: 137.71355pt x 151.76596pt.
 
 
@@ -3449,7 +3449,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.571 \end{frame}
+l.573 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3457,7 +3457,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.571 \end{frame}
+l.573 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3468,7 +3468,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.571 \end{frame}
+l.573 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3481,7 +3481,7 @@ and I'll forget about whatever was undefined.
 ] <images/CBC.PNG, id=426, 603.25375pt x 242.9075pt>
 File: images/CBC.PNG Graphic file (type png)
  <use images/CBC.PNG>
-Package pdftex.def Info: images/CBC.PNG used on input line 579.
+Package pdftex.def Info: images/CBC.PNG used on input line 581.
 (pdftex.def)             Requested size: 301.62613pt x 121.45345pt.
 
 
@@ -3491,7 +3491,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.579 \end{frame}
+l.581 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3499,7 +3499,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.579 \end{frame}
+l.581 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3510,7 +3510,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.579 \end{frame}
+l.581 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3527,13 +3527,13 @@ and I'll forget about whatever was undefined.
 File: images/SocialMedia.PNG Graphic file (type png)
 
 <use images/SocialMedia.PNG>
-Package pdftex.def Info: images/SocialMedia.PNG used on input line 601.
+Package pdftex.def Info: images/SocialMedia.PNG used on input line 603.
 (pdftex.def)             Requested size: 87.55722pt x 39.52496pt.
 
 <images/https.PNG, id=449, 313.17pt x 402.75468pt>
 File: images/https.PNG Graphic file (type png)
  <use images/https.PNG>
-Package pdftex.def Info: images/https.PNG used on input line 601.
+Package pdftex.def Info: images/https.PNG used on input line 603.
 (pdftex.def)             Requested size: 93.95172pt x 120.82733pt.
 
 [51
@@ -3542,11 +3542,11 @@ Package pdftex.def Info: images/https.PNG used on input line 601.
 File: images/SocialMedia.PNG Graphic file (type png)
 
 <use images/SocialMedia.PNG>
-Package pdftex.def Info: images/SocialMedia.PNG used on input line 601.
+Package pdftex.def Info: images/SocialMedia.PNG used on input line 603.
 (pdftex.def)             Requested size: 87.55722pt x 39.52496pt.
 File: images/https.PNG Graphic file (type png)
  <use images/https.PNG>
-Package pdftex.def Info: images/https.PNG used on input line 601.
+Package pdftex.def Info: images/https.PNG used on input line 603.
 (pdftex.def)             Requested size: 93.95172pt x 120.82733pt.
  [52
 
@@ -3554,11 +3554,11 @@ Package pdftex.def Info: images/https.PNG used on input line 601.
 File: images/SocialMedia.PNG Graphic file (type png)
 
 <use images/SocialMedia.PNG>
-Package pdftex.def Info: images/SocialMedia.PNG used on input line 601.
+Package pdftex.def Info: images/SocialMedia.PNG used on input line 603.
 (pdftex.def)             Requested size: 87.55722pt x 39.52496pt.
 File: images/https.PNG Graphic file (type png)
  <use images/https.PNG>
-Package pdftex.def Info: images/https.PNG used on input line 601.
+Package pdftex.def Info: images/https.PNG used on input line 603.
 (pdftex.def)             Requested size: 93.95172pt x 120.82733pt.
  [53
 
@@ -3570,7 +3570,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.626 \end{frame}
+l.628 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3578,7 +3578,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.626 \end{frame}
+l.628 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3589,7 +3589,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.626 \end{frame}
+l.628 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3604,7 +3604,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.626 \end{frame}
+l.628 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3612,7 +3612,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.626 \end{frame}
+l.628 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3623,7 +3623,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.626 \end{frame}
+l.628 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3637,7 +3637,7 @@ and I'll forget about whatever was undefined.
 File: images/snowden.jpg Graphic file (type jpg)
 
 <use images/snowden.jpg>
-Package pdftex.def Info: images/snowden.jpg used on input line 626.
+Package pdftex.def Info: images/snowden.jpg used on input line 628.
 (pdftex.def)             Requested size: 57.81938pt x 69.66432pt.
 
 
@@ -3647,7 +3647,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.626 \end{frame}
+l.628 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3655,7 +3655,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.626 \end{frame}
+l.628 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3666,7 +3666,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.626 \end{frame}
+l.628 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3678,7 +3678,7 @@ and I'll forget about whatever was undefined.
 File: images/BoundlessInformant.PNG Graphic file (type png)
 
 <use images/BoundlessInformant.PNG>
-Package pdftex.def Info: images/BoundlessInformant.PNG used on input line 626.
+Package pdftex.def Info: images/BoundlessInformant.PNG used on input line 628.
 (pdftex.def)             Requested size: 136.55775pt x 76.48439pt.
 
 
@@ -3688,7 +3688,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.626 \end{frame}
+l.628 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3696,7 +3696,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.626 \end{frame}
+l.628 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3707,7 +3707,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.626 \end{frame}
+l.628 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3721,7 +3721,7 @@ and I'll forget about whatever was undefined.
 File: images/snowden.jpg Graphic file (type jpg)
 
 <use images/snowden.jpg>
-Package pdftex.def Info: images/snowden.jpg used on input line 626.
+Package pdftex.def Info: images/snowden.jpg used on input line 628.
 (pdftex.def)             Requested size: 57.81938pt x 69.66432pt.
 
 
@@ -3731,7 +3731,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.626 \end{frame}
+l.628 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3739,7 +3739,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.626 \end{frame}
+l.628 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3750,7 +3750,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.626 \end{frame}
+l.628 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3760,7 +3760,7 @@ and I'll forget about whatever was undefined.
 
 File: images/BoundlessInformant.PNG Graphic file (type png)
 <use images/BoundlessInformant.PNG>
-Package pdftex.def Info: images/BoundlessInformant.PNG used on input line 626.
+Package pdftex.def Info: images/BoundlessInformant.PNG used on input line 628.
 (pdftex.def)             Requested size: 136.55775pt x 76.48439pt.
 
 
@@ -3770,7 +3770,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.626 \end{frame}
+l.628 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3778,7 +3778,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.626 \end{frame}
+l.628 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3789,7 +3789,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.626 \end{frame}
+l.628 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3799,12 +3799,12 @@ and I'll forget about whatever was undefined.
 
 [56
 
-] <images/termsandconditions.png, id=494, 521.95pt x 415.5525pt>
-File: images/termsandconditions.png Graphic file (type png)
+] <images/facebook_terms.PNG, id=494, 843.15pt x 272.01625pt>
+File: images/facebook_terms.PNG Graphic file (type png)
 
-<use images/termsandconditions.png>
-Package pdftex.def Info: images/termsandconditions.png used on input line 640.
-(pdftex.def)             Requested size: 156.5862pt x 124.6667pt.
+<use images/facebook_terms.PNG>
+Package pdftex.def Info: images/facebook_terms.PNG used on input line 642.
+(pdftex.def)             Requested size: 252.94695pt x 81.6055pt.
 
 
 ! LaTeX Error: \caption outside float.
@@ -3813,7 +3813,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.640 \end{frame}
+l.642 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3821,7 +3821,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.640 \end{frame}
+l.642 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3832,7 +3832,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.640 \end{frame}
+l.642 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3842,11 +3842,11 @@ and I'll forget about whatever was undefined.
 
 [57
 
- <./images/termsandconditions.png>]
-File: images/termsandconditions.png Graphic file (type png)
- <use images/termsandconditions.png>
-Package pdftex.def Info: images/termsandconditions.png used on input line 640.
-(pdftex.def)             Requested size: 156.5862pt x 124.6667pt.
+ <./images/facebook_terms.PNG>]
+File: images/facebook_terms.PNG Graphic file (type png)
+ <use images/facebook_terms.PNG>
+Package pdftex.def Info: images/facebook_terms.PNG used on input line 642.
+(pdftex.def)             Requested size: 252.94695pt x 81.6055pt.
 
 
 ! LaTeX Error: \caption outside float.
@@ -3855,7 +3855,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.640 \end{frame}
+l.642 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3863,7 +3863,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.640 \end{frame}
+l.642 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3874,7 +3874,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.640 \end{frame}
+l.642 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3891,7 +3891,7 @@ and I'll forget about whatever was undefined.
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 653.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 655.
 
 [61
 
@@ -3905,12 +3905,12 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10> not available
 \tf@snm=\write10
 \openout10 = `Presentation_OTPAES.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 658.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 658.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 660.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 660.
 
 (Presentation_OTPAES.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 658.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 658.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 660.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 660.
 Package rerunfilecheck Info: File `Presentation_OTPAES.out' has not changed.
 (rerunfilecheck)             Checksum: E48C81AC868F7B2515FC99D13C5493A7;587.
 
@@ -3923,8 +3923,8 @@ Package logreq Info: Writing requests to 'Presentation_OTPAES.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28711 strings out of 493335
- 546957 string characters out of 3146586
+ 28710 strings out of 493335
+ 546933 string characters out of 3146586
  976937 words of memory out of 3000000
  31467 multiletter control sequences out of 15000+200000
  15016 words of font info for 55 fonts, out of 3000000 for 9000
@@ -3938,7 +3938,7 @@ mss17.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmss8.pfb><E:/miketex/font
 s/type1/public/amsfonts/cm/cmssi10.pfb><E:/miketex/fonts/type1/public/amsfonts/
 cm/cmssi12.pfb><E:/miketex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/mikete
 x/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Presentation_OTPAES.pdf (62 pages, 2123253 bytes).
+Output written on Presentation_OTPAES.pdf (62 pages, 2247654 bytes).
 PDF statistics:
  638 PDF objects out of 1000 (max. 8388607)
  146 named destinations out of 1000 (max. 500000)
